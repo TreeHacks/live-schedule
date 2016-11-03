@@ -1,3 +1,0 @@
-Template.index.onCreated(function() {
-	
-});
