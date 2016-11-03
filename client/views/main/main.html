@@ -5,7 +5,9 @@
 
 	<body>
 	  <h1>Welcome to treehacks!</h1>
-
-	  {{> event}}
+	  
+	  {{#each events}}
+	  	{{> event}}
+	  {{/each}}
 	</body>
 </template>
