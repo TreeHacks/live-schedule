@@ -1,7 +1,7 @@
-Template.main.onCreated(function() {
+Template.schedule.onCreated(function() {
 });
 
-Template.main.helpers({
+Template.schedule.helpers({
   events: function () {
 	  return Events.find();
   }
