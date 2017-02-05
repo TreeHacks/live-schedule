@@ -20,19 +20,19 @@
 					<div id="header-countdown-content">
 						<div class="header-countdown-item">
 							<div class="header-countdown-caption">Day</div>
-							<div id="header-countdown-day" class="header-countdown-time">24</div>
+							<div id="header-countdown-day" class="header-countdown-time"></div>
 						</div>
 						<div class="header-countdown-item">
 							<div class="header-countdown-caption">Hour</div>
-							<div id="header-countdown-hour" class="header-countdown-time">24</div>
+							<div id="header-countdown-hour" class="header-countdown-time"></div>
 						</div>
 						<div class="header-countdown-item">
 							<div class="header-countdown-caption">Min</div>
-							<div id="header-countdown-min" class="header-countdown-time">37</div>
+							<div id="header-countdown-min" class="header-countdown-time"></div>
 						</div>
 						<div class="header-countdown-item">
 							<div class="header-countdown-caption">Sec</div>
-							<div id="header-countdown-sec" class="header-countdown-time">11</div>
+							<div id="header-countdown-sec" class="header-countdown-time"></div>
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -61,9 +61,13 @@
 						<script data-mute="false" data-social="false" class="mkEmbedPlayer" data-cover="http://www.calhacks.io/assets/img/meta_image.png" data-type="square" data-username="@calhacks" src="http://meerkatapp.co/widgets/embed.js" type="text/javascript"></script>
 					</div>-->
 					<div id="live-info">
+						<div id="faq" class="tile tile-link"><a href="https://treehacks2017.slack.com/signup" target="_blank">
+							<div class="tile-icon"><img class="img-scaled" src="/slack.svg"></div>
+							<div class="tile-caption">Slack</div></a>
+						</div>
 						<div id="hardware" class="tile tile-link"><a href="hardware" target="_blank">
 							<div class="tile-icon"><img class="img-scaled" src="/hardware.svg"></div>
-							<div class="tile-caption">Hardware</div></a>
+							<div class="tile-caption">Hackpacks</div></a>
 						</div>
 						<div id="api" class="tile tile-link"><a href="apis" target="_blank">
 							<div class="tile-icon"><img class="img-scaled" src="/api.svg"></div>
@@ -73,9 +77,13 @@
 							<div class="tile-icon"><img class="img-scaled" src="/challenge.svg"></div>
 							<div class="tile-caption">DevPost</div></a>
 						</div>
+						<div id="faq" class="tile tile-link"><a href="https://campus-map.stanford.edu" target="_blank">
+							<div class="tile-icon"><img class="img-scaled" src="/map.svg"></div>
+							<div class="tile-caption">Map</div></a>
+						</div>
 						<div id="faq" class="tile tile-link"><a href="https://www.treehacks.com/#faq" target="_blank">
-							<div class="tile-icon"><img class="img-scaled" src="/faq.svg"></div>
-							<div class="tile-caption">FAQ</div></a>
+							<div class="tile-icon"><img class="img-scaled" src="/map.svg"></div>
+							<div class="tile-caption">Map</div></a>
 						</div>
 						<!--<div id="sticker-challenge" class="tile tile-row">
 							<div class="tile-header">Drake Sticker Challenge</div>
@@ -93,7 +101,7 @@
 					</div>
 					<div id="schedule-guide-left"><img class="img-scaled" src="assets/live/icons/arrow_left.svg" /></div>
 					<div id="schedule-guide-right"><img class="img-scaled" src="assets/live/icons/arrow_right.svg" /></div>
-					<!--<div id="schedule-indicator"></div> -->
+					<div id="schedule-indicator"></div> 
 					<div class="schedule-content">
 						<div class="schedule-column-container">
 							<!-- 30 minute blocks get schedule-item-1 class, 60 minute blocks get schedule-item-2, etc. -->
@@ -143,8 +151,8 @@
 		q="milliseconds seconds minutes hours days weeks months years decades centuries millennia".split(" ")})();r&&r.exports?r.exports=d:"function"===typeof window.define&&window.define.amd&&window.define("countdown",[],function(){return d});return d}(module);
 
 		var VIEWPORT_WIDTH;
-		var START_TIME = (new Date(2015, 10, 9, 0, 0, 0, 0)).getTime();
-		var END_TIME = (new Date(2015, 10, 11, 12, 0, 0, 0)).getTime();
+		var START_TIME = (new Date(2017, 1, 4, 0, 0, 0, 0)).getTime();
+		var END_TIME = (new Date(2017, 1, 6, 12, 0, 0, 0)).getTime();
 		var TOTAL_TIME = END_TIME - START_TIME;
 		var SCHEDULE_HEIGHT = 4400;
 		var countdown;
@@ -331,7 +339,7 @@
 				update_schedule_indicator();
 			}, 1000);
 
-			countdown = countdown(new Date(2015, 9, 10, 15, 42, 0), function(ts){
+			countdown = countdown(new Date(2017, 1, 4, 17, 0, 0), function(ts){
 				$('#header-countdown-day').text(ts.days);
 				$('#header-countdown-hour').text(ts.hours);
 				$('#header-countdown-min').text(ts.minutes);
