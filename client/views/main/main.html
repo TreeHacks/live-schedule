@@ -78,8 +78,8 @@
 							<div class="tile-caption">DevPost</div></a>
 						</div>
 						<div id="faq" class="tile tile-link"><a href="https://campus-map.stanford.edu" target="_blank">
-							<div class="tile-icon"><img class="img-scaled" src="/map.svg"></div>
-							<div class="tile-caption">Map</div></a>
+							<div class="tile-icon"><img class="img-scaled" src="/question.svg"></div>
+							<div class="tile-caption">FAQ</div></a>
 						</div>
 						<div id="faq" class="tile tile-link"><a href="https://www.treehacks.com/#faq" target="_blank">
 							<div class="tile-icon"><img class="img-scaled" src="/map.svg"></div>
@@ -119,7 +119,7 @@
 					</div>
 					<div id="schedule-submit" style="margin-top:-3960px;background-color:#2ecc71;">You may begin hacking!</div>
 					<a href="https://treehacks-2017.devpost.com" target="_blank">
-						<div id="schedule-submit" style="margin-top:361px">Your hacks are due!</div>
+						<div id="schedule-submit" style="margin-top:241px">Hacks are due on DevPost!</div>
 					</a>
 				</div>
 				<div class="clear"></div>
@@ -493,22 +493,6 @@
 			end_hour = Math.floor(end_hour - 1) % 12 + 1 + ":" + (end_hour % 1) * 60;
 			end_hour = end_hour.split(":")[1].length > 1 ? end_hour : end_hour + "0";
 			return start + "-" + end_hour
-		}
-
-		function getLocation(location) {
-			if (!location) {
-				return " @ <a href='assets/img/map.png' target='_blank'>Cal Memorial Stadium</a>";
-			}
-
-			if (location == "woz") {
-				return " @ <a href='assets/img/map.png' target='_blank'>Wozniak Lounge, Soda Hall</a>";
-			} else if (location == "sdh") {
-				return " @ <a href='assets/img/map.png' target='_blank'>Sutardja Dai Hall</a>";
-			} else if (location == "uni") {
-				return " @ <a href='assets/img/map.png' target='_blank'>Cal Memorial Stadium</a>";
-			}
-
-			return "";
 		}
 
 		function getCard(time, event_type) {
