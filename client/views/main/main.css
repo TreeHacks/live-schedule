@@ -260,7 +260,7 @@ a.sticker-link {
 }
 
 #sticker-challenge .tile-header {
-	color: #F6B758;
+	color: #D5BCBA;
 }
 
 #sticker-challenge .tile-content {
@@ -367,7 +367,7 @@ a.sticker-link {
 	margin-bottom: 12px;
 	width: calc(100% - 24px);
 	position: absolute;
-	border-left: 6px solid #F6B758;
+	border: 3px solid #D5BCBA;
 	transition: 0.3s ease;
 	overflow: hidden;
 }
@@ -381,12 +381,12 @@ a.sticker-link {
 }
 
 .schedule-item.uni {
-	border-color: #F6B758
+	border-color: #D5BCBA
 }
 
 .schedule-item.offset-1 {
-	margin-left: 6px;
-	width: calc(100% - 30px)
+	margin-left: 8px;
+	width: calc(100% - 40px)
 }
 
 .schedule-item.offset-2 {

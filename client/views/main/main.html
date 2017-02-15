@@ -117,7 +117,10 @@
 							</div>
 						</div>
 					</div>
-					<div id="schedule-submit">Your Hacks are due!</div>
+					<div id="schedule-submit" style="margin-top:-3960px;background-color:#2ecc71;">You may begin hacking!</div>
+					<a href="https://treehacks-2017.devpost.com" target="_blank">
+						<div id="schedule-submit" style="margin-top:361px">Your hacks are due!</div>
+					</a>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -156,6 +159,242 @@
 		var TOTAL_TIME = END_TIME - START_TIME;
 		var SCHEDULE_HEIGHT = 4400;
 		var countdown;
+		
+		var schedule = [
+  {
+    "caption": "Hackers check in to TreeHacks!",
+    "event_type": "Main timeline",
+    "location": "Huang Basement",
+    "time": {
+      "day": "fri",
+      "duration": "4:00",
+      "start": "4:00PM"
+    },
+    "title": "Hacker Registration"
+  },
+  {
+    "caption": "",
+    "event_type": "Main timeline",
+    "location": "Huang 1st Floor - Outside",
+    "time": {
+      "day": "fri",
+      "duration": "1:00",
+      "start": "6:00PM"
+    },
+    "title": "Dinner",
+	"offset": 1
+  },
+  {
+    "caption": "Meet other hackers and build a team!",
+    "event_type": "events",
+    "location": "Huang 3rd Floor",
+    "time": {
+      "day": "fri",
+      "duration": "1:00",
+      "start": "7:00PM"
+    },
+    "title": "Team Building"
+  },
+  {
+    "caption": "Kickoff the event!",
+    "event_type": "Main timeline",
+    "location": "Hewlett 200",
+    "time": {
+      "day": "fri",
+      "duration": "2:00",
+      "start": "8:00PM"
+    },
+    "title": "Opening Ceremony"
+  },
+  {
+    "caption": "",
+    "event_type": "events",
+    "location": "Huang 2nd Floor",
+    "time": {
+      "day": "sat",
+      "duration": "1:00",
+      "start": "2:00AM"
+    },
+    "title": "Gaming Tournament"
+  },
+  {
+    "caption": "Meet at the Ampitheater!",
+    "event_type": "events",
+    "location": "The Dish",
+    "time": {
+      "day": "sat",
+      "duration": "2:00",
+      "start": "6:30AM"
+    },
+    "title": "Sunrise Dish Hike"
+  },
+  {
+    "caption": "",
+    "event_type": "events",
+    "location": "AOERC",
+    "time": {
+      "day": "sat",
+      "duration": "2:30",
+      "start": "8:00AM"
+    },
+    "title": "Shower Facilities"
+  },
+  {
+    "caption": "",
+    "event_type": "Main timeline",
+    "location": "Huang 1st Floor - Outside",
+    "time": {
+      "day": "sat",
+      "duration": "1:00",
+      "start": "9:30AM"
+    },
+    "title": "Breakfast"
+  },
+  {
+    "caption": "",
+    "event_type": "events",
+    "location": "Windhover",
+    "time": {
+      "day": "sat",
+      "duration": "0:45",
+      "start": "10:30AM"
+    },
+    "title": "Meditation"
+  },
+  {
+    "caption": "",
+    "event_type": "Main timeline",
+    "location": "Huang 1st Floor - Outside",
+    "time": {
+      "day": "sat",
+      "duration": "1:00",
+      "start": "12:00PM"
+    },
+    "title": "Lunch"
+  },
+  {
+    "caption": "",
+    "event_type": "events",
+    "location": "AOERC",
+    "time": {
+      "day": "sat",
+      "duration": "1:00",
+      "start": "1:45PM"
+    },
+    "title": "Zumba with DM"
+  },
+  {
+    "caption": "Meet at the Ampitheater!",
+    "event_type": "events",
+    "location": "Cantor Art Museum",
+    "time": {
+      "day": "sat",
+      "duration": "1:00",
+      "start": "3:30PM"
+    },
+    "title": "Trip to Art Museum"
+  },
+  {
+    "caption": "",
+    "event_type": "Main timeline",
+    "location": "Huang 1st Floor - Outside",
+    "time": {
+      "day": "sat",
+      "duration": "1:00",
+      "start": "6:30PM"
+    },
+    "title": "Dinner",
+	"offset": 1
+  },
+  {
+    "caption": "",
+    "event_type": "events",
+    "location": "AOERC",
+    "time": {
+      "day": "sat",
+      "duration": "3:00",
+      "start": "7:00PM"
+    },
+    "title": "Shower Facilities"
+  },
+  {
+    "caption": "Meet at the Ampitheater!",
+    "event_type": "events",
+    "location": "Across Campus",
+    "time": {
+      "day": "sat",
+      "duration": "1:00",
+      "start": "11:00PM"
+    },
+    "title": "Humans v. Zombies"
+  },
+  {
+    "caption": "Meet at the Ampitheater!",
+    "event_type": "events",
+    "location": "Ampitheater",
+    "time": {
+      "day": "sun",
+      "duration": "1:00",
+      "start": "1:00AM"
+    },
+    "title": "Stargazing"
+  },
+  {
+    "caption": "",
+    "event_type": "events",
+    "location": "Huang 2nd Floor",
+    "time": {
+      "day": "sun",
+      "duration": "1:00",
+      "start": "2:00AM"
+    },
+    "title": "Gaming Tournament"
+  },
+  {
+    "caption": "",
+    "event_type": "Main timeline",
+    "location": "Huang 1st Floor - Outside",
+    "time": {
+      "day": "sun",
+      "duration": "1:00",
+      "start": "10:30AM"
+    },
+    "title": "Brunch"
+  },
+  {
+    "caption": "",
+    "event_type": "Main timeline",
+    "location": "Huang Basement",
+    "time": {
+      "day": "sun",
+      "duration": "2:00",
+      "start": "12:00PM"
+    },
+    "title": "Project Expo"
+  },
+  {
+    "caption": "",
+    "event_type": "Main timeline",
+    "location": "Hewlett 200",
+    "time": {
+      "day": "sun",
+      "duration": "1:30",
+      "start": "2:00PM"
+    },
+    "title": "Closing Ceremony"
+  },
+  {
+    "caption": "",
+    "event_type": "Main timeline",
+    "location": "Drop Off Points",
+    "time": {
+      "day": "sun",
+      "duration": "0:45",
+      "start": "4:30PM"
+    },
+    "title": "Buses Depart"
+  }
+];
 
 		function update_schedule_indicator(){
 
@@ -183,8 +422,8 @@
 		// calendar
 
 		days = ["FRI", "SAT", "SUN"];
-		start_hour = 6;
-		duration = 49;
+		start_hour = 3;
+		duration = 54;
 
 		function createCalendar() {
 			var day = 0;
@@ -221,7 +460,7 @@
 
 		schedule_hour_height = 120;
 		schedule_card_margin = 34;
-		schedule_start_hour = 18;
+		schedule_start_hour = 15;
 		schedule_card_offset = 48;
 
 
@@ -235,7 +474,7 @@
 			}
 			var $card = $("<div class='schedule-item' name='" + generateCardHash(time, event_type) +  "'></div>");
 			var $title = $("<div class='schedule-item-title'></div>").text(title);
-			var $hour = $("<div class='schedule-item-subtitle' />").html(getTimeRange(time) + getLocation(location));
+			var $hour = $("<div class='schedule-item-subtitle' />").html(getTimeRange(time) + " / " + location);
 			var $caption = $("<div class='schedule-item-caption'></div>").html(caption);
 			var offset = cardOffset(time) + "px";
 			var card_height = parseTime(time.duration) * schedule_hour_height - schedule_card_margin;
