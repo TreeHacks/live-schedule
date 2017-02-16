@@ -532,7 +532,8 @@ a.sticker-link {
 	background: #1abc9c;
 	border-radius: 2px;
 	padding: 12px;
-	margin-top: 2px;
+	margin-top: 8px;
+	margin-right:55px;
 	cursor: pointer;
 }
 
@@ -549,6 +550,7 @@ a.sticker-link {
 	line-height: 24px;
 	text-transform: uppercase;
 	font-weight: 700;
+	color:white;
 }
 
 #footer {
@@ -616,6 +618,10 @@ a.sticker-link {
 
 	#header-title {
 		float: none;
+	}
+	
+	#header-submit {
+		margin-right:0px;
 	}
 	
 	#header-countdown {
