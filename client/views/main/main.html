@@ -430,6 +430,17 @@
       "start": "3:00PM"
     },
     "title": "Web Workshop"
+  },
+  {
+    "caption": "",
+    "event_type": "Workshops",
+    "location": "Huang 219",
+    "time": {
+      "day": "sat",
+      "duration": "1:00",
+      "start": "4:00PM"
+    },
+    "title": "Security Workshop"
   }
 ];
 
@@ -460,7 +471,7 @@
 
 		days = ["FRI", "SAT", "SUN"];
 		start_hour = 3;
-		duration = 54;
+		duration = 53;
 
 		function createCalendar() {
 			var day = 0;
@@ -599,7 +610,7 @@
 				update_schedule_indicator();
 			}, 1000);
 
-			countdown = countdown(new Date(2017, 1, 4, 17, 0, 0), function(ts){
+			countdown = countdown(new Date(2017, 1, 19, 9, 0, 0), function(ts){
 				$('#header-countdown-day').text(ts.days);
 				$('#header-countdown-hour').text(ts.hours);
 				$('#header-countdown-min').text(ts.minutes);
