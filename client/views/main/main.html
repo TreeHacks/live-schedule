@@ -442,6 +442,117 @@
       "start": "4:00PM"
     },
     "title": "Security Workshop"
+  },
+  /*{
+    "caption": "",
+    "event_type": "Workshops",
+    "location": "TBD",
+    "time": {
+      "day": "fri",
+      "duration": "0:30",
+      "start": "10:00PM"
+    },
+    "title": "Microsoft Bots + Cog Services"
+  },*/
+  {
+    "caption": "",
+    "event_type": "Workshops",
+    "location": "TBD",
+    "time": {
+      "day": "fri",
+      "duration": "0:30",
+      "start": "10:30PM"
+    },
+    "title": "Intro to Microsoft Azure"
+  },
+  {
+    "caption": "",
+    "event_type": "Workshops",
+    "location": "TBD",
+    "time": {
+      "day": "fri",
+      "duration": "0:30",
+      "start": "11:00PM"
+    },
+    "title": "IBM Tech Talk"
+  },
+  {
+    "caption": "",
+    "event_type": "Workshops",
+    "location": "TBD",
+    "time": {
+      "day": "fri",
+      "duration": "0:30",
+      "start": "11:30PM"
+    },
+    "title": "Disney Tech Talk"
+  },
+  {
+    "caption": "",
+    "event_type": "Workshops",
+    "location": "TBD",
+    "time": {
+      "day": "sat",
+      "duration": "0:30",
+      "start": "12:00AM"
+    },
+    "title": "Google Cloud Platform Intro"
+  },
+  {
+    "caption": "",
+    "event_type": "Workshops",
+    "location": "TBD",
+    "time": {
+      "day": "sat",
+      "duration": "0:30",
+      "start": "12:30AM"
+    },
+    "title": "Illumina Tech Talk"
+  },
+  {
+    "caption": "",
+    "event_type": "Workshops",
+    "location": "TBD",
+    "time": {
+      "day": "sat",
+      "duration": "0:30",
+      "start": "1:00AM"
+    },
+    "title": "Amazon Alexa Tech Talk"
+  },
+  {
+    "caption": "",
+    "event_type": "Workshops",
+    "location": "TBD",
+    "time": {
+      "day": "sat",
+      "duration": "0:30",
+      "start": "1:30AM"
+    },
+    "title": "Zillow Tech Talk"
+  },
+  {
+    "caption": "",
+    "event_type": "events",
+    "location": "TBD",
+    "time": {
+      "day": "sat",
+      "duration": "2:00",
+      "start": "3:00PM"
+    },
+    "title": "Microsoft Massages"
+  },
+  {
+    "caption": "",
+    "event_type": "events",
+    "location": "TBD",
+    "time": {
+      "day": "sat",
+      "duration": "2:00",
+      "start": "3:30PM"
+    },
+    "title": "Best Friends Animal Society Water Bottle Infuser Station",
+	"offset": 1
   }
 ];
 
@@ -506,12 +617,10 @@
 			$("#schedule-calendar").append($("<div class='schedule-calendar-hour'><div class='hour'>" + time + "</div></div>"));
 		}
 
-
 		schedule_hour_height = 120;
 		schedule_card_margin = 34;
 		schedule_start_hour = 15;
 		schedule_card_offset = 48;
-
 
 		// string title, string caption, Date time
 		// "Drake Performance", "Yay!", {day: "Sat", time: "12PM"}
@@ -621,7 +730,7 @@
 			VIEWPORT_WIDTH = $(window).width();
 
 			if (VIEWPORT_WIDTH < 960) {
-				$('.schedule-content').iosSlider({
+				/*$('.schedule-content').iosSlider({
 					snapToChildren: true,
 					desktopClickDrag: true,
 					onSlideChange: schedule_callback,
@@ -630,7 +739,7 @@
 					scrollbarBackground: '#FFFFFF',
 					elasticPullResistance: 0.0,
 					elasticFrictionCoefficient: 0.3
-				});
+				});*/
 			}
 
 			$(window).resize(function(){
@@ -642,7 +751,7 @@
 					return false;
 				} else {
 					if (new_width < 960) {
-						$('.schedule-content').iosSlider({
+						/*$('.schedule-content').iosSlider({
 							snapToChildren: true,
 							desktopClickDrag: true,
 							scrollbar: true,
@@ -650,7 +759,7 @@
 							scrollbarBackground: '#FFFFFF',
 							elasticPullResistance: 0.0,
 							elasticFrictionCoefficient: 0.3
-						});
+						});*/
 					} else {
 						//$('.schedule-content').iosSlider('destroy');
 						$('#schedule-guide-left').hide();
