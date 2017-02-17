@@ -125,7 +125,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="schedule-submit" style="margin-top:-3960px;background-color:#2ecc71;">You may begin hacking!</div>
+					<div id="schedule-submit" style="margin-top:-4012px;background-color:#2ecc71;">You may begin hacking!</div>
 					<a href="https://treehacks-2017.devpost.com" target="_blank">
 						<div id="schedule-submit" style="margin-top:241px">Hacks are due on DevPost!</div>
 					</a>
@@ -172,7 +172,7 @@
 		
 		var schedule_url = "https://raw.githubusercontent.com/TreeHacks/2017-schedule/master/schedule.json";
 
-		function update_schedule_indicator(){
+		function update_schedule_indicator() {
 
 			var elapsed_time = (new Date()).getTime() - START_TIME;
 			$('#schedule-indicator').css({'top': (elapsed_time / TOTAL_TIME) * SCHEDULE_HEIGHT + 48 + 'px', 'opacity': 1});
@@ -242,10 +242,10 @@
 		// "Drake Performance", "Yay!", {day: "Sat", time: "12PM"}
 
 		function createScheduleCard(title, caption, time, event_type, location) {
-			if (getCard(time, event_type)) {
+			/*if (getCard(time, event_type)) {
 				updateCard(title, caption, time, event_type);
 				return;
-			}
+			}*/
 			var $card = $("<div class='schedule-item' name='" + generateCardHash(time, event_type) +  "'></div>");
 			var $title = $("<div class='schedule-item-title'></div>").text(title);
 			var $hour = $("<div class='schedule-item-subtitle' />").html(getTimeRange(time) + " / " + location);
