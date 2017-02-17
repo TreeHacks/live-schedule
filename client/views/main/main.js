@@ -1,5 +1,5 @@
 Template.main.helpers({
 	announcements: function() {
-		return Announcements.find({});
+		return Announcements.find().fetch().reverse();
 	}
 });

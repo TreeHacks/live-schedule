@@ -20,6 +20,6 @@ Template.admin.events({
 
 Template.admin.helpers({
 	announcements: function() {
-		return Announcements.find({});
+		return Announcements.find().fetch().reverse();
 	}
 });
