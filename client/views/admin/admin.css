@@ -15,16 +15,33 @@
 	margin-top:80px!important;
 }
 
-#admin_finish {
+#admin_submit_container {
 	display:block;
 	margin:0px auto;
-	width:20%;
-	height:45px;
+	width:50%;
+	margin-bottom:180px;
+}
+
+#admin_password {
+	width:44%;
+	float:left;
+	height:56px;
+	outline:0;
+	font-size: 28px;
+	font-family: "Proxima Nova";
+	padding-left:20px;
+	margin-top:40px;
+}
+
+#admin_finish {
+	width:44%;
+	float:right;
+	height:48px;
 	background-color:#27ae60;
 	margin-top:40px;
 	color:white;
 	text-align:center;
-	padding-top:10px;
+	padding-top:14px;
 	font-size: 24px;
 	cursor:pointer;
 	margin-bottom:60px;
@@ -50,6 +67,7 @@
 
 .admin_delete {
 	float:right;
-	padding-top:18px;
+	clear:both;
 	padding-right:20px;
+	margin-top:-34px;
 }
