@@ -330,6 +330,8 @@
 		}
 
 		$(document).ready(function(){
+			
+			$.ajaxSetup({ cache: false });
 
 			setInterval(function(){
 				update_schedule_indicator();
