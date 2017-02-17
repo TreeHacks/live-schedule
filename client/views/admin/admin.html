@@ -1,11 +1,12 @@
 <template name="admin">
-	admin page
-	<br>
-	add an event: 
-	<br>
-	<br>
-	<input type="text" id="name" placeholder="event name">
-	<input type="text" id="time" placeholder="event time">
-	<input type="text" id="location" placeholder="event location">
-	<button id="submit" type="submit">Submit</button>
+	<h1 id="admin_announcements_title">announcements 🎤</h1>
+	<input type="text" id="admin_announcement" placeholder="Make an announcement...">
+	<div id="admin_finish">post</div>
+	{{#each announcements}}
+		<div class="admin_announcement_container">
+			<p class="admin_announcement_text">{{text}}</p>
+			<a class="admin_delete" id="{{_id}}">delete</a>
+		</div>
+		<br>
+	{{/each}}
 </template>

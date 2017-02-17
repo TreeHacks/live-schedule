@@ -1,0 +1,55 @@
+#admin_announcements_title {
+	text-align:center;
+	margin-top:0px!important;
+}
+
+#admin_announcement {
+	width:60%;
+	height:60px;
+	outline:0;
+	display:block!important;
+	margin:0px auto!important;
+	font-size: 32px;
+	font-family: "Proxima Nova";
+	padding-left:20px;
+	margin-top:80px!important;
+}
+
+#admin_finish {
+	display:block;
+	margin:0px auto;
+	width:20%;
+	height:45px;
+	background-color:#27ae60;
+	margin-top:40px;
+	color:white;
+	text-align:center;
+	padding-top:10px;
+	font-size: 24px;
+	cursor:pointer;
+	margin-bottom:60px;
+}
+
+#admin_finish:hover {
+	background-color:#2ecc71;
+}
+
+.admin_announcement_container {
+	width:60%;
+	height:60px;
+	display:block!important;
+	margin:0px auto!important;
+	background-color:#E2C1BF;
+}
+
+.admin_announcement_text {
+	padding-top:4px;
+	padding-left:20px;
+	float:left;
+}
+
+.admin_delete {
+	float:right;
+	padding-top:18px;
+	padding-right:20px;
+}

@@ -6,7 +6,7 @@ body {	/*the outer layer of the site and global style attributes*/
 	font-family: "Proxima Nova", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0px;
 	position: relative;
-	padding: 120px 0px;
+	padding: 60px 0px;
 	background: #FDF4F3;
 	color: #75332A;
 }

@@ -55,10 +55,9 @@
 				<div id="announcement" class="tile">
 					<div class="tile-header">Live Announcements</div>
 					<!-- Add announcements here -->
-					<div class="tile-content">Registration is open from 4 to 8pm.</div>
-					<div class="tile-content">Dinner will be served at 6.</div>
-					<div class="tile-content">Hacking begins at 10!</div>
-
+					{{#each announcements}}
+						<div class="tile-content">{{text}}</div>
+					{{/each}}
 				</div>
 				<div class="tile-row">
 					<!-- Surround .tile divs with anchor tags to link -->

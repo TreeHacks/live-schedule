@@ -1,3 +1,3 @@
-Meteor.publish('events', function(table) {
-  return Events.find();
+Meteor.publish('announcements', function(table) {
+  return Announcements.find();
 });
