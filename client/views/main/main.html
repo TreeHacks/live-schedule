@@ -154,13 +154,6 @@
 	   function(){var a=u(this),b=a.length;if(!b)return"";1<b&&(a[b-1]="and "+a[b-1]);return a.join(", ")};n.prototype.toHTML=function(a){a=a||"span";var b=u(this),c=b.length;if(!c)return"";for(var d=0;d<c;d++)b[d]="\x3c"+a+"\x3e"+b[d]+"\x3c/"+a+"\x3e";--c&&(b[c]="and "+b[c]);return b.join(", ")};u=function(a){var b=[],c=a.millennia;c&&b.push(f(c,10));(c=a.centuries)&&b.push(f(c,9));(c=a.decades)&&b.push(f(c,8));(c=a.years)&&b.push(f(c,7));(c=a.months)&&b.push(f(c,6));(c=a.weeks)&&b.push(f(c,5));(c=a.days)&&
 	   b.push(f(c,4));(c=a.hours)&&b.push(f(c,3));(c=a.minutes)&&b.push(f(c,2));(c=a.seconds)&&b.push(f(c,1));(c=a.milliseconds)&&b.push(f(c,0));return b};d.MILLISECONDS=1;d.SECONDS=2;d.MINUTES=4;d.HOURS=8;d.DAYS=16;d.WEEKS=32;d.MONTHS=64;d.YEARS=128;d.DECADES=256;d.CENTURIES=512;d.MILLENNIA=1024;d.DEFAULTS=222;d.ALL=2047;d.setLabels=function(a,b){a=a||[];a.split&&(a=a.split("|"));b=b||[];b.split&&(b=b.split("|"));for(var c=0;10>=c;c++)p[c]=a[c]||p[c],q[c]=b[c]||q[c]};(d.resetLabels=function(){p="millisecond second minute hour day week month year decade century millennium".split(" ");
 	   q="milliseconds seconds minutes hours days weeks months years decades centuries millennia".split(" ")})();r&&r.exports?r.exports=d:"function"===typeof window.define&&window.define.amd&&window.define("countdown",[],function(){return d});return d}(module);
-		
-		// ADJUST THE COUNTDOWN DATETIME
-
-		//Location can be: “Field”, “Uni”, “Other”
-		//Days can be: “fri”, “sat”, “sun”
-		//start can be: [TIME][PERIOD]  ie “12:00AM”, “12:45PM”
-		//duration is duration in hours. ie 1 hour would be “1:00”
 
 	   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -173,8 +166,8 @@
 		schedule = null;
 
 		var VIEWPORT_WIDTH;
-		var START_TIME = (new Date(2017, 1, 17, 15, 0, 0, 0)).getTime();
-		var END_TIME = (new Date(2017, 1, 19, 6, 0, 0, 0)).getTime();
+		var START_TIME = (new Date(2018, 1, 16, 15, 0, 0, 0)).getTime();
+		var END_TIME = (new Date(2018, 1, 18, 6, 0, 0, 0)).getTime();
 		var TOTAL_TIME = END_TIME - START_TIME;
 		var SCHEDULE_HEIGHT = 4400;
 		var countdown;
@@ -347,7 +340,7 @@
 				update_schedule_indicator();
 			}, 1000);
 
-			countdown = countdown(new Date(2017, 1, 19, 11, 0, 0), function(ts){
+			countdown = countdown(START_TIME, function(ts){
 				$('#header-countdown-day').text(ts.days);
 				$('#header-countdown-hour').text(ts.hours);
 				$('#header-countdown-min').text(ts.minutes);
