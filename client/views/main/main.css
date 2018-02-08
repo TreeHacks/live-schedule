@@ -578,7 +578,7 @@ a.sticker-link {
 	}
 	
 	body {
-		padding: 60px 30px;
+		padding: 20px 30px;
 	}
 	
 	#sponsor {
@@ -673,17 +673,16 @@ a.sticker-link {
 	.schedule-venue {
 		text-align: center;
 		font-size: 16px;
-
 		position: relative;
 		top: -6px;
 	}
 	
 	.schedule-item {
-		margin-left: 60px;
+		margin-left: 20px;
 	}
 
 	.schedule-item.offset-1 {
-		margin-left: 66px;
+		margin-left: 26px;
 		width: calc(100% - 30px)
 	}
 
@@ -704,7 +703,7 @@ a.sticker-link {
 	}
 
 	.schedule-calendar-hour {
-		margin-left: 60px;
+		margin-left: 20px;
 	}
 	
 	#schedule-submit {
