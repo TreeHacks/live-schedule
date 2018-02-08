@@ -709,6 +709,8 @@ a.sticker-link {
 	#schedule-submit {
 		width: calc(100% - 84px);
 		right: 0px;
+		left: 30px!important;
+		padding-right:30px!important;
 	}
 	
 	#schedule-guide-right {
