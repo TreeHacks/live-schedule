@@ -133,7 +133,6 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<!--div id="footer">Made with ♥ by the Cal Hacks team. Special thanks to <a href="http://www.designbyroka.com" target="_blank">Shawn Park</a>!</div>-->
 		</body>
 		<script>
 		
@@ -175,10 +174,8 @@
 		var schedule_url = "https://raw.githubusercontent.com/TreeHacks/event-schedules/master/schedule-2018.json";
 
 		function update_schedule_indicator() {
-
 			var elapsed_time = (new Date()).getTime() - START_TIME;
 			$('#schedule-indicator').css({'top': (elapsed_time / TOTAL_TIME) * SCHEDULE_HEIGHT + 48 + 'px', 'opacity': 1});
-
 		}
 
 		function schedule_callback(state){
@@ -197,8 +194,6 @@
 			}
 		}
 
-		// calendar
-
 		days = ["FRI", "SAT", "SUN"];
 		start_hour = 3;
 		duration = 53;
@@ -212,7 +207,6 @@
 			duration--;
 			current_hour = current_hour % 12 + 1;
 			while (duration) {
-				// new period
 				if (current_hour == 12) {
 					if (period == 0) { // new day
 						day++;
@@ -225,7 +219,6 @@
 				} else {
 					createTimeslot(current_hour + periods[period]);
 				}
-
 				duration--;
 				current_hour = current_hour % 12 + 1;
 			}
@@ -239,9 +232,6 @@
 		schedule_card_margin = 34;
 		schedule_start_hour = 15;
 		schedule_card_offset = 48;
-
-		// string title, string caption, Date time
-		// "Drake Performance", "Yay!", {day: "Sat", time: "12PM"}
 
 		function createScheduleCard(title, caption, time, event_type, location) {
 			/*if (getCard(time, event_type)) {
@@ -268,6 +258,7 @@
 			var end_hour = start_hour + parseTime(time.duration);
 			end_hour = Math.floor(end_hour - 1) % 12 + 1 + ":" + (end_hour % 1) * 60;
 			end_hour = end_hour.split(":")[1].length > 1 ? end_hour : end_hour + "0";
+			end_hour = end_hour.split(".")[0]
 			return start + "-" + end_hour
 		}
 
