@@ -466,6 +466,10 @@ a.sticker-link {
 	margin-right: 6px;
 }
 
+.short-title {
+	margin-top: -9px!important;
+}
+
 #schedule-indicator {
 	width: calc(100% + 24px);
 	height: 4px;
