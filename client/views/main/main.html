@@ -239,7 +239,7 @@
 				return;
 			}*/
 			var $card = $("<div class='schedule-item' name='" + generateCardHash(time, event_type) +  "'></div>");
-			if (time.duration == "0:20") {
+			if (time.duration == "0:20" || (time.duration == "0:30" && title.length > 34)) {
 				var $title = $("<div class='schedule-item-title short-title'></div>").text(title);
 			} else {
 				var $title = $("<div class='schedule-item-title'></div>").text(title);
