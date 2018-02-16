@@ -104,6 +104,7 @@
 					</div>
 					<div class="clear"></div>
 				</div>
+				<p id="mobile-message">Swipe left + right to switch between timelines!</p>
 				<div id="schedule">
 					<div id="schedule-calendar">
 					</div>
@@ -315,7 +316,6 @@
 			if (card.offset) {
 				$html_card.addClass("offset-" + card.offset);
 			}
-
 			if (card.location) {
 				$html_card.addClass(card.location);
 			}
@@ -323,7 +323,6 @@
 			if ($container.length < 1) {
 				throw "WRONG LOCATION, DIPSHIT!";
 			}
-
 			$container.append($html_card);
 		}
 
