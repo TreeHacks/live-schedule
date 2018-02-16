@@ -734,4 +734,15 @@ a.sticker-link {
 		margin: 0px;
 		height: initial;
 	}
+	#mobile-message {
+		display:block!important;
+	}
+}
+
+#mobile-message {
+	display:none;
+	text-align:center;
+	margin-top:-50px;
+	margin-bottom:35px;
+	text-decoration:underline;
 }
