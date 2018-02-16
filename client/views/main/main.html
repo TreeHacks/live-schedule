@@ -399,6 +399,11 @@
 					height: $("#schedule-calendar").height()
 				})
 			});
+			
+			const body = document.querySelector('body');
+			const patch = document.createElement('div');
+			patch.style = "background: #FDF4F3 !important; border: 0px; width: 100%; height: 170px; position: absolute; bottom: 0px; z-index:999999; margin-bottom:-100px"
+			body.appendChild(patch);
 		});
 		
 	</script>
