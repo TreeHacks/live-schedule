@@ -110,7 +110,7 @@
 					</div>
 					<div id="schedule-guide-left"><img class="img-scaled" src="/arrow_left.svg" /></div>
 					<div id="schedule-guide-right"><img class="img-scaled" src="/arrow_right.svg" /></div>
-					<!--<div id="schedule-indicator"></div>-->
+					<div id="schedule-indicator"></div>
 					<div class="schedule-content">
 						<div class="schedule-column-container">
 							<!-- 30 minute blocks get schedule-item-1 class, 60 minute blocks get schedule-item-2, etc. -->
@@ -167,7 +167,7 @@
 
 		var VIEWPORT_WIDTH;
 		var START_TIME = (new Date(2018, 1, 16, 15, 0, 0, 0)).getTime();
-		var END_TIME = (new Date(2018, 1, 18, 6, 0, 0, 0)).getTime();
+		var END_TIME = (new Date(2018, 1, 18, 4, 0, 0, 0)).getTime();
 		var TOTAL_TIME = END_TIME - START_TIME;
 		var SCHEDULE_HEIGHT = 4400;
 		var countdown;
@@ -334,7 +334,7 @@
 				update_schedule_indicator();
 			}, 1000);
 
-			countdown = countdown(START_TIME, function(ts){
+			countdown = countdown(END_TIME, function(ts){
 				$('#header-countdown-day').text(ts.days);
 				$('#header-countdown-hour').text(ts.hours);
 				$('#header-countdown-min').text(ts.minutes);

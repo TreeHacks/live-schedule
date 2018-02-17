@@ -474,6 +474,7 @@ a.sticker-link {
 	width: calc(100% + 24px);
 	height: 4px;
 	position: absolute;
+	z-index:99999999;
 	background: #de6868;
 	top: 48px;
 	opacity: 0;
