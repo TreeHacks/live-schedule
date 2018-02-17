@@ -747,3 +747,10 @@ a.sticker-link {
 	margin-bottom:35px;
 	text-decoration:underline;
 }
+
+#reservation-message {
+	text-align:center;
+	margin-top:-50px;
+	margin-bottom:60px;
+	text-decoration:underline;
+}
