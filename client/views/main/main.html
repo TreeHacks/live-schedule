@@ -171,6 +171,7 @@
 		var VIEWPORT_WIDTH;
 		var START_TIME = (new Date(2018, 1, 16, 15, 0, 0, 0)).getTime();
 		var END_TIME = (new Date(2018, 1, 18, 4, 0, 0, 0)).getTime();
+		var ACTUAL_END_TIME = (new Date(2018, 1, 18, 10, 0, 0, 0)).getTime();
 		var TOTAL_TIME = END_TIME - START_TIME;
 		var SCHEDULE_HEIGHT = 4400;
 		var countdown;
@@ -337,7 +338,7 @@
 				update_schedule_indicator();
 			}, 1000);
 
-			countdown = countdown(END_TIME, function(ts){
+			countdown = countdown(ACTUAL_END_TIME, function(ts){
 				$('#header-countdown-day').text(ts.days);
 				$('#header-countdown-hour').text(ts.hours);
 				$('#header-countdown-min').text(ts.minutes);
