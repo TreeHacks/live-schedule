@@ -1,0 +1,413 @@
+<template name="main">
+	<head>
+		<title>treehacks live</title>
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!--<div id="background"><img class="img-scaled-wh" src="assets/live/img/thumbnails/background.jpg" /></div>
+		<div id="background-overlay"></div>-->
+		<div id="container">
+			<div id="header">
+				<a href="#">
+					<!--<div id="header-logo"><img class="img-scaled" src="/logo.png" /></div>-->
+					<div id="header-title">treehacks <span id="header-live">live</span></div>
+				</a>
+				<!-- Comment this part when hacks are due -->
+				<div id="header-countdown">
+					<div id="header-countdown-caption">Time <div class='countdown-break'></div>Remaining</div>
+					<div id="header-countdown-content">
+						<div class="header-countdown-item">
+							<div class="header-countdown-caption">Day</div>
+							<div id="header-countdown-day" class="header-countdown-time"></div>
+						</div>
+						<div class="header-countdown-item">
+							<div class="header-countdown-caption">Hour</div>
+							<div id="header-countdown-hour" class="header-countdown-time"></div>
+						</div>
+						<div class="header-countdown-item">
+							<div class="header-countdown-caption">Min</div>
+							<div id="header-countdown-min" class="header-countdown-time"></div>
+						</div>
+						<div class="header-countdown-item">
+							<div class="header-countdown-caption">Sec</div>
+							<div id="header-countdown-sec" class="header-countdown-time"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- Uncomment this part and surround with submission link when hacks are due -->
+				<a href="https://treehacks-2018.devpost.com/" target="_blank">
+					<div id="header-submit">
+						<div id="header-submit-icon">
+							<img class="img-scaled" src="/submit.svg" />
+						</div>
+						<div id="header-submit-caption">Submit your Hacks</div>
+						<div class="clear"></div>
+					</div>
+				</a>
+				<div class="clear"></div>
+				</div>
+				<div id="announcement" class="tile">
+					<div class="tile-header">Live Announcements</div>
+					<!-- Add announcements here -->
+					{{#each announcements}}
+						<div class="tile-content">{{text}}</div>
+					{{/each}}
+				</div>
+				<div class="tile-row">
+					<!-- Surround .tile divs with anchor tags to link -->
+					<!--<div id="live-stream">
+						<script data-mute="false" data-social="false" class="mkEmbedPlayer" data-cover="http://www.calhacks.io/assets/img/meta_image.png" data-type="square" data-username="@calhacks" src="http://meerkatapp.co/widgets/embed.js" type="text/javascript"></script>
+					</div>-->
+					<div id="live-info">
+						<div id="faq" class="tile tile-link"><a href="https://join.slack.com/t/treehacks2018/shared_invite/enQtMzAxOTQ3ODM5MTIyLTRkMmZhMTI3MWUzYjFiNjk3ZjFhYzAzMjgwZWE1NzVmYmJhYzQxMzBjMDNlZjRmMzg2ODg4Y2QyZTAxYWRhNTM" target="_blank">
+							<div class="tile-icon"><img class="img-scaled" src="/slack.svg"></div>
+							<div class="tile-caption">Slack</div></a>
+						</div>
+						<div id="hardware" class="tile tile-link"><a href="hardware" target="_blank">
+							<a href="https://www.treehacks.com/hackpacks">
+								<div class="tile-icon"><img class="img-scaled" src="/hardware.svg"></div>
+								<div class="tile-caption">Hackpacks</div></a>
+							</a>
+						</div>
+						<div id="api" class="tile tile-link">
+							<a href="https://www.treehacks.com/apis">
+								<div class="tile-icon"><img class="img-scaled" src="/api.svg"></div>
+								<div class="tile-caption">APIs</div>
+							</a>
+						</div>
+						<div id="challenge" class="tile tile-link"><a href="https://treehacks-2018.devpost.com/" target="_blank">
+							<div class="tile-icon"><img class="img-scaled" src="/challenge.svg"></div>
+							<div class="tile-caption">DevPost</div></a>
+						</div>
+						<div id="faq" class="tile tile-link"><a href="https://treehacks.quip.com/on1xA6HhXfyQ/The-Ultimate-TreeHacks-Guide-" target="_blank">
+							<div class="tile-icon"><img class="img-scaled" src="/question.svg"></div>
+							<div class="tile-caption">FAQ</div></a>
+						</div>
+						<div id="faq" class="tile tile-link"><a href="/map.pdf" target="_blank">
+							<div class="tile-icon"><img class="img-scaled" src="/map.svg"></div>
+							<div class="tile-caption">Map</div></a>
+						</div>
+						<!--<div id="sticker-challenge" class="tile tile-row">
+							<div class="tile-header">Drake Sticker Challenge</div>
+							<img id='drake-sticker' src='assets/img/drake_sticker.png'>
+							<div class="tile-content">
+								Do you want a Drake sticker? Of course you do. But do you have what it takes to get one?!?! <p><a href="drake" class='sticker-link' target="_blank">WIN A STICKER</a></p>
+							</div>
+						</div>-->
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<a href="http://reserve.treehacks.com" target="_blank">
+					<p id="reservation-message">Click here for the conference room reservation tool...</p>
+				</a>
+				<p id="mobile-message">Swipe left + right to switch between timelines!</p>
+				<div id="schedule">
+					<div id="schedule-calendar">
+					</div>
+					<div id="schedule-guide-left"><img class="img-scaled" src="/arrow_left.svg" /></div>
+					<div id="schedule-guide-right"><img class="img-scaled" src="/arrow_right.svg" /></div>
+					<div id="schedule-indicator"></div>
+					<div class="schedule-content">
+						<div class="schedule-column-container">
+							<!-- 30 minute blocks get schedule-item-1 class, 60 minute blocks get schedule-item-2, etc. -->
+							<!-- For empty blocks, make sure the height value is 60 * # of 30 minute blocks. For example, if the empty block is 2.5 hours, make height 300px. -->
+							<div class="schedule-column" id="main-timeline">
+								<div class="schedule-venue">Main Timeline</div>
+							</div>
+							<div class="schedule-column" id="workshops">
+								<div class="schedule-venue">Workshops</div>
+							</div>
+							<div class="schedule-column" id="events">
+								<div class="schedule-venue">Events</div>
+							</div>
+						</div>
+					</div>
+					<div id="schedule-submit" style="margin-top:-4012px;background-color:#2ecc71;">You may begin hacking!</div>
+					<a href="https://treehacks-2018.devpost.com/" target="_blank">
+						<div id="schedule-submit" style="margin-top:240px">Submissions are due on DevPost at 9am!</div>
+					</a>
+					<div id="schedule-submit" style="margin-top:357px">Hacking stops at 10am!</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</body>
+		<script>
+		
+	   /*
+	    countdown.js v2.3.4 http://countdownjs.org
+	    Copyright (c)2006-2012 Stephen M. McKamey.
+	    Licensed under The MIT License.
+	   */
+	   var module,countdown=function(r){function v(a,b){var c=a.getTime();a.setUTCMonth(a.getUTCMonth()+b);return Math.round((a.getTime()-c)/864E5)}function t(a){var b=a.getTime(),c=new Date(b);c.setUTCMonth(a.getUTCMonth()+1);return Math.round((c.getTime()-b)/864E5)}function f(a,b){return a+" "+(1===a?p[b]:q[b])}function n(){}function l(a,b,c,g,x,d){0<=a[c]&&(b+=a[c],delete a[c]);b/=x;if(1>=b+1)return 0;if(0<=a[g]){a[g]=+(a[g]+b).toFixed(d);switch(g){case "seconds":if(60!==a.seconds||isNaN(a.minutes))break;
+	   a.minutes++;a.seconds=0;case "minutes":if(60!==a.minutes||isNaN(a.hours))break;a.hours++;a.minutes=0;case "hours":if(24!==a.hours||isNaN(a.days))break;a.days++;a.hours=0;case "days":if(7!==a.days||isNaN(a.weeks))break;a.weeks++;a.days=0;case "weeks":if(a.weeks!==t(a.refMonth)/7||isNaN(a.months))break;a.months++;a.weeks=0;case "months":if(12!==a.months||isNaN(a.years))break;a.years++;a.months=0;case "years":if(10!==a.years||isNaN(a.decades))break;a.decades++;a.years=0;case "decades":if(10!==a.decades||
+	   isNaN(a.centuries))break;a.centuries++;a.decades=0;case "centuries":if(10!==a.centuries||isNaN(a.millennia))break;a.millennia++;a.centuries=0}return 0}return b}function w(a,b,c,g,d,k){a.start=b;a.end=c;a.units=g;a.value=c.getTime()-b.getTime();if(0>a.value){var f=c;c=b;b=f}a.refMonth=new Date(b.getFullYear(),b.getMonth(),15);try{a.millennia=0;a.centuries=0;a.decades=0;a.years=c.getUTCFullYear()-b.getUTCFullYear();a.months=c.getUTCMonth()-b.getUTCMonth();a.weeks=0;a.days=c.getUTCDate()-b.getUTCDate();
+	   a.hours=c.getUTCHours()-b.getUTCHours();a.minutes=c.getUTCMinutes()-b.getUTCMinutes();a.seconds=c.getUTCSeconds()-b.getUTCSeconds();a.milliseconds=c.getUTCMilliseconds()-b.getUTCMilliseconds();var h;0>a.milliseconds?(h=s(-a.milliseconds/1E3),a.seconds-=h,a.milliseconds+=1E3*h):1E3<=a.milliseconds&&(a.seconds+=m(a.milliseconds/1E3),a.milliseconds%=1E3);0>a.seconds?(h=s(-a.seconds/60),a.minutes-=h,a.seconds+=60*h):60<=a.seconds&&(a.minutes+=m(a.seconds/60),a.seconds%=60);0>a.minutes?(h=s(-a.minutes/
+	   60),a.hours-=h,a.minutes+=60*h):60<=a.minutes&&(a.hours+=m(a.minutes/60),a.minutes%=60);0>a.hours?(h=s(-a.hours/24),a.days-=h,a.hours+=24*h):24<=a.hours&&(a.days+=m(a.hours/24),a.hours%=24);for(;0>a.days;)a.months--,a.days+=v(a.refMonth,1);7<=a.days&&(a.weeks+=m(a.days/7),a.days%=7);0>a.months?(h=s(-a.months/12),a.years-=h,a.months+=12*h):12<=a.months&&(a.years+=m(a.months/12),a.months%=12);10<=a.years&&(a.decades+=m(a.years/10),a.years%=10,10<=a.decades&&(a.centuries+=m(a.decades/10),a.decades%=
+	   10,10<=a.centuries&&(a.millennia+=m(a.centuries/10),a.centuries%=10)));b=0;!(g&1024)||b>=d?(a.centuries+=10*a.millennia,delete a.millennia):a.millennia&&b++;!(g&512)||b>=d?(a.decades+=10*a.centuries,delete a.centuries):a.centuries&&b++;!(g&256)||b>=d?(a.years+=10*a.decades,delete a.decades):a.decades&&b++;!(g&128)||b>=d?(a.months+=12*a.years,delete a.years):a.years&&b++;!(g&64)||b>=d?(a.months&&(a.days+=v(a.refMonth,a.months)),delete a.months,7<=a.days&&(a.weeks+=m(a.days/7),a.days%=7)):a.months&&
+	   b++;!(g&32)||b>=d?(a.days+=7*a.weeks,delete a.weeks):a.weeks&&b++;!(g&16)||b>=d?(a.hours+=24*a.days,delete a.days):a.days&&b++;!(g&8)||b>=d?(a.minutes+=60*a.hours,delete a.hours):a.hours&&b++;!(g&4)||b>=d?(a.seconds+=60*a.minutes,delete a.minutes):a.minutes&&b++;!(g&2)||b>=d?(a.milliseconds+=1E3*a.seconds,delete a.seconds):a.seconds&&b++;if(!(g&1)||b>=d){var e=l(a,0,"milliseconds","seconds",1E3,k);if(e&&(e=l(a,e,"seconds","minutes",60,k))&&(e=l(a,e,"minutes","hours",60,k))&&(e=l(a,e,"hours","days",
+	   24,k))&&(e=l(a,e,"days","weeks",7,k))&&(e=l(a,e,"weeks","months",t(a.refMonth)/7,k))){g=e;var n,p=a.refMonth,q=p.getTime(),r=new Date(q);r.setUTCFullYear(p.getUTCFullYear()+1);n=Math.round((r.getTime()-q)/864E5);if(e=l(a,g,"months","years",n/t(a.refMonth),k))if(e=l(a,e,"years","decades",10,k))if(e=l(a,e,"decades","centuries",10,k))if(e=l(a,e,"centuries","millennia",10,k))throw Error("Fractional unit overflow");}}}finally{delete a.refMonth}return a}function d(a,b,c,d,f){var k;c=+c||222;d=0<d?d:NaN;
+	   f=0<f?20>f?Math.round(f):20:0;"function"===typeof a?(k=a,a=null):a instanceof Date||(a=null!==a&&isFinite(a)?new Date(a):null);"function"===typeof b?(k=b,b=null):b instanceof Date||(b=null!==b&&isFinite(b)?new Date(b):null);if(!a&&!b)return new n;if(!k)return w(new n,a||new Date,b||new Date,c,d,f);var l=c&1?1E3/30:c&2?1E3:c&4?6E4:c&8?36E5:c&16?864E5:6048E5,h,e=function(){k(w(new n,a||new Date,b||new Date,c,d,f),h)};e();return h=setInterval(e,l)}var s=Math.ceil,m=Math.floor,p,q,u;n.prototype.toString=
+	   function(){var a=u(this),b=a.length;if(!b)return"";1<b&&(a[b-1]="and "+a[b-1]);return a.join(", ")};n.prototype.toHTML=function(a){a=a||"span";var b=u(this),c=b.length;if(!c)return"";for(var d=0;d<c;d++)b[d]="\x3c"+a+"\x3e"+b[d]+"\x3c/"+a+"\x3e";--c&&(b[c]="and "+b[c]);return b.join(", ")};u=function(a){var b=[],c=a.millennia;c&&b.push(f(c,10));(c=a.centuries)&&b.push(f(c,9));(c=a.decades)&&b.push(f(c,8));(c=a.years)&&b.push(f(c,7));(c=a.months)&&b.push(f(c,6));(c=a.weeks)&&b.push(f(c,5));(c=a.days)&&
+	   b.push(f(c,4));(c=a.hours)&&b.push(f(c,3));(c=a.minutes)&&b.push(f(c,2));(c=a.seconds)&&b.push(f(c,1));(c=a.milliseconds)&&b.push(f(c,0));return b};d.MILLISECONDS=1;d.SECONDS=2;d.MINUTES=4;d.HOURS=8;d.DAYS=16;d.WEEKS=32;d.MONTHS=64;d.YEARS=128;d.DECADES=256;d.CENTURIES=512;d.MILLENNIA=1024;d.DEFAULTS=222;d.ALL=2047;d.setLabels=function(a,b){a=a||[];a.split&&(a=a.split("|"));b=b||[];b.split&&(b=b.split("|"));for(var c=0;10>=c;c++)p[c]=a[c]||p[c],q[c]=b[c]||q[c]};(d.resetLabels=function(){p="millisecond second minute hour day week month year decade century millennium".split(" ");
+	   q="milliseconds seconds minutes hours days weeks months years decades centuries millennia".split(" ")})();r&&r.exports?r.exports=d:"function"===typeof window.define&&window.define.amd&&window.define("countdown",[],function(){return d});return d}(module);
+
+	   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	   ga('create', 'UA-88669908-2', 'auto');
+	   ga('send', 'pageview');
+
+		schedule = null;
+
+		var VIEWPORT_WIDTH;
+		var START_TIME = (new Date(2018, 1, 16, 15, 0, 0, 0)).getTime();
+		var END_TIME = (new Date(2018, 1, 18, 3, 35, 0, 0)).getTime();
+		var ACTUAL_END_TIME = (new Date(2018, 1, 18, 10, 0, 0, 0)).getTime();
+		var TOTAL_TIME = END_TIME - START_TIME;
+		var SCHEDULE_HEIGHT = 4400;
+		var countdown;
+		
+		var schedule_url = "https://raw.githubusercontent.com/TreeHacks/event-schedules/master/schedule-2018.json";
+
+		function update_schedule_indicator() {
+			var elapsed_time = (new Date()).getTime() - START_TIME;
+			$('#schedule-indicator').css({'top': (elapsed_time / TOTAL_TIME) * SCHEDULE_HEIGHT + 48 + 'px', 'opacity': 1});
+		}
+
+		function schedule_callback(state){
+			var slide = state.targetSlideNumber;
+
+			if (slide == 1) {
+				$('#schedule-guide-left').hide();
+			} else {
+				$('#schedule-guide-left').show();
+			}
+
+			if (slide == 3) {
+				$('#schedule-guide-right').hide();
+			} else {
+				$('#schedule-guide-right').show();
+			}
+		}
+
+		days = ["FRI", "SAT", "SUN"];
+		start_hour = 3;
+		duration = 53;
+
+		function createCalendar() {
+			var day = 0;
+			var period = 0; // 0 PM, 1 AM
+			var periods = ["PM", "AM"];
+			var current_hour = start_hour;
+			createTimeslot(days[day] + " " + current_hour + periods[period]);
+			duration--;
+			current_hour = current_hour % 12 + 1;
+			while (duration) {
+				if (current_hour == 12) {
+					if (period == 0) { // new day
+						day++;
+						period = 1 - period;
+						createTimeslot(days[day] + " " + current_hour + periods[period]);
+					} else {
+						period = 1 - period;
+						createTimeslot(current_hour + periods[period]);
+					}
+				} else {
+					createTimeslot(current_hour + periods[period]);
+				}
+				duration--;
+				current_hour = current_hour % 12 + 1;
+			}
+		}
+
+		function createTimeslot(time) {
+			$("#schedule-calendar").append($("<div class='schedule-calendar-hour'><div class='hour'>" + time + "</div></div>"));
+		}
+
+		schedule_hour_height = 120;
+		schedule_card_margin = 34;
+		schedule_start_hour = 15;
+		schedule_card_offset = 48;
+
+		function createScheduleCard(title, caption, time, event_type, location) {
+			/*if (getCard(time, event_type)) {
+				updateCard(title, caption, time, event_type);
+				return;
+			}*/
+			var $card = $("<div class='schedule-item' name='" + generateCardHash(time, event_type) +  "'></div>");
+			if (time.duration == "0:20" || (time.duration == "0:30" && title.length > 34)) {
+				var $title = $("<div class='schedule-item-title short-title'></div>").text(title);
+			} else {
+				var $title = $("<div class='schedule-item-title'></div>").text(title);
+			}
+			var $hour = $("<div class='schedule-item-subtitle' />").html(getTimeRange(time) + " / " + location);
+			var $caption = $("<div class='schedule-item-caption'></div>").html(caption);
+			var offset = cardOffset(time) + "px";
+			var card_height = parseTime(time.duration) * schedule_hour_height - schedule_card_margin;
+			$card.append($title).append($hour)
+			if (caption) $card.append($caption);
+			$("body").append($card)
+			if ($card.height() > card_height) $card.addClass("shortened")
+			$card.css({"top": offset, "height": card_height});
+			return $card;
+		}
+
+		function getTimeRange(time) {
+			var start = time.start.slice(0, -2);
+			var start_hour = parseTime(start);
+			var end_hour = start_hour + parseTime(time.duration);
+			end_hour = Math.floor(end_hour - 1) % 12 + 1 + ":" + (end_hour % 1) * 60;
+			end_hour = end_hour.split(":")[1].length > 1 ? end_hour : end_hour + "0";
+			end_hour = end_hour.split(".")[0]
+			return start + "-" + end_hour
+		}
+
+		function getCard(time, event_type) {
+			var $card = $(".schedule-item[name='" + generateCardHash(time, event_type) + "']");
+			return $card.length > 0 ? $card : false;
+		}
+
+		function updateCard(title, caption, time, event_type) {
+			var $card = getCard(time, event_type);
+			$card.append($("<div class='schedule-item-title'></div>").text(title))
+			$card.append($("<div class='schedule-item-caption'></div>").text(caption));
+		}
+
+		function generateCardHash(time, event_type) {
+			return time.day + time.start + event_type;
+		}
+
+		function cardOffset(time) {
+			var day = time.day.toLowerCase();
+			var time = time.start;
+			var period = time.slice(-2);
+			var period_offset = period == "PM" ? 12 : 0;
+			//default friday, which has offset of 0
+			var day_offset = 0;
+			if (day == "sat") {
+				day_offset = 24;
+			} else if (day == "sun") {
+				day_offset = 48;
+			}
+			var hours = parseTime(time.slice(0, -2));
+			return (hours % 12 + period_offset + day_offset - schedule_start_hour) * schedule_hour_height + schedule_card_offset;
+		}
+
+		function parseTime(time) {
+			time = time.split(":");
+			var hour = parseInt(time[0]);
+			var minutes = time[1] ? parseInt(time[1])/60 : 0;
+			return hour + minutes;
+		}
+
+		function createSchedule(schedule) {
+			for (var card in schedule) {
+				appendCard(schedule[card]);
+			}
+		}
+
+		function appendCard(card) {
+			var $html_card = createScheduleCard(card.title, card.caption, card.time, card.event_type, card.location);
+			if (card.offset) {
+				$html_card.addClass("offset-" + card.offset);
+			}
+			if (card.location) {
+				$html_card.addClass(card.location);
+			}
+			var $container = $("#" + card.event_type.split(" ").join("-").toLowerCase());
+			if ($container.length < 1) {
+				throw "WRONG LOCATION, DIPSHIT!";
+			}
+			$container.append($html_card);
+		}
+
+		$(document).ready(function(){
+			
+			$.ajaxSetup({ cache: false });
+
+			setInterval(function(){
+				update_schedule_indicator();
+			}, 1000);
+
+			countdown = countdown(ACTUAL_END_TIME, function(ts){
+				$('#header-countdown-day').text(ts.days);
+				$('#header-countdown-hour').text(ts.hours);
+				$('#header-countdown-min').text(ts.minutes);
+				$('#header-countdown-sec').text(ts.seconds);
+			}, countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
+
+			VIEWPORT_WIDTH = $(window).width();
+
+			if (VIEWPORT_WIDTH < 960) {
+				$('.schedule-content').iosSlider({
+					snapToChildren: true,
+					desktopClickDrag: true,
+					onSlideChange: schedule_callback,
+					scrollbar: true,
+					scrollbarLocation: 'bottom',
+					scrollbarBackground: '#FFFFFF',
+					elasticPullResistance: 0.0,
+					elasticFrictionCoefficient: 0.3
+				});
+			}
+
+			$(window).resize(function(){
+
+				var new_width = $(window).width();
+
+				if (VIEWPORT_WIDTH < 960 && new_width < 960) {
+					VIEWPORT_WIDTH = new_width;
+					return false;
+				} else {
+					if (new_width < 960) {
+						$('.schedule-content').iosSlider({
+							snapToChildren: true,
+							desktopClickDrag: true,
+							scrollbar: true,
+							scrollbarLocation: 'bottom',
+							scrollbarBackground: '#FFFFFF',
+							elasticPullResistance: 0.0,
+							elasticFrictionCoefficient: 0.3
+						});
+					} else {
+						//$('.schedule-content').iosSlider('destroy');
+						$('#schedule-guide-left').hide();
+						$('#schedule-guide-right').hide();
+					}
+					VIEWPORT_WIDTH = new_width;
+				}
+			});
+
+			$('#schedule-guide-left').click(function(){
+				$('.schedule-content').iosSlider('prevSlide');
+			});
+
+			$('#schedule-guide-right').click(function(){
+				$('.schedule-content').iosSlider('nextSlide');
+			});
+
+			// create schedule
+			createCalendar();
+			$.getJSON(schedule_url, function(data) {
+				createSchedule(data);
+				$("#schedule").css({
+					height: $("#schedule-calendar").height()
+				})
+			});
+			
+			const body = document.querySelector('body');
+			const patch = document.createElement('div');
+			patch.style = "background: #FDF4F3 !important; border: 0px; width: 100%; height: 170px; position: absolute; bottom: 0px; z-index:999999; margin-bottom:-100px"
+			body.appendChild(patch);
+		});
+		
+	</script>
+	</template>
+
