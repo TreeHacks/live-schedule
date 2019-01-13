@@ -1,0 +1,17 @@
+#announcements {
+  @extend %half-section;
+  @include flex(column nowrap, flex-start, center);
+  margin: 0 $medium-space/2;
+}
+
+.announcement {
+  padding: 16px 0;
+  width: 85%;
+  border-bottom: 3px solid $green;
+  text-align: justify;
+
+  h1 {
+    font-size: $heading-font-size;
+    margin-bottom: 8px;
+  }
+}

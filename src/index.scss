@@ -1,0 +1,59 @@
+@import "sass/global";
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+nav,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $avenir-heavy;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+body {
+  background-color: $light-gray;
+  color: white;
+  font-family: $avenir;
+  font-size: $base-font-size;
+  text-align: center;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+#group {
+  @include flex(row-nowrap, center, stretch);
+  margin: $medium-space auto;
+}
+
+#sidebar {
+  margin: 0 $medium-space/2;
+}
+
+@import "sass/header";
+@import "sass/countdown";
+@import "sass/resources";
+@import "sass/schedule";
+@import "sass/announcements";
+@import "sass/projects";
+@import "sass/hackpacks";

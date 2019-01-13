@@ -1,0 +1,67 @@
+$header-logo-font-size: 36px;
+$header-logo-image-height: 40px;
+$header-font-size: 24px;
+$header-margin: 16px;
+
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 101;
+
+  background-color: white;
+  color: $dark-gray;
+  height: 80px;
+  width: 100vw;
+
+  .container {
+    @include flex(row nowrap, flex-end, center);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0 $small-space;
+    list-style-type: none;
+  }
+}
+
+#header-logo {
+  flex: 1 0 auto;
+  font-size: $header-logo-font-size;
+
+  a {
+    @include flex(row nowrap, flex-start, center);
+    color: $dark-gray;
+  }
+
+  img {
+    height: $header-logo-image-height;
+    margin-right: 10px;
+  }
+}
+
+#social-media {
+  @include flex(row nowrap, center, center);
+}
+
+.header-item {
+  @include flex(row nowrap, center, center);
+  margin: 0 $header-margin;
+  width: $header-font-size * 1.75;
+  height: $header-font-size * 1.75;
+  font-size: $header-font-size;
+  transition: background-color $transition-speed;
+  background-color: $dark-gray;
+  border-radius: 50%;
+  padding-top: 5px;
+
+  &:hover {
+    background-color: $green;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    #mobile-menu {
+      display: none;
+    }
+  }
+}
