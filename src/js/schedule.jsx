@@ -1,9 +1,15 @@
 import React from 'react';
+import { VueWrapper } from 'vuera'
+import EventSchedule from './event-schedule'
 
 function Schedule() {
   return (
     <div id="schedule">
-      <h1 className="section-heading">Schedule</h1>
+      <div className="schedule-embed-wrapper">
+        <VueWrapper
+          component={EventSchedule}
+        />
+      </div>
     </div>
   );
 }
