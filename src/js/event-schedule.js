@@ -314,7 +314,7 @@ export default Vue.component('event-schedule', {
       TweenLite.to(this.$refs.wrapper, 0.25, {scrollLeft: this.getScrollLeftFromPercent(percent)});
     },
     startDrag: function(e) {
-      this.drag.dragStart = (e.screenX || e.touches[0].screenX);
+      this.drag.dragStart = (e.screenX || (e.touches && e.touches[0].screenX) || 0);
       this.drag.scrollPercentBeforeDrag = this.scrollPercent;
       this.drag.down = true;
       document.addEventListener('mousemove', this.onDrag);
@@ -326,7 +326,7 @@ export default Vue.component('event-schedule', {
       document.body.style.userSelect = 'none';
     },
     onDrag: function(e) {
-      var delta = (e.screenX || e.touches[0].screenX) - this.drag.dragStart;
+      var delta = (e.screenX || (e.touches && e.touches[0].screenX) || 0) - this.drag.dragStart;
       if (this.drag.down && Math.abs(delta) > 10) { // more than 10 px delta
         var percent = this.drag.scrollPercentBeforeDrag + delta / this.$refs.track.clientWidth;
         this.$refs.wrapper.scrollLeft = this.getScrollLeftFromPercent(percent);

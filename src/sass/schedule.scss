@@ -1,11 +1,6 @@
 #schedule {
   @extend %section;
-  width: 100vw;
-  border-radius: 0;
-  background: #fff;
-  color: $dark-gray;
-  padding-top: 0;
-  padding-bottom: 2vh;
+  padding: 0;
 }
 
 .schedule-embed-wrapper {
@@ -74,11 +69,9 @@ $primary: $green;
 }
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-search {
-  border-top: 1px solid #DDD;
+  border: 1px solid #DDD;
   height: 3em;
-  border-bottom: 1px solid #DDD;
-  border-right-style: none;
-  border-left-style: none;
+  border-radius: 1em 1em 0 0;
   font-family: "Hind Siliguri", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
   padding: 0 2.55em;
   font-size: 1em;
@@ -89,21 +82,21 @@ $primary: $green;
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-search:focus {
   outline: 0;
-  border-color: #16AFFB
+  border-color: $green;
 }
 
 .schedule .schedule-top .schedule-categories {
   border-bottom: 1px solid #DDD;
   margin-bottom: 0.5em;
-  padding: 0 1.9em;
+  padding: 0.5em 1.9em;
 }
 
 .schedule .schedule-top .schedule-categories button.schedule-category {
   font-size: 12px;
-  padding: 1em;
+  padding: 0.5em;
   background: transparent;
   border-style: none;
-  color: #333;
+  color: $white;
   opacity: 0.5;
   cursor: pointer;
   font-weight: 600;
@@ -218,9 +211,9 @@ $primary: $green;
   background: #FFF;
   margin-left: -20px;
   padding-left: 20px;
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 20px);
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 20px);
-  background: linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 20px);
+  background: -moz-linear-gradient(left, rgba(83, 81, 82, 0) 0, rgba(83, 81, 82, 1) 20px);
+  background: -webkit-linear-gradient(left, rgba(83, 81, 82, 0) 0, rgba(83, 81, 82, 1) 20px);
+  background: linear-gradient(left, rgba(83, 81, 82, 0) 0, rgba(83, 81, 82, 1) 20px);
   width: 200px;
   font-weight: 700;
   transform: translateX(-9px)
@@ -234,8 +227,8 @@ $primary: $green;
 
 .schedule .schedule-wrapper .schedule-inner .schedule-row .schedule-item {
   position: absolute;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+  background: rgba(83, 81, 82, 0.5);
+  box-shadow: 0 0 50px rgba(83, 81, 82, 0.5);
   opacity: 1;
   cursor: pointer;
   transition: all 250ms
@@ -250,7 +243,7 @@ $primary: $green;
   font-size: 12px;
   padding: 5px 0 3px 5px;
   text-overflow: ellipsis;
-  color: #333;
+  color: $white;
   overflow: hidden;
   margin-right: -25%;
   text-decoration: underline
@@ -319,6 +312,7 @@ $primary: $green;
   border: 1px solid #0982A6;
   top: 0;
   width: 300px;
+  color: $dark-gray;
   box-sizing: border-box;
   padding: 1.5em;
   overflow-y: auto;
@@ -349,9 +343,8 @@ $primary: $green;
   bottom: 0;
   width: 100%;
   left: 0;
-  background: #FFF;
   z-index: 2;
-  padding: 20px 0 5px 0
+  padding: 20px 0 20px 0;
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper {
@@ -361,7 +354,7 @@ $primary: $green;
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper .schedule-thumb {
-  background: #FFF;
+  background: $dark-gray;
   height: 18px;
   border-radius: 9px;
   width: 20%;
@@ -382,14 +375,14 @@ $primary: $green;
 .schedule .schedule-dragger .schedule-track-wrapper .schedule-track {
   content: '';
   margin: 0 -10%;
-  background: #EEE;
+  background: $light-gray;
   height: 18px;
   border-radius: 9px;
   display: block
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper:hover .schedule-track {
-  background: #EAEAEA
+  background: lighten($light-gray, 0.5);
 }
 
 .schedule-search {
