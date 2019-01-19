@@ -1,7 +1,6 @@
 import Vue from 'vue/dist/vue.js';
 import Fuse from 'fuse.js';
 import {TweenLite} from 'gsap/TweenMax';
-import striptags from 'string-strip-html/dist/string-strip-html.esm.js';
 
 export default Vue.component('event-schedule', {
   template: `<div id="schedule-inner" class="schedule" :class="{active: true}">
@@ -130,7 +129,7 @@ export default Vue.component('event-schedule', {
             location: item.location,
             start: localFormatDayTime(new Date(item.start_time)),
             end: localFormatDayTime(new Date(item.end_time)),
-            description: striptags(item.description)
+            description: new DOMParser().parseFromString(item.description, 'text/html').body.textContent
           });
         }
       }
