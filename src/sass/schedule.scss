@@ -133,7 +133,6 @@ $primary: $green;
 }
 
 .schedule .schedule-category-view .section-wrapper .schedule-category-view-inner {
-  border-bottom: 1px solid #DDD;
   padding-top: 0.75em;
   padding-bottom: 0.75em
 }
@@ -390,7 +389,7 @@ $primary: $green;
   padding-bottom: 0;
 }
 .schedule-wrapper {
-  min-height: 500px;
+  min-height: 400px;
 }
 .schedule.no-selection {
   user-select: none;

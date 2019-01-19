@@ -1,6 +1,7 @@
 import Vue from 'vue/dist/vue.js';
 import Fuse from 'fuse.js';
-import {TweenLite} from "gsap/TweenMax";
+import {TweenLite} from 'gsap/TweenMax';
+import striptags from 'striptags';
 
 export default Vue.component('event-schedule', {
   template: `<div id="schedule-inner" class="schedule" :class="{active: true}">
@@ -82,7 +83,7 @@ export default Vue.component('event-schedule', {
     if ((new Date().getTime() - new Date('2017-09-15 18:00').getTime()) / 3600000 < 36) setInterval(this.updateTime, 60000);
     this.updateTime();
     var ctx = this;
-    fetch('https://hackerapi.com/v2/events/hackthenorth2017/schedule').then(r => r.json()).then(data => {
+    fetch('https://api.eventive.org/event_buckets/5c42b3007bd8d2002314d2a6/events_slim?api_key=2db927190aa686598bf88c893181cb7a').then(r => r.json()).then(data => {
       
       // Schedule shell
       var schedule = [{
@@ -107,32 +108,29 @@ export default Vue.component('event-schedule', {
         items: []
       }];
 
-      // Add data to correct columns
-      var tagMap = {
-        'logistics': 0,
-        'lightning_challenge': 2,
-        'meetup': 2,
-        'food': 1,
-        'judging': 0,
-        'workshop': 3,
-        'talk': 4
-      };
+      function pad (num) {
+        var norm = Math.floor(Math.abs(num));
+        return (norm < 10 ? '0' : '') + norm;
+      }
+
+      function localFormatDayTime(d) {
+        return pad(d.getDate()) +
+          'T' + pad(d.getHours()) +
+          ':' + pad(d.getMinutes())
+      }
 
       for (var i = 0; i < data.length; i++) {
         var item = data[i];
-        var cat = item.tags.reduce(function(v, tag){ // take largest tag value (since everything has logistics...)
-          if (tagMap[tag] !== undefined) {
-            v = Math.max(v, tagMap[tag]);
-          }
-          return v;
-        }, -1);
+        var cat = schedule.findIndex(cat => {
+          return item.tags.some(t => t === cat.name);
+        });
         if (cat !== -1) { // this fits somewhere!
           schedule[cat].items.push({
             name: item.title,
             location: item.location,
-            start: item.start_time.substr(8, 8),
-            end: item.end_time.substr(8, 8),
-            description: item.description
+            start: localFormatDayTime(new Date(item.start_time)),
+            end: localFormatDayTime(new Date(item.end_time)),
+            description: striptags(item.description)
           });
         }
       }
@@ -246,7 +244,7 @@ export default Vue.component('event-schedule', {
   computed: {
     scheduleHeight: function() { 
       // 25px to account for scrollbar
-      return this.rowHeight * this.scheduleRows.length + 50 + 'px';
+      return Math.max(this.rowHeight * this.scheduleRows.length + 50, 300) + 'px';
     },
     thumbStyle: function() {
       var percent = this.scrollPercent;
