@@ -1,7 +1,7 @@
 import Vue from 'vue/dist/vue.js';
 import Fuse from 'fuse.js';
 import {TweenLite} from 'gsap/TweenMax';
-import striptags from 'striptags';
+import striptags from 'string-strip-html';
 
 export default Vue.component('event-schedule', {
   template: `<div id="schedule-inner" class="schedule" :class="{active: true}">
