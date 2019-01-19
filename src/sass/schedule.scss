@@ -164,7 +164,7 @@ $primary: $green;
   width: 100%;
   z-index: 1;
   position: relative;
-  padding-top: 50px;
+  padding-top: 60px;
   will-change: transform
 }
 
@@ -203,7 +203,7 @@ $primary: $green;
 
 .schedule .schedule-wrapper .schedule-inner .schedule-marker-day {
   position: absolute;
-  font-size: 14px;
+  font-size: 16px;
   top: -50px;
   text-align: left;
   color: #CCC;
@@ -215,7 +215,7 @@ $primary: $green;
   background: linear-gradient(left, rgba(83, 81, 82, 0) 0, rgba(83, 81, 82, 1) 20px);
   width: 200px;
   font-weight: 700;
-  transform: translateX(-9px)
+  transform: translateX(-12px)
 }
 
 .schedule .schedule-wrapper .schedule-inner .schedule-row {
@@ -308,7 +308,7 @@ $primary: $green;
 .schedule .schedule-wrapper .schedule-inner .schedule-overlay {
   position: absolute;
   background: #FFF;
-  border: 1px solid #0982A6;
+  border: 1px solid $green;
   top: 0;
   width: 300px;
   color: $dark-gray;
@@ -322,7 +322,7 @@ $primary: $green;
 }
 
 .schedule .schedule-wrapper .schedule-inner .schedule-overlay strong {
-  color: #0982A6;
+  color: $green;
   margin-top: 0.5em;
   display: inline-block
 }
@@ -389,11 +389,11 @@ $primary: $green;
   padding-bottom: 0;
 }
 .schedule-wrapper {
-  min-height: 400px;
+  min-height: 410px;
 }
 .schedule.no-selection {
   user-select: none;
 }
 .schedule .schedule-category-view .section-wrapper .schedule-category-view-inner .schedule-category-view-item {
-  margin-left: 0.5em;
+  margin: 0 2.5em;
 }
