@@ -11,6 +11,13 @@ $timer-space: 2vw;
   }
 }
 
+#countdown-heading {
+  font-size: $heading-font-size;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 20px;
+}
+
 #timer {
   @include flex(row nowrap, center, center);
   font-family: $avenir-heavy;

@@ -17,6 +17,7 @@ function Countdown() {
       <div className="timeUnits">
         {timeline}
       </div>
+      <h1 id="countdown-heading">until hacking ends!</h1>
     </div>
   );
 }
