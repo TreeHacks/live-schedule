@@ -1,7 +1,7 @@
 #resources {
   @extend %section;
   @include flex(row nowrap, center, center);
-  padding: 12px 0;
+  padding: 0;
   border-radius: 12px;
 }
 
@@ -16,6 +16,7 @@
 }
 
 .resource-icon {
-  color: $green;
-  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
 }
