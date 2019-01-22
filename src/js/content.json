@@ -1,0 +1,44 @@
+{
+  "hackpacks": [
+    {
+      "name": "Android (Java)",
+      "link": "https://github.com/TreeHacks/hackpack-android"
+    },
+    {
+      "name": "Android (Kotlin)",
+      "link": "https://github.com/TreeHacks/hackpack-android-kotlin"
+    },
+    {
+      "name": "Arduino",
+      "link": "https://github.com/TreeHacks/hackpack-arduino-app"
+    },
+    {
+      "name": "Botnet",
+      "link": "https://github.com/TreeHacks/botnet-hackpack"
+    },
+    {
+      "name": "Chrome Extensions",
+      "link": "https://github.com/TreeHacks/hackpack-chrome-ext"
+    },
+    {
+      "name": "iOS (Swift)",
+      "link": "https://github.com/TreeHacks/hackpack-ios"
+    },
+    {
+      "name": "iOS ARKit",
+      "link": "https://github.com/TreeHacks/hackpack-arkit"
+    },
+    {
+      "name": "iOS ResearchKit",
+      "link": "https://github.com/TreeHacks/hackpack-researchkit"
+    },
+    {
+      "name": "Machine Learning",
+      "link": "https://github.com/TreeHacks/hackpack-ml"
+    },
+    {
+      "name": "Web",
+      "link": "https://github.com/TreeHacks/hackpack-web-next"
+    }
+  ]
+}

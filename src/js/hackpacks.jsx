@@ -1,10 +1,10 @@
 import React from 'react';
+import {hackpacks} from './content.json';
 
 function Hackpacks() {
-  var hackpacks = ["ARKit", "Bot", "Chatbot", "Chrome Extension", "General", "Healthkit", "Introduction", "iOS", "Web"];
   var content = [];
   for (var i = 0; i < hackpacks.length; i++) {
-    content.push(<button className="green-button" key={i}>{hackpacks[i]}</button>);
+    content.push(HackPack(hackpacks[i].name, hackpacks[i].link))
   }
   return (
     <div id="hackpacks">
@@ -12,6 +12,14 @@ function Hackpacks() {
       <hr />
       {content}
     </div>
+  );
+}
+
+function HackPack(name, link) {
+  return(
+    <a href={link} target="_blank">
+      <button className="green-button">{name}</button>
+    </a>
   );
 }
 
