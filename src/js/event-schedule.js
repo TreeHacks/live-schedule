@@ -83,7 +83,7 @@ export default Vue.component('event-schedule', {
     this.updateTime();
     var ctx = this;
     fetch('https://api.eventive.org/event_buckets/5c42b3007bd8d2002314d2a6/events_slim?api_key=2db927190aa686598bf88c893181cb7a').then(r => r.json()).then(data => {
-      
+
       // Schedule shell
       var schedule = [{
         name: "Main Events",
@@ -94,7 +94,7 @@ export default Vue.component('event-schedule', {
         color: "#f1ffa1",
         items: []
       }, {
-        name: "Activities",
+        name: "HackX",
         color: "#9bdeff",
         items: []
       }, {
@@ -102,7 +102,7 @@ export default Vue.component('event-schedule', {
         color: "#8dffae",
         items: []
       }, {
-        name: "Tech Talks",
+        name: "Talks",
         color: "#a89bff",
         items: []
       }];
@@ -169,10 +169,10 @@ export default Vue.component('event-schedule', {
         return true;
       }
 
-      ctx.scheduleRows = schedule.reduce(function(acc, cat) { 
+      ctx.scheduleRows = schedule.reduce(function(acc, cat) {
 
         var oldAccLength = acc.length; // make a shallow copy
-        
+
         for (var i = 0; i < cat.items.length; i++) {
           var item = cat.items[i];
           var curRow = oldAccLength;
@@ -189,7 +189,7 @@ export default Vue.component('event-schedule', {
           acc[curRow].push(item);
         }
         return acc;
-      }, []); 
+      }, []);
 
       var allScheduleItems = schedule.reduce(function(acc, cat) {
         return cat.items.reduce(function(acc2, item){
@@ -241,7 +241,7 @@ export default Vue.component('event-schedule', {
     this.$refs.wrapper.scrollLeft = this.hoursIn * this.hourWidth;
   },
   computed: {
-    scheduleHeight: function() { 
+    scheduleHeight: function() {
       // 25px to account for scrollbar
       return Math.max(this.rowHeight * this.scheduleRows.length + 50, 300) + 'px';
     },
@@ -276,11 +276,11 @@ export default Vue.component('event-schedule', {
     updateTime: function() {
       var hoursIn = (new Date().getTime() - new Date('2017-09-15 18:00').getTime()) / 3600000;
       if (hoursIn > 36) hoursIn = -1;
-      this.hoursIn = hoursIn; 
+      this.hoursIn = hoursIn;
     },
     getItemStyle: function(item) {
       return {
-        left: (item.absStartHour * this.hourWidth + 'px'), 
+        left: (item.absStartHour * this.hourWidth + 'px'),
         width: (item.absEndHour - item.absStartHour) * this.hourWidth + 'px',
         height: this.rowHeight + 'px',
         color: item.color
@@ -288,7 +288,7 @@ export default Vue.component('event-schedule', {
     },
     getOverlayStyle: function(item) {
       return {
-        left: (item.absStartHour * this.hourWidth + 'px'), 
+        left: (item.absStartHour * this.hourWidth + 'px'),
         top: this.rowHeight * Math.min(item.row, this.scheduleRows.length/2 - 1) + 'px',
         maxHeight: this.rowHeight * (this.scheduleRows.length/2 + 1) + 'px'
       };
@@ -339,7 +339,7 @@ export default Vue.component('event-schedule', {
       document.removeEventListener('touchcancel', this.stopDrag);
       document.body.style.userSelect = null;
     },
-    getDayStyle: function(hour) { 
+    getDayStyle: function(hour) {
       var left = hour * this.hourWidth;
       var scheduleLeft = this.$refs.wrapper ? this.scrollPercent * (this.$refs.wrapper.scrollWidth - this.$refs.wrapper.clientWidth) : 0;
       var transformLeft = scheduleLeft - left;
