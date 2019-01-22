@@ -40,5 +40,23 @@
       "name": "Web",
       "link": "https://github.com/TreeHacks/hackpack-web-next"
     }
+  ],
+  "projects": [
+    {
+      "name": "Awareness",
+      "link": "https://treehacks.quip.com/NqcLA8qUk2pO/TreeHacks-Awareness-Vertical-Guide-"
+    },
+    {
+      "name": "Health",
+      "link": "https://treehacks.quip.com/04qwAYbuWaMh/TreeHacks-Health-Vertical-Guide-"
+    },
+    {
+      "name": "Safety",
+      "link": "https://treehacks.quip.com/HmZJAF1SVbhw/TreeHacks-Safety-Vertical-Guide-"
+    },
+    {
+      "name": "Open Souce Initiatve",
+      "link": "https://treehacks.quip.com/FOUaA4YHYacP/TreeHacks-Open-Source-Initiative-Guide-"
+    }
   ]
 }

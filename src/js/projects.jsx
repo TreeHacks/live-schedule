@@ -1,14 +1,10 @@
 import React from 'react';
+import {projects} from './content.json';
 
 function Projects() {
-  var projects = ["Health", "Awareness", "Safety", "OSI"];
   var content = [];
   for (var i = 0; i < projects.length; i++) {
-    content.push(
-      <div className="project" key={i}>
-        <button className="green-button">{projects[i]}</button>
-      </div>
-    );
+    content.push(Project(projects[i].name, projects[i].link))
   }
   return (
     <div id="projects">
@@ -16,6 +12,14 @@ function Projects() {
       <hr />
       {content}
     </div>
+  );
+}
+
+function Project(name, link) {
+  return(
+    <a href={link} target="_blank">
+      <button className="green-button">{name}</button>
+    </a>
   );
 }
 
