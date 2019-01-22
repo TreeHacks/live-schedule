@@ -16,9 +16,9 @@ function Header() {
           </a>
         </li>
         <div id="social-media">
-          <li className="header-item"><a href="https://www.instagram.com/hackwithtrees"><FontAwesomeIcon icon={faInstagram} /></a></li>
-          <li className="header-item"><a href="https://www.facebook.com/treehacks/"><FontAwesomeIcon icon={faFacebookF} /></a></li>
-          <li className="header-item"><a href="https://twitter.com/hackwithtrees"><FontAwesomeIcon icon={faTwitter} /></a></li>
+          <li className="header-item"><a href="https://www.instagram.com/hackwithtrees" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
+          <li className="header-item"><a href="https://www.facebook.com/treehacks/" target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a></li>
+          <li className="header-item"><a href="https://twitter.com/hackwithtrees" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a></li>
         </div>
       </ul>
     </nav>
