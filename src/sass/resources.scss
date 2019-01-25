@@ -20,3 +20,19 @@
   padding-right: 10px;
   vertical-align: middle;
 }
+
+@media screen and (max-width: 767px) {
+  #resources {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #resources {
+    font-size: 12px;
+  }
+
+  .resource-icon {
+    width: 20px;
+  }
+}

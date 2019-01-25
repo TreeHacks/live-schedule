@@ -41,6 +41,12 @@ body {
   padding-top: 80px;
 }
 
+@media screen and (max-width: 767px) {
+  body {
+    padding: 60px 0;
+  }
+}
+
 #group {
   @include flex(row-nowrap, center, stretch);
   margin: $medium-space auto;
@@ -50,6 +56,13 @@ body {
   margin: 0 $medium-space/2;
 }
 
+@media screen and (max-width: 1023px) {
+  #group {
+    display: none;
+  }
+}
+
+@import "sass/timer";
 @import "sass/header";
 @import "sass/countdown";
 @import "sass/resources";
@@ -57,3 +70,4 @@ body {
 @import "sass/announcements";
 @import "sass/projects";
 @import "sass/hackpacks";
+@import "sass/footer";

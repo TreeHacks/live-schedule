@@ -7,6 +7,7 @@ import Schedule from './js/schedule.jsx';
 import Announcements from './js/announcements.jsx';
 import Projects from './js/projects.jsx';
 import Hackpacks from './js/hackpacks.jsx';
+import Footer from './js/footer.jsx';
 import './favicons/favicons';
 import './index.scss';
 
@@ -24,6 +25,7 @@ function App() {
           <Hackpacks />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

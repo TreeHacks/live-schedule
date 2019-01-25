@@ -98,3 +98,19 @@ $border-style: 1px solid $green;
     cursor: pointer;
   }
 }
+
+%menu {
+  position: fixed;
+  left: 0;
+  z-index: 101;
+  height: 60px;
+  width: 100vw;
+  background-color: white;
+  color: $dark-gray;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-text-live {
+    padding-left: 5px;
+  }
+}

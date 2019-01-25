@@ -4,14 +4,9 @@ $header-font-size: 24px;
 $header-margin: 16px;
 
 #header {
-  position: fixed;
+  @extend %menu;
   top: 0;
-  z-index: 101;
-
-  background-color: white;
-  color: $dark-gray;
   height: 80px;
-  width: 100vw;
 
   .container {
     @include flex(row nowrap, flex-end, center);
@@ -58,9 +53,28 @@ $header-margin: 16px;
   }
 }
 
-@media screen and (max-width: 1023px) {
-  body {
-    #mobile-menu {
+@media screen and (max-width: 767px) {
+  #header {
+    height: 60px;
+
+    #header-logo {
+      font-size: 16px;
+
+      img {
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+
+    #social-media {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    #timer {
       display: none;
     }
   }
