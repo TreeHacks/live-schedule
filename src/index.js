@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './js/header.jsx';
+import Latest from './js/latest.jsx';
 import Countdown from './js/countdown.jsx';
 import Resources from './js/resources.jsx';
 import Schedule from './js/schedule.jsx';
@@ -15,6 +16,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Latest />
       <Countdown />
       <Resources />
       <Schedule />
