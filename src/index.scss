@@ -48,17 +48,24 @@ body {
 }
 
 #group {
-  @include flex(row-nowrap, center, stretch);
+  @include flex(row nowrap, space-between, stretch);
+  width: $section-width;
   margin: $medium-space auto;
 }
 
-#sidebar {
-  margin: 0 $medium-space/2;
+@media screen and (max-width: 767px) {
+  #group {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1023px) {
   #group {
-    display: none;
+    flex-direction: column;
+  }
+
+  #sidebar {
+    margin-top: $medium-space;
   }
 }
 

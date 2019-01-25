@@ -114,3 +114,14 @@ $border-style: 1px solid $green;
     padding-left: 5px;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  %half-section {
+    width: $section-width;
+  }
+
+  .green-button {
+    width: $section-width/3;
+    margin: $small-space;
+  }
+}

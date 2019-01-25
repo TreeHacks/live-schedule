@@ -1,7 +1,6 @@
 #announcements {
   @extend %half-section;
   @include flex(column nowrap, flex-start, center);
-  margin: 0 $medium-space/2;
 }
 
 .announcement {
