@@ -1,16 +1,35 @@
 #announcements {
   @extend %half-section;
   @include flex(column nowrap, flex-start, center);
+
+  .loading {
+    margin-top: 1rem;
+  }
 }
 
 .announcement {
   padding: 16px 0;
   width: 85%;
   border-bottom: 3px solid $green;
-  text-align: justify;
+  text-align: left;
 
   h1 {
     font-size: $heading-font-size;
     margin-bottom: 8px;
+  }
+
+  .message {
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .ts {
+    font-size: $base-font-size - 2px;
+    margin-top: 0.25rem;
+    color: $gray;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
