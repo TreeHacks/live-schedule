@@ -39,7 +39,7 @@ export default Vue.component('event-schedule', {
     <div ref="wrapper" v-if="selectedCat == -1" class="schedule-wrapper" @scroll="handleScroll" @click="hidePopup">
       <div class="schedule-inner" :style="{height: scheduleHeight, width: visibleHours * hourWidth + 'px'}">
         <div v-for="i in visibleHours" class="schedule-marker" :style="{left: (i - 1) * hourWidth + 'px'}">
-          <div class="schedule-marker-time">[[getMarkerValue(i + 17)]]</div>
+          <div class="schedule-marker-time">[[getMarkerValue(i + 14)]]</div>
         </div>
         <div class="schedule-marker-day" :style="getDayStyle(0)">Fri</div>
         <div class="schedule-marker-day" :style="getDayStyle(6)">Sat</div>
@@ -79,7 +79,7 @@ export default Vue.component('event-schedule', {
     </div>
   </div>`,
   created: function() {
-    if ((new Date().getTime() - new Date('2017-09-15 18:00').getTime()) / 3600000 < 36) setInterval(this.updateTime, 60000);
+    if ((new Date().getTime() - new Date('2019-02-15 15:00').getTime()) / 3600000 < 36) setInterval(this.updateTime, 60000);
     this.updateTime();
     var ctx = this;
     fetch('https://api.eventive.org/event_buckets/5c42b3007bd8d2002314d2a6/events_slim?api_key=2db927190aa686598bf88c893181cb7a').then(r => r.json()).then(data => {
@@ -145,9 +145,9 @@ export default Vue.component('event-schedule', {
             endHour = Number(item.end.slice(3, 5)),
             endMinute = Number(item.end.slice(6));
 
-          // subtract 18 to make 0 "6pm"
-          item.absStartHour = (startDay - 15) * 24 + startHour + (startMinute / 60) - 18;
-          item.absEndHour = (endDay - 15) * 24 + endHour + (endMinute / 60) - 18;
+          // subtract 15 to make 0 "3pm"
+          item.absStartHour = (startDay - 15) * 24 + startHour + (startMinute / 60) - 15;
+          item.absEndHour = (endDay - 15) * 24 + endHour + (endMinute / 60) - 15;
           item.startTime = (startHour % 12 || 12) + ":" + ("0" + startMinute).slice(-2);
           item.endTime = (endHour % 12 || 12) + ":" + ("0" + endMinute).slice(-2);
           item.startDate = dayMap[startDay - 15] + ' ' + item.startTime + (startHour >= 12 ? 'pm' : 'am');
@@ -274,7 +274,7 @@ export default Vue.component('event-schedule', {
   },
   methods: {
     updateTime: function() {
-      var hoursIn = (new Date().getTime() - new Date('2017-09-15 18:00').getTime()) / 3600000;
+      var hoursIn = (new Date().getTime() - new Date('2019-02-15 15:00').getTime()) / 3600000;
       if (hoursIn > 36) hoursIn = -1;
       this.hoursIn = hoursIn;
     },
