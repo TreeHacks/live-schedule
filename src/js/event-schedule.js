@@ -283,7 +283,8 @@ export default Vue.component('event-schedule', {
         left: (item.absStartHour * this.hourWidth + 'px'),
         width: (item.absEndHour - item.absStartHour) * this.hourWidth + 'px',
         height: this.rowHeight + 'px',
-        color: item.color
+        color: item.color,
+        zIndex: item.absStartHour
       };
     },
     getOverlayStyle: function(item) {
