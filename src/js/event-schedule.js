@@ -42,8 +42,8 @@ export default Vue.component('event-schedule', {
           <div class="schedule-marker-time">[[getMarkerValue(i + 14)]]</div>
         </div>
         <div class="schedule-marker-day" :style="getDayStyle(0)">Fri</div>
-        <div class="schedule-marker-day" :style="getDayStyle(6)">Sat</div>
-        <div class="schedule-marker-day" :style="getDayStyle(30)">Sun</div>
+        <div class="schedule-marker-day" :style="getDayStyle(9)">Sat</div>
+        <div class="schedule-marker-day" :style="getDayStyle(33)">Sun</div>
         <div class="schedule-marker-now" :style="markerNowStyle"></div>
         <div v-for="(row, index) in scheduleRows" class="schedule-row" :style="{top: index * rowHeight + 'px'}">
           <div v-for="item in row" class="schedule-item" :class="{faded: !isFound(item), point: item.absStartHour == item.absEndHour}" :style="getItemStyle(item)" @click="setSelected(item)" :title="item.name">
@@ -129,7 +129,7 @@ export default Vue.component('event-schedule', {
             location: item.location,
             start: localFormatDayTime(new Date(item.start_time)),
             end: localFormatDayTime(new Date(item.end_time)),
-            description: new DOMParser().parseFromString(item.description, 'text/html').body.textContent
+            description: item.description ? new DOMParser().parseFromString(item.description, 'text/html').body.textContent : undefined
           });
         }
       }
@@ -228,7 +228,7 @@ export default Vue.component('event-schedule', {
       query: "",
       rowHeight: 55,
       hourWidth: 100,
-      visibleHours: 48,
+      visibleHours: 51,
       scrollPercent: 0,
       schedule: [],
       scheduleRows: [],
