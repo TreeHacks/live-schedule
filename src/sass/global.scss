@@ -24,7 +24,9 @@ $white: #FFFFFF;
 $avenir: 'Avenir', sans-serif;
 $avenir-heavy: 'Avenir Heavy', sans-serif;
 $base-font-size: 16px;
+$mobile-font-size: 14px;
 $heading-font-size: 28px;
+$mobile-heading-font-size: 20px;
 
 /* Base Styles */
 $small-space: 2vw;
@@ -83,8 +85,7 @@ $border-style: 1px solid $green;
 
 .green-button {
   background-color: $dark-gray;
-  color: $green;
-  font-size: $base-font-size;
+  color: $white;
   width: $section-width/5;
   border: $border-style;
   border-radius: 8px;
@@ -94,7 +95,6 @@ $border-style: 1px solid $green;
 
   &:hover {
     background-color: $green;
-    color: $dark-gray;
     cursor: pointer;
   }
 }
@@ -112,6 +112,10 @@ $border-style: 1px solid $green;
 @media screen and (max-width: 767px) {
   .logo-text-live {
     padding-left: 5px;
+  }
+
+  .section-heading {
+    font-size: $mobile-heading-font-size;
   }
 }
 
