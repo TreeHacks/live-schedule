@@ -343,11 +343,10 @@ export default Vue.component('event-schedule', {
       var left = hour * this.hourWidth;
       var scheduleLeft = this.$refs.wrapper ? this.scrollPercent * (this.$refs.wrapper.scrollWidth - this.$refs.wrapper.clientWidth) : 0;
       var transformLeft = scheduleLeft - left;
-      var marginLeft = this.$refs.wrapper ? this.$refs.wrapper.clientWidth * 0.075 : 50;
-      if (transformLeft > marginLeft) {
+      if (scheduleLeft > left) {
         return {
           left: left + 'px',
-          transform: 'translateX('+(transformLeft - marginLeft - 9)+'px)'
+          transform: 'translateX('+(scheduleLeft - left - 9)+'px)'
         }
       }
       return { left: left + 'px' };
