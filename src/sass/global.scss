@@ -27,6 +27,7 @@ $base-font-size: 16px;
 $mobile-font-size: 14px;
 $heading-font-size: 28px;
 $mobile-heading-font-size: 20px;
+$mobile-proj-font-size: 10px;
 
 /* Base Styles */
 $small-space: 2vw;
@@ -117,6 +118,10 @@ $border-style: 1px solid $green;
 
   .section-heading {
     font-size: $mobile-heading-font-size;
+  }
+
+  .green-button {
+    font-size: $mobile-proj-font-size;
   }
 }
 
