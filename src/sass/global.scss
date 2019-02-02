@@ -29,6 +29,9 @@ $heading-font-size: 28px;
 $mobile-heading-font-size: 20px;
 $mobile-proj-font-size: 10px;
 
+$mobile-screen: 767px;
+$tablet-screen: 1023px;
+
 /* Base Styles */
 $small-space: 2vw;
 $medium-space: 5vh;
@@ -111,7 +114,7 @@ $border-style: 1px solid $green;
   color: $dark-gray;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mobile-screen) {
   .logo-text-live {
     padding-left: 5px;
   }
@@ -125,7 +128,7 @@ $border-style: 1px solid $green;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $tablet-screen) {
   %half-section {
     width: $section-width;
   }

@@ -2,17 +2,3 @@
   @extend %half-section;
   margin-bottom: $medium-space;
 }
-
-.project {
-  display: inline-block;
-  width: $section-width/5;
-  margin: $small-space/2;
-
-  .green-button {
-    margin: 0;
-  }
-
-  img {
-    width: $section-width/10;
-  }
-}

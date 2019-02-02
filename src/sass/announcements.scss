@@ -7,9 +7,14 @@
   }
 }
 
+.announcements-container {
+  width: 85%;
+  max-height: calc(15vh + 416px + 14vw);
+  overflow-y: scroll;
+}
+
 .announcement {
   padding: 16px 0;
-  width: 85%;
   border-bottom: 3px solid $green;
   text-align: left;
 
@@ -31,5 +36,11 @@
 
   a {
     text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: $mobile-screen) {
+  .announcements-container {
+    max-height: 30vh;
   }
 }
