@@ -59,31 +59,30 @@
       "link": "https://treehacks.quip.com/FOUaA4YHYacP/TreeHacks-Open-Source-Initiative-Guide-"
     }
   ],
-  "tabs": [
+  "resources": [
     {
       "name": "Schedule",
-      "link": "",
-      "imageURL": ""
+      "link": ""
     },
     {
       "name": "Announcements",
-      "link": "",
-      "imageURL": ""
+      "link": ""
     },
     {
       "name": "HackPacks",
-      "link": "",
-      "imageURL": ""
+      "link": ""
     },
     {
       "name": "Projects",
-      "link": "",
-      "imageURL": ""
+      "link": ""
     },
     {
       "name": "Info",
-      "link": "",
-      "imageURL": ""
+      "link": ""
+    },
+    {
+      "name": "Info",
+      "link": ""
     }
   ]
 }
