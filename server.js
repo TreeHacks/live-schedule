@@ -7,7 +7,7 @@ const forceSsl = require('force-ssl-heroku');
 
 // Set up the Express app
 const app = express();
-// app.use(forceSsl);
+app.use(forceSsl);
 
 // If you want to connect to MongoDB - should be running locally
 // mongoose.connect('mongodb://localhost/');
