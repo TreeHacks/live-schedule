@@ -28,18 +28,20 @@ class Announcements extends React.Component {
       <div id="announcements">
         <h1 className="section-heading">Announcements</h1>
         <hr />
-        {announcements.length ?
-          announcements.map(({ text, ts }) => (
-            <div key={ts} className="announcement">
-              <div class="message" dangerouslySetInnerHTML={ { __html: this.md.render(emojify(text, { output: 'unicode' })) } } />
-              <p class="ts">{new Date(ts * 1000).toLocaleString()}</p>
+        <div className="container">
+          {announcements.length ?
+            announcements.map(({ text, ts }) => (
+              <div key={ts} className="announcement">
+                <div className="message" dangerouslySetInnerHTML={ { __html: this.md.render(emojify(text, { output: 'unicode' })) } } />
+                <p className="ts">{new Date(ts * 1000).toLocaleString()}</p>
+              </div>
+            ))
+          :
+            <div className="loading">
+              <p>Loading...</p>
             </div>
-          ))
-        :
-          <div class="loading">
-            <p>Loading...</p>
-          </div>
-        }
+          }
+        </div>
       </div>
     );
   }

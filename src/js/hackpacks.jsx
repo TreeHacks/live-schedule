@@ -10,7 +10,9 @@ function Hackpacks() {
     <div id="hackpacks">
       <h1 className="section-heading">Hackpacks</h1>
       <hr />
-      {content}
+      <div className="container">
+        {content}
+      </div>
     </div>
   );
 }

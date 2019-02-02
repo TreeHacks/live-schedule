@@ -41,9 +41,9 @@ body {
   padding-top: 80px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mobile-screen) {
   body {
-    padding: 60px 0;
+    font-size: $mobile-font-size;
   }
 }
 
@@ -53,13 +53,7 @@ body {
   margin: $medium-space auto;
 }
 
-@media screen and (max-width: 767px) {
-  #group {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $tablet-screen) {
   #group {
     flex-direction: column;
   }
@@ -71,11 +65,9 @@ body {
 
 @import "sass/timer";
 @import "sass/header";
-@import "sass/latest";
 @import "sass/countdown";
 @import "sass/resources";
 @import "sass/schedule";
 @import "sass/announcements";
 @import "sass/projects";
 @import "sass/hackpacks";
-@import "sass/footer";

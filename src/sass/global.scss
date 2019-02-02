@@ -24,7 +24,13 @@ $white: #FFFFFF;
 $avenir: 'Avenir', sans-serif;
 $avenir-heavy: 'Avenir Heavy', sans-serif;
 $base-font-size: 16px;
+$mobile-font-size: 14px;
 $heading-font-size: 28px;
+$mobile-heading-font-size: 20px;
+$mobile-proj-font-size: 10px;
+
+$mobile-screen: 767px;
+$tablet-screen: 1023px;
 
 /* Base Styles */
 $small-space: 2vw;
@@ -83,18 +89,15 @@ $border-style: 1px solid $green;
 
 .green-button {
   background-color: $dark-gray;
-  color: $green;
-  font-size: $base-font-size;
-  width: $section-width/5;
+  color: $white;
   border: $border-style;
   border-radius: 8px;
-  padding: 16px;
-  margin: $small-space/2;
+  padding: $base-font-size;
   transition: $transition-speed;
+  font-size: $base-font-size;
 
   &:hover {
     background-color: $green;
-    color: $dark-gray;
     cursor: pointer;
   }
 }
@@ -109,19 +112,28 @@ $border-style: 1px solid $green;
   color: $dark-gray;
 }
 
-@media screen and (max-width: 767px) {
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+@media screen and (max-width: $mobile-screen) {
   .logo-text-live {
     padding-left: 5px;
   }
-}
 
-@media screen and (max-width: 1023px) {
-  %half-section {
-    width: $section-width;
+  .section-heading {
+    font-size: $mobile-heading-font-size;
   }
 
   .green-button {
-    width: $section-width/3;
-    margin: $small-space;
+    font-size: $mobile-proj-font-size;
+    padding: $mobile-proj-font-size
+  }
+}
+
+@media screen and (max-width: $tablet-screen) {
+  %half-section {
+    width: $section-width;
   }
 }
