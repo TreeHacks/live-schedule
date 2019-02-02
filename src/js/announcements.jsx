@@ -28,7 +28,7 @@ class Announcements extends React.Component {
       <div id="announcements">
         <h1 className="section-heading">Announcements</h1>
         <hr />
-        <div className="announcements-container">
+        <div className="container">
           {announcements.length ?
             announcements.map(({ text, ts }) => (
               <div key={ts} className="announcement">

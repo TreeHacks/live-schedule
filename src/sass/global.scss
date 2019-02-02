@@ -90,11 +90,9 @@ $border-style: 1px solid $green;
 .green-button {
   background-color: $dark-gray;
   color: $white;
-  width: $section-width/5;
   border: $border-style;
   border-radius: 8px;
-  padding: 16px;
-  margin: $small-space/2;
+  padding: $base-font-size;
   transition: $transition-speed;
   font-size: $base-font-size;
 
@@ -114,6 +112,11 @@ $border-style: 1px solid $green;
   color: $dark-gray;
 }
 
+.container {
+  width: 85%;
+  margin: auto;
+}
+
 @media screen and (max-width: $mobile-screen) {
   .logo-text-live {
     padding-left: 5px;
@@ -125,16 +128,12 @@ $border-style: 1px solid $green;
 
   .green-button {
     font-size: $mobile-proj-font-size;
+    padding: $mobile-proj-font-size
   }
 }
 
 @media screen and (max-width: $tablet-screen) {
   %half-section {
     width: $section-width;
-  }
-
-  .green-button {
-    width: $section-width/3;
-    margin: $small-space;
   }
 }

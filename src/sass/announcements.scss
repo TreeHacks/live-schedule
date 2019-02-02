@@ -1,16 +1,14 @@
 #announcements {
   @extend %half-section;
-  @include flex(column nowrap, flex-start, center);
+
+  .container {
+    max-height: calc(15vh + 416px + 14vw);
+    overflow-y: scroll;
+  }
 
   .loading {
     margin-top: 1rem;
   }
-}
-
-.announcements-container {
-  width: 85%;
-  max-height: calc(15vh + 416px + 14vw);
-  overflow-y: scroll;
 }
 
 .announcement {
@@ -40,7 +38,9 @@
 }
 
 @media screen and (max-width: $mobile-screen) {
-  .announcements-container {
-    max-height: 30vh;
+  #announcements {
+    .container {
+      max-height: 30vh;
+    }
   }
 }
