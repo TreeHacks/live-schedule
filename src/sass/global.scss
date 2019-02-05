@@ -91,7 +91,7 @@ $border-style: 1px solid $green;
   background-color: $dark-gray;
   color: $white;
   border: $border-style;
-  border-radius: 8px;
+  border-radius: 8px !important;
   padding: $base-font-size;
   transition: $transition-speed;
   font-size: $base-font-size;
