@@ -11,7 +11,9 @@ export default () => (<div class="bootstrap container">
                 <div className="card api-item p-4" key={api.title}>
                     <h3>{api.title}</h3>
                     <p>{api.description}</p>
-                    <p><a href={company.slack}>#slack channel</a></p>
+                    {company.slack && 
+                        <p><a target="_blank" href={company.slack}>#slack channel</a></p>
+                    }
                     {api.links.map(link =>
                         <a target="_blank" href={link.url}>
                             <button className="green-button">{link.title || link.url}</button>
