@@ -1,0 +1,88 @@
+- title: Azure Cognitive Services
+  description: Easily add AI to your app by using prebuilt Machine Learning Models
+    to analyze text & images, identify faces, detect emotions, recognize speech and
+    more.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+  - title: Link 2
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+  - title: Link 3
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+- title: Azure App Service
+  description: Deploy and scale web applications or backend APIs.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/app-service/containers/app-service-linux-intro
+- title: Azure Functions
+  description: On demand event-driven, data-driven or time-triggered serverless code
+    execution.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/azure-functions
+- title: Azure Cognitive Services2
+  description: Easily add AI to your app by using prebuilt Machine Learning Models
+    to analyze text & images, identify faces, detect emotions, recognize speech and
+    more.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+  - title: Link 2
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+  - title: Link 3
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+- title: Azure App Service2
+  description: Deploy and scale web applications or backend APIs.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/app-service/containers/app-service-linux-intro
+- title: Azure Functions2
+  description: On demand event-driven, data-driven or time-triggered serverless code
+    execution.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/azure-functions
+- title: Azure Cognitive Services3
+  description: Easily add AI to your app by using prebuilt Machine Learning Models
+    to analyze text & images, identify faces, detect emotions, recognize speech and
+    more.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+  - title: Link 2
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+  - title: Link 3
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+- title: Azure App Service3
+  description: Deploy and scale web applications or backend APIs.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/app-service/containers/app-service-linux-intro
+- title: Azure Functions3
+  description: On demand event-driven, data-driven or time-triggered serverless code
+    execution.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/azure-functions
+- title: Azure Cognitive Services4
+  description: Easily add AI to your app by using prebuilt Machine Learning Models
+    to analyze text & images, identify faces, detect emotions, recognize speech and
+    more.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+  - title: Link 2
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+  - title: Link 3
+    url: https://docs.microsoft.com/en-us/azure/cognitive-services
+- title: Azure App Service4
+  description: Deploy and scale web applications or backend APIs.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/app-service/containers/app-service-linux-intro
+- title: Azure Functions4
+  description: On demand event-driven, data-driven or time-triggered serverless code
+    execution.
+  links:
+  - title: Link 1
+    url: https://docs.microsoft.com/en-us/azure/azure-functions
