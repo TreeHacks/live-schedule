@@ -125,5 +125,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "yaml-loader": "^0.5.0"
   }
 }
