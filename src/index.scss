@@ -62,7 +62,9 @@ body {
     margin-top: $medium-space;
   }
 }
-
+.bootstrap {
+  @import "node_modules/bootstrap/scss/bootstrap.scss";
+}
 @import "sass/timer";
 @import "sass/header";
 @import "sass/countdown";
@@ -71,3 +73,4 @@ body {
 @import "sass/announcements";
 @import "sass/projects";
 @import "sass/hackpacks";
+@import "sass/apis";
