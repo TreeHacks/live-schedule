@@ -62,9 +62,7 @@ body {
     margin-top: $medium-space;
   }
 }
-.bootstrap {
-  @import "node_modules/bootstrap/scss/bootstrap.scss";
-}
+@import "node_modules/bricklayer/src/bricklayer";
 @import "sass/timer";
 @import "sass/header";
 @import "sass/countdown";

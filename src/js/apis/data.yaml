@@ -34,3 +34,20 @@
     description: test3
     links: 
     - title: test3
+- company: Apple
+  slack: https://apple.com
+  apis:
+  - title: Apple API 1
+    description: test
+    links: 
+    - title: test
+    - title: test2
+    - title: test3
+  - title: Apple API 2
+    description: test2
+    links: 
+    - title: test2
+  - title: Apple API 3
+    description: test3
+    links: 
+    - title: test3
