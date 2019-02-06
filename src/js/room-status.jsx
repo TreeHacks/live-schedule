@@ -48,6 +48,7 @@ class RoomStatus extends React.Component {
 
     return (
       <div id="room_status">
+        <style>{`#header { display: none !important; }`}</style>
         <div className="title"><Textfit mode="multi" min={100}>{status.name || 'unknown room'}</Textfit></div>
         <div className="subtitle"><Textfit mode="single">{expiry > now ? `expires in ${this._formatDelta((expiry - now) / 1000)}` : 'currently available!'}</Textfit></div>
       </div>
