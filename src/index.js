@@ -8,6 +8,7 @@ import Announcements from './js/announcements.jsx';
 import Projects from './js/projects.jsx';
 import Hackpacks from './js/hackpacks.jsx';
 import RoomStatus from './js/room-status.jsx';
+import Apis from './js/apis/Apis.jsx';
 import './favicons/favicons';
 import './index.scss';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
@@ -15,7 +16,6 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 function Main() {
   return (
     <div>
-      <Header />
       <Countdown />
       <Resources />
       <Schedule />
@@ -30,21 +30,27 @@ function Main() {
   );
 }
 
-function CustomRedirect({from, to}) {
-  return <Route exact path={from} component={() => { window.location = to; return null;} }/>
+function CustomRedirect({ from, to }) {
+  return <Route exact path={from} component={() => { window.location = to; return null; }} />
 }
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <CustomRedirect from="/faq" to="https://treehacks.quip.com/AAJgA6BS2tvU/The-Ultimate-TreeHacks-Guide-" />
-        {/* todo maps */}
-        <Route exact path="/" component={Main} />
-        <Route path="/_room/:roomId" component={RoomStatus} />
-        <Redirect to="/" />
-      </Switch>
-    </Router>
+    <div>
+      <Header />
+      <Router>
+        <Switch>
+          <CustomRedirect from="/faq" to="https://treehacks.quip.com/AAJgA6BS2tvU/The-Ultimate-TreeHacks-Guide-" />
+          {/* todo maps
+        <CustomRedirect from="/maps" to="..." />
+        */}
+          <Route exact path="/" component={Main} />
+          <Route exact path="/_room/:roomId" component={RoomStatus} />
+          <Route exact path="/apis" component={Apis} />
+          <Redirect to="/" />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 

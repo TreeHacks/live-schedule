@@ -1,3 +1,29 @@
 #hackpacks {
   @extend %half-section;
 }
+
+#sidebar {
+  .container {
+    @include flex(row wrap, space-between, center);
+
+    a {
+      flex: 0 0 45%;
+      margin: $small-space/2 0;
+    }
+  }
+
+  .green-button {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $tablet-screen) {
+  #sidebar {
+    .container {
+      a {
+        margin: $small-space 0;
+      }
+    }
+  }
+}

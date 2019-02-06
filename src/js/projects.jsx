@@ -10,7 +10,9 @@ function Projects() {
     <div id="projects">
       <h1 className="section-heading">Projects</h1>
       <hr />
-      {content}
+      <div className="container">
+        {content}
+      </div>
     </div>
   );
 }

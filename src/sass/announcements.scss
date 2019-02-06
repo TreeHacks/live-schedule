@@ -1,6 +1,10 @@
 #announcements {
   @extend %half-section;
-  @include flex(column nowrap, flex-start, center);
+
+  .container {
+    max-height: calc(15vh + 416px + 14vw);
+    overflow-y: scroll;
+  }
 
   .loading {
     margin-top: 1rem;
@@ -9,7 +13,6 @@
 
 .announcement {
   padding: 16px 0;
-  width: 85%;
   border-bottom: 3px solid $green;
   text-align: left;
 
@@ -31,5 +34,13 @@
 
   a {
     text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: $mobile-screen) {
+  #announcements {
+    .container {
+      max-height: 30vh;
+    }
   }
 }

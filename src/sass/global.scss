@@ -27,6 +27,10 @@ $base-font-size: 16px;
 $mobile-font-size: 14px;
 $heading-font-size: 28px;
 $mobile-heading-font-size: 20px;
+$mobile-proj-font-size: 10px;
+
+$mobile-screen: 767px;
+$tablet-screen: 1023px;
 
 /* Base Styles */
 $small-space: 2vw;
@@ -86,16 +90,16 @@ $border-style: 1px solid $green;
 .green-button {
   background-color: $dark-gray;
   color: $white;
-  width: $section-width/5;
   border: $border-style;
-  border-radius: 8px;
-  padding: 16px;
-  margin: $small-space/2;
+  border-radius: 8px !important;
+  padding: $base-font-size;
   transition: $transition-speed;
+  font-size: $base-font-size;
 
   &:hover {
     background-color: $green;
     cursor: pointer;
+    transform: scale(1.1, 1.1);
   }
 }
 
@@ -109,7 +113,12 @@ $border-style: 1px solid $green;
   color: $dark-gray;
 }
 
-@media screen and (max-width: 767px) {
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+@media screen and (max-width: $mobile-screen) {
   .logo-text-live {
     padding-left: 5px;
   }
@@ -117,15 +126,15 @@ $border-style: 1px solid $green;
   .section-heading {
     font-size: $mobile-heading-font-size;
   }
-}
-
-@media screen and (max-width: 1023px) {
-  %half-section {
-    width: $section-width;
-  }
 
   .green-button {
-    width: $section-width/3;
-    margin: $small-space;
+    font-size: $mobile-proj-font-size;
+    padding: $mobile-proj-font-size
+  }
+}
+
+@media screen and (max-width: $tablet-screen) {
+  %half-section {
+    width: $section-width;
   }
 }
