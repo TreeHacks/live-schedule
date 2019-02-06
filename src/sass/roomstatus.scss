@@ -1,0 +1,24 @@
+#room_status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: $avenir-heavy;
+
+  .title {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .subtitle {
+    padding: 0 30%;
+  }
+}

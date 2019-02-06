@@ -7,6 +7,7 @@ import Schedule from './js/schedule.jsx';
 import Announcements from './js/announcements.jsx';
 import Projects from './js/projects.jsx';
 import Hackpacks from './js/hackpacks.jsx';
+import RoomStatus from './js/room-status.jsx';
 import './favicons/favicons';
 import './index.scss';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
@@ -40,6 +41,7 @@ function App() {
         <CustomRedirect from="/faq" to="https://treehacks.quip.com/AAJgA6BS2tvU/The-Ultimate-TreeHacks-Guide-" />
         {/* todo maps */}
         <Route exact path="/" component={Main} />
+        <Route path="/_room/:roomId" component={RoomStatus} />
         <Redirect to="/" />
       </Switch>
     </Router>
