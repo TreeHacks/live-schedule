@@ -113,6 +113,7 @@ export default Vue.component('event-schedule', {
       }
 
       function localFormatDayTime(d) {
+        d = new Date(d - ((480 - new Date().getTimezoneOffset()) * 60 * 1000));
         return pad(d.getDate()) +
           'T' + pad(d.getHours()) +
           ':' + pad(d.getMinutes())
