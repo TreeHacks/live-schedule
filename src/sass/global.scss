@@ -84,6 +84,8 @@ $border-style: 1px solid $green;
   hr {
     border: 1px solid $gray;
     width: 90%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
   }
 }
 
@@ -95,6 +97,8 @@ $border-style: 1px solid $green;
   padding: $base-font-size;
   transition: $transition-speed;
   font-size: $base-font-size;
+  font-family: $avenir;
+  line-height: 1;
 
   &:hover {
     background-color: $green;
