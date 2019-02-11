@@ -7,6 +7,7 @@ import Schedule from './js/schedule.jsx';
 import Announcements from './js/announcements.jsx';
 import Projects from './js/projects.jsx';
 import Hackpacks from './js/hackpacks.jsx';
+import RoomStatus from './js/room-status.jsx';
 import Apis from './js/apis/Apis.jsx';
 import './favicons/favicons';
 import './index.scss';
@@ -44,6 +45,7 @@ function App() {
         <CustomRedirect from="/maps" to="..." />
         */}
           <Route exact path="/" component={Main} />
+          <Route exact path="/_room/:roomId" component={RoomStatus} />
           <Route exact path="/apis" component={Apis} />
           <Redirect to="/" />
         </Switch>
