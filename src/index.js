@@ -41,9 +41,7 @@ function App() {
       <Router>
         <Switch>
           <CustomRedirect from="/faq" to="https://treehacks.quip.com/AAJgA6BS2tvU/The-Ultimate-TreeHacks-Guide-" />
-          {/* todo maps
-        <CustomRedirect from="/maps" to="..." />
-        */}
+          <CustomRedirect from="/maps" to="https://treehacks.quip.com/tOUKAghhGiby/Maps-" />
           <Route exact path="/" component={Main} />
           <Route exact path="/_room/:roomId" component={RoomStatus} />
           <Route exact path="/apis" component={Apis} />
