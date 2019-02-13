@@ -3,6 +3,10 @@
   background: transparent;
   padding: 0;
 
+  .message a {
+    text-decoration: underline;
+  }
+
   .green-button {
     margin-top: 0.75rem;
     display: inline-block;
