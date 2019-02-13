@@ -26,9 +26,9 @@ function Header() {
 function SocialMedia() {
   return(
     <div id="social-media">
-      <li className="header-item"><a href="https://www.instagram.com/hackwithtrees" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
-      <li className="header-item"><a href="https://www.facebook.com/treehacks/" target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a></li>
-      <li className="header-item"><a href="https://twitter.com/hackwithtrees" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a></li>
+      <a href="https://www.instagram.com/hackwithtrees" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+      <a href="https://www.facebook.com/treehacks/" target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a>
+      <a href="https://twitter.com/hackwithtrees" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
     </div>
   );
 }

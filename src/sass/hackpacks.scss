@@ -5,6 +5,7 @@
 #sidebar {
   .container {
     @include flex(row wrap, space-between, center);
+    margin-bottom: -2.5%;
 
     a {
       flex: 0 0 47.5%;

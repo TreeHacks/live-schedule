@@ -44,6 +44,7 @@ body {
 @media screen and (max-width: $mobile-screen) {
   body {
     font-size: $mobile-font-size;
+    padding-top: 60px;
   }
 }
 
@@ -65,6 +66,7 @@ body {
 @import "node_modules/bricklayer/src/bricklayer";
 @import "sass/timer";
 @import "sass/header";
+@import "sass/mobile-hud";
 @import "sass/countdown";
 @import "sass/resources";
 @import "sass/schedule";

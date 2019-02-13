@@ -18,7 +18,11 @@ class Announcements extends React.Component {
 
   componentWillMount() {
     fetch('https://api.treehacks.com/announcements').then(r => r.json()).then(announcements => {
+      announcements = announcements.map(({ text, ts }) => {
+        return { content: this.md.render(emojify(text, { output: 'unicode' })), ts };
+      });
       this.setState({ announcements });
+      this.props.setAnnouncementData(announcements);
     });
   }
 
@@ -30,9 +34,9 @@ class Announcements extends React.Component {
         <hr />
         <div className="container">
           {announcements.length ?
-            announcements.map(({ text, ts }) => (
+            announcements.map(({ content, ts }) => (
               <div key={ts} className="announcement">
-                <div className="message" dangerouslySetInnerHTML={ { __html: this.md.render(emojify(text, { output: 'unicode' })) } } />
+                <div className="message" dangerouslySetInnerHTML={{ __html: content }} />
                 <p className="ts">{new Date(ts * 1000).toLocaleString()}</p>
               </div>
             ))

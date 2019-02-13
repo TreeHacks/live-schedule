@@ -37,7 +37,7 @@ $small-space: 2vw;
 $medium-space: 5vh;
 $large-space: 7.5vw;
 $section-width: 80vw;
-$transition-speed: .5s;
+$transition-speed: .2s;
 $border-style: 1px solid $green;
 
 @mixin flex($flex-flow, $justify, $align) {
@@ -78,8 +78,11 @@ $border-style: 1px solid $green;
 %half-section {
   @extend %section;
   width: calc(#{$section-width/2} - #{$medium-space/2});
-  padding: $medium-space 0;
   margin: 0;
+
+  @media screen and (max-width: $mobile-screen) {
+    padding: 7.5% 0;
+  }
 
   hr {
     border: 1px solid $gray;

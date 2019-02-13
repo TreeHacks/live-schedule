@@ -12,7 +12,7 @@ export default Vue.component('event-schedule', {
         <div class="schedule-search-wrapper">
           <i class="fa fa-search schedule-search-icon"></i>
           <input type="text" placeholder="Search" v-model="query" class="schedule-search" />
-          <i class="fa fa-times schedule-clear-icon" v-if="query.length > 0" @click="query=''"></i>
+          <span class="schedule-clear-icon" v-if="query.length > 0" @click="query=''">✕</span>
         </div>
         <div class="schedule-categories">
           <button class="schedule-category" @click="selectedCat = -1" :class="{active: selectedCat == -1}">All Events</button>
@@ -20,7 +20,7 @@ export default Vue.component('event-schedule', {
         </div>
       </div>
     </div>
-    <div class="schedule-category-view" v-if="selectedCat != -1">
+    <div class="schedule-category-view" v-if="query.length > 0 || selectedCat != -1">
       <div class="section-wrapper">
         <div class="content-wrapper-wide">
           <div class="schedule-category-view-inner">
@@ -36,7 +36,7 @@ export default Vue.component('event-schedule', {
         </div>
       </div>
     </div>
-    <div ref="wrapper" v-if="selectedCat == -1" class="schedule-wrapper" @scroll="handleScroll" @click="hidePopup">
+    <div ref="wrapper" v-if="query.length == 0 && selectedCat == -1" class="schedule-wrapper" @scroll="handleScroll" @click="hidePopup">
       <div class="schedule-inner" :style="{height: scheduleHeight, width: visibleHours * hourWidth + 'px'}">
         <div v-for="i in visibleHours" class="schedule-marker" :style="{left: (i - 1) * hourWidth + 'px'}">
           <div class="schedule-marker-time">[[getMarkerValue(i + 14)]]</div>
@@ -69,7 +69,7 @@ export default Vue.component('event-schedule', {
         </div>
       </div>
     </div>
-    <div class="schedule-dragger" v-if="selectedCat == -1">
+    <div class="schedule-dragger" v-if="query.length == 0 && selectedCat == -1">
       <div class="content-wrapper-wide">
         <div ref="track" class="schedule-track-wrapper">
           <div class="schedule-thumb" @mousedown="startDrag" @touchstart="startDrag" :style="thumbStyle">|||</div>
@@ -270,7 +270,7 @@ export default Vue.component('event-schedule', {
       return obj;
     },
     categoryItems: function() {
-      return this.selectedCat === -1 ? [] : this.schedule[this.selectedCat].items;
+      return this.selectedCat === -1 ? this.allScheduleItems : this.schedule[this.selectedCat].items;
     }
   },
   methods: {
