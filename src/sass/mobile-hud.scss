@@ -1,0 +1,20 @@
+#mobile-hud {
+  @extend %section;
+  background: transparent;
+  padding: 0;
+
+  .message a {
+    text-decoration: underline;
+  }
+
+  .green-button {
+    margin-top: 0.75rem;
+    display: inline-block;
+    font-size: 15px;
+  }
+
+  display: none;
+  @media screen and (max-width: $mobile-screen) {
+    display: block;
+  }
+}

@@ -4,9 +4,8 @@ $timer-space: 2vw;
 #timer {
   @include flex(row nowrap, center, center);
   font-family: $avenir-heavy;
-  font-size: 12px;
+  font-size: 14px;
   color: $green;
-  margin-bottom: 3px;
 
   span {
     font-size: 18px;

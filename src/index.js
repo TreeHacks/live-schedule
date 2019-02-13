@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './js/header.jsx';
+import MobileHud from './js/mobile-hud.jsx';
 import Countdown from './js/countdown.jsx';
 import Resources from './js/resources.jsx';
 import Schedule from './js/schedule.jsx';
@@ -13,21 +14,37 @@ import './favicons/favicons';
 import './index.scss';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
-function Main() {
-  return (
-    <div>
-      <Countdown />
-      <Resources />
-      <Schedule />
-      <div id="group">
-        <Announcements />
-        <div id="sidebar">
-          <Projects />
-          <Hackpacks />
+class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      announcementData: null
+    };
+
+    this.setAnnouncementData = this.setAnnouncementData.bind(this);
+  }
+
+  setAnnouncementData(announcementData) {
+    this.setState({ announcementData });
+  }
+
+  render() {
+    return (
+      <div>
+        <MobileHud announcementData={this.state.announcementData} /> 
+        <Countdown />
+        <Resources />
+        <Schedule />
+        <div id="group">
+          <Announcements setAnnouncementData={this.setAnnouncementData} />
+          <div id="sidebar">
+            <Projects />
+            <Hackpacks />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 function CustomRedirect({ from, to }) {

@@ -15,6 +15,10 @@ $header-margin: 16px;
     width: 100%;
     padding: 0 $small-space;
     list-style-type: none;
+
+    @media screen and (max-width: $mobile-screen) {
+      padding: 0 1.5rem;
+    }
   }
 }
 
@@ -35,21 +39,20 @@ $header-margin: 16px;
 
 #social-media {
   @include flex(row nowrap, center, center);
-}
 
-.header-item {
-  @include flex(row nowrap, center, center);
-  margin: 0 $header-margin;
-  width: $header-font-size * 1.75;
-  height: $header-font-size * 1.75;
-  font-size: $header-font-size;
-  transition: background-color $transition-speed;
-  background-color: $dark-gray;
-  border-radius: 50%;
-  padding-top: 5px;
+  a {
+    @include flex(row nowrap, center, center);
+    margin: 0 $header-margin;
+    width: $header-font-size * 1.75;
+    height: $header-font-size * 1.75;
+    font-size: $header-font-size;
+    transition: background-color $transition-speed;
+    background-color: $dark-gray;
+    border-radius: 50%;
 
-  &:hover {
-    background-color: $green;
+    &:hover {
+      background-color: $green;
+    }
   }
 }
 
