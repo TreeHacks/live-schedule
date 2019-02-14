@@ -1,53 +1,58 @@
 - company: Microsoft
-  slack: https://microsoft.com
+  slack: microsoft
   apis:
   - title: Azure Cognitive Services
-    description: Easily add AI to your app by using prebuilt Machine Learning Models
-      to analyze text & images, identify faces, detect emotions, recognize speech and
-      more.
-    links:
-    - title: Link 1
-      url: https://docs.microsoft.com/en-us/azure/cognitive-services
-    - title: Link 2
-      url: https://docs.microsoft.com/en-us/azure/cognitive-services
-    - title: Link 3
-      url: https://docs.microsoft.com/en-us/azure/cognitive-services
+    description: Easily add AI to your app by using prebuilt Machine Learning Models to analyze text & images, identify faces, detect emotions, recognize speech and more.
+    links: 
+    - title: Documentation
+      url: https://docs.microsoft.com/en-us/azure/cognitive-services/
   - title: Azure App Service
     description: Deploy and scale web applications or backend APIs.
-    links:
-    - title: Link 1
+    links: 
+    - title: Documentation
       url: https://docs.microsoft.com/en-us/azure/app-service/containers/app-service-linux-intro
-- company: Google
-  slack: https://google.com
+  - title: Azure Functions
+    description: On demand event-driven, data-driven or time-triggered serverless code execution.
+    links: 
+    - title: Documentation
+      url: https://docs.microsoft.com/en-us/azure/azure-functions
+- company: Neo
+  slack: bubbles
   apis:
-  - title: Google API 1
-    description: test
-    links: 
-    - title: test
-    - title: test2
-    - title: test3
-  - title: Google API 2
-    description: test2
-    links: 
-    - title: test2
-  - title: Google API 3
-    description: test3
-    links: 
-    - title: test3
-- company: Apple
-  slack: https://apple.com
+  - title: Bubble
+    description: Bubble is a visual programming tool that lets you build any web application in a few clicks, and deploy it immediately.
+    links:
+    - title: Visual Programming | Bubble
+      url: https://bubble.is
+    - title: Developers | Bubble
+      url: https://bubble.is/developers
+    - title: Lessons | Bubble
+      url: https://bubble.is/lessons
+- company: Phone2Action
+  slack: phone2action
   apis:
-  - title: Apple API 1
-    description: test
+  - title: Legislator Lookup API
+    description: Given any US address, Phone2Action's Legislator Lookup API tells you what elected officials govern over that location, across all levels of government, as well as detailed information about those lawmakers including party affiliation, contact information, social media accounts, and more.
     links: 
-    - title: test
-    - title: test2
-    - title: test3
-  - title: Apple API 2
-    description: test2
+    - title: Documentation
+      url: http://treehacks.phone2action.com
+    - title: GitHub repo with sample code
+      url: https://github.com/phone2action/treehacks-examples
+- company: Esri
+  slack: esri
+  apis:
+  - title: ArcGIS API for Javascript
+    description: Build 2D and 3D web apps.
     links: 
-    - title: test2
-  - title: Apple API 3
-    description: test3
+    - title: Documentation
+      url: https://developers.arcgis.com/javascript/
+  - title: ArcGIS API for Python
+    description: Perform GIS visualization, analysis and incorporate data science.
     links: 
-    - title: test3
+    - title: Documentation
+      url: https://developers.arcgis.com/python/
+  - title: ArcGIS Runtime SDKs for Android, iOS, .NET and Qt
+    description: Develop native mapping and location analysis apps.
+    links: 
+    - title: Documentation
+      url: https://developers.arcgis.com/arcgis-runtime/

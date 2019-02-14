@@ -23,7 +23,7 @@ export default class extends React.Component {
                                 <h3>{api.title}</h3>
                                 <p>{api.description}</p>
                                 {company.slack &&
-                                    <p><a target="_blank" href={company.slack}>#slack channel</a></p>
+                                    <p>slack: <strong>#{company.slack}</strong></p>
                                 }
                                 {api.links.map(link =>
                                     <a target="_blank" href={link.url}>
