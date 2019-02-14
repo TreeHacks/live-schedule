@@ -11,7 +11,7 @@ export default Vue.component('event-schedule', {
         </div>
         <div class="schedule-search-wrapper">
           <i class="fa fa-search schedule-search-icon"></i>
-          <input type="text" placeholder="Search" v-model="query" class="schedule-search" />
+          <input type="text" placeholder="Search" @input='evt=>query=evt.target.value' class="schedule-search" />
           <span class="schedule-clear-icon" v-if="query.length > 0" @click="query=''">✕</span>
         </div>
         <div class="schedule-categories">
