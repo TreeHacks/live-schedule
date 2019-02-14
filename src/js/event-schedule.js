@@ -105,6 +105,10 @@ export default Vue.component('event-schedule', {
         name: "Talks",
         color: "#a89bff",
         items: []
+      }, {
+        name: "Hardware",
+        color: "#ffc570",
+        items: []
       }];
 
       function pad (num) {
