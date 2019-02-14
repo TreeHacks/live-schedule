@@ -32,7 +32,7 @@
   slack: phone2action
   apis:
   - title: Legislator Lookup API
-    description: Given any US address, Phone2Action's Legislator Lookup API tells you what elected officials govern over that location, across all levels of government, as well as detailed information about those lawmakers including party affiliation, contact information, social media accounts, and more. In addition we've set up an SMS keyword, students will be able to text "TREEHACKS" to 52886 to obtain API tokens and links to our documentation in a convenient manner.
+    description: Given any US address, Phone2Action's Legislator Lookup API tells you what elected officials govern over that location, across all levels of government, as well as detailed information about those lawmakers including party affiliation, contact information, social media accounts, and more.
     links: 
     - title: Documentation
       url: http://treehacks.phone2action.com
