@@ -17,7 +17,7 @@
     - title: Documentation
       url: https://docs.microsoft.com/en-us/azure/azure-functions
 - company: Neo
-  slack: bubbles
+  slack: bubble
   apis:
   - title: Bubble
     description: Bubble is a visual programming tool that lets you build any web application in a few clicks, and deploy it immediately.
