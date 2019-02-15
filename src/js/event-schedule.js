@@ -29,7 +29,7 @@ export default Vue.component('event-schedule', {
               <div class="schedule-category-view-item-details" :style="{color: item.color}">
                 [[item.startDate]][[item.absStartHour != item.absEndHour ? ' - ' + item.endDate : '']] [[item.location ? ' | ' + item.location : '']]
               </div>
-              <p v-if="item.description">[[item.description]]</p>
+              <div v-if="item.description" v-html="item.description" />
               <span class="schedule-category-view-item-circle" :style="{background: item.color}"></span>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default Vue.component('event-schedule', {
           <strong>Location</strong>
           <p>[[selectedItem.location || 'N/A']]</p>
           <strong v-if="selectedItem.description">Description</strong>
-          <p v-if="selectedItem.description">[[selectedItem.description]]</p>
+          <div v-if="selectedItem.description" v-html="selectedItem.description" />
           <button class="schedule-overlay-close" @click="selectedItem = null"><i class="fa fa-times"></i></button>
         </div>
       </div>
@@ -134,7 +134,7 @@ export default Vue.component('event-schedule', {
             location: item.location,
             start: localFormatDayTime(new Date(item.start_time)),
             end: localFormatDayTime(new Date(item.end_time)),
-            description: item.description ? new DOMParser().parseFromString(item.description, 'text/html').body.textContent : undefined
+            description: item.description ? item.description : undefined
           });
         }
       }
