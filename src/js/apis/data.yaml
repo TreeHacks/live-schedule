@@ -56,3 +56,33 @@
     links: 
     - title: Documentation
       url: https://developers.arcgis.com/arcgis-runtime/
+- company: IBM
+  slack: ibm
+  apis:
+  - title: IBM Visual Recognition Watson
+    description: Visual Recognition understands an image’s content out-of-the-box. Our pre-trained models enable you to analyze images for objects, faces, colors, food, explicit content and other subjects for insights into your visual content.
+    links: 
+    - title: Documentation
+      url: https://console.bluemix.net/docs/services/visual-recognition/getting-started.html#getting-started-tutorial
+    - title: API
+      url: https://console.bluemix.net/apidocs/visual-recognition
+    - title: Sample Apps
+      url: https://developer.ibm.com/patterns/category/vision/
+  - title: IBM Natural Language Understanding
+    description: With IBM Watson Natural Language Understanding, developers can analyze semantic features of text input, including categories, concepts, emotion, entities, keywords, metadata, relations, semantic roles, and sentiment.
+    links: 
+    - title: Documentation
+      url: https://console.bluemix.net/docs/services/natural-language-understanding/getting-started.html#getting-started-tutorial
+    - title: API
+      url: https://console.bluemix.net/apidocs/natural-language-understanding
+    - title: Sample Apps
+      url: https://developer.ibm.com/patterns/category/natural-language-processing
+  - title: IBM Watson Assistant
+    description: The IBM Watson Assistant service combines machine learning, natural language understanding, and integrated dialog tools to create conversation flows between your apps and your users.
+    links: 
+    - title: Documentation
+      url: https://console.bluemix.net/docs/services/assistant/getting-started.html#getting-started
+    - title: API
+      url: https://cloud.ibm.com/apidocs/assistant-v2
+    - title: Sample Apps
+      url: https://developer.ibm.com/patterns/category/conversation

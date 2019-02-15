@@ -37,7 +37,11 @@
       "link": "https://github.com/TreeHacks/hackpack-ml"
     },
     {
-      "name": "Web",
+      "name": "Web API",
+      "link": "https://github.com/TreeHacks/hackpack-web-api"
+    },
+    {
+      "name": "Web Next",
       "link": "https://github.com/TreeHacks/hackpack-web-next"
     }
   ],
