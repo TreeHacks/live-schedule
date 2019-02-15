@@ -86,3 +86,29 @@
       url: https://cloud.ibm.com/apidocs/assistant-v2
     - title: Sample Apps
       url: https://developer.ibm.com/patterns/category/conversation
+- company: Oracle
+  slack: oracle
+  apis:
+  - title: GraalVM
+    description: GraalVM is a universal virtual machine for running applications written in JavaScript, Python, Ruby, R, JVM-based languages like Java, Scala, Kotlin, Clojure, and LLVM-based languages such as C and C++.
+    links: 
+    - title: Quickstart
+      url: https://www.graalvm.org/docs/getting-started/
+    - title: Examples
+      url: https://www.graalvm.org/docs/examples/
+  - title: GraphPipe
+    description: GraphPipe is a protocol and collection of software designed to simplify machine learning model deployment and decouple it from framework-specific model implementations.
+    links: 
+    - title: Quickstart
+      url: https://oracle.github.io/graphpipe/#/guide/user-guide/quickstart
+    - title: Examples
+      url: https://oracle.github.io/graphpipe/#/guide/examples/overview
+  - title: Fn Project
+    description: The Fn Project is an open-source container-native serverless platform that you can run anywhere -- any cloud or on-premise.
+    links: 
+    - title: Quickstart
+      url: https://github.com/fnproject/fn#top
+    - title: Tutorials
+      url: http://fnproject.io/tutorials/
+    - title: API reference
+      url: http://petstore.swagger.io/?url=https://raw.githubusercontent.com/fnproject/fn/master/docs/swagger_v2.yml
