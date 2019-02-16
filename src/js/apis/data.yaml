@@ -86,3 +86,22 @@
       url: https://cloud.ibm.com/apidocs/assistant-v2
     - title: Sample Apps
       url: https://developer.ibm.com/patterns/category/conversation
+- company: Polarr
+  slack: polarr
+  apis:
+  - title: Polarr Foundation
+    description: Import any Polarr or CoreML models to run locally on your iOS device.
+    links: 
+    - title: Documentation
+      url: https://polarrco.github.io/TreeHacks/PolarrFoundation_README.html
+    - title: Starter Code
+      url: https://github.com/Polarrco/TreeHacks
+    - title: Demo Video
+      url: https://www.youtube.com/watch?v=xMPcpInGBXU
+  - title: Polarr Photo Rendering
+    description: Render any still image or live video feed on your iOS device.
+    links: 
+    - title: Documentation
+      url: https://polarrco.github.io/TreeHacks/PolarrPhotoRendering_README.html
+    - title: Starter Code (.zip)
+      url: https://github.com/Polarrco/TreeHacks
