@@ -25,7 +25,7 @@ class RoomStatus extends React.Component {
 
   refresh() {
     if (!this.props.match.params.roomId) { return; }
-    fetch(`http://localhost:3000/rooms/status?id=${this.props.match.params.roomId}`)
+    fetch(`https://api.treehacks.com/rooms/status?id=${this.props.match.params.roomId}`)
       .then(r => r.json())
       .then(status => this.setState({ status }))
       .catch(e => this.setState({ status: { name: "??!!?!" } }));
