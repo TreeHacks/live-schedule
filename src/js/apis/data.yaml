@@ -232,12 +232,12 @@
   slack: twilio
   apis:
   - title: Twilio Programmable SMS
-    description: Send and receive texts in your app. Promo code: TREEHACKS19
+    description: "Send and receive texts in your app. Promo code: TREEHACKS19"
     links:
     - title: Documentation
       url: https://www.twilio.com/docs/sms
   - title: Twilio Programmable Voice
-    description: Make and receive phone calls in your app. Promo code: TREEHACKS19
+    description: "Make and receive phone calls in your app. Promo code: TREEHACKS19"
     links:
     - title: Documentation
       url: https://www.twilio.com/docs/voice
