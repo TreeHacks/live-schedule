@@ -131,3 +131,70 @@
       url: https://polarrco.github.io/TreeHacks/PolarrPhotoRendering_README.html
     - title: Starter Code
       url: https://github.com/Polarrco/TreeHacks
+- company: Firebase
+  slack: firebase
+  apis:
+  - title: Cloud Firestore
+    description: Cloud Firestore is a NoSQL document database that lets you easily store, sync, and query data for your mobile and web apps - at global scale.
+    links: 
+    - title: Documentation
+      url: https://firebase.google.com/docs/firestore/quickstart
+  - title: Firebase Hosting
+    description: With Firebase Hosting, you can deploy a single-page web app, a mobile app landing page, or a progressive web app without all the hassle.
+    links: 
+    - title: Documentation
+      url: https://firebase.google.com/docs/hosting/quickstart
+  - title: Firebase Cloud Functions
+    description: Extend your app with custom backend code without needing to manage and scale your own servers.
+    links: 
+    - title: Documentation
+      url: https://firebase.google.com/docs/functions/
+- company: Expo
+  slack: expo
+  apis:
+  - title: Expo
+    description: Expo is a free and open source toolchain built around React Native to help you build native iOS and Android projects using JavaScript and React.
+    links: 
+    - title: Getting Started
+      url: https://expo.io/learn
+    - title: Documentation
+      url: https://docs.expo.io/versions/latest/
+- company: SoundHound
+  slack: soundhound
+  apis:
+  - title: Houndify API
+    description: SoundHound Inc.'s Houndify platform allows developers to easily integrate voice and conversational intelligence into your products with unprecedented speed, accuracy, and intelligence in voice recognition and understanding.
+    links: 
+    - title: Learn More
+      url: https://www.houndify.com/
+    - title: Developer Guide
+      url: https://www.houndify.com/docs
+    - title: Example code and SDKs
+      url: https://www.houndify.com/sdks
+- company: GitHub
+  apis:
+  - title: GitHub Student Developer Pack
+    description: The GitHub Student Developer Pack gives students free access to the best developer tools in one place so they can learn by doing.
+    links: 
+    - title: Get your Pack
+      url: https://education.github.com/pack
+- company: Wix
+  slack: wixcode-support
+  apis:
+  - title: Wix Code APIs
+    description: Build any type of website with a little JavaScript and Wix Code APIs. This combination gives you full control over your site’s functionality, from Wix elements to your databases to backend files, including fetching & routing, all hassle free.
+    links: 
+    - title: Learn More
+      url: https://www.wix.com/code/home/api
+- company: Blockstack
+  slack: blockstack
+  apis:
+  - title: Blockstack APIs
+    description: The easiest way to start building decentralized blockchain apps.
+    links: 
+    - title: Blockstack Core
+      url: https://core.blockstack.org/
+    - title: Blockstack Developer API
+      url: https://blockstack.github.io/blockstack.js/index.html#listfiles
+    - title: Blockstack Explorer
+      url: https://explorer.blockstack.org/
