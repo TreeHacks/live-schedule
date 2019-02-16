@@ -1,6 +1,6 @@
 import React from 'react';
 
-const END_DATE = new Date("February 17, 2019 12:00:00");
+const END_DATE = new Date("2019-02-17T18:00:00.000Z");
 
 function calculateTimeUntil() {
   let now = new Date();
