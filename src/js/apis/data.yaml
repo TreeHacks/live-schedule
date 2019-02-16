@@ -198,3 +198,21 @@
       url: https://blockstack.github.io/blockstack.js/index.html#listfiles
     - title: Blockstack Explorer
       url: https://explorer.blockstack.org/
+- company: Google
+  slack: google-cloud
+  apis:
+  - title: Google Cloud Machine Learning APIs
+    description: Gain insights from your data using Google Cloud’s pre-trained machine learning models. Require ZERO prior knowledge of machine learning. We have APIs for Vision, Speech-to-Text, Text-to-Speech, Natural Language, Translate, and Video Intelligence.
+    links: 
+    - title: Documentation
+      url: https://cloud.google.com/products/ai/
+  - title: Google Cloud App Engine
+    description: Deploy web apps and mobile backends to the Cloud. Available for Python, Node.js, Ruby, Java, PHP, Go, and .NET.
+    links: 
+    - title: Documentation
+      url: https://cloud.google.com/appengine/
+  - title: Google Cloud Functions
+    description: Event-driven serverless computing in Python, Node.js, and Go. Can be triggered by either an HTTP call or other Google Cloud products like Cloud Storage or Cloud Firestore.
+    links: 
+    - title: Documentation
+      url: https://cloud.google.com/functions/
