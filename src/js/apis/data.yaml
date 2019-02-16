@@ -216,3 +216,28 @@
     links: 
     - title: Documentation
       url: https://cloud.google.com/functions/
+- company: Xinfin
+  slack: xinfin
+  apis:
+  - title: Xinfin
+    description: Develop smart contract on the XinFin private network.
+    links: 
+    - title: Documentation
+      url: https://docs.xinfin.org/
+    - title: API
+      url: https://mycontract.co/
+    - title: TestNet
+      url: http://xinfin.network/#stats
+- company: Twilio
+  slack: twilio
+  apis:
+  - title: Twilio Programmable SMS
+    description: Send and receive texts in your app. Promo code: TREEHACKS19
+    links:
+    - title: Documentation
+      url: https://www.twilio.com/docs/sms
+  - title: Twilio Programmable Voice
+    description: Make and receive phone calls in your app. Promo code: TREEHACKS19
+    links:
+    - title: Documentation
+      url: https://www.twilio.com/docs/voice
