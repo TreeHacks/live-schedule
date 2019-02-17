@@ -59,7 +59,7 @@ function App() {
         <Switch>
           <CustomRedirect from="/faq" to="https://treehacks.quip.com/AAJgA6BS2tvU/The-Ultimate-TreeHacks-Guide-" />
           <CustomRedirect from="/maps" to="https://treehacks.quip.com/tOUKAghhGiby/Maps-" />
-          <CustomRedirect from="/expo" to="https://treehacks.github.io/expo" />
+          <CustomRedirect from="/expo" to="http://expo.treehacks.com" />
           <Route exact path="/" component={Main} />
           <Route exact path="/_room/:roomId" component={RoomStatus} />
           <Route exact path="/apis" component={Apis} />
