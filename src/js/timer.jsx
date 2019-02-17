@@ -5,7 +5,8 @@ const END_DATE = new Date("2019-02-17T18:00:00.000Z");
 function calculateTimeUntil() {
   let now = new Date();
   let offset = (END_DATE.getTimezoneOffset() - now.getTimezoneOffset()) * 60;
-  return ((END_DATE.getTime() - now.getTime()) / 1000) - offset;
+  let timeUntil = ((END_DATE.getTime() - now.getTime()) / 1000) - offset;
+  return (timeUntil > 0) ? timeUntil : 0;
 }
 
 class Timer extends React.Component {
@@ -16,15 +17,15 @@ class Timer extends React.Component {
       days: Math.floor(timeUntil/60/60/24),
       hours: Math.floor((timeUntil/60/60)%24),
       minutes: Math.floor((timeUntil/60)%60),
-      seconds: Math.floor(timeUntil%60)
+      seconds: Math.floor(timeUntil%60),
     };
   }
 
   componentDidMount() {
-    this.timerID = setInterval(
-      () => this.tick(),
-      1000
-    );
+    // this.timerID = setInterval(
+    //   () => this.tick(),
+    //   1000
+    // );
   }
 
   componentWillUnmount() {
