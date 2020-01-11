@@ -17,7 +17,7 @@ function Countdown() {
         {timeline}
       </div>
       <h1 id="countdown-heading">until hacking ends!</h1>
-      <a className="main-button" href="https://root.treehacks.com/rooms">Reserve a room</a>
+      <a className="main-button" href="https://root.treehacks.com/rooms">reserve a room</a>
     </div>
   );
 }

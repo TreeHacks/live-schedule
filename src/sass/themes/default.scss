@@ -8,12 +8,10 @@ $secondary-color: #888888;
 $tertiary-color: #888888;
 $box-color: #FFFFFF;
 
+$text-gray: #ADADAD;
 $text-color: #000000;
 $secondary-text-color: #000000;
 $primary-btn-text-color: #FFFFFF;
-
-$text-gray: #ADADAD;
-$border-style: 1px solid $primary-color;
 
 /* Fonts */
 $navbar-font-size: 16px * 1.18;
@@ -30,4 +28,8 @@ $base-font-family: 'Avenir', sans-serif;
 $small-space: 2vh;
 $medium-space: 5vh;
 $large-space: 7.5vh;
+
+/* Other */
+$border-style: 1px solid $primary-color;
 $transition-speed: .2s;
+$transform-scale: 1.05;

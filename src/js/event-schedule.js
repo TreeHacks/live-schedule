@@ -87,27 +87,27 @@ export default Vue.component('event-schedule', {
       // Schedule shell
       var schedule = [{
         name: "Main Events",
-        color: "#ff7c8a",
+        color: "#E51B5D",
         items: []
       }, {
         name: "Food",
-        color: "#f1ffa1",
+        color: "#DA70D6",
         items: []
       }, {
         name: "HackX",
-        color: "#9bdeff",
+        color: "#44B8CF",
         items: []
       }, {
         name: "Workshops",
-        color: "#8dffae",
+        color: "#6B8E23",
         items: []
       }, {
         name: "Talks",
-        color: "#a89bff",
+        color: "#000080",
         items: []
       }, {
         name: "Hardware",
-        color: "#ffc570",
+        color: "#F46E20",
         items: []
       }];
 

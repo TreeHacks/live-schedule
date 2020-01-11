@@ -76,7 +76,7 @@ $section-width: 80vw;
   color: $primary-btn-text-color;
   border: $border-style;
   border-radius: 8px !important;
-  padding: $base-font-size;
+  padding: $base-font-size / 2;
   transition: $transition-speed;
   font-size: $base-font-size;
   font-family: $base-font-family;
@@ -85,7 +85,18 @@ $section-width: 80vw;
   &:hover {
     background-color: $primary-color;
     cursor: pointer;
-    transform: scale(1.1, 1.1);
+    transform: scale($transform-scale);
+  }
+}
+
+.inverted-button {
+  background-color: $secondary-background-color;
+  color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $primary-btn-text-color;
   }
 }
 

@@ -8,9 +8,9 @@
   }
 
   .main-button {
+    font-size: $medium-font-size;
     display: inline-block;
-    margin-top: 20px;
-    text-transform: uppercase;
+    margin-top: $small-space;
     font-weight: bold;
   }
 }
@@ -19,7 +19,7 @@
   font-size: $heading-font-size;
   text-transform: uppercase;
   width: 100%;
-  margin-top: 20px;
+  margin-top: $small-space;
 }
 
 .timeUnits {

@@ -20,7 +20,7 @@ function Hackpacks() {
 function HackPack(name, link) {
   return(
     <a href={link} target="_blank">
-      <button className="main-button">{name}</button>
+      <button className="main-button inverted-button">{name}</button>
     </a>
   );
 }
