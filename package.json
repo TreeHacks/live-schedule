@@ -1,7 +1,7 @@
 {
   "name": "live-schedule",
   "version": "1.0.0",
-  "description": "TreeHacks 2019 live site",
+  "description": "TreeHacks 2020 live site",
   "main": "server.js",
   "scripts": {
     "start": "node scripts/start.js",
