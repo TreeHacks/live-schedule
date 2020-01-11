@@ -3,9 +3,10 @@ $timer-space: 2vw;
 
 #timer {
   @include flex(row nowrap, center, center);
-  font-family: $avenir-heavy;
+  font-family: $base-font-family;
+  font-weight: bold;
   font-size: 14px;
-  color: $green;
+  color: $primary-color;
 
   span {
     font-size: 18px;

@@ -10,14 +10,14 @@ function Countdown() {
     );
   }
   return (
-    <div id="countdown">
+    <div id="countdown" class="section">
       <Timer />
       <hr/>
       <div className="timeUnits">
         {timeline}
       </div>
       <h1 id="countdown-heading">until hacking ends!</h1>
-      <a className="green-button" href="https://root.treehacks.com/rooms">Reserve a room</a>
+      <a className="main-button" href="https://root.treehacks.com/rooms">Reserve a room</a>
     </div>
   );
 }

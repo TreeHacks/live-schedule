@@ -8,7 +8,8 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  font-family: $avenir-heavy;
+  font-family: $base-font-family;
+  font-weight: bold;
 
   .title {
     height: 60vh;

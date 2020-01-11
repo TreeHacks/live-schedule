@@ -13,7 +13,7 @@
 
 .announcement {
   padding: 16px 0;
-  border-bottom: 3px solid $green;
+  border-bottom: 3px solid $primary-color;
   text-align: left;
 
   h1 {
@@ -27,7 +27,7 @@
   }
 
   .ts {
-    font-size: $base-font-size - 2px;
+    font-size: $base-font-size;
     margin-top: 0.25rem;
     color: $gray;
   }

@@ -4,7 +4,7 @@ import EventSchedule from './event-schedule'
 
 function Schedule() {
   return (
-    <div id="schedule">
+    <div id="schedule" class="section">
       <div className="schedule-embed-wrapper">
         <VueWrapper
           component={EventSchedule}

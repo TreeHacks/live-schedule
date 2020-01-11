@@ -27,7 +27,7 @@ export default class extends React.Component {
                                 }
                                 {api.links.map(link =>
                                     <a target="_blank" href={link.url}>
-                                        <button className="green-button">{link.title || link.url}</button>
+                                        <button className="main-button">{link.title || link.url}</button>
                                     </a>
                                 )}
                             </div>

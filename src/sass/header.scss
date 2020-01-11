@@ -28,7 +28,7 @@ $header-margin: 16px;
 
   a {
     @include flex(row nowrap, flex-start, center);
-    color: $dark-gray;
+    color: $primary-color;
   }
 
   img {
@@ -47,11 +47,11 @@ $header-margin: 16px;
     height: $header-font-size * 1.75;
     font-size: $header-font-size;
     transition: background-color $transition-speed;
-    background-color: $dark-gray;
+    background-color: $primary-color;
     border-radius: 50%;
 
     &:hover {
-      background-color: $green;
+      background-color: $primary-color;
     }
   }
 }

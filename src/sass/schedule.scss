@@ -7,8 +7,6 @@
   text-align: left;
 }
 
-$primary: $green;
-
 .schedule {
   position: relative
 }
@@ -82,7 +80,7 @@ $primary: $green;
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-search:focus {
   outline: 0;
-  border-color: $green;
+  border-color: $primary-color;
 }
 
 .schedule .schedule-top .schedule-categories {
@@ -96,7 +94,7 @@ $primary: $green;
   padding: 0.5em;
   background: transparent;
   border-style: none;
-  color: $white;
+  color: $primary-color;
   opacity: 0.5;
   cursor: pointer;
   font-weight: 600;
@@ -242,8 +240,8 @@ $primary: $green;
   font-size: 12px;
   padding: 5px 0 3px 5px;
   text-overflow: ellipsis;
-  color: $white;
-  overflow: hidden; 
+  color: $text-color;
+  overflow: hidden;
   // margin-right: -100px;
   text-decoration: underline
 }
@@ -308,7 +306,7 @@ $primary: $green;
 .schedule .schedule-wrapper .schedule-inner .schedule-overlay {
   position: absolute;
   background: #FFF;
-  border: 1px solid $green;
+  border: 1px solid $primary-color;
   top: 0;
   width: 300px;
   color: $dark-gray;
@@ -322,7 +320,7 @@ $primary: $green;
 }
 
 .schedule .schedule-wrapper .schedule-inner .schedule-overlay strong {
-  color: $green;
+  color: $primary-color;
   margin-top: 0.5em;
   display: inline-block
 }
@@ -353,35 +351,35 @@ $primary: $green;
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper .schedule-thumb {
-  background: $dark-gray;
+  background: $primary-color;
   height: 18px;
   border-radius: 9px;
   width: 20%;
   position: absolute;
   top: 0;
   left: -10%;
-  border: 1px solid $primary;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 10px;
   text-align: center;
   padding: 3px 0;
   letter-spacing: 3px;
-  color: $primary;
+  color: $primary-color;
   line-height: 1em
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper .schedule-track {
   content: '';
   margin: 0 -10%;
-  background: $light-gray;
+  background: $tertiary-color;
   height: 18px;
   border-radius: 9px;
   display: block
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper:hover .schedule-track {
-  background: lighten($light-gray, 0.5);
+  background: lighten($tertiary-color, 0.5);
 }
 
 .schedule-search {
