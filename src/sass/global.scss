@@ -43,7 +43,7 @@ $section-width: 80vw;
 }
 
 %section {
-  background-color: $secondary-background-color;
+  background-color: $box-color;
   width: $section-width;
   margin: $medium-space auto;
   padding: $medium-space 0;
@@ -90,7 +90,7 @@ $section-width: 80vw;
 }
 
 .inverted-button {
-  background-color: $secondary-background-color;
+  background-color: $box-color;
   color: $primary-color;
   border-color: $primary-color;
 

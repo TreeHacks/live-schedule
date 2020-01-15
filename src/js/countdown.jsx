@@ -10,7 +10,7 @@ function Countdown() {
     );
   }
   return (
-    <div id="countdown" class="section">
+    <div id="countdown" className="section">
       <Timer />
       <hr/>
       <div className="timeUnits">

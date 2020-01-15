@@ -7,7 +7,7 @@ function Projects() {
     content.push(Project(projects[i].name, projects[i].link))
   }
   return (
-    <div id="projects" class="section">
+    <div id="projects" className="section">
       <h1 className="section-heading">Projects</h1>
       <hr />
       <div className="container">

@@ -7,7 +7,7 @@ function Hackpacks() {
     content.push(HackPack(hackpacks[i].name, hackpacks[i].link))
   }
   return (
-    <div id="hackpacks" class="section">
+    <div id="hackpacks" className="section">
       <h1 className="section-heading">Hackpacks</h1>
       <hr />
       <div className="container">
