@@ -59,7 +59,8 @@
   padding: 1em;
   font-size: 1em;
   color: #333;
-  opacity: 0.5
+  opacity: 0.5;
+  color: $text-color;
 }
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-clear-icon:hover {
@@ -71,12 +72,13 @@
   border-bottom: 1px solid $light-gray;
   height: 3em;
   border-radius: 1vw 1vw 0 0;
-  font-family: "Hind Siliguri", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
   padding: 0 2.55em;
-  font-size: 1em;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
   display: block;
   box-sizing: border-box;
-  width: 100%
+  width: 100%;
+  color: $text-color;
 }
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-search:focus {
@@ -99,7 +101,6 @@
   opacity: 0.5;
   cursor: pointer;
   font-weight: 600;
-  font-family: "Hind Siliguri", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
   transition: opacity 125ms
 }
 
@@ -200,7 +201,7 @@
 
 .schedule .schedule-wrapper .schedule-inner .schedule-marker-day {
   position: absolute;
-  font-size: 16px;
+  font-size: $base-font-size;
   top: -50px;
   text-align: left;
   color: $secondary-text-color;
