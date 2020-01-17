@@ -1,6 +1,9 @@
 {
   "name": "live-schedule",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.16.3"
+  },
   "description": "TreeHacks 2020 live site",
   "main": "server.js",
   "scripts": {
