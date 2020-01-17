@@ -8,7 +8,7 @@
 %resource {
   width: $section-width/6;
   padding: 16px 0;
-  border-right: 1px solid $gray;
+  border-right: 1px solid $light-gray;
 }
 
 @for $i from 1 through 6 {

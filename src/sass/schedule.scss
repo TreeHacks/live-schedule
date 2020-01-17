@@ -67,7 +67,8 @@
 }
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-search {
-  border: 1px solid #DDD;
+  border: none;
+  border-bottom: 1px solid $light-gray;
   height: 3em;
   border-radius: 1vw 1vw 0 0;
   font-family: "Hind Siliguri", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
@@ -84,7 +85,7 @@
 }
 
 .schedule .schedule-top .schedule-categories {
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid $light-gray;
   margin-bottom: 0.5em;
   padding: 0.5em 1.9em;
 }

@@ -3,7 +3,7 @@
 
   hr {
     width: 40vw;
-    border: 1px solid $gray;
+    border: 1px solid $text-color;
     margin: 0 auto;
   }
 
@@ -26,7 +26,7 @@
   @include flex(row nowrap, center, center);
   width: 36vw;
   margin: auto;
-  color: $gray;
+  color: $text-color;
 
   svg {
     position: relative;
@@ -38,7 +38,7 @@
       cx: 5;
       cy: 5;
       r: 5;
-      fill: $gray;
+      fill: $text-color;
     }
   }
 }
