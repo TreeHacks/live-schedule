@@ -50,6 +50,7 @@ $header-margin: 16px;
     transition: background-color $transition-speed;
     background-color: $primary-color;
     border-radius: 50%;
+    color: $box-color;
 
     &:hover {
       background-color: $primary-color;

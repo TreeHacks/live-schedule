@@ -341,14 +341,14 @@
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper {
-  height: 18px;
+  height: 14px;
   margin: 0 10%;
   position: relative
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper .schedule-thumb {
   background: $primary-color;
-  height: 18px;
+  height: 14px;
   border-radius: 9px;
   width: 20%;
   position: absolute;
@@ -370,7 +370,7 @@
   margin: 0 -10%;
   background: $box-color;
   border: $border-style;
-  height: 18px;
+  height: 14px;
   border-radius: 9px;
   display: block
 }
