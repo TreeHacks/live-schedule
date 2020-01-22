@@ -7,7 +7,7 @@ function Projects() {
     content.push(Project(projects[i].name, projects[i].link))
   }
   return (
-    <div id="projects">
+    <div id="projects" className="section">
       <h1 className="section-heading">Projects</h1>
       <hr />
       <div className="container">
@@ -20,7 +20,7 @@ function Projects() {
 function Project(name, link) {
   return(
     <a href={link} target="_blank">
-      <button className="green-button">{name}</button>
+      <button className="main-button inverted-button">{name}</button>
     </a>
   );
 }

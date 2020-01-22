@@ -3,14 +3,14 @@
 
   hr {
     width: 40vw;
-    border: 1px solid $gray;
+    border: 1px solid $text-color;
     margin: 0 auto;
   }
 
-  .green-button {
+  .main-button {
+    font-size: $medium-font-size;
     display: inline-block;
-    margin-top: 20px;
-    text-transform: uppercase;
+    margin-top: $small-space;
     font-weight: bold;
   }
 }
@@ -19,18 +19,18 @@
   font-size: $heading-font-size;
   text-transform: uppercase;
   width: 100%;
-  margin-top: 20px;
+  margin-top: $small-space;
 }
 
 .timeUnits {
   @include flex(row nowrap, center, center);
   width: 36vw;
   margin: auto;
-  color: $gray;
+  color: $text-color;
 
   svg {
     position: relative;
-    top: -10px;
+    top: -12px;
     height: 10px;
     width: 10px;
 
@@ -38,7 +38,7 @@
       cx: 5;
       cy: 5;
       r: 5;
-      fill: $gray;
+      fill: $text-color;
     }
   }
 }

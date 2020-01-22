@@ -10,7 +10,7 @@ class MobileHud extends React.Component {
         <div>
           <strong>Latest announcement:</strong> <div className="message" dangerouslySetInnerHTML={{ __html: announcementContent }} />
         </div>
-        <a className="green-button" href="https://root.treehacks.com/rooms">Reserve a room</a>
+        <a className="main-button" href="https://root.treehacks.com/rooms">Reserve a room</a>
       </div>
     );
   }

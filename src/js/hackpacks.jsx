@@ -7,7 +7,7 @@ function Hackpacks() {
     content.push(HackPack(hackpacks[i].name, hackpacks[i].link))
   }
   return (
-    <div id="hackpacks">
+    <div id="hackpacks" className="section">
       <h1 className="section-heading">Hackpacks</h1>
       <hr />
       <div className="container">
@@ -20,7 +20,7 @@ function Hackpacks() {
 function HackPack(name, link) {
   return(
     <a href={link} target="_blank">
-      <button className="green-button">{name}</button>
+      <button className="main-button inverted-button">{name}</button>
     </a>
   );
 }

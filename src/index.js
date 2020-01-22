@@ -31,7 +31,7 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <MobileHud announcementData={this.state.announcementData} /> 
+        <MobileHud announcementData={this.state.announcementData} />
         <Countdown />
         <Resources />
         <Schedule />

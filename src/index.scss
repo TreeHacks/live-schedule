@@ -1,3 +1,4 @@
+@import "sass/themes/pink_palm_tree";
 @import "sass/global";
 
 body,
@@ -19,11 +20,12 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $avenir-heavy;
+  font-family: $base-font-family;
+  font-weight: bold;
 }
 
 a {
-  color: white;
+  color: $text-color;
   text-decoration: none;
 
   &:hover {
@@ -37,9 +39,9 @@ a {
 }
 
 body {
-  background-color: $light-gray;
-  color: white;
-  font-family: $avenir;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $base-font-family;
   font-size: $base-font-size;
   text-align: center;
   overflow-x: hidden;

@@ -7,8 +7,6 @@
   text-align: left;
 }
 
-$primary: $green;
-
 .schedule {
   position: relative
 }
@@ -61,7 +59,8 @@ $primary: $green;
   padding: 1em;
   font-size: 1em;
   color: #333;
-  opacity: 0.5
+  opacity: 0.5;
+  color: $text-color;
 }
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-clear-icon:hover {
@@ -69,24 +68,26 @@ $primary: $green;
 }
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-search {
-  border: 1px solid #DDD;
+  border: none;
+  border-bottom: 1px solid $light-gray;
   height: 3em;
   border-radius: 1vw 1vw 0 0;
-  font-family: "Hind Siliguri", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
   padding: 0 2.55em;
-  font-size: 1em;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
   display: block;
   box-sizing: border-box;
-  width: 100%
+  width: 100%;
+  color: $text-color;
 }
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-search:focus {
   outline: 0;
-  border-color: $green;
+  border-color: $primary-color;
 }
 
 .schedule .schedule-top .schedule-categories {
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid $light-gray;
   margin-bottom: 0.5em;
   padding: 0.5em 1.9em;
 }
@@ -96,11 +97,10 @@ $primary: $green;
   padding: 0.5em;
   background: transparent;
   border-style: none;
-  color: $white;
+  color: $primary-color;
   opacity: 0.5;
   cursor: pointer;
   font-weight: 600;
-  font-family: "Hind Siliguri", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
   transition: opacity 125ms
 }
 
@@ -181,7 +181,7 @@ $primary: $green;
   height: 100%;
   margin: -5px 0;
   width: 1px;
-  background: #EEE
+  background: #EEE;
 }
 
 .schedule .schedule-wrapper .schedule-inner .schedule-marker .schedule-marker-time {
@@ -189,7 +189,7 @@ $primary: $green;
   font-size: 14px;
   top: -25px;
   text-align: left;
-  color: #DDD;
+  color: $text-color;
   transform: translateX(-50%)
 }
 
@@ -197,25 +197,21 @@ $primary: $green;
   position: absolute;
   width: 1px;
   height: 100%;
-  background: #16AFFB;
-  box-shadow: 0 0 10px #16affb
 }
 
 .schedule .schedule-wrapper .schedule-inner .schedule-marker-day {
   position: absolute;
-  font-size: 16px;
+  font-size: $base-font-size;
   top: -50px;
   text-align: left;
-  color: #CCC;
-  background: #FFF;
+  color: $secondary-text-color;
+  background-color: $box-color;
+  border-radius: 5px;
   margin-left: -20px;
   padding-left: 20px;
-  background: -moz-linear-gradient(left, rgba(83, 81, 82, 0) 0, rgba(83, 81, 82, 1) 20px);
-  background: -webkit-linear-gradient(left, rgba(83, 81, 82, 0) 0, rgba(83, 81, 82, 1) 20px);
-  background: linear-gradient(left, rgba(83, 81, 82, 0) 0, rgba(83, 81, 82, 1) 20px);
   width: 200px;
   font-weight: 700;
-  transform: translateX(-12px)
+  transform: translateX(-12px);
 }
 
 .schedule .schedule-wrapper .schedule-inner .schedule-row {
@@ -226,8 +222,6 @@ $primary: $green;
 
 .schedule .schedule-wrapper .schedule-inner .schedule-row .schedule-item {
   position: absolute;
-  background: rgba(83, 81, 82, 0.5);
-  box-shadow: 0 0 50px rgba(83, 81, 82, 0.5);
   opacity: 1;
   cursor: pointer;
   transition: all 250ms
@@ -242,8 +236,8 @@ $primary: $green;
   font-size: 12px;
   padding: 5px 0 3px 5px;
   text-overflow: ellipsis;
-  color: $white;
-  overflow: hidden; 
+  color: $text-color;
+  overflow: hidden;
   // margin-right: -100px;
   text-decoration: underline
 }
@@ -308,7 +302,7 @@ $primary: $green;
 .schedule .schedule-wrapper .schedule-inner .schedule-overlay {
   position: absolute;
   background: #FFF;
-  border: 1px solid $green;
+  border: 1px solid $primary-color;
   top: 0;
   width: 300px;
   color: $dark-gray;
@@ -322,7 +316,7 @@ $primary: $green;
 }
 
 .schedule .schedule-wrapper .schedule-inner .schedule-overlay strong {
-  color: $green;
+  color: $primary-color;
   margin-top: 0.5em;
   display: inline-block
 }
@@ -347,41 +341,38 @@ $primary: $green;
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper {
-  height: 18px;
+  height: 14px;
   margin: 0 10%;
   position: relative
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper .schedule-thumb {
-  background: $dark-gray;
-  height: 18px;
+  background: $primary-color;
+  height: 14px;
   border-radius: 9px;
   width: 20%;
   position: absolute;
   top: 0;
   left: -10%;
-  border: 1px solid $primary;
+  border: 1px solid $primary-color;
   box-sizing: border-box;
   cursor: pointer;
   font-size: 10px;
   text-align: center;
   padding: 3px 0;
   letter-spacing: 3px;
-  color: $primary;
+  color: $primary-color;
   line-height: 1em
 }
 
 .schedule .schedule-dragger .schedule-track-wrapper .schedule-track {
   content: '';
   margin: 0 -10%;
-  background: $light-gray;
-  height: 18px;
+  background: $box-color;
+  border: $border-style;
+  height: 14px;
   border-radius: 9px;
   display: block
-}
-
-.schedule .schedule-dragger .schedule-track-wrapper:hover .schedule-track {
-  background: lighten($light-gray, 0.5);
 }
 
 .schedule-search {
