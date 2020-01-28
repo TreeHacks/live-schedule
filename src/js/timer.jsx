@@ -1,11 +1,13 @@
 import React from "react";
 
-const END_DATE = new Date("2020-02-16T18:00:00.000Z");
+export const START_DATE = new Date("2020-02-15T06:00:00.000Z");
+export const END_DATE = new Date("2020-02-16T18:00:00.000Z");
 
 function calculateTimeUntil() {
+  let date = new Date() < START_DATE ? START_DATE : END_DATE;
   let now = new Date();
-  let offset = (END_DATE.getTimezoneOffset() - now.getTimezoneOffset()) * 60;
-  let timeUntil = (END_DATE.getTime() - now.getTime()) / 1000 - offset;
+  let offset = (date.getTimezoneOffset() - now.getTimezoneOffset()) * 60;
+  let timeUntil = (date.getTime() - now.getTime()) / 1000 - offset;
   return timeUntil > 0 ? timeUntil : 0;
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Timer from "./timer.jsx";
+import { START_DATE, default as Timer } from "./timer.jsx";
 
 function Countdown() {
   var units = ["d", "h", "m", "s"];
@@ -12,7 +12,9 @@ function Countdown() {
       <Timer />
       <hr />
       <div className="timeUnits">{timeline}</div>
-      <h1 id="countdown-heading">until hacking ends!</h1>
+      <h1 id="countdown-heading">
+        until hacking {new Date() < START_DATE ? "starts" : "ends"}!
+      </h1>
       {/* <a className="main-button" href="https://root.treehacks.com/rooms">reserve a room</a> */}
     </div>
   );
