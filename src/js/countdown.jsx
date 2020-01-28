@@ -1,23 +1,19 @@
-import React from 'react';
-import Timer from './timer.jsx'
+import React from "react";
+import Timer from "./timer.jsx";
 
 function Countdown() {
-  var units = ['d', 'h', 'm', 's']
-  var timeline = []
+  var units = ["d", "h", "m", "s"];
+  var timeline = [];
   for (var i = 0; i < 4; i++) {
-    timeline.push(
-      <TimerUnit unit={units[i]} key={i}/>
-    );
+    timeline.push(<TimerUnit unit={units[i]} key={i} />);
   }
   return (
     <div id="countdown" className="section">
       <Timer />
-      <hr/>
-      <div className="timeUnits">
-        {timeline}
-      </div>
+      <hr />
+      <div className="timeUnits">{timeline}</div>
       <h1 id="countdown-heading">until hacking ends!</h1>
-      <a className="main-button" href="https://root.treehacks.com/rooms">reserve a room</a>
+      {/* <a className="main-button" href="https://root.treehacks.com/rooms">reserve a room</a> */}
     </div>
   );
 }
@@ -27,7 +23,7 @@ class TimerUnit extends React.Component {
     return (
       <div className="timeUnit">
         <svg>
-          <circle/>
+          <circle />
         </svg>
         <br />
         {this.props.unit}
