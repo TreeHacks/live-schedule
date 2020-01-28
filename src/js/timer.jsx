@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const END_DATE = new Date("2019-02-17T18:00:00.000Z");
+const END_DATE = new Date("2020-02-16T18:00:00.000Z");
 
 function calculateTimeUntil() {
   let now = new Date();
   let offset = (END_DATE.getTimezoneOffset() - now.getTimezoneOffset()) * 60;
-  let timeUntil = ((END_DATE.getTime() - now.getTime()) / 1000) - offset;
-  return (timeUntil > 0) ? timeUntil : 0;
+  let timeUntil = (END_DATE.getTime() - now.getTime()) / 1000 - offset;
+  return timeUntil > 0 ? timeUntil : 0;
 }
 
 class Timer extends React.Component {
@@ -14,18 +14,15 @@ class Timer extends React.Component {
     super(props);
     let timeUntil = calculateTimeUntil();
     this.state = {
-      days: Math.floor(timeUntil/60/60/24),
-      hours: Math.floor((timeUntil/60/60)%24),
-      minutes: Math.floor((timeUntil/60)%60),
-      seconds: Math.floor(timeUntil%60),
+      days: Math.floor(timeUntil / 60 / 60 / 24),
+      hours: Math.floor((timeUntil / 60 / 60) % 24),
+      minutes: Math.floor((timeUntil / 60) % 60),
+      seconds: Math.floor(timeUntil % 60)
     };
   }
 
   componentDidMount() {
-    // this.timerID = setInterval(
-    //   () => this.tick(),
-    //   1000
-    // );
+    this.timerID = setInterval(() => this.tick(), 1000);
   }
 
   componentWillUnmount() {
@@ -35,10 +32,10 @@ class Timer extends React.Component {
   tick() {
     let timeUntil = calculateTimeUntil();
     this.setState({
-      days: Math.floor(timeUntil/60/60/24),
-      hours: Math.floor((timeUntil/60/60)%24),
-      minutes: Math.floor((timeUntil/60)%60),
-      seconds: Math.floor(timeUntil%60)
+      days: Math.floor(timeUntil / 60 / 60 / 24),
+      hours: Math.floor((timeUntil / 60 / 60) % 24),
+      minutes: Math.floor((timeUntil / 60) % 60),
+      seconds: Math.floor(timeUntil % 60)
     });
   }
 
@@ -61,11 +58,9 @@ class TimerComponent extends React.Component {
   render() {
     var valueString = this.props.value.toString();
     if (this.props.value < 10) {
-      valueString = '0' + valueString;
+      valueString = "0" + valueString;
     }
-    return (
-      <h1 className="timerComponent">{valueString}</h1>
-    );
+    return <h1 className="timerComponent">{valueString}</h1>;
   }
 }
 

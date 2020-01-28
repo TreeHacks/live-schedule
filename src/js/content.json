@@ -47,19 +47,23 @@
   ],
   "projects": [
     {
-      "name": "Awareness",
+      "name": "Xxx",
+      "coming_soon": true,
       "link": "https://treehacks.quip.com/NqcLA8qUk2pO/TreeHacks-Awareness-Vertical-Guide-"
     },
     {
       "name": "Health",
+      "coming_soon": true,
       "link": "https://treehacks.quip.com/04qwAYbuWaMh/TreeHacks-Health-Vertical-Guide-"
     },
     {
       "name": "Safety",
+      "coming_soon": true,
       "link": "https://treehacks.quip.com/HmZJAF1SVbhw/TreeHacks-Safety-Vertical-Guide-"
     },
     {
       "name": "Open Source Initiative",
+      "coming_soon": true,
       "link": "https://treehacks.quip.com/FOUaA4YHYacP/TreeHacks-Open-Source-Initiative-Guide-"
     }
   ],

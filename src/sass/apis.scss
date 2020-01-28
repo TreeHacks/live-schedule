@@ -3,7 +3,8 @@
 }
 
 .api-item {
-  background-color: $dark-gray !important;
+  border: 1px solid $primary-color;
+  border-radius: 1rem;
 
   p {
     margin-top: 0.5rem;

@@ -3,6 +3,13 @@
   @include flex(row nowrap, center, center);
   padding: 0;
   border-radius: 12px;
+
+  .disabled {
+    opacity: 0.3;
+    user-select: none;
+    cursor: not-allowed;
+    border-right: 1px solid darken($light-gray, 10/0.3);
+  }
 }
 
 %resource {
