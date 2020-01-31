@@ -26,7 +26,9 @@ class Announcements extends React.Component {
 
         announcements = announcements.map(({ text, ts }) => {
           return {
-            content: this.md.render(emojify(text, { output: "unicode" })),
+            content: this.md
+              .render(emojify(text, { output: "unicode" }))
+              .replace(/<.*?\|(.*?)>/g, "#$1"),
             ts
           };
         });
