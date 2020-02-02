@@ -1,0 +1,27 @@
+.challenge {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+  h1,
+  h2 {
+    margin: 1.5rem 0;
+  }
+
+  a {
+    color: $primary-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ol,
+  ul {
+    margin: calc(min(1rem, 2vw)) 0;
+    padding-left: 2rem;
+  }
+}

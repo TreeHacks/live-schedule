@@ -10,6 +10,7 @@ import Projects from "./js/projects.jsx";
 import Hackpacks from "./js/hackpacks.jsx";
 import RoomStatus from "./js/room-status.jsx";
 import Apis from "./js/apis/Apis.jsx";
+import Challenge from "./js/challenge.jsx";
 import "./favicons/favicons";
 import "./index.scss";
 import {
@@ -83,6 +84,7 @@ function App() {
           <Route exact path="/" component={Main} />
           <Route exact path="/_room/:roomId" component={RoomStatus} />
           <Route exact path="/apis" component={Apis} />
+          <Route exact path="/challenges/:challengeId" component={Challenge} />
           <Redirect to="/" />
         </Switch>
       </Router>
