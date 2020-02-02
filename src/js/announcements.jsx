@@ -26,6 +26,7 @@ class Announcements extends React.Component {
 
         announcements = announcements.map(({ text, ts }) => {
           return {
+            ts,
             content: this.md
               .render(emojify(text, { output: "unicode" }))
               .replace(/&lt;.*?\|(.*?)&gt;/g, "#$1") // reformat slack links
