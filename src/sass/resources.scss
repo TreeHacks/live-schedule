@@ -37,21 +37,26 @@
 @media screen and (max-width: $mobile-screen) {
   #resources {
     flex-wrap: wrap;
-  }
 
-  %resource {
-    width: $section-width/3;
-    padding: 12px 0;
-  }
-
-  @for $i from 1 to 4 {
-    .resource-#{$i} {
-      border-bottom: 1px solid $gray;
+    %resource {
+      width: $section-width/3;
+      padding: 12px 0;
     }
-  }
 
-  .resource-3 {
-    border-right: none;
+    @for $i from 1 to 4 {
+      .resource-#{$i} {
+        border-bottom: 1px solid $light-gray;
+
+        &.disabled {
+          border-bottom: 1px solid darken($light-gray, 10/0.3);
+        }
+      }
+    }
+
+    .resource-3,
+    .resource-3.disabled {
+      border-right: none;
+    }
   }
 }
 
@@ -61,6 +66,9 @@
   }
 
   .resource-icon {
+    display: block;
+    padding: 0;
+    margin: 0 auto 2px;
     height: 18px;
   }
 }

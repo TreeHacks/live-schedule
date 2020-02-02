@@ -23,7 +23,10 @@
   #sidebar {
     .container {
       a {
-        margin: $small-space 0;
+        button {
+          font-size: 1rem;
+        }
+        margin: 10px 0;
       }
     }
   }
