@@ -258,14 +258,15 @@
 }
 
 .schedule .schedule-wrapper .schedule-inner .schedule-row .schedule-item h3 {
-  // white-space: nowrap;
-  max-height: 3rem;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   font-size: 12px;
   padding: 5px 0 3px 5px;
   text-overflow: ellipsis;
   color: $text-color;
   overflow: hidden;
-  // margin-right: -100px;
   text-decoration: underline;
 }
 
