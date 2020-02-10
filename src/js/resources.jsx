@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 function Resources() {
   return (
     <div id="resources" className="section">
-      <a {/*href="https://slack.treehacks.com"*/ ...{}} target="_blank">
-        <div className="resource-1 disabled">
+      <a href="https://slack.treehacks.com" target="_blank">
+        <div className="resource-1">
           <img src={slackIcon} className="resource-icon" />
           Slack
         </div>
@@ -23,8 +23,8 @@ function Resources() {
           Devpost
         </div>
       </a>
-      <a {/*href="https://hardware.hackbetter.org"*/ ...{}} target="_blank">
-        <div className="resource-3 disabled">
+      <a href="https://hardware.hackbetter.org" target="_blank">
+        <div className="resource-3">
           <img src={hardwareIcon} className="resource-icon" />
           Hardware
         </div>
