@@ -369,6 +369,11 @@
   top: auto;
 }
 
+.schedule-overlay {
+  max-height: 100px;
+  overflow: auto;
+}
+
 .schedule .schedule-wrapper .schedule-inner .schedule-overlay {
   position: absolute;
   background: #fff;
@@ -382,7 +387,6 @@
   z-index: 3;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
   border-radius: 0.5em;
-  max-height: initial !important;
 }
 
 .schedule .schedule-wrapper .schedule-inner .schedule-overlay strong {
