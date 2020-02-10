@@ -29,6 +29,7 @@ class Announcements extends React.Component {
             ts,
             content: this.md
               .render(emojify(text, { output: "unicode" }))
+              .replace(/\s*&lt;!(?:channel|here)&gt;\s*/g, "") // remove @channel
               .replace(/&lt;.*?\|(.*?)&gt;/g, "#$1") // reformat slack links
           };
         });
