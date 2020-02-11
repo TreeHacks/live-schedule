@@ -49,7 +49,7 @@ export default Vue.component("event-schedule", {
           <div v-for="item in row" class="schedule-item" :class="{faded: !isFound(item), point: item.absStartHour == item.absEndHour}" :style="getItemStyle(item)" @click="setSelected(item)" :title="item.name">
             <h3 :style="{minWidth: hourWidth + 'px'}">[[item.name.replace("Getting Started With The", "")]]</h3>
             <div class="schedule-details" :style="{minWidth: hourWidth + 'px'}">
-              [[item.startTime]][[item.absStartHour != item.absEndHour ? ' - ' + item.endTime : '']] [[item.location ? ' | ' + item.location : '']]
+              [[item.startTime]][[item.absStartHour != item.absEndHour ? ' - ' + item.endTime : '']] [[item.location && item.location != 'Unknown Location' ? ' | ' + item.location : '']]
             </div>
             <div class="schedule-bar" :style="{background: item.color}">
               <div class="schedule-bar-start" :style="{background: item.color}"></div>
@@ -61,8 +61,10 @@ export default Vue.component("event-schedule", {
           <h3>[[selectedItem.name]]</h3>
           <strong>Time</strong>
           <p>[[selectedItem.startDate]][[selectedItem.absStartHour != selectedItem.absEndHour ? ' - ' + selectedItem.endDate : '']]</p>
-          <strong>Location</strong>
-          <p>[[selectedItem.location || 'N/A']]</p>
+          <div v-if="selectedItem.location != 'Unknown Location'">
+            <strong>Location</strong>
+            <p>[[selectedItem.location || 'N/A']]</p>
+          </div>
           <strong v-if="selectedItem.description">Description</strong>
           <div v-if="selectedItem.description" v-html="selectedItem.description" />
           <button class="schedule-overlay-close" @click="selectedItem = null"><i class="fa fa-times"></i></button>
