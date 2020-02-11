@@ -120,6 +120,11 @@ export default Vue.component("event-schedule", {
             items: []
           },
           {
+            name: "Office Hours",
+            color: "#009688",
+            items: []
+          },
+          {
             name: "Hardware",
             color: "#F46E20",
             items: []
