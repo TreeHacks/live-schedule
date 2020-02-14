@@ -272,7 +272,7 @@ export default Vue.component("event-schedule", {
       fuse: null,
       allScheduleItems: [],
       query: "",
-      rowHeight: 70,
+      rowHeight: 75,
       hourWidth: 100,
       visibleHours: 51,
       scrollPercent: 0,
