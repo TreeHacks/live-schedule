@@ -29,24 +29,24 @@ function Resources() {
           Hardware
         </div>
       </a>
-      <a {/*href="/apis"*/ ...{}}>
-        <div className="resource-4 disabled">
+      <Link to="/apis" >
+        <div className="resource-4">
           <img src={apisIcon} className="resource-icon" />
           APIs
         </div>
-      </a>
-      <a href="/maps">
+      </Link>
+      <Link to="/maps">
         <div className="resource-5">
           <img src={mapsIcon} className="resource-icon" />
           Maps
         </div>
-      </a>
-      <a href="/faq">
+      </Link>
+      <Link to="/faq">
         <div className="resource-6">
           <img src={faqIcon} className="resource-icon" />
           FAQ
         </div>
-      </a>
+      </Link>
     </div>
   );
 }
