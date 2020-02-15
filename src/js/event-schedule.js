@@ -330,7 +330,7 @@ export default Vue.component("event-schedule", {
   methods: {
     updateTime: function() {
       var hoursIn =
-        (new Date().getTime() - new Date("2019-02-14 15:00").getTime()) /
+        (new Date().getTime() - new Date("2020-02-14 15:00").getTime()) /
         3600000;
       if (hoursIn > 36) hoursIn = -1;
       this.hoursIn = hoursIn;
