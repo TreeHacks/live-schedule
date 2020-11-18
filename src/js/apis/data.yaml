@@ -1,239 +1,269 @@
-- company: MapBox
-  apis:
-  - title: MapBox APIs
-    description: A wide range of map related APIs.
-    links:
-    - title: Documentation
-      url: https://docs.mapbox.com/help/how-mapbox-works/
-- company: Esri
-  apis: 
-  - title: Esri APIs
-    description: Rich 2D and 3D map data from a wide array of sensors.
-    links:
-    - title: Documentation
-      url: https://developers.arcgis.com/
-- company: Planet.com
-  apis:
-  - title: Planet API
-    description: Awesome geospatial API!
-    links:
-    - title: Documentation
-      url: https://www.planet.com/
-- company: CARTO
-  apis:
-  - title: CARTO API
-    description: Awesome geospatial API!
-    links:
-    - title: Documentation
-      url: https://carto.com/
-- company: Google Earth Engine
-  apis:
-  - title: Google Earth Datasets
-    description: A catalog of over 600 datasets with 29 petabytes of data all updated daily.
-    links:
-    - title: Datasets
-      url: https://developers.google.com/earth-engine/datasets
-  - title: Google Earth APIs
-    description: Leverage Google’s massive map and earth infrastructure to extract all kinds of insights.
-    links:
-    - title: Documentation
-      url: https://github.com/google/earthengine-api
-- company: Awesome Public Datasets
-  apis:
-  - title: Healthcare Datasets
-    description: Awesome publicly-available healthcare datasets
-    links:
-    - title: Datasets
-      url: https://github.com/awesomedata/awesome-public-datasets#healthcare
-- company: National Emergency Medical Services Information System
-  apis:
-  - title: NEMSIS Database
-    description: The National Emergency Medical Services Information System (NEMSIS) is the national database storing EMS data from the U.S. States and Territories.
-    links:
-    - title: Datasets
-      url: https://nemsis.org/
-- company: World Health Organization
-  apis:
-  - title: Health Coverage
-    description: Coverage of health statistics around the globe
-    links:
-    - title: Reports
-      url: https://www.who.int/healthinfo/universal_health_coverage/en/
-- company: Google Research
-  apis:
-  - title: AudioSet
-    description: AudioSet, a large collection of sound events from Google Research, has a "Human voice" section that has subcategories including speech, shout, screaming, whispering, and more.
-    links:
-    - title: Dataset
-      url: https://research.google.com/audioset/ontology/human_voice_1.html
-- company: Mozilla
-  apis: 
-  - title: Common Voice
-    description: Common Voices is an open-source, multi-language dataset of voices that anyone can use to train speech-enabled applications.
-    links: 
-    - title: Datasets
-      url: https://voice.mozilla.org/en/datasets
-- company: Home Assistnat
-  apis:
-  - title: Home Assistant API
-    description: Home Assistant is an open-source home automation system that puts local control and privacy first, all on a Raspberry Pi
-    links:
-    - title: Documentation
-      url: https://www.home-assistant.io/
-- company: Voiceflow
-  apis:
-  - title: Voiceflow Business
-    description: An online platform that allows anyone to visually design, prototype, and publish Alexa skills and Google Actions. TreeHacks participants get one year of the Business plan for free!
-    links:
-    - title: Documentation & Free Credits
-      url: https://almond.stanford.edu/thingpedia
-- company: Stanford Open Virtual Assistant Lab
-  apis:
-  - title: Thingpedia
-    description: a crowd-sourced repository of commands and interfaces to online services and IoT
-    links:
-    - title: Documentation
-      url: https://almond.stanford.edu/thingpedia
-- company: Samsung
-  apis:
-  - title: Samsung Bixby
-    description: Bixby is Samsung's personal voice assistant. It has numerous integrations and natural language capabilities.
-    links: 
-    - title: Documentation
-      url: https://github.com/bixbydevelopers
-- company: Teleportal Dev
-  apis:
-  - title: Teleportal Dev
-    description: A suite of tools and services that makes it easier to create mixed reality software
-    links:
-    - title: Documentation
-      url: https://teleportal.dev/docs/
-    - title: Developer Discord
-      url: https://discordapp.com/invite/wSHHm5b
-- company: Magic Leap
-  slack: magicleap
-  apis: 
-  - title: Magic Leap Developer Quickstart Guide
-    description: Get started with Unity and Unreal on Magic Leap headsets!
-    links:
-    - title: Documentation
-      url: https://drive.google.com/file/d/1Yfd03CBuQJ-Vs2kDEiAdyHUHZIWkMNR1/view
-- company: Duolingo
-  slack: duolingo
-  apis: 
-  - title: English Prompts & Translation
-    description: Data for English translation tasks!
-    links:
-    - title: Dataset
-      url: http://sharedtask.duolingo.com/#data
-  - title: Dependency Parsing Dataset
-    description: Data for dependency parsing
-    links:
-    - title: Dataset
-      url: https://sharedtask.duolingo.com/2018.html
-- company: Oracle
-  slack: oracle
-  apis: 
-  - title: Oracle Cloud
-    description: Oracle Cloud is an enterprise-grade, hyper-scale cloud platform that allows you to build leading-edge technology
-    links: 
-    - title: Documentation
-      url: https://docs.oracle.com/en/cloud/paas/index.html
-  - title: GraalVM
-    description: GraalVM is a universal virtual machine for running applications written in JavaScript, Python, Ruby, R, JVM-based languages like Java, Scala, Kotlin, Clojure, and LLVM-based languages such as C and C++.
-    links: 
-    - title: Documentation
-      url: https://www.graalvm.org/docs/getting-started/
-  - title: GraphPipe
-    description: GraphPipe is a protocol and collection of software designed to simplify machine learning model deployment and decouple it from framework-specific model implementations.
-    links: 
-    - title: Documentation
-      url: https://oracle.github.io/graphpipe/#/guide/user-guide/quickstart
-  - title: Fn Project
-    description: The Fn project is an open-source container-native serverless platform that you can run anywhere -- any cloud or on-premise.
-    links: 
-    - title: Documentation
-      url: https://github.com/fnproject/fn#top
-- company: alwaysAI
-  slack: alwaysai
-  apis:
-  - title: alwaysAI API
-    description: alwaysAI is an essential computer vision development platform for creating and deploying machine learning applications on edge devices. We are fundamentally changing the way developers create and deploy CV applications.
-    links:
-    - title: Documentation
-      url: https://alwaysai.co/platform
-- company: Snapchat
-  slack: snapchat
-  apis:
-  - title: Lens Studio
-    description: Lens Studio invites artists, students, developers, animators, and more to unleash their creativity — and share it with the millions of people who play with Lenses on Snapchat every single day!
-    links:
-    - title: Documentation
-      url: https://lensstudio.snapchat.com/
-- company: Checkbook
-  slack: checkbook
-  apis: 
-  - title: Real-Time Instant Payments for Your Platform
-    description: Checkbook's RESTful API is a simple way to track payments, send batches of checks, onboard customers and more.
-    links:
-    - title: Documentation
-      url: https://docs.checkbook.io/reference
-- company: SoundHound
-  slack: soundhound
-  apis:
-  - title: Houndify API
-    description: Houndify is a platform that allows anyone to add smart, voice enabled, conversational interfaces to anything with an Internet connection. Once you integrate with Houndify, your product will instantly understand a wide variety of questions and commands.
-    links: 
-    - title: Documentation
-      url: https://www.houndify.com/docs
-- company: Google Cloud
-  slack: google-cloud
-  apis: 
-  - title: Google Cloud Platform Hackathon Toolkit
-    description: Get started with cool ways to use Google Cloud for your project!
-    links:
-    - title: GitHub Repo 
-      url: https://github.com/GoogleCloudPlatform/hackathon-toolkit
-- company: MapMyIndia
-  slack: mapmyindia
-  apis: 
-  - title: MapMyIndia APIs
-    description: A vast array of APIs for map information outside the US. A great way to target emerging markets where many products are still developing.
-    links:
-    - title: Documentation
-      url: https://www.mapmyindia.com/api/
-- company: Johnson Controls
-  slack: jci
-  apis: 
-  - title: Energy Prediction Challenge Dataset
-    description: This is the dataset for Johnson Control's Energy Prediction Challenge. Submit your results for a chance to win a prize – the top 3 teams will win!
-    links:
-    - title: Dataset
-      url: https://drive.google.com/drive/folders/1ey1h7PKrb-wIhB0Ei2135JGnF3Jy1vi-
-    - title: Results Form
-      url: https://forms.gle/RLCUaK7LXpRhRAkX7
-- company: Microsoft
-  slack: microsoft
-  apis:
-  - title: az hack create
-    description: Command line utility to quickly create web space, a database, and enable AI services
-    links: 
-    - title: GitHub Repo
-      url: https://github.com/microsoft/hackwithazure/blob/master/az-hack.md
-  - title: Computer Vision
-    description: AI service to detect objects and text in an image
-    links:
-    - title: Documentation
-      url: https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/
-  - title: Custom Vision
-    description: Trainable AI service to detect objects you identify in images
-    links:
-    - title: Documentation
-      url: https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/
-  - title: Bot Framework
-    description: Framework and platform for creating cross-channel chat bots
-    links:
-    - title: Documentation
-      url: https://dev.botframework.com/
-
-
+tags:
+  - Geospatial
+  - Education
+  - IOT
+  - Voice Assistance
+  - AR/VR
+  - Medical Access
+companies:
+  - company: MapBox
+    apis:
+      - title: MapBox APIs
+        description: A wide range of map related APIs.
+        links:
+          - title: Documentation
+            url: https://docs.mapbox.com/help/how-mapbox-works/
+        tags:
+          - Geospatial
+  - company: Esri
+    apis:
+      - title: Esri APIs
+        description: Rich 2D and 3D map data from a wide array of sensors.
+        links:
+          - title: Documentation
+            url: https://developers.arcgis.com/
+        tags:
+          - Geospatial
+  - company: Planet.com
+    apis:
+      - title: Planet API
+        description: Awesome geospatial API!
+        links:
+          - title: Documentation
+            url: https://www.planet.com/
+        tags:
+          - Geospatial
+  - company: CARTO
+    apis:
+      - title: CARTO API
+        description: Awesome geospatial API!
+        links:
+          - title: Documentation
+            url: https://carto.com/
+        tags:
+          - Geospatial
+  - company: Google Earth Engine
+    apis:
+      - title: Google Earth Datasets
+        description: A catalog of over 600 datasets with 29 petabytes of data all updated daily.
+        links:
+          - title: Datasets
+            url: https://developers.google.com/earth-engine/datasets
+      - title: Google Earth APIs
+        description: Leverage Google’s massive map and earth infrastructure to extract all kinds of insights.
+        links:
+          - title: Documentation
+            url: https://github.com/google/earthengine-api
+  - company: Awesome Public Datasets
+    apis:
+      - title: Healthcare Datasets
+        description: Awesome publicly-available healthcare datasets
+        links:
+          - title: Datasets
+            url: https://github.com/awesomedata/awesome-public-datasets#healthcare
+  - company: National Emergency Medical Services Information System
+    apis:
+      - title: NEMSIS Database
+        description: The National Emergency Medical Services Information System (NEMSIS) is the national database storing EMS data from the U.S. States and Territories.
+        links:
+          - title: Datasets
+            url: https://nemsis.org/
+        tags:
+          - Medical Access
+  - company: World Health Organization
+    apis:
+      - title: Health Coverage
+        description: Coverage of health statistics around the globe
+        links:
+          - title: Reports
+            url: https://www.who.int/healthinfo/universal_health_coverage/en/
+  - company: Google Research
+    apis:
+      - title: AudioSet
+        description: AudioSet, a large collection of sound events from Google Research, has a "Human voice" section that has subcategories including speech, shout, screaming, whispering, and more.
+        links:
+          - title: Dataset
+            url: https://research.google.com/audioset/ontology/human_voice_1.html
+  - company: Mozilla
+    apis:
+      - title: Common Voice
+        description: Common Voices is an open-source, multi-language dataset of voices that anyone can use to train speech-enabled applications.
+        links:
+          - title: Datasets
+            url: https://voice.mozilla.org/en/datasets
+        tags:
+          - Voice Assistance
+  - company: Home Assistnat
+    apis:
+      - title: Home Assistant API
+        description: Home Assistant is an open-source home automation system that puts local control and privacy first, all on a Raspberry Pi
+        links:
+          - title: Documentation
+            url: https://www.home-assistant.io/
+        tags:
+          - Voice Assistance
+  - company: Voiceflow
+    apis:
+      - title: Voiceflow Business
+        description: An online platform that allows anyone to visually design, prototype, and publish Alexa skills and Google Actions. TreeHacks participants get one year of the Business plan for free!
+        links:
+          - title: Documentation & Free Credits
+            url: https://almond.stanford.edu/thingpedia
+        tags:
+          - Voice Assistance
+  - company: Stanford Open Virtual Assistant Lab
+    apis:
+      - title: Thingpedia
+        description: a crowd-sourced repository of commands and interfaces to online services and IoT
+        links:
+          - title: Documentation
+            url: https://almond.stanford.edu/thingpedia
+        tags:
+          - IOT
+  - company: Samsung
+    apis:
+      - title: Samsung Bixby
+        description: Bixby is Samsung's personal voice assistant. It has numerous integrations and natural language capabilities.
+        links:
+          - title: Documentation
+            url: https://github.com/bixbydevelopers
+  - company: Teleportal Dev
+    apis:
+      - title: Teleportal Dev
+        description: A suite of tools and services that makes it easier to create mixed reality software
+        links:
+          - title: Documentation
+            url: https://teleportal.dev/docs/
+          - title: Developer Discord
+            url: https://discordapp.com/invite/wSHHm5b
+  - company: Magic Leap
+    slack: magicleap
+    apis:
+      - title: Magic Leap Developer Quickstart Guide
+        description: Get started with Unity and Unreal on Magic Leap headsets!
+        links:
+          - title: Documentation
+            url: https://drive.google.com/file/d/1Yfd03CBuQJ-Vs2kDEiAdyHUHZIWkMNR1/view
+        tags:
+          - AR/VR
+  - company: Duolingo
+    slack: duolingo
+    apis:
+      - title: English Prompts & Translation
+        description: Data for English translation tasks!
+        links:
+          - title: Dataset
+            url: http://sharedtask.duolingo.com/#data
+        tags:
+          - Education
+      - title: Dependency Parsing Dataset
+        description: Data for dependency parsing
+        links:
+          - title: Dataset
+            url: https://sharedtask.duolingo.com/2018.html
+        tags:
+          - Education
+  - company: Oracle
+    slack: oracle
+    apis:
+      - title: Oracle Cloud
+        description: Oracle Cloud is an enterprise-grade, hyper-scale cloud platform that allows you to build leading-edge technology
+        links:
+          - title: Documentation
+            url: https://docs.oracle.com/en/cloud/paas/index.html
+      - title: GraalVM
+        description: GraalVM is a universal virtual machine for running applications written in JavaScript, Python, Ruby, R, JVM-based languages like Java, Scala, Kotlin, Clojure, and LLVM-based languages such as C and C++.
+        links:
+          - title: Documentation
+            url: https://www.graalvm.org/docs/getting-started/
+      - title: GraphPipe
+        description: GraphPipe is a protocol and collection of software designed to simplify machine learning model deployment and decouple it from framework-specific model implementations.
+        links:
+          - title: Documentation
+            url: https://oracle.github.io/graphpipe/#/guide/user-guide/quickstart
+      - title: Fn Project
+        description: The Fn project is an open-source container-native serverless platform that you can run anywhere -- any cloud or on-premise.
+        links:
+          - title: Documentation
+            url: https://github.com/fnproject/fn#top
+  - company: alwaysAI
+    slack: alwaysai
+    apis:
+      - title: alwaysAI API
+        description: alwaysAI is an essential computer vision development platform for creating and deploying machine learning applications on edge devices. We are fundamentally changing the way developers create and deploy CV applications.
+        links:
+          - title: Documentation
+            url: https://alwaysai.co/platform
+  - company: Snapchat
+    slack: snapchat
+    apis:
+      - title: Lens Studio
+        description: Lens Studio invites artists, students, developers, animators, and more to unleash their creativity — and share it with the millions of people who play with Lenses on Snapchat every single day!
+        links:
+          - title: Documentation
+            url: https://lensstudio.snapchat.com/
+  - company: Checkbook
+    slack: checkbook
+    apis:
+      - title: Real-Time Instant Payments for Your Platform
+        description: Checkbook's RESTful API is a simple way to track payments, send batches of checks, onboard customers and more.
+        links:
+          - title: Documentation
+            url: https://docs.checkbook.io/reference
+  - company: SoundHound
+    slack: soundhound
+    apis:
+      - title: Houndify API
+        description: Houndify is a platform that allows anyone to add smart, voice enabled, conversational interfaces to anything with an Internet connection. Once you integrate with Houndify, your product will instantly understand a wide variety of questions and commands.
+        links:
+          - title: Documentation
+            url: https://www.houndify.com/docs
+  - company: Google Cloud
+    slack: google-cloud
+    apis:
+      - title: Google Cloud Platform Hackathon Toolkit
+        description: Get started with cool ways to use Google Cloud for your project!
+        links:
+          - title: GitHub Repo
+            url: https://github.com/GoogleCloudPlatform/hackathon-toolkit
+  - company: MapMyIndia
+    slack: mapmyindia
+    apis:
+      - title: MapMyIndia APIs
+        description: A vast array of APIs for map information outside the US. A great way to target emerging markets where many products are still developing.
+        links:
+          - title: Documentation
+            url: https://www.mapmyindia.com/api/
+  - company: Johnson Controls
+    slack: jci
+    apis:
+      - title: Energy Prediction Challenge Dataset
+        description: This is the dataset for Johnson Control's Energy Prediction Challenge. Submit your results for a chance to win a prize – the top 3 teams will win!
+        links:
+          - title: Dataset
+            url: https://drive.google.com/drive/folders/1ey1h7PKrb-wIhB0Ei2135JGnF3Jy1vi-
+          - title: Results Form
+            url: https://forms.gle/RLCUaK7LXpRhRAkX7
+  - company: Microsoft
+    slack: microsoft
+    apis:
+      - title: az hack create
+        description: Command line utility to quickly create web space, a database, and enable AI services
+        links:
+          - title: GitHub Repo
+            url: https://github.com/microsoft/hackwithazure/blob/master/az-hack.md
+      - title: Computer Vision
+        description: AI service to detect objects and text in an image
+        links:
+          - title: Documentation
+            url: https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/
+      - title: Custom Vision
+        description: Trainable AI service to detect objects you identify in images
+        links:
+          - title: Documentation
+            url: https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/
+      - title: Bot Framework
+        description: Framework and platform for creating cross-channel chat bots
+        links:
+          - title: Documentation
+            url: https://dev.botframework.com/
