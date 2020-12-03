@@ -81,14 +81,16 @@ export default Vue.component("event-schedule", {
     </div>
   </div>`,
   created: function() {
+    // TODO: will need to change this date
     if (
-      (new Date().getTime() - new Date("2020-02-14 15:00").getTime()) /
+      (new Date().getTime() - new Date("2021-02-14 15:00").getTime()) /
         3600000 <
       36
     )
       setInterval(this.updateTime, 60000);
     this.updateTime();
     var ctx = this;
+    // TODO: will need to change this url and possibly event colours
     fetch(
       "https://api.eventive.org/event_buckets/5e2d4729d44a8300290de7cf/events_slim?api_key=2db927190aa686598bf88c893181cb7a"
     )
@@ -98,17 +100,17 @@ export default Vue.component("event-schedule", {
         var schedule = [
           {
             name: "Main Events",
-            color: "#E51B5D",
+            color: "#0D9071",
             items: []
           },
           {
             name: "Food",
-            color: "#DA70D6",
+            color: "#E83028",
             items: []
           },
           {
             name: "HackX",
-            color: "#44B8CF",
+            color: "#FF730E",
             items: []
           },
           {
@@ -123,7 +125,7 @@ export default Vue.component("event-schedule", {
           },
           {
             name: "Office Hours",
-            color: "#009688",
+            color: "#E51B5D",
             items: []
           },
           {

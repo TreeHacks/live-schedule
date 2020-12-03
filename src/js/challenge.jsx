@@ -11,9 +11,10 @@ export default function Challenge({ match }) {
   const [content, setContent] = useState("");
   const challengeId = match.params.challengeId;
 
+  // TODO: will need to update this to correspond to this years challenges
   useEffect(() => {
     fetch(
-      `https://raw.githubusercontent.com/TreeHacks/challenges-2020/master/${challengeId}.md`
+      `https://raw.githubusercontent.com/TreeHacks/challenges-2021/master/${challengeId}.md`
     )
       .then(r => r.text())
       .then(raw => {
