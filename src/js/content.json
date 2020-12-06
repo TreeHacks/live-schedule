@@ -47,28 +47,24 @@
   ],
   "projects": [
     {
+      "name": "Healthcare",
+      "link": "/challenges/healthcare"
+    },
+    {
       "name": "Education",
       "link": "/challenges/education"
     },
     {
-      "name": "Medical Access",
-      "link": "/challenges/medical"
+      "name": "Civic Engagement",
+      "link": "/challenges/civic"
     },
     {
-      "name": "Voice Assistance",
-      "link": "/challenges/voice"
+      "name": "sustainability",
+      "link": "/challenges/sustainability"
     },
     {
-      "name": "IOT",
-      "link": "/challenges/iot"
-    },
-    {
-      "name": "AR/VR",
-      "link": "/challenges/xr"
-    },
-    {
-      "name": "Geospatial",
-      "link": "/challenges/geospatial"
+      "name": "social (inter)connectivity",
+      "link": "/challenges/social"
     }
   ],
   "resources": [
