@@ -26,3 +26,23 @@
 .apis.container {
   margin-bottom: 7.5%;
 }
+
+button.api-tag-button {
+  font-size: 12px;
+  padding: 0.5em;
+  background: transparent;
+  border-style: none;
+  color: $primary-color;
+  opacity: 0.5;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 125ms;
+  border: none;
+  outline: none;
+}
+
+button.api-tag-button:hover,
+button.api-tag-button:active,
+button.api-tag-button.active {
+  opacity: 1;
+}
