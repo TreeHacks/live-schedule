@@ -1,9 +1,13 @@
 import Vue from "vue/dist/vue.js";
 import Fuse from "fuse.js";
 import { TweenLite } from "gsap/TweenMax";
+var cal = window.ics();
+
 
 export default Vue.component("event-schedule", {
-  template: `<div id="schedule-inner" class="schedule" :class="{active: true}">
+  template: `
+
+<div id="schedule-inner" class="schedule" :class="{active: true}">
     <div class="schedule-top section-wrapper">
       <div class="content-wrapper-wide">
         <div class="schedule-loader" style="height: 750px;">
@@ -12,6 +16,8 @@ export default Vue.component("event-schedule", {
         <div class="schedule-search-wrapper">
           <i class="fa fa-search schedule-search-icon"></i>
           <input type="text" placeholder="Search" @input='evt=>query=evt.target.value' class="schedule-search" />
+          <button class="downoad-button" @click="downloadCalendar">download</button>
+
           <span class="schedule-clear-icon" v-if="query.length > 0" @click="query=''">✕</span>
         </div>
         <div class="schedule-categories">
@@ -80,7 +86,9 @@ export default Vue.component("event-schedule", {
       </div>
     </div>
   </div>`,
+  
   created: function() {
+
     // TODO: will need to change this date
     if (
       (new Date().getTime() - new Date("2021-02-14 15:00").getTime()) /
@@ -150,9 +158,9 @@ export default Vue.component("event-schedule", {
             pad(d.getMinutes())
           );
         }
-
         for (var i = 0; i < data.length; i++) {
           var item = data[i];
+          cal.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
           var cat = schedule.findIndex(cat => {
             return item.tags.some(t => t === cat.name);
           });
@@ -282,7 +290,8 @@ export default Vue.component("event-schedule", {
       scheduleRows: [],
       hoursIn: 0,
       selectedCat: -1,
-      selectedItem: null
+      selectedItem: null,
+      calendar: cal
     };
   },
   mounted: function() {
@@ -438,6 +447,9 @@ export default Vue.component("event-schedule", {
     },
     setSelected: function(item) {
       this.selectedItem = item;
+    },
+    downloadCalendar: function() {
+      this.calendar.download("treeHacksSchedule2021")
     },
     hidePopup: function(e) {
       if (this.selectedItem !== null) {
