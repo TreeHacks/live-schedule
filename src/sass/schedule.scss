@@ -80,6 +80,30 @@
   width: 100%;
   color: $text-color;
 }
+.downoad-button{
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  margin: .4em;
+  background-color: $primary-color;
+  color: $primary-btn-text-color;
+  border: $border-style;
+  border-color: $primary-btn-text-color;
+  border-radius: 8px !important;
+  padding: $base-font-size / 2;
+  transition: $transition-speed;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  line-height: 1;
+
+  &:hover {
+    background-color: $primary-color;
+    cursor: pointer;
+    transform: scale($transform-scale);
+  }
+}
 
 .schedule .schedule-top .schedule-search-wrapper .schedule-search:focus {
   outline: 0;
