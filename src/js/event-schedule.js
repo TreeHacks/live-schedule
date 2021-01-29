@@ -188,7 +188,7 @@ export default Vue.component("event-schedule", {
           }
 
           if (cat !== -1) {
-            console.log(cat);
+            //console.log(cat);
             // this fits somewhere!
             schedule[cat].items.push({
               name: item.title,
