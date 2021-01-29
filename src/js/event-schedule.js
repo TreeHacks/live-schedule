@@ -2,7 +2,13 @@ import Vue from "vue/dist/vue.js";
 import Fuse from "fuse.js";
 import { TweenLite } from "gsap/TweenMax";
 var cal = window.ics();
-
+var cal0 = window.ics();
+var cal1 = window.ics();
+var cal2 = window.ics();
+var cal3 = window.ics();
+var cal4 = window.ics();
+var cal5 = window.ics();
+var cal6 = window.ics();
 
 export default Vue.component("event-schedule", {
   template: `
@@ -164,7 +170,25 @@ export default Vue.component("event-schedule", {
           var cat = schedule.findIndex(cat => {
             return item.tags.some(t => t === cat.name);
           });
+
+          if(cat == 0){
+            cal0.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
+          } else if(cat == 1){
+            cal1.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
+          } else if(cat == 2){
+            cal2.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
+          } else if(cat == 3){
+            cal3.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
+          } else if(cat == 4){
+            cal4.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
+          } else if(cat == 5){
+            cal5.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
+          } else if(cat == 6){
+            cal6.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
+          }
+
           if (cat !== -1) {
+            console.log(cat);
             // this fits somewhere!
             schedule[cat].items.push({
               name: item.title,
@@ -291,7 +315,14 @@ export default Vue.component("event-schedule", {
       hoursIn: 0,
       selectedCat: -1,
       selectedItem: null,
-      calendar: cal
+      calendar: cal,
+      calendar0: cal0,
+      calendar1: cal1,
+      calendar2: cal2,
+      calendar3: cal3,
+      calendar4: cal4,
+      calendar5: cal5,
+      calendar6: cal6,
     };
   },
   mounted: function() {
@@ -449,7 +480,26 @@ export default Vue.component("event-schedule", {
       this.selectedItem = item;
     },
     downloadCalendar: function() {
-      this.calendar.download("treeHacksSchedule2021")
+      // if (this.selectedCat === -1){
+      //   this.calendar.download("treeHacksSchedule2021")
+      // } 
+      if (this.selectedCat === 0){
+        this.calendar0.download("mainEvents2021")
+      } else if (this.selectedCat === 1){
+        this.calendar1.download("food2021")
+      } else if (this.selectedCat === 2){
+        this.calendar2.download("hackX2021")
+      } else if (this.selectedCat === 3){
+        this.calendar3.download("workshops2021")
+      } else if (this.selectedCat === 4){
+        this.calendar4.download("talks2021")
+      } else if (this.selectedCat === 5){
+        this.calendar5.download("officeHours2021")
+      } else if (this.selectedCat === 6){
+        this.calendar6.download("hardware2021")
+      } else {
+        this.calendar.download("treeHacksSchedule2021")
+      }
     },
     hidePopup: function(e) {
       if (this.selectedItem !== null) {
