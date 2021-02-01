@@ -5,17 +5,13 @@ $timer-space: 2vw;
   @include flex(row nowrap, center, center);
   font-family: $base-font-family;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 4vw;
   color: $primary-color;
 
   span {
-    font-size: 18px;
-    width: 6px;
+    font-size: 4vw;
+    width: 5%; // $timer-space;
   }
-}
-
-.timerComponent {
-  width: 24px;
 }
 
 @media screen and (min-width: 768px) {

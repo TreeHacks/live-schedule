@@ -72,15 +72,15 @@ $header-margin: 16px;
     }
 
     #social-media {
-      display: none;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #header {
-    #timer {
-      display: none;
+      a {
+        width: 16px * 1.75;
+        height: 16px * 1.75;
+        margin-right: 3px;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
     }
   }
 }
