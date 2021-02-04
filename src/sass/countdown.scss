@@ -23,6 +23,7 @@
   font-size: $heading-font-size;
   text-transform: uppercase;
   width: 100%;
+  padding: 0 10%;
   margin-top: $small-space;
 }
 
@@ -58,6 +59,24 @@
 
 @media screen and (max-width: $mobile-screen) {
   #countdown {
-    display: none;
+    hr {
+      width: 70%;
+    }
+  }
+  .timeUnits {
+    width: 87.5%;
+    svg {
+      top: -8px;
+
+      circle {
+        cx: 4;
+        cy: 4;
+        r: 4;
+      }
+    }
+  }
+  .timeUnit {
+    width: 15%;
+    margin-right: 5%;
   }
 }

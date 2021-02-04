@@ -2,7 +2,7 @@ import React from 'react';
 import * as logo from '../svg/logo.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faInstagram, faFacebookF, faTwitter} from '@fortawesome/free-brands-svg-icons';
-import Timer from './timer.jsx';
+// import Timer from './timer.jsx';
 
 function Header() {
   return(
@@ -17,7 +17,6 @@ function Header() {
           </a>
         </li>
         <SocialMedia />
-        <Timer />
       </ul>
     </nav>
   );

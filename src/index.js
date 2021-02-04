@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./js/header.jsx";
-import MobileHud from "./js/mobile-hud.jsx";
 import Countdown from "./js/countdown.jsx";
 import Resources from "./js/resources.jsx";
 import Schedule from "./js/schedule.jsx";
@@ -37,7 +36,6 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <MobileHud announcementData={this.state.announcementData} />
         <Countdown />
         <Resources />
         <Schedule />
