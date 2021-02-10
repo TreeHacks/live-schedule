@@ -97,7 +97,7 @@ export default Vue.component("event-schedule", {
 
     // TODO: will need to change this date
     if (
-      (new Date().getTime() - new Date("2021-02-14 15:00").getTime()) /
+      (new Date().getTime() - new Date("2021-02-12 15:00").getTime()) /
         3600000 <
       36
     )
@@ -106,7 +106,7 @@ export default Vue.component("event-schedule", {
     var ctx = this;
     // TODO: will need to change this url and possibly event colours
     fetch(
-      "https://api.eventive.org/event_buckets/5e2d4729d44a8300290de7cf/events_slim?api_key=2db927190aa686598bf88c893181cb7a"
+      "https://api.eventive.org/event_buckets/600fc040ac1bef0079ecb20b/events_slim?api_key=2db927190aa686598bf88c893181cb7a"
     )
       .then(r => r.json())
       .then(data => {
@@ -115,11 +115,6 @@ export default Vue.component("event-schedule", {
           {
             name: "Main Events",
             color: "#0D9071",
-            items: []
-          },
-          {
-            name: "Food",
-            color: "#E83028",
             items: []
           },
           {
@@ -133,20 +128,10 @@ export default Vue.component("event-schedule", {
             items: []
           },
           {
-            name: "Talks",
-            color: "#000080",
-            items: []
-          },
-          {
             name: "Office Hours",
             color: "#E51B5D",
             items: []
           },
-          {
-            name: "Hardware",
-            color: "#F46E20",
-            items: []
-          }
         ];
 
         function pad(num) {
@@ -214,20 +199,20 @@ export default Vue.component("event-schedule", {
 
             // subtract 15 to make 0 "3pm"
             item.absStartHour =
-              (startDay - 14) * 24 + startHour + startMinute / 60 - 15;
+              (startDay - 12) * 24 + startHour + startMinute / 60 - 15;
             item.absEndHour =
-              (endDay - 14) * 24 + endHour + endMinute / 60 - 15;
+              (endDay - 12) * 24 + endHour + endMinute / 60 - 15;
             item.startTime =
               (startHour % 12 || 12) + ":" + ("0" + startMinute).slice(-2);
             item.endTime =
               (endHour % 12 || 12) + ":" + ("0" + endMinute).slice(-2);
             item.startDate =
-              dayMap[startDay - 14] +
+              dayMap[startDay - 12] +
               " " +
               item.startTime +
               (startHour >= 12 ? "pm" : "am");
             item.endDate =
-              dayMap[endDay - 14] +
+              dayMap[endDay - 12] +
               " " +
               item.endTime +
               (endHour >= 12 ? "pm" : "am");
@@ -372,7 +357,7 @@ export default Vue.component("event-schedule", {
   methods: {
     updateTime: function() {
       var hoursIn =
-        (new Date().getTime() - new Date("2020-02-14 15:00").getTime()) /
+        (new Date().getTime() - new Date("2021-02-12 15:00").getTime()) /
         3600000;
       if (hoursIn > 36) hoursIn = -1;
       this.hoursIn = hoursIn;
