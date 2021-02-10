@@ -11,37 +11,19 @@ import { Link } from "react-router-dom";
 function Resources() {
   return (
     <div id="resources" className="section">
-      <a href="https://slack.treehacks.com" target="_blank">
+      <a href="https://join.slack.com/t/treehacks2021/shared_invite/zt-lgcz1v50-XOWwzePiP194j1OlunUzPA" target="_blank">
         <div className="resource-1">
           <img src={slackIcon} className="resource-icon" />
           Slack
         </div>
       </a>
-      <a href="https://treehacks-2020.devpost.com" target="_blank">
+      <a href="https://treehacks-2021.devpost.com" target="_blank">
         <div className="resource-2">
           <img src={devpostIcon} className="resource-icon" />
           Devpost
         </div>
       </a>
-      <a href="https://hardware.hackbetter.org" target="_blank">
-        <div className="resource-3">
-          <img src={hardwareIcon} className="resource-icon" />
-          Hardware
-        </div>
-      </a>
-      <Link to="/apis" >
-        <div className="resource-4">
-          <img src={apisIcon} className="resource-icon" />
-          APIs
-        </div>
-      </Link>
-      <Link to="/maps">
-        <div className="resource-5">
-          <img src={mapsIcon} className="resource-icon" />
-          Maps
-        </div>
-      </Link>
-      <Link to="/faq">
+      <Link to="">
         <div className="resource-6">
           <img src={faqIcon} className="resource-icon" />
           FAQ
