@@ -42,10 +42,10 @@ class Main extends React.Component {
         <div id="group">
           <Announcements setAnnouncementData={this.setAnnouncementData} />
           <div id="sidebar">
-            <Projects />
+            {/* <Projects /> */}
             <Hackpacks />
-          </div>
-        </div>
+          </div>*
+        </div> 
       </div>
     );
   }
