@@ -23,12 +23,12 @@ function Resources() {
           Devpost
         </div>
       </a>
-      <Link to="https://support.treehacks.com">
+      <a href="https://support.treehacks.com" target="_blank">
         <div className="resource-6">
           <img src={faqIcon} className="resource-icon" />
           FAQ
         </div>
-      </Link>
+      </a>
     </div>
   );
 }
