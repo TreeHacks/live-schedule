@@ -23,7 +23,7 @@ function Resources() {
           Devpost
         </div>
       </a>
-      <Link to="">
+      <Link to="https://support.treehacks.com">
         <div className="resource-6">
           <img src={faqIcon} className="resource-icon" />
           FAQ
