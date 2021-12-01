@@ -1,6 +1,6 @@
 import React from 'react';
 import * as logo from '../svg/logo.svg';
-import * as newLogo from '../svg/newLogo.svg';
+import * as whiteLeavesLogo from '../svg/whiteLeavesLogo.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faInstagram, faFacebookF, faTwitter} from '@fortawesome/free-brands-svg-icons';
 // import Timer from './timer.jsx';
@@ -11,7 +11,7 @@ function Header() {
       <ul className="container" style={{background: '#15766A'}}>
         <li id="header-logo">
           <a href="/">
-            <img src={newLogo} alt="treehacks small logo"/>
+            <img src={whiteLeavesLogo} alt="treehacks small logo"/>
             <span className="logo-text-tree">tree</span>
             <span className="logo-text-hacks">hacks</span>
             <span className="logo-text-live">live</span>
