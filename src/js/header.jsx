@@ -1,5 +1,4 @@
 import React from 'react';
-import * as logo from '../svg/logo.svg';
 import * as whiteLeavesLogo from '../svg/whiteLeavesLogo.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faInstagram, faFacebookF, faTwitter} from '@fortawesome/free-brands-svg-icons';
