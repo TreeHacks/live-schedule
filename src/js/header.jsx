@@ -1,5 +1,5 @@
 import React from 'react';
-import * as logo from '../svg/logo.svg';
+import * as whiteLeavesLogo from '../svg/whiteLeavesLogo.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faInstagram, faFacebookF, faTwitter} from '@fortawesome/free-brands-svg-icons';
 // import Timer from './timer.jsx';
@@ -7,10 +7,10 @@ import {faInstagram, faFacebookF, faTwitter} from '@fortawesome/free-brands-svg-
 function Header() {
   return(
     <nav id="header">
-      <ul className="container">
+      <ul className="container" style={{background: '#15766A'}}>
         <li id="header-logo">
           <a href="/">
-            <img src={logo} alt="treehacks small logo"/>
+            <img src={whiteLeavesLogo} alt="treehacks small logo"/>
             <span className="logo-text-tree">tree</span>
             <span className="logo-text-hacks">hacks</span>
             <span className="logo-text-live">live</span>
@@ -25,9 +25,9 @@ function Header() {
 function SocialMedia() {
   return(
     <div id="social-media">
-      <a href="https://www.instagram.com/stanfordtreehacks" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
-      <a href="https://www.facebook.com/treehacks/" target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a>
-      <a href="https://twitter.com/hackwithtrees" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
+      <a style={{background: 'white'}} href="https://www.instagram.com/stanfordtreehacks" target="_blank"><FontAwesomeIcon style={{color: '#15766A'}} icon={faInstagram} /></a>
+      <a style={{background: 'white'}} href="https://www.facebook.com/treehacks/" target="_blank"><FontAwesomeIcon style={{color: '#15766A'}} icon={faFacebookF} /></a>
+      <a style={{background: 'white'}} href="https://twitter.com/hackwithtrees" target="_blank"><FontAwesomeIcon style={{color: '#15766A'}} icon={faTwitter} /></a>
     </div>
   );
 }
