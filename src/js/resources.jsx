@@ -11,13 +11,13 @@ import { Link } from "react-router-dom";
 function Resources() {
   return (
     <div id="resources" className="section">
-      <a href="https://join.slack.com/t/treehacks2021/shared_invite/zt-lgcz1v50-XOWwzePiP194j1OlunUzPA" target="_blank">
+      {/* <a href="https://join.slack.com/t/treehacks2021/shared_invite/zt-lgcz1v50-XOWwzePiP194j1OlunUzPA" target="_blank">
         <div className="resource-1">
           <img src={slackIcon} className="resource-icon" />
           Slack
         </div>
-      </a>
-      <a href="https://treehacks-2021.devpost.com" target="_blank">
+      </a> */}
+      <a href="https://treehacks-2022.devpost.com" target="_blank">
         <div className="resource-2">
           <img src={devpostIcon} className="resource-icon" />
           Devpost

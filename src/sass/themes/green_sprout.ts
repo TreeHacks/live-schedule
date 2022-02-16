@@ -1,6 +1,6 @@
 export default {
-  "hackathon_year": 2021,
-  "hackathon_date_range": "February 12-14",
+  "hackathon_year": 2022,
+  "hackathon_date_range": "February 18-20",
   "deadlines": [
       {
           "key": "oos",
