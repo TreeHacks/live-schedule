@@ -18,11 +18,13 @@ $section-width: 80vw;
 
 .logo-text-tree {
   font-family: $base-font-family;
+  color: white;
 }
 
 .logo-text-hacks {
   font-family: $base-font-family;
   font-weight: bold;
+  color: white;
 }
 
 .logo-text-live {
@@ -30,6 +32,7 @@ $section-width: 80vw;
   font-weight: bold;
   color: $primary-color;
   padding-left: 10px;
+  color: white;
 }
 
 .section-heading {
