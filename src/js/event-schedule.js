@@ -108,6 +108,7 @@ export default Vue.component("event-schedule", {
     )
       .then(r => r.json())
       .then(data => {
+        console.log(data);
         // Schedule shell
         var schedule = [
           {
@@ -199,12 +200,12 @@ export default Vue.component("event-schedule", {
             item.endTime =
               (endHour % 12 || 12) + ":" + ("0" + endMinute).slice(-2);
             item.startDate =
-              dayMap[startDay - 12] +
+              dayMap[startDay - 18] +
               " " +
               item.startTime +
               (startHour >= 12 ? "pm" : "am");
             item.endDate =
-              dayMap[endDay - 12] +
+              dayMap[endDay - 18] +
               " " +
               item.endTime +
               (endHour >= 12 ? "pm" : "am");
