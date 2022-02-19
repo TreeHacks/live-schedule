@@ -88,7 +88,7 @@ function App() {
                     />
                     <Route exact path="/" component={Main} />
                     <Route exact path="/_room/:roomId" component={RoomStatus} />
-                    <Route exact path="/apis" component={Apis} />
+                    <Route exact path="/apisresources" component={Apis} />
                     <Route
                         exact
                         path="/challenges/:challengeId"

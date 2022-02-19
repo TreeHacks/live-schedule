@@ -31,7 +31,7 @@ export default class extends React.Component {
     return (
       <div class="apis container">
         <div className="row">
-          <h1 className="api-title">API Directory</h1>
+          <h1 className="api-title">APIs & Resources</h1>
         </div>
         <div className="row">
           <button
