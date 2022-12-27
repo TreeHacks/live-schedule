@@ -1,5 +1,5 @@
 import React from "react";
-import * as whiteLeavesLogo from "../svg/whiteLeavesLogo.svg";
+import * as whitelogo from "../svg/whitelogo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -14,7 +14,7 @@ function Header() {
       <ul className="container" style={{ background: "#0CB08A" }}>
         <li id="header-logo">
           <a href="/">
-            <img src={whiteLeavesLogo} alt="treehacks small logo" />
+            <img src={whitelogo} alt="treehacks small logo" />
             <span className="logo-text-tree">tree</span>
             <span className="logo-text-hacks">hacks</span>
             <span className="logo-text-live">live</span>
