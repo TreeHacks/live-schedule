@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 function Resources() {
   return (
     <div id="resources" className="section">
-
       <a href="https://link.treehacks.com/slack" target="_blank">
         <div className="resource-1">
           <img src={slackIcon} className="resource-icon" />
@@ -27,7 +26,7 @@ function Resources() {
       </a>
 
       <a href="https://support.treehacks.com" target="_blank">
-        <div className="resource-6">
+        <div className="resource-2">
           <img src={faqIcon} className="resource-icon" />
           FAQ
         </div>
@@ -39,7 +38,6 @@ function Resources() {
           APIs and Resources
         </div>
       </a>
-
     </div>
   );
 }
