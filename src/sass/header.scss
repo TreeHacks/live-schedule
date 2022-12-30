@@ -7,7 +7,7 @@ $header-margin: 16px;
   @extend %menu;
   top: 0;
   height: 80px;
-  box-shadow: 0 5px 30px -5px rgba(0,0,0,.2);
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.2);
 
   .container {
     @include flex(row nowrap, flex-end, center);
@@ -48,13 +48,13 @@ $header-margin: 16px;
     height: $header-font-size * 1.75;
     font-size: $header-font-size;
     transition: background-color $transition-speed;
-    background-color: $primary-color;
+    /* background-color: $primary-color;
     border-radius: 50%;
     color: $box-color;
 
     &:hover {
       background-color: $primary-color;
-    }
+    } */
   }
 }
 
