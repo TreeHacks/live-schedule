@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "LKWJEF.io.treehacks.scan",
+        "paths": [
+          "/profiles/*"
+        ]
+      }
+    ]
+  }
+}
