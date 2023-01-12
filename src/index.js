@@ -48,7 +48,6 @@ class Main extends React.Component {
             {/* <Projects /> */}
             <Hackpacks />
           </div>
-          *
         </div>
       </div>
     );
