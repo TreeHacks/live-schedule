@@ -1,7 +1,7 @@
 import React from "react";
 
-export const START_DATE = new Date("2022-02-19T04:00:00.000Z");
-export const END_DATE = new Date("2022-02-20T16:00:00.000Z");
+export const START_DATE = new Date("2023-02-17T04:00:00.000Z");
+export const END_DATE = new Date("2023-02-19T16:00:00.000Z");
 
 function calculateTimeUntil() {
   let date = new Date() < START_DATE ? START_DATE : END_DATE;
@@ -19,7 +19,7 @@ class Timer extends React.Component {
       days: Math.floor(timeUntil / 60 / 60 / 24),
       hours: Math.floor((timeUntil / 60 / 60) % 24),
       minutes: Math.floor((timeUntil / 60) % 60),
-      seconds: Math.floor(timeUntil % 60)
+      seconds: Math.floor(timeUntil % 60),
     };
   }
 
@@ -37,7 +37,7 @@ class Timer extends React.Component {
       days: Math.floor(timeUntil / 60 / 60 / 24),
       hours: Math.floor((timeUntil / 60 / 60) % 24),
       minutes: Math.floor((timeUntil / 60) % 60),
-      seconds: Math.floor(timeUntil % 60)
+      seconds: Math.floor(timeUntil % 60),
     });
   }
 
