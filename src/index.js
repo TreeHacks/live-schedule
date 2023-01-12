@@ -13,92 +13,87 @@ import Challenge from "./js/challenge.jsx";
 import "./favicons/favicons";
 import "./index.scss";
 import {
-    BrowserRouter as Router,
-    Route,
-    Switch,
-    Redirect,
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
 } from "react-router-dom";
 
+const reload = () => window.location.reload();
+
 class Main extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            announcementData: null,
-        };
+  constructor(props) {
+    super(props);
+    this.state = {
+      announcementData: null,
+    };
 
-        this.setAnnouncementData = this.setAnnouncementData.bind(this);
-    }
+    this.setAnnouncementData = this.setAnnouncementData.bind(this);
+  }
 
-    setAnnouncementData(announcementData) {
-        this.setState({ announcementData });
-    }
+  setAnnouncementData(announcementData) {
+    this.setState({ announcementData });
+  }
 
-    render() {
-        return (
-            <div>
-                <Countdown />
-                <Resources />
-                <p>Note: all times below are in PT (California time)</p>
-                <Schedule />
-                <div id="group">
-                    <Announcements
-                        setAnnouncementData={this.setAnnouncementData}
-                    />
-                    <div id="sidebar">
-                        {/* <Projects /> */}
-                        <Hackpacks />
-                    </div>
-                    *
-                </div>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <Countdown />
+        <Resources />
+        <p>Note: all times below are in PT (California time)</p>
+        <Schedule />
+        <div id="group">
+          <Announcements setAnnouncementData={this.setAnnouncementData} />
+          <div id="sidebar">
+            {/* <Projects /> */}
+            <Hackpacks />
+          </div>
+          *
+        </div>
+      </div>
+    );
+  }
 }
 
 function CustomRedirect({ from, to }) {
-    return (
-        <Route
-            exact
-            path={from}
-            component={() => {
-                window.location = to;
-                return null;
-            }}
-        />
-    );
+  return (
+    <Route
+      exact
+      path={from}
+      component={() => {
+        window.location = to;
+        return null;
+      }}
+    />
+  );
 }
 
 function App() {
-    return (
-        <div>
-            <Header />
-            <Router>
-                <Switch>
-                    <CustomRedirect
-                        from="/faq"
-                        to="https://treehacks.quip.com/FHPoABlrGBLN"
-                    />
-                    <CustomRedirect
-                        from="/maps"
-                        to="https://treehacks.quip.com/tOUKAghhGiby/Maps-"
-                    />
-                    <CustomRedirect
-                        from="/expo"
-                        to="https://treehacks.github.io/expo"
-                    />
-                    <Route exact path="/" component={Main} />
-                    <Route exact path="/_room/:roomId" component={RoomStatus} />
-                    <Route exact path="/apisresources" component={Apis} />
-                    <Route
-                        exact
-                        path="/challenges/:challengeId"
-                        component={Challenge}
-                    />
-                    <Redirect to="/" />
-                </Switch>
-            </Router>
-        </div>
-    );
+  return (
+    <div>
+      <Header />
+      <Router>
+        <Switch>
+          <CustomRedirect
+            from="/faq"
+            to="https://treehacks.quip.com/FHPoABlrGBLN"
+          />
+          <CustomRedirect
+            from="/maps"
+            to="https://treehacks.quip.com/tOUKAghhGiby/Maps-"
+          />
+          <CustomRedirect from="/expo" to="https://treehacks.github.io/expo" />
+          <Route exact path="/" component={Main} />
+          <Route exact path="/_room/:roomId" component={RoomStatus} />
+          <Route exact path="/apisresources" component={Apis} />
+          <Route exact path="/challenges/:challengeId" component={Challenge} />
+          <Route path="/apple-app-site-association" onEnter={reload} />
+
+          <Redirect to="/" />
+        </Switch>
+      </Router>
+    </div>
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
