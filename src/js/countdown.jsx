@@ -2,7 +2,7 @@ import React from "react";
 import { START_DATE, default as Timer } from "./timer.jsx";
 
 function Countdown() {
-  var units = ["d", "h", "m", "s"];
+  var units = ["days", "hours", "minutes", "seconds"];
   var timeline = [];
   for (var i = 0; i < 4; i++) {
     timeline.push(<TimerUnit unit={units[i]} key={i} />);

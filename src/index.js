@@ -18,6 +18,7 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
+import Prizes from "./js/prizes/Prizes.jsx";
 
 const reload = () => window.location.reload();
 
@@ -40,7 +41,7 @@ class Main extends React.Component {
       <div>
         <Countdown />
         <Resources />
-        <p>Note: all times below are in PT (California time)</p>
+        <p>Note: all times below are in PST (California time)</p>
         <Schedule />
         <div id="group">
           <Announcements setAnnouncementData={this.setAnnouncementData} />
@@ -85,6 +86,7 @@ function App() {
           <Route exact path="/" component={Main} />
           <Route exact path="/_room/:roomId" component={RoomStatus} />
           <Route exact path="/apisresources" component={Apis} />
+          <Route exact path="/prizes" component={Prizes} />
           <Route exact path="/challenges/:challengeId" component={Challenge} />
           <Route path="/apple-app-site-association" onEnter={reload} />
 
