@@ -1,6 +1,18 @@
 {
   "hackpacks": [
     {
+      "name": "Computer Vision (Machine Learning)",
+      "link": "https://github.com/TreeHacks/computer-vision-hackpack"
+    },
+    {
+      "name": "Web + Firebase",
+      "link": "https://github.com/TreeHacks/hackpack-web-firebase"
+    },
+    {
+      "name": "Hardware",
+      "link": "https://github.com/TreeHacks/hardware_hackpack"
+    },
+    {
       "name": "Android (Java)",
       "link": "https://github.com/TreeHacks/hackpack-android"
     },

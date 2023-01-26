@@ -27,6 +27,94 @@
   margin-bottom: 7.5%;
 }
 
+.prizes {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media screen and (min-width: 768px) {
+    .bricklayer-column-sizer {
+      /* divide by 2. */
+      width: 33%;
+    }
+  }
+}
+
+.trackPrizes {
+  padding-right: 30px;
+  padding-left: 30px;
+  @media screen and (min-width: 768px) {
+    .bricklayer-column-sizer {
+      /* divide by 2. */
+      width: 33%;
+    }
+  }
+}
+
+.sponsorPrizes {
+  padding-right: 30px;
+  padding-left: 30px;
+  @media screen and (min-width: 768px) {
+    .bricklayer-column-sizer {
+      /* divide by 2. */
+      width: 25%;
+    }
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+  align-content: center;
+  justify-content: center;
+  border: "1px solid blue";
+  height: 200px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
 button.api-tag-button {
   font-size: 12px;
   padding: 0.5em;

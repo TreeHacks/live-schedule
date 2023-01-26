@@ -1,7 +1,7 @@
 import React from "react";
 
-export const START_DATE = new Date("2023-02-17T04:00:00.000Z");
-export const END_DATE = new Date("2023-02-19T16:00:00.000Z");
+export const START_DATE = new Date("2023-02-18T06:00:00.000Z");
+export const END_DATE = new Date("2023-02-19T18:00:00.000Z");
 
 function calculateTimeUntil() {
   let date = new Date() < START_DATE ? START_DATE : END_DATE;

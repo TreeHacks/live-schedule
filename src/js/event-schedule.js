@@ -7,7 +7,6 @@ var cal1 = window.ics();
 var cal2 = window.ics();
 var cal3 = window.ics();
 
-
 export default Vue.component("event-schedule", {
   template: `
 
@@ -49,7 +48,7 @@ export default Vue.component("event-schedule", {
     <div ref="wrapper" v-if="query.length == 0 && selectedCat == -1" class="schedule-wrapper" @scroll="handleScroll" @click="hidePopup">
       <div class="schedule-inner" :style="{height: scheduleHeight, width: visibleHours * hourWidth + 'px'}">
         <div v-for="i in visibleHours" class="schedule-marker" :style="{left: (i - 1) * hourWidth + 'px'}">
-          <div class="schedule-marker-time">[[getMarkerValue(i + 14)]]</div>
+          <div class="schedule-marker-time">[[getMarkerValue(i + 12)]]</div>
         </div>
         <div class="schedule-marker-day" :style="getDayStyle(0)">Fri</div>
         <div class="schedule-marker-day" :style="getDayStyle(9)">Sat</div>
@@ -90,12 +89,11 @@ export default Vue.component("event-schedule", {
       </div>
     </div>
   </div>`,
-  
-  created: function() {
 
+  created: function () {
     // TODO: will need to change this date
     if (
-      (new Date().getTime() - new Date("2022-02-18 15:00").getTime()) /
+      (new Date().getTime() - new Date("2023-02-04 15:00").getTime()) /
         3600000 <
       36
     )
@@ -103,33 +101,40 @@ export default Vue.component("event-schedule", {
     this.updateTime();
     var ctx = this;
     // TODO: will need to change this url and possibly event colours
+    //62d6f1e7253936004578c672
+    //old: 6203128ecad60200e7963432
     fetch(
-      "https://api.eventive.org/event_buckets/6203128ecad60200e7963432/events_slim?api_key=2db927190aa686598bf88c893181cb7a"
+      "https://api.eventive.org/event_buckets/62d6f1e7253936004578c672/events_slim?api_key=2db927190aa686598bf88c893181cb7a"
     )
-      .then(r => r.json())
-      .then(data => {
+      .then((r) => r.json())
+      .then((data) => {
         console.log(data);
         // Schedule shell
         var schedule = [
           {
             name: "Main Events",
             color: "#0D9071",
-            items: []
+            items: [],
           },
           {
             name: "HackX",
             color: "#FF730E",
-            items: []
+            items: [],
           },
           {
             name: "Workshops",
             color: "#6B8E23",
-            items: []
+            items: [],
           },
           {
             name: "Office Hours",
             color: "#E51B5D",
-            items: []
+            items: [],
+          },
+          {
+            name: "Special Talks / Events",
+            color: "#513ec3",
+            items: [],
           },
         ];
 
@@ -150,19 +155,49 @@ export default Vue.component("event-schedule", {
         }
         for (var i = 0; i < data.length; i++) {
           var item = data[i];
-          cal.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
-          var cat = schedule.findIndex(cat => {
-            return item.tags.some(t => t === cat.name);
+          cal.addEvent(
+            item.title,
+            item.description ? item.description : "",
+            item.location,
+            item.start_time,
+            item.end_time
+          );
+          var cat = schedule.findIndex((cat) => {
+            return item.tags.some((t) => t === cat.name);
           });
 
-          if(cat == 0){
-            cal0.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
-          } else if(cat == 1){
-            cal1.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
-          } else if(cat == 2){
-            cal2.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
-          } else if(cat == 3){
-            cal3.addEvent(item.title, item.description ? item.description : '', item.location, item.start_time, item.end_time);
+          if (cat == 0) {
+            cal0.addEvent(
+              item.title,
+              item.description ? item.description : "",
+              item.location,
+              item.start_time,
+              item.end_time
+            );
+          } else if (cat == 1) {
+            cal1.addEvent(
+              item.title,
+              item.description ? item.description : "",
+              item.location,
+              item.start_time,
+              item.end_time
+            );
+          } else if (cat == 2) {
+            cal2.addEvent(
+              item.title,
+              item.description ? item.description : "",
+              item.location,
+              item.start_time,
+              item.end_time
+            );
+          } else if (cat == 3) {
+            cal3.addEvent(
+              item.title,
+              item.description ? item.description : "",
+              item.location,
+              item.start_time,
+              item.end_time
+            );
           }
 
           if (cat !== -1) {
@@ -173,16 +208,16 @@ export default Vue.component("event-schedule", {
               location: item.location,
               start: localFormatDayTime(new Date(item.start_time)),
               end: localFormatDayTime(new Date(item.end_time)),
-              description: item.description ? item.description : undefined
+              description: item.description ? item.description : undefined,
             });
           }
         }
 
         var dayMap = ["Friday", "Saturday", "Sunday"];
 
-        schedule = schedule.map(function(cat) {
+        schedule = schedule.map(function (cat) {
           // sort subitems and create serialized time hashes
-          cat.items = cat.items.map(function(item) {
+          cat.items = cat.items.map(function (item) {
             var startDay = Number(item.start.slice(0, 2)),
               startHour = Number(item.start.slice(3, 5)),
               startMinute = Number(item.start.slice(6)),
@@ -191,28 +226,29 @@ export default Vue.component("event-schedule", {
               endMinute = Number(item.end.slice(6));
 
             // subtract 15 to make 0 "3pm"
+            // subtract 13 to make 0 "1pm"
             item.absStartHour =
-              (startDay - 18) * 24 + startHour + startMinute / 60 - 15;
+              (startDay - 17) * 24 + startHour + startMinute / 60 - 13;
             item.absEndHour =
-              (endDay - 18) * 24 + endHour + endMinute / 60 - 15;
+              (endDay - 17) * 24 + endHour + endMinute / 60 - 13;
             item.startTime =
               (startHour % 12 || 12) + ":" + ("0" + startMinute).slice(-2);
             item.endTime =
               (endHour % 12 || 12) + ":" + ("0" + endMinute).slice(-2);
             item.startDate =
-              dayMap[startDay - 18] +
+              dayMap[startDay - 17] +
               " " +
               item.startTime +
               (startHour >= 12 ? "pm" : "am");
             item.endDate =
-              dayMap[endDay - 18] +
+              dayMap[endDay - 17] +
               " " +
               item.endTime +
               (endHour >= 12 ? "pm" : "am");
             item.color = cat.color;
             return item;
           });
-          cat.items.sort(function(a, b) {
+          cat.items.sort(function (a, b) {
             return a.absStartHour - b.absStartHour;
           });
           return cat;
@@ -232,7 +268,7 @@ export default Vue.component("event-schedule", {
           return true;
         }
 
-        ctx.scheduleRows = schedule.reduce(function(acc, cat) {
+        ctx.scheduleRows = schedule.reduce(function (acc, cat) {
           var oldAccLength = acc.length; // make a shallow copy
 
           for (var i = 0; i < cat.items.length; i++) {
@@ -253,8 +289,8 @@ export default Vue.component("event-schedule", {
           return acc;
         }, []);
 
-        var allScheduleItems = schedule.reduce(function(acc, cat) {
-          return cat.items.reduce(function(acc2, item) {
+        var allScheduleItems = schedule.reduce(function (acc, cat) {
+          return cat.items.reduce(function (acc2, item) {
             acc2.push(item);
             return acc2;
           }, acc);
@@ -267,19 +303,19 @@ export default Vue.component("event-schedule", {
           distance: 100,
           maxPatternLength: 32,
           minMatchCharLength: 1,
-          keys: ["name", "location", "description"]
+          keys: ["name", "location", "description"],
         });
         ctx.schedule = schedule;
         ctx.allScheduleItems = allScheduleItems;
       });
   },
   delimiters: ["[[", "]]"],
-  data: function() {
+  data: function () {
     return {
       drag: {
         down: false,
         dragStart: 0,
-        scrollPercentBeforeDrag: 0
+        scrollPercentBeforeDrag: 0,
       },
       fuse: null,
       allScheduleItems: [],
@@ -300,81 +336,81 @@ export default Vue.component("event-schedule", {
       calendar3: cal3,
     };
   },
-  mounted: function() {
+  mounted: function () {
     this.$refs.wrapper.scrollLeft = this.hoursIn * this.hourWidth;
   },
   computed: {
-    scheduleHeight: function() {
+    scheduleHeight: function () {
       // 25px to account for scrollbar
       return (
         Math.max(this.rowHeight * this.scheduleRows.length + 50, 300) + "px"
       );
     },
-    thumbStyle: function() {
+    thumbStyle: function () {
       var percent = this.scrollPercent;
       return this.$refs.track
         ? {
             transform:
               "translate3d(" +
               this.$refs.track.clientWidth * percent +
-              "px,0,0)"
+              "px,0,0)",
           }
         : {};
     },
-    found: function() {
+    found: function () {
       var query = this.query.trim();
       return query ? this.fuse.search(query) : this.allScheduleItems;
     },
-    markerNowStyle: function() {
+    markerNowStyle: function () {
       return {
         display: this.hoursIn < 0 ? "none" : "block",
-        left: this.hoursIn * this.hourWidth + "px"
+        left: this.hoursIn * this.hourWidth + "px",
       };
     },
-    foundMap: function() {
+    foundMap: function () {
       var obj = {};
       for (var i = 0; i < this.found.length; i++) {
         obj[this.found[i].absStartHour + this.found[i].name] = true;
       }
       return obj;
     },
-    categoryItems: function() {
+    categoryItems: function () {
       return this.selectedCat === -1
         ? this.allScheduleItems
         : this.schedule[this.selectedCat].items;
-    }
+    },
   },
   methods: {
-    updateTime: function() {
+    updateTime: function () {
       var hoursIn =
-        (new Date().getTime() - new Date("2022-02-18 15:00").getTime()) /
+        (new Date().getTime() - new Date("2023-02-04 15:00").getTime()) /
         3600000;
       if (hoursIn > 36) hoursIn = -1;
       this.hoursIn = hoursIn;
     },
-    getItemStyle: function(item) {
+    getItemStyle: function (item) {
       return {
         left: item.absStartHour * this.hourWidth + "px",
         width: (item.absEndHour - item.absStartHour) * this.hourWidth + "px",
         height: this.rowHeight + "px",
         color: item.color,
-        zIndex: Math.floor(item.absStartHour * 100)
+        zIndex: Math.floor(item.absStartHour * 100),
       };
     },
-    getOverlayStyle: function(item) {
+    getOverlayStyle: function (item) {
       return {
         left: item.absStartHour * this.hourWidth + "px",
         top:
           this.rowHeight *
             Math.min(item.row, this.scheduleRows.length / 2 - 1) +
           "px",
-        maxHeight: this.rowHeight * (this.scheduleRows.length / 2 + 1) + "px"
+        maxHeight: this.rowHeight * (this.scheduleRows.length / 2 + 1) + "px",
       };
     },
-    isFound: function(item) {
+    isFound: function (item) {
       return this.foundMap[item.absStartHour + item.name];
     },
-    getMarkerValue: function(n) {
+    getMarkerValue: function (n) {
       var v = n % 12;
       return (v || 12) + (n % 24 >= 12 ? "pm" : "am");
     },
@@ -384,11 +420,11 @@ export default Vue.component("event-schedule", {
         (this.$refs.wrapper.scrollWidth - this.$refs.wrapper.clientWidth)
       );
     },
-    handleScroll: function(e) {
+    handleScroll: function (e) {
       this.scrollPercent =
         e.target.scrollLeft / (e.target.scrollWidth - e.target.clientWidth);
     },
-    handleClick: function(e) {
+    handleClick: function (e) {
       var percent = Math.max(
         0,
         Math.min(
@@ -398,10 +434,10 @@ export default Vue.component("event-schedule", {
         )
       ); // account for 20% negative margins...
       TweenLite.to(this.$refs.wrapper, 0.25, {
-        scrollLeft: this.getScrollLeftFromPercent(percent)
+        scrollLeft: this.getScrollLeftFromPercent(percent),
       });
     },
-    startDrag: function(e) {
+    startDrag: function (e) {
       this.drag.dragStart =
         e.screenX || (e.touches && e.touches[0].screenX) || 0;
       this.drag.scrollPercentBeforeDrag = this.scrollPercent;
@@ -414,7 +450,7 @@ export default Vue.component("event-schedule", {
       document.addEventListener("touchcancel", this.stopDrag);
       document.body.style.userSelect = "none";
     },
-    onDrag: function(e) {
+    onDrag: function (e) {
       var delta =
         (e.screenX || (e.touches && e.touches[0].screenX) || 0) -
         this.drag.dragStart;
@@ -426,7 +462,7 @@ export default Vue.component("event-schedule", {
         this.$refs.wrapper.scrollLeft = this.getScrollLeftFromPercent(percent);
       }
     },
-    stopDrag: function(e) {
+    stopDrag: function (e) {
       this.drag.down = false;
       document.removeEventListener("mousemove", this.onDrag);
       document.removeEventListener("mouseup", this.stopDrag);
@@ -436,7 +472,7 @@ export default Vue.component("event-schedule", {
       document.removeEventListener("touchcancel", this.stopDrag);
       document.body.style.userSelect = null;
     },
-    getDayStyle: function(hour) {
+    getDayStyle: function (hour) {
       var left = hour * this.hourWidth;
       var scheduleLeft = this.$refs.wrapper
         ? this.scrollPercent *
@@ -446,31 +482,31 @@ export default Vue.component("event-schedule", {
       if (scheduleLeft > left) {
         return {
           left: left + "px",
-          transform: "translateX(" + (scheduleLeft - left - 9) + "px)"
+          transform: "translateX(" + (scheduleLeft - left - 9) + "px)",
         };
       }
       return { left: left + "px" };
     },
-    setSelected: function(item) {
+    setSelected: function (item) {
       this.selectedItem = item;
     },
-    downloadCalendar: function() {
+    downloadCalendar: function () {
       // if (this.selectedCat === -1){
       //   this.calendar.download("treeHacksSchedule2021")
-      // } 
-      if (this.selectedCat === 0){
-        this.calendar0.download("mainEvents2021")
-      } else if (this.selectedCat === 1){
-        this.calendar1.download("hackX2021")
-      } else if (this.selectedCat === 2){
-        this.calendar2.download("workshops2021")
-      } else if (this.selectedCat === 3){
-        this.calendar3.download("officeHours2021")
+      // }
+      if (this.selectedCat === 0) {
+        this.calendar0.download("mainEvents2021");
+      } else if (this.selectedCat === 1) {
+        this.calendar1.download("hackX2021");
+      } else if (this.selectedCat === 2) {
+        this.calendar2.download("workshops2021");
+      } else if (this.selectedCat === 3) {
+        this.calendar3.download("officeHours2021");
       } else {
-        this.calendar.download("treeHacksSchedule2021")
+        this.calendar.download("treeHacksSchedule2021");
       }
     },
-    hidePopup: function(e) {
+    hidePopup: function (e) {
       if (this.selectedItem !== null) {
         // not the popup itself was clicked and not a click target
         if (
@@ -483,6 +519,6 @@ export default Vue.component("event-schedule", {
           this.selectedItem = null;
         }
       }
-    }
-  }
+    },
+  },
 });
