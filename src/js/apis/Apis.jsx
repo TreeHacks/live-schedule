@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Bricklayer from "bricklayer";
 import data from "./data.yaml";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export default class extends React.Component {
   constructor(props) {
     super(props);
-    this.myRef = React.createRef();
     this.state = {
       tag: null,
       searchInput: "",
       companyData: data.companies,
+      constantCompanyData: data.companies,
     };
-    this.onTagClick = this.onTagClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -19,8 +19,10 @@ export default class extends React.Component {
     e.preventDefault();
     this.setState({ searchInput: e.target.value });
     //const dataC = [{ name: "Belgium", continent: "Europe" }];
-    if (this.state.searchInput.length > 0) {
-      const filtered = this.state.companyData.filter(
+    if (this.state.searchInput.length == 0) {
+      this.setState({ companyData: this.state.constantCompanyData });
+    } else if (this.state.searchInput.length > 0) {
+      const filtered = this.state.constantCompanyData.filter(
         (country) =>
           country.apis[0].title
             .toLowerCase()
@@ -45,23 +47,6 @@ export default class extends React.Component {
       project.submitLastName?.includes(search)
   );*/
 
-  componentDidMount() {
-    this.bricklayer = new Bricklayer(this.myRef.current);
-  }
-  onTagClick(tag) {
-    this.bricklayer.destroy();
-
-    if (tag == this.state.tag) {
-      this.setState({ tag: null }, () => {
-        this.bricklayer = new Bricklayer(this.myRef.current);
-      });
-    } else {
-      this.setState({ tag: tag }, () => {
-        this.bricklayer = new Bricklayer(this.myRef.current);
-      });
-    }
-  }
-
   render() {
     return (
       <div class="apis container">
@@ -80,12 +65,14 @@ export default class extends React.Component {
           Here you can find a list of all the API's offered by our sponsoring
           companies, along with any resources and forms we post to receive cloud
           credits.
-          {/* <input
+          <input
             type="text"
             placeholder="Search here"
+            id="searchInput"
             style={{
               width: "80%",
               borderRadius: "20px",
+              fontSize: "20px",
               backgroundColor: "transparent",
               border: "1px solid black",
               padding: "10px 15px",
@@ -93,7 +80,7 @@ export default class extends React.Component {
             }}
             onChange={this.handleChange}
             value={this.state.searchInput}
-          /> */}
+          />
           {/*  {(data.tags || []).map((tag) => (
             <button
               className={`api-tag-button ${
@@ -105,41 +92,64 @@ export default class extends React.Component {
             </button>
           ))} */}
         </div>
-        <div className="bricklayer" ref={this.myRef}>
-          {this.state.companyData.map((company) =>
-            company.apis.map((api) => {
-              if (
-                this.state.tag == null ||
-                (api.tags && api.tags.includes(this.state.tag))
-              ) {
-                return (
-                  <div className="api-item-container">
-                    <div className="card api-item" key={api.title}>
-                      <h3>{api.title}</h3>
-                      <p>{api.description}</p>
-                      {company.slack && (
-                        <p>
-                          slack: <strong>#{company.slack}</strong>
-                        </p>
-                      )}
-                      {console.log(api)}
-                      {api.links != null &&
-                        api.links.map((link) => (
-                          <a target="_blank" href={link.url}>
-                            <button className="main-button">
-                              {link.title || link.url}
-                            </button>
-                          </a>
-                        ))}
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry>
+            {this.state.companyData.map((company) =>
+              company.apis.map((api) => {
+                if (
+                  this.state.tag == null ||
+                  (api.tags && api.tags.includes(this.state.tag))
+                ) {
+                  return (
+                    <div className="api-item-container">
+                      <div className="card api-item" key={api.title}>
+                        <h3>{api.title}</h3>
+                        <p>{api.description}</p>
+                        {company.slack && (
+                          <p>
+                            slack: <strong>#{company.slack}</strong>
+                          </p>
+                        )}
+                        {console.log(api)}
+                        {api.links != null &&
+                          api.links.map((link) => (
+                            <a target="_blank" href={link.url}>
+                              <button className="main-button">
+                                {link.title || link.url}
+                              </button>
+                            </a>
+                          ))}
+                      </div>
                     </div>
-                  </div>
-                );
-              } else {
-                return null;
-              }
-            })
-          )}
-        </div>
+                  );
+                } else {
+                  return null;
+                }
+              })
+            )}
+            {this.state.companyData.length == 0 && (
+              <div
+                style={{
+                  justifyContent: "center",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <h1
+                  style={{
+                    color: "black",
+                    paddingBottom: "30px",
+                  }}
+                >
+                  No results found
+                </h1>
+              </div>
+            )}
+          </Masonry>
+        </ResponsiveMasonry>
+        <div></div>
       </div>
     );
   }

@@ -29,7 +29,10 @@ export default Vue.component("event-schedule", {
         </div>
       </div>
     </div>
+   
     <div class="schedule-category-view" v-if="query.length > 0 || selectedCat != -1">
+
+    
       <div class="section-wrapper">
         <div class="content-wrapper-wide">
           <div class="schedule-category-view-inner">
@@ -41,10 +44,14 @@ export default Vue.component("event-schedule", {
               <div v-if="item.description" v-html="item.description" />
               <span class="schedule-category-view-item-circle" :style="{background: item.color}"></span>
             </div>
+            <div v-if="categoryItems.length == 0" class="schedule-category-view-item">
+              Coming soon! We are still finalizing the incredible lineup and schedule for these events!
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
     <div ref="wrapper" v-if="query.length == 0 && selectedCat == -1" class="schedule-wrapper" @scroll="handleScroll" @click="hidePopup">
       <div class="schedule-inner" :style="{height: scheduleHeight, width: visibleHours * hourWidth + 'px'}">
         <div v-for="i in visibleHours" class="schedule-marker" :style="{left: (i - 1) * hourWidth + 'px'}">
@@ -129,6 +136,11 @@ export default Vue.component("event-schedule", {
           {
             name: "Office Hours",
             color: "#E51B5D",
+            items: [],
+          },
+          {
+            name: "Food",
+            color: "#0089B6",
             items: [],
           },
           {
@@ -495,15 +507,15 @@ export default Vue.component("event-schedule", {
       //   this.calendar.download("treeHacksSchedule2021")
       // }
       if (this.selectedCat === 0) {
-        this.calendar0.download("mainEvents2021");
+        this.calendar0.download("mainEvents2023");
       } else if (this.selectedCat === 1) {
-        this.calendar1.download("hackX2021");
+        this.calendar1.download("hackX2023");
       } else if (this.selectedCat === 2) {
-        this.calendar2.download("workshops2021");
+        this.calendar2.download("workshops2023");
       } else if (this.selectedCat === 3) {
-        this.calendar3.download("officeHours2021");
+        this.calendar3.download("officeHours2023");
       } else {
-        this.calendar.download("treeHacksSchedule2021");
+        this.calendar.download("treeHacksSchedule2023");
       }
     },
     hidePopup: function (e) {

@@ -27,6 +27,10 @@
   margin-bottom: 7.5%;
 }
 
+#searchInput:focus {
+  outline: none;
+}
+
 .prizes {
   padding-right: 30px;
   padding-left: 30px;
@@ -36,6 +40,47 @@
       /* divide by 2. */
       width: 33%;
     }
+  }
+}
+
+.sponsor {
+  background-image: linear-gradient(90deg, black, #0089b6);
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@-moz-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
   }
 }
 

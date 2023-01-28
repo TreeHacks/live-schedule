@@ -104,12 +104,21 @@ companies:
             url: https://docs.mem.ai/
         tags:
           - Geospatial
-  - company: Mem
+  - company: Convex
     apis:
       - title: Convex API
         description: Convex platform getting started, usage docs, and reference APIs
         links:
           - title: API
             url: https://docs.convex.dev/tutorial
+        tags:
+          - Geospatial
+  - company: Algolia
+    apis:
+      - title: Algolia API
+        description: Algolia has set up the "1 month free" for TreeHacks 2023 hackers, hackers can redeem it at https://algolia.com/redeem using the code TREEHACKS23
+        links:
+          - title: Redeem here
+            url: https://algolia.com/redeem
         tags:
           - Geospatial
