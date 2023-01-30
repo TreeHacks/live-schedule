@@ -13,7 +13,7 @@ function Resources() {
   return (
     <div id="resources" className="section">
       <a
-        //href="https://join.slack.com/t/treehacks2023/shared_invite/zt-1o9x80qf4-fgz7xEKi7nINeFDMF6Os5Q"
+        href="https://join.slack.com/t/treehacks2023/shared_invite/zt-1o9x80qf4-fgz7xEKi7nINeFDMF6Os5Q"
         target="_blank"
       >
         <div className="resource-1">
