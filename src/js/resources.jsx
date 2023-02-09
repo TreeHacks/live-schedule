@@ -16,36 +16,36 @@ function Resources() {
         href="https://join.slack.com/t/treehacks2023/shared_invite/zt-1o9x80qf4-fgz7xEKi7nINeFDMF6Os5Q"
         target="_blank"
       >
-        <div className="resource-1">
+        <div className="resource-container">
           <img src={slackIcon} className="resource-icon" />
           Slack
         </div>
       </a>
 
       <a href="https://treehacks-2023.devpost.com/" target="_blank">
-        <div className="resource-1">
+        <div className="resource-container">
           <img src={devpostIcon} className="resource-icon" />
           Devpost
         </div>
       </a>
 
       <a href="https://support.treehacks.com" target="_blank">
-        <div className="resource-1">
+        <div className="resource-container">
           <img src={faqIcon} className="resource-icon" />
           FAQ
         </div>
       </a>
       <a href="/prizes" target="">
-        <div className="resource-1">
+        <div className="resource-container">
           <img src={trophyIcon} className="resource-icon" />
           Prizes
         </div>
       </a>
 
       <a href="/apisresources" target="">
-        <div className="resource-6">
+        <div className="resource-container">
           <img src={apisIcon} className="resource-icon" />
-          APIs and Resources
+          APIs & Resources
         </div>
       </a>
     </div>

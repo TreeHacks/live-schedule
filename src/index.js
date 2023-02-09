@@ -20,6 +20,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import Prizes from "./js/prizes/Prizes.jsx";
+import Leaderboard from "./js/leaderboard.jsx";
 
 const reload = () => window.location.reload();
 
@@ -50,6 +51,9 @@ class Main extends React.Component {
             {/* <Projects /> */}
             <Hackpacks />
           </div>
+        </div>
+        <div id="group">
+          <Leaderboard />
         </div>
       </div>
     );

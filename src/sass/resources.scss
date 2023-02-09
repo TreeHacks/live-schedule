@@ -1,7 +1,8 @@
 #resources {
   @extend %section;
   @include flex(row nowrap, center, center);
-  padding: 0;
+  justify-content: space-evenly;
+  padding: 10px;
   border-radius: 12px;
 
   .disabled {
@@ -28,6 +29,12 @@
   border-right: none;
 }
 
+.resource-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .resource-7 {
   scale: 0.7;
   border-right: none;
@@ -35,7 +42,7 @@
 
 .resource-icon {
   height: 24px;
-  padding-right: 10px;
+  margin-bottom: 10px;
   vertical-align: middle;
 }
 
