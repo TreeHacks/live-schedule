@@ -1,0 +1,76 @@
+{
+  "Replit": {
+    "title": "Replit",
+    "name": "Stickers & Merch Store Discount",
+    "description": "We can send Replit stickers, please provide one shipping address to send them to. As well as 15% off ReplShop.",
+    "access": "Get 15% off your entire order using the promo code ReplitHackathon at checkout",
+    "links": {
+      "Checkout": "https://shop.replit.com/"
+    }
+  },
+  "Vercel": {
+    "title": "Vercel",
+    "name": "Vercel Free Tier",
+    "description": "Vercel offers a 100% free tier, perfect for Hackathons, to get your React, Vue, Svelte, Nuxt, Next.js, or similar projects deployed to the Web.",
+    "access": "Visit the link below",
+    "links": {
+      "Access": "https://vercel.com/"
+    }
+  },
+  "Skydio": {
+    "title": "Skydio",
+    "name": "Loaner Drones",
+    "description": "STK",
+    "access": "Skydio will bring drones for you to use!"
+  },
+  "Cadence": {
+    "title": "Cadence",
+    "name": "Cadence in the Cloud",
+    "description": "The Cadence OnCloud Platform offers easy cloud-based access to comprehensive, scalable software solutions for your specific engineering discipline, PCB design, multiphysics analysis, and computational fluid dynamics (CFD) analysis.",
+    "access": "View the following links",
+    "links": {
+      "Log In": "https://oncloud.cadence.com/appsportal",
+      "Getting Started": "https://resources.pcb.cadence.com/getting-started-with-cadence-oncloud-academic/getting-started-with-cadence-oncloud?utm_source=oncloud_academic&utm_medium=website&utm_campaign=academic_pdf"
+    }
+  },
+  "Wolfram": {
+    "title": "Wolfram",
+    "name": "Wolfram|One",
+    "description": "Access to both Desktop and Cloud, Wolfram Language, Knowledgebase, FreeCDF deployment, 5000 Wolfram|Alpha API calls, 5000 Cloud Credits, 2 installations per user, and 2 GB of Cloud Storage for 30 days.",
+    "access": "You will receive an email 36-48 hours before the hackathon"
+  },
+  "Twilio": {
+    "title": "Twilio",
+    "name": "Twilio credit",
+    "description": "Promo code, each hacker receives 30 dollars worth of Twilio credit which should last for a year",
+    "access": "All hackers can receive the promo code"
+  },
+  "Pear VC": {
+    "title": "Pear VC",
+    "name": "Fast track interview for a $100k Uncapped SAFE via Pear Competition",
+    "description": "Winners get fast-tracked to win upto a $100k Uncapped SAFE via Pear Competition (https://pear.vc/competition)",
+    "access": "Winners will receive an email from Udit Jain at Pear about next steps"
+  },
+
+  "Modal": {
+    "title": "Modal",
+    "name": "500$ in Modal API credits",
+    "description": "Modal compute credits that can be used towards GPU inference, training, compute jobs and hosting web APIs.",
+    "access": "Sign up here for credits and to get taken off the waitlist",
+    "links": {
+      "Sign Up": " https://forms.gle/52G2fWMbTgwjEXZh8"
+    }
+  },
+  "Cotopaxi": {
+    "title": "Cotopaxi",
+    "name": "Cotopaxi hats and beanies",
+    "description": "Cotopaxi merch!",
+    "access": "TBD"
+  },
+  "Mem": {
+    "title": "Mem",
+    "name": "1 complimentary month of Mem X",
+    "description": "1 complimentary month of Mem X",
+    "access": "TBD"
+  }
+}

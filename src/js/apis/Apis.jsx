@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Bricklayer from "bricklayer";
 import data from "./data.yaml";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import giftData from "./gifts.json";
 
 export default class extends React.Component {
   constructor(props) {
@@ -32,7 +33,6 @@ export default class extends React.Component {
             .includes(this.state.searchInput)
       );
       this.setState({ companyData: filtered });
-      console.log(filtered);
     }
   };
 
@@ -48,6 +48,11 @@ export default class extends React.Component {
   );*/
 
   render() {
+    var giftResult = [];
+    for (var i in giftData) {
+      giftResult.push([i, giftData[i]]);
+    }
+
     return (
       <div class="apis container">
         <div className="row">
@@ -76,6 +81,7 @@ export default class extends React.Component {
               backgroundColor: "transparent",
               border: "1px solid black",
               padding: "10px 15px",
+              fontFamily: "Avenir",
               margin: "20px 0",
             }}
             onChange={this.handleChange}
@@ -110,7 +116,6 @@ export default class extends React.Component {
                             slack: <strong>#{company.slack}</strong>
                           </p>
                         )}
-                        {console.log(api)}
                         {api.links != null &&
                           api.links.map((link) => (
                             <a target="_blank" href={link.url}>
@@ -149,7 +154,36 @@ export default class extends React.Component {
             )}
           </Masonry>
         </ResponsiveMasonry>
-        <div></div>
+        <div className="row">
+          <h1 className="api-title">Gift-In-Kind</h1>
+        </div>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry>
+            {giftResult.map((company) => {
+              return (
+                <div className="api-item-container">
+                  <div className="card api-item" key={company[1].title}>
+                    <h3>{company[1].name}</h3>
+                    <p style={{ color: "#0cb08a" }}>
+                      Sponsored by: {company[1].title}
+                    </p>
+                    <p>{company[1].description}</p>
+                    <h4 style={{ marginTop: "10px" }}>How to access</h4>
+                    <p>{company[1].access}</p>
+                    {company[1].links != null &&
+                      Object.keys(company[1].links).map((key) => {
+                        return (
+                          <a target="_blank" href={company[1].links[key]}>
+                            <button className="main-button">{key}</button>
+                          </a>
+                        );
+                      })}
+                  </div>
+                </div>
+              );
+            })}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
     );
   }
