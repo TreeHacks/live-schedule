@@ -45,7 +45,7 @@ function Resources() {
       <a href="/apisresources" target="">
         <div className="resource-container">
           <img src={apisIcon} className="resource-icon" />
-          APIs & Resources
+          APIs, Resources, Gifts-in-Kind
         </div>
       </a>
     </div>

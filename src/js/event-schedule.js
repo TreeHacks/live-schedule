@@ -58,8 +58,8 @@ export default Vue.component("event-schedule", {
           <div class="schedule-marker-time">[[getMarkerValue(i + 12)]]</div>
         </div>
         <div class="schedule-marker-day" :style="getDayStyle(0)">Fri</div>
-        <div class="schedule-marker-day" :style="getDayStyle(9)">Sat</div>
-        <div class="schedule-marker-day" :style="getDayStyle(33)">Sun</div>
+        <div class="schedule-marker-day" :style="getDayStyle(11)">Sat</div>
+        <div class="schedule-marker-day" :style="getDayStyle(35)">Sun</div>
         <div class="schedule-marker-now" :style="markerNowStyle"></div>
         <div v-for="(row, index) in scheduleRows" class="schedule-row" :style="{top: index * rowHeight + 'px'}">
           <div v-for="item in row" class="schedule-item" :class="{faded: !isFound(item), point: item.absStartHour == item.absEndHour}" :style="getItemStyle(item)" @click="setSelected(item)" :title="item.name">
@@ -98,9 +98,9 @@ export default Vue.component("event-schedule", {
   </div>`,
 
   created: function () {
-    // TODO: will need to change this date
+    // this date is the time they start hacking
     if (
-      (new Date().getTime() - new Date("2023-02-04 15:00").getTime()) /
+      (new Date().getTime() - new Date("2023-02-17 22:00").getTime()) /
         3600000 <
       36
     )
@@ -334,7 +334,7 @@ export default Vue.component("event-schedule", {
       query: "",
       rowHeight: 75,
       hourWidth: 100,
-      visibleHours: 51,
+      visibleHours: 52,
       scrollPercent: 0,
       schedule: [],
       scheduleRows: [],
@@ -395,7 +395,7 @@ export default Vue.component("event-schedule", {
   methods: {
     updateTime: function () {
       var hoursIn =
-        (new Date().getTime() - new Date("2023-02-04 15:00").getTime()) /
+        (new Date().getTime() - new Date("2023-02-17 22:00").getTime()) /
         3600000;
       if (hoursIn > 36) hoursIn = -1;
       this.hoursIn = hoursIn;

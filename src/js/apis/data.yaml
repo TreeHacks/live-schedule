@@ -122,3 +122,24 @@ companies:
             url: https://algolia.com/redeem
         tags:
           - Geospatial
+  - company: Modal
+    apis:
+      - title: Modal API
+        description: Modal makes serverless compute magically easy. You can deploy an ML endpoint, a cron job, or a web app, or run massively parallel experiments with a few lines of code. No kubernetes, no configuration, and instant feedback loops. Discount - 500$ free credits this month + 30$/mo perpetually.
+        links:
+          - title: To get off the waitlist
+            url: https://forms.gle/52G2fWMbTgwjEXZh8
+          - title: API
+            url: https://modal.com/
+        tags:
+          - Geospatial
+  - company: Dolby.io
+    apis:
+      - title: Dolby.io Real-time Streaming and Communications
+        description: Dolby.io’s award winning services and APIs are designed to improve the quality of media, communications, and streaming experiences. You can create live events that rival the real-world with immersive experiences using spatial audio, real-time interactivity with low-latency streaming to massive audiences, and social engagement with voice and video chat. Sign-up for an account using this link to get free minutes on your account for use on your projects for the hackathon -  https://bit.ly/dolbyio-at-treehacks
+        links:
+          - title: Access Here
+            url: https://bit.ly/dolbyio-at-treehacks
+
+        tags:
+          - Geospatial
