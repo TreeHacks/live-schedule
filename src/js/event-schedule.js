@@ -144,6 +144,11 @@ export default Vue.component("event-schedule", {
             items: [],
           },
           {
+            name: "Hardware",
+            color: "brown",
+            items: [],
+          },
+          {
             name: "Special Talks / Events",
             color: "#513ec3",
             items: [],
