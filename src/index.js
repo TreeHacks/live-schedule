@@ -9,8 +9,8 @@ import Projects from "./js/projects.jsx";
 import Hackpacks from "./js/hackpacks.jsx";
 import RoomStatus from "./js/room-status.jsx";
 import Apis from "./js/apis/Apis.jsx";
-
 import Challenge from "./js/challenge.jsx";
+
 import "./favicons/favicons";
 import "./index.scss";
 import {
@@ -22,6 +22,7 @@ import {
 import Prizes from "./js/prizes/Prizes.jsx";
 import Leaderboard from "./js/leaderboard.jsx";
 import Maps from "./js/maps/Maps.jsx";
+import Top10 from "./js/top10.jsx";
 
 const reload = () => window.location.reload();
 
@@ -55,6 +56,10 @@ class Main extends React.Component {
         </div>
         <div id="group">
           <Leaderboard />
+          <div id="sidebar">
+            {/* <Projects /> */}
+            <Top10 />
+          </div>
         </div>
       </div>
     );

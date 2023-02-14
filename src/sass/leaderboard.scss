@@ -1,6 +1,5 @@
 #leaderboard {
-  width: 50%;
-  margin: 0 auto;
+  @extend %half-section;
   padding: 20px;
   background-color: white;
   justify-content: "center";
