@@ -48,6 +48,12 @@ function Resources() {
           APIs, Resources, Gifts-in-Kind
         </div>
       </a>
+      <a href="/maps" target="">
+        <div className="resource-container">
+          <img src={mapsIcon} className="resource-icon" />
+          Maps
+        </div>
+      </a>
     </div>
   );
 }

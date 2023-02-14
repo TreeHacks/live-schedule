@@ -3,6 +3,7 @@
   @include flex(row nowrap, center, center);
   justify-content: space-evenly;
   padding: 10px;
+  flex-wrap: wrap;
   border-radius: 12px;
 
   .disabled {
@@ -31,6 +32,7 @@
 
 .resource-container {
   display: flex;
+  margin-top: 5px;
   flex-direction: column;
   justify-content: center;
 }

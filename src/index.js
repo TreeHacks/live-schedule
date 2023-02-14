@@ -21,6 +21,7 @@ import {
 } from "react-router-dom";
 import Prizes from "./js/prizes/Prizes.jsx";
 import Leaderboard from "./js/leaderboard.jsx";
+import Maps from "./js/maps/Maps.jsx";
 
 const reload = () => window.location.reload();
 
@@ -83,14 +84,15 @@ function App() {
             from="/faq"
             to="https://treehacks.quip.com/FHPoABlrGBLN"
           />
-          <CustomRedirect
+          {/* <CustomRedirect
             from="/maps"
             to="https://treehacks.quip.com/tOUKAghhGiby/Maps-"
-          />
+          /> */}
           <CustomRedirect from="/expo" to="https://treehacks.github.io/expo" />
           <Route exact path="/" component={Main} />
           <Route exact path="/_room/:roomId" component={RoomStatus} />
           <Route exact path="/apisresources" component={Apis} />
+          <Route exact path="/maps" component={Maps} />
           <Route exact path="/prizes" component={Prizes} />
           <Route exact path="/challenges/:challengeId" component={Challenge} />
           <Route path="/apple-app-site-association" onEnter={reload} />
