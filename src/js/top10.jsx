@@ -1,5 +1,4 @@
 import { hackpacks } from "./content.json";
-import Tabletop from "tabletop";
 import React, { useEffect, useState } from "react";
 
 function Top10() {
