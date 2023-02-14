@@ -61,6 +61,12 @@
       "link": "https://github.com/TreeHacks/hackpack-web-next"
     }
   ],
+  "preHackathonWorkshops": [
+    {
+      "name": "Education Technology with Professor Dan Schwartz",
+      "link": "https://drive.google.com/file/d/1FvLw7bmcZt64pr3SK0IUZs6vQzqBt4hG/view?usp=sharing"
+    }
+  ],
   "projects": [
     {
       "name": "Healthcare",
