@@ -11,6 +11,7 @@
   align-items: "center";
 }
 #leaderboard2 {
+  @extend %half-section;
   padding: 20px;
   background-color: white;
   justify-content: "center";

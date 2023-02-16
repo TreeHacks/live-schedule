@@ -23,6 +23,7 @@ import Prizes from "./js/prizes/Prizes.jsx";
 import Leaderboard from "./js/leaderboard.jsx";
 import Maps from "./js/maps/Maps.jsx";
 import Top10 from "./js/top10.jsx";
+import ScavLocation from "./js/scavLocation.jsx";
 
 const reload = () => window.location.reload();
 
@@ -54,13 +55,12 @@ class Main extends React.Component {
             <Hackpacks />
           </div>
         </div>
-        <div id="group">
+        {/* <div id="group">
           <Leaderboard />
           <div id="sidebar">
-            {/* <Projects /> */}
             <Top10 />
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
@@ -95,9 +95,11 @@ function App() {
           /> */}
           <CustomRedirect from="/expo" to="https://treehacks.github.io/expo" />
           <Route exact path="/" component={Main} />
-          <Route exact path="/_room/:roomId" component={RoomStatus} />
+          {/*  <Route exact path="/_room/:roomId" component={RoomStatus} /> */}
+          <Route exact path="/scavhunt/:locationID" component={ScavLocation} />
           <Route exact path="/apisresources" component={Apis} />
           <Route exact path="/maps" component={Maps} />
+          <Route exact path="/leaderboard" component={Top10} />
           <Route exact path="/prizes" component={Prizes} />
           <Route exact path="/challenges/:challengeId" component={Challenge} />
           <Route path="/apple-app-site-association" onEnter={reload} />

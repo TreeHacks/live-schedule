@@ -6,11 +6,15 @@ import Estuary from "../../logos/estuary.webp";
 import Convex from "../../logos/convex.webp";
 import InterSystems from "../../logos/intersystems.webp";
 import OpenAI from "../../logos/OpenAI.webp";
+import Modal from "../../logos/modal.webp";
 import Vercel from "../../logos/vercel.webp";
+import Palantir from "../../logos/palantir.webp";
+import Cotopaxi from "../../logos/cotopaxi.webp";
 import Citadel from "../../logos/citadel.webp";
 import You from "../../logos/you.webp";
 import Skydio from "../../logos/skydio.webp";
 import Cadence from "../../logos/cadence.webp";
+import EIS from "../../logos/EIS.webp";
 import Arduino from "../../logos/arduino.webp";
 import Zetachain from "../../logos/zetachain.webp";
 import Phri from "../../logos/phri.webp";
@@ -56,6 +60,14 @@ export default class extends React.Component {
         logo: You,
       },
       {
+        name: "Best Use of Dolby.io",
+        description:
+          "Add high-quality audio & video experiences to your application using Dolby.io Real-time Communications and Streaming.",
+        contents: "$1000 Cash prize (gift cards)",
+        company: "Dolby.io",
+        logo: Dolby,
+      },
+      {
         name: "Best Use of the You.com Open Platform",
         description:
           "Awarded to the team who creates the best You.com Open Platform Search app using the Developer Dashboard. Documentation and examples can be found at https://you.com/developers",
@@ -64,10 +76,28 @@ export default class extends React.Component {
         logo: You,
       },
       {
+        name: "Best Use of OpenAI Models",
+        description:
+          "Awarded to the team who uses OpenAI's models to create the most innovative application.",
+        contents: "$2,500 in API Credits",
+        company: "OpenAI",
+        logo: OpenAI,
+      },
+      {
+        name: "Highest Frequency Award",
+        description:
+          "For the team that makes the best use of RF and microwave design workflows for high-frequency solutions",
+        contents: "True Wireless Earbuds",
+        company: "Cadence",
+        logo: Cadence,
+        quantity: 5,
+      },
+      {
         name: "Best Web Frontend",
         description:
           "For the team that sweats the details. Every pixel of the UI has been polished and intentionally crafted. This award goes to the team who can merge the design and development worlds.",
         contents: "Vercel swag box ($100 value)",
+        quantity: 4,
         company: "Vercel",
         logo: Vercel,
       },
@@ -80,7 +110,7 @@ export default class extends React.Component {
         logo: Vercel,
       },
       {
-        name: "Skydio 2+ Drone",
+        name: "Best Drone Hack",
         description:
           "Skydio 2+ does all the shooting so you can concentrate on the adventure at hand. Launch Skydio into the air and after just 27 minutes, you will have over 100,000 breathtaking 4K stills to choose from, export and share. And when you’re ready to take your drone photography to the next level, Skydio Panorama Skills gives you live previews of massive horizontal, vertical and spherical images in up to 72 megapixels.",
         contents: "Skydio 2+ Drone",
@@ -96,11 +126,19 @@ export default class extends React.Component {
         logo: Phri,
       },
       {
+        name: "Palantir Prize",
+        description: "Best use of Palantir Foundry",
+        contents: "$2,000 cash prize",
+        company: "Palantir",
+        logo: Palantir,
+      },
+      {
         name: "Best Real-World Crypto Hack",
         description:
           "Build something using technologies like Bitcoin, Ethereum, ZetaChain that provides real utility for real people.",
-        contents: "1x Ledger Nano X per teammate",
+        contents: "Ledger Nano X",
         company: "ZetaChain",
+        quantity: 4,
         logo: Zetachain,
       },
       {
@@ -116,8 +154,9 @@ export default class extends React.Component {
         description:
           "Our future is most definitely going to be a cyberpunk dystopia. Show us your best hack that interacts with the physical world. This could be a robotic arm controlled by A.I., a custom pentest gadget, taking control of a consumer product, or a matrix of blinking LEDs meant to distract the masses. The best physical hack takes home the prize!",
         contents:
-          "4 Arduino Machine Vision Bundle Kits for the winning team members",
+          "Arduino Machine Vision Bundle Kits for the winning team members",
         company: "Arduino",
+        quantity: 4,
         logo: Arduino,
       },
       {
@@ -145,11 +184,20 @@ export default class extends React.Component {
         logo: Near,
       },
       {
-        name: "Replit",
+        name: "Replit's Choice Award",
         description:
           "This prize goes to the teams that the Replit team thinks made the coolest projects!",
-        contents:
-          "First place winner: 3,000 Cycles (~ 3 months of Hacker)\nSecond place winner: 2,000 Cycles (~ 2 months of Hacker)\nThird place winner: 1,000 Cycles (~ 1 month of Hacker)",
+        contents: {
+          1: {
+            name: "3,000 Cycles (~ 3 months of Hacker)",
+          },
+          2: {
+            name: "2,000 Cycles (~ 2 months of Hacker)",
+          },
+          3: {
+            name: "1,000 Cycles (~ 1 month of Hacker)",
+          },
+        },
         company: "Replit",
         logo: Replit,
       },
@@ -177,13 +225,31 @@ export default class extends React.Component {
         contents:
           "A Supabase swag pack (Black mode T-shirt, Supabase hat, cam cover, and stickers) for each member of the team.",
         company: "Supabase",
+        quantity: 4,
         logo: Supabase,
+      },
+      {
+        name: "Most Ethically Engaged Hack",
+        description:
+          "This prize awards the team that can best articulate the ethical tensions and potential hazards latent in their project and create innovative solutions for addressing them. Judging criteria for the prize can be found here: rb.gy/21wpus. Participants are encouraged to attend the Center for Ethics workshop on Saturday at 12:30pm to learn more. To be considered, participants must also include in their devpost submission a written narrative that explains what ethical considerations were most important when developing the project and how they were incorporated into their final product. You can see a previous winner here: https://devpost.com/software/soteria-58hg6m",
+        contents: "$1000 Cash Prize",
+        company: "Stanford Center for Ethics in Society",
+        logo: EIS,
+      },
+      {
+        name: "Peak Modal",
+        description:
+          "Best project that’s hosted on Modal, or used Modal somewhere along the line for training or data processing.",
+        contents: "$1000/mo in Modal credits for the winning team for life",
+        company: "Modal",
+        logo: Modal,
       },
       {
         name: "Most Innovative Hack",
         description: "",
         contents: "Back pack, blankets, sweat shirts, t-shirts, beanies  ",
         company: "Meta",
+        quantity: 4,
         logo: Meta,
       },
       {
@@ -199,9 +265,9 @@ export default class extends React.Component {
         name: "Best use of Data Hack",
         description:
           "Effective use of data is important to the decisions we make at Hudson River Trading, and we’re always looking for innovative new ways to strategize with data. This prize will be awarded to the hack that best integrates the use of data into their project.",
-        contents:
-          "Effective use of data is important to the decisions we make at Hudson River Trading, and we’re always looking for innovative new ways to strategize with data. This prize will be awarded to the hack that best integrates the use of data into their project.",
+        contents: "Acesss to online HRT VIP Swag Store + $150 Amazon Gift Card",
         company: "HRT",
+        quantity: 4,
         logo: HRT,
       },
       {
@@ -216,9 +282,10 @@ export default class extends React.Component {
         name: "Checkbook API Best Implementation",
         description:
           "This prize will be awarded to the team that has the most interesting use-case of the Checkbook.io platform.",
-        contents: "AirPod Pros for each member ",
+        contents: "AirPod Pros",
         company: "Checkbook.io",
         logo: Checkbook,
+        quantity: 4,
       },
       {
         name: "Best use of Drone Technology",
@@ -226,20 +293,13 @@ export default class extends React.Component {
           "Parrot is the European leader in the drone industry building Nano drones (under 2 pounds). As drones continue to find applications in a wide range of verticals, such as, industrial inspections, defense, first responders and surveillance, there is a need for development of innovative and specific software mission or customize accessories relevant for different use case. we are therefore interested by what can be the drone technology of tomorrow, how such a technology would be operated and in which mission contexts.",
         contents: "Anafi AI Drone",
         company: "Parrot Drones",
+        quantity: 1,
         logo: Parrot,
       },
       {
         name: "Best Startup",
         description:
-          "Given to the top performing teams in Y Combinator’s challenge.  These are the teams that we think are most likely to succeed at a startup.",
-        contents: "AirPod Pros for each member ",
-        company: "Checkbook.io",
-        logo: Checkbook,
-      },
-      {
-        name: "Checkbook API Best Implementation",
-        description:
-          "This prize will be awarded to the team that has the most interesting use-case of the Checkbook.io platform.",
+          "Given to the top performing teams in Y Combinator's challenge. These are the teams that we think are most likely to succeed at a startup.",
         contents:
           "Real interview for Y Combinator (no expiration, come interview whenever you want with whoever you want) Dinner on Sunday, with YC team (if in person)",
         company: "Y Combinator",
@@ -248,7 +308,8 @@ export default class extends React.Component {
       {
         name: "Dev tools",
         description: "Best developer tool",
-        contents: "4 Xbox Series S",
+        contents: "Xbox Series S",
+        quantity: 4,
         company: "Warp",
         logo: Warp,
       },
@@ -260,6 +321,16 @@ export default class extends React.Component {
           "$1,000 cash prize and upto $100,000 uncapped SAFE (more below)",
         company: "Pear VC",
         logo: Pear,
+      },
+      {
+        name: "Cotopaxi's Choice Award",
+        description:
+          "The Cotopaxi team will choose a team that is working on a project closely tied to Cotopaxi's values of sustainability and extreme poverty alleviation",
+        contents:
+          "Cotopaxi Allpa 28L Backpack, filled with a Dopp Kit, Cotopaxi hat, and MiiR x Cotopaxi camping mug. $250 value/ea",
+        company: "Cotopaxi",
+        logo: Cotopaxi,
+        quantity: 4,
       },
       {
         name: "Best Hack for a Real World Use Case ",
@@ -284,7 +355,8 @@ export default class extends React.Component {
         description:
           "Build your hackathon project faster with the power of Retool, and get your project demo ready in no time. Retool is perfect for beginners or coding veterans alike to build your apps 10x faster than usual. We’re looking for cool apps that utilize Retool in their hack!",
         contents:
-          "Ducky One 3 SF Pure White 65% Hotswap RGB Mechanical Keyboard per team member",
+          "Ducky One 3 SF Pure White 65% Hotswap RGB Mechanical Keyboard",
+        quantity: 4,
         company: "Retool",
         logo: Retool,
       },
@@ -292,8 +364,16 @@ export default class extends React.Component {
         name: "Best Use of Estuary",
         description:
           "This prize will go to the students who best demonstrate Estuary's use case and use creative ways to incorporate our API. The first place prize will be iPads and second place will be keyboards.",
-        contents:
-          "1st Prize - 4 iPad 10th Generation\n2nd Prize - 4 Mechanical/gaming keyboards",
+        contents: {
+          1: {
+            name: "iPad 10th Generation",
+            quantity: 4,
+          },
+          2: {
+            name: "4 Mechanical/gaming keyboards",
+            quantity: 4,
+          },
+        },
         company: "Warp",
         logo: Warp,
       },
@@ -311,16 +391,29 @@ export default class extends React.Component {
         description:
           "Best VALUENEX Radar Hack for the best VALUENEX Radar use case to show the world! Each winning team member will be awarded a $250 Amazon gift card and an annual VALUENEX Radar subscription. ",
         contents:
-          "VALUENEX package - Amazon gift card ($250 x 4 people = $1000) and VALUENEX Radar 1 year membership",
+          "VALUENEX package - Amazon gift card ($250) and VALUENEX Radar 1 year membership",
         company: "Otsuka <> Valuenex",
+        quantity: 4,
         logo: Otsuka,
       },
       {
         name: "Best Natural Language Hack",
         description:
           "The project with the best application of natural language processing",
-        contents:
-          "1st place: AirPods Max for each team member ($500/ea)\n2nd place: Ember Mug for each team member ($125/ea)\n3rd place: Amazon Echo Dot (5th gen) for each team member ($50/ea)",
+        contents: {
+          1: {
+            name: "AirPods Max ($500/each)",
+            quantity: 4,
+          },
+          2: {
+            name: "Ember Mug ($125/each)",
+            quantity: 4,
+          },
+          3: {
+            name: "Amazon Echo Dot (5th gen) ($50/ea)",
+            quantity: 4,
+          },
+        },
         company: "Mem",
         logo: Mem,
       },
@@ -332,15 +425,7 @@ export default class extends React.Component {
         company: "InterSystems",
         logo: InterSystems,
       },
-      {
-        name: "Best Use of Estuary",
-        description:
-          "This prize will go to the students who best demonstrate Estuary's use case and use creative ways to incorporate our API. The first place prize will be iPads and second place will be keyboards.",
-        contents:
-          "1st Prize - 4 iPad 10th Generation\n2nd Prize - 4 Mechanical/gaming keyboards",
-        company: "Warp",
-        logo: Warp,
-      },
+
       {
         name: "Best use of Convex",
         description:
@@ -365,7 +450,6 @@ export default class extends React.Component {
   handleChange = (e) => {
     e.preventDefault();
     this.setState({ searchInput: e.target.value });
-    console.log(e.target.value);
     //const dataC = [{ name: "Belgium", continent: "Europe" }];
     if (e.target.value.length == 0) {
       this.setState({ sData: this.state.constantSData });
@@ -375,7 +459,13 @@ export default class extends React.Component {
           country.name.toLowerCase().includes(this.state.searchInput) ||
           country.description.toLowerCase().includes(this.state.searchInput) ||
           country.company.toLowerCase().includes(this.state.searchInput) ||
-          country.contents.toLowerCase().includes(this.state.searchInput)
+          Object.keys(country.contents)
+            .map(function (item) {
+              return country.contents[item].name;
+            })
+            .join(" ")
+            .toLowerCase()
+            .includes(this.state.searchInput)
       );
 
       this.setState({
@@ -466,6 +556,7 @@ export default class extends React.Component {
         description: "Most points tallied on our leaderboard system",
         logo: Logo,
         contents: "TreeHacks Engraved AirPods (3rd generation)",
+        quantity: 1,
       },
     ];
 
@@ -495,7 +586,7 @@ export default class extends React.Component {
         name: "Web 3.0 and Fintech Grand Prize",
         description: "Best Web 3.0 project",
         logo: Logo,
-        contents: "Airline Gift Card to go to a crypto conference!",
+        contents: "Airline $250 Gift Card to go to a crypto conference!",
         quantity: 4,
       },
       {
@@ -513,13 +604,6 @@ export default class extends React.Component {
         quantity: 4,
       },
     ];
-
-    const rows = grandPrizeData.reduce(function (rows, key, index) {
-      return (
-        (index % 8 == 0 ? rows.push([key]) : rows[rows.length - 1].push(key)) &&
-        rows
-      );
-    }, []);
 
     return (
       <div>
@@ -560,7 +644,7 @@ export default class extends React.Component {
                     <h3>{col.name}</h3>
                     <p>{col.description}</p>
                     <p style={{ color: "white", fontWeight: "bold" }}>
-                      {col.contents} for each team member
+                      {col.quantity && col.quantity + "x"} {col.contents}
                     </p>
                     <h3 style={{ color: "white", marginTop: "10px" }}>
                       Sponsored by
@@ -607,7 +691,7 @@ export default class extends React.Component {
                     <h3>{col.name}</h3>
                     <p>{col.description}</p>
                     <p style={{ color: "white" }}>
-                      {col.contents} for each team member
+                      {col.quantity && col.quantity + "x"} {col.contents}
                     </p>
                     <h3 style={{ color: "white", marginTop: "10px" }}>
                       Sponsored by
@@ -650,6 +734,7 @@ export default class extends React.Component {
               backgroundColor: "transparent",
               border: "1px solid white",
               padding: "10px 15px",
+              fontFamily: "Avenir",
               margin: "20px 0",
             }}
             id="searchInput"
@@ -677,7 +762,32 @@ export default class extends React.Component {
                         <p>{col.description}</p>
                         <br />
                         <p style={{ color: "white" }}>Winners get: </p>
-                        <p style={{ color: "white" }}>{col.contents}</p>
+
+                        {typeof col.contents == "object" ? (
+                          <div>
+                            {Object.keys(col.contents).map((item) => {
+                              return (
+                                <p style={{ color: "white" }}>
+                                  {item == 1
+                                    ? "1st Place: "
+                                    : item == 2
+                                    ? "2nd Place: "
+                                    : item == 3
+                                    ? "3rd Place: "
+                                    : ""}
+                                  {col.contents[item].quantity &&
+                                    col.contents[item].quantity + "x"}{" "}
+                                  {col.contents[item].name}
+                                </p>
+                              );
+                            })}
+                          </div>
+                        ) : (
+                          <p style={{ color: "white" }}>
+                            {col.quantity && col.quantity + "x"} {col.contents}
+                          </p>
+                        )}
+
                         <h3 style={{ color: "white" }}>
                           Sponsored by {col.company}
                         </h3>

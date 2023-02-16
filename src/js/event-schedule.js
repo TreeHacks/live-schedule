@@ -115,7 +115,6 @@ export default Vue.component("event-schedule", {
     )
       .then((r) => r.json())
       .then((data) => {
-        console.log(data);
         // Schedule shell
         var schedule = [
           {
