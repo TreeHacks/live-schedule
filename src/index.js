@@ -9,8 +9,8 @@ import Projects from "./js/projects.jsx";
 import Hackpacks from "./js/hackpacks.jsx";
 import RoomStatus from "./js/room-status.jsx";
 import Apis from "./js/apis/Apis.jsx";
-
 import Challenge from "./js/challenge.jsx";
+
 import "./favicons/favicons";
 import "./index.scss";
 import {
@@ -21,6 +21,9 @@ import {
 } from "react-router-dom";
 import Prizes from "./js/prizes/Prizes.jsx";
 import Leaderboard from "./js/leaderboard.jsx";
+import Maps from "./js/maps/Maps.jsx";
+import Top10 from "./js/top10.jsx";
+import ScavLocation from "./js/scavLocation.jsx";
 
 const reload = () => window.location.reload();
 
@@ -52,9 +55,12 @@ class Main extends React.Component {
             <Hackpacks />
           </div>
         </div>
-        <div id="group">
+        {/* <div id="group">
           <Leaderboard />
-        </div>
+          <div id="sidebar">
+            <Top10 />
+          </div>
+        </div> */}
       </div>
     );
   }
@@ -83,14 +89,17 @@ function App() {
             from="/faq"
             to="https://treehacks.quip.com/FHPoABlrGBLN"
           />
-          <CustomRedirect
+          {/* <CustomRedirect
             from="/maps"
             to="https://treehacks.quip.com/tOUKAghhGiby/Maps-"
-          />
+          /> */}
           <CustomRedirect from="/expo" to="https://treehacks.github.io/expo" />
           <Route exact path="/" component={Main} />
-          <Route exact path="/_room/:roomId" component={RoomStatus} />
+          {/*  <Route exact path="/_room/:roomId" component={RoomStatus} /> */}
+          <Route exact path="/scavhunt/:locationID" component={ScavLocation} />
           <Route exact path="/apisresources" component={Apis} />
+          <Route exact path="/maps" component={Maps} />
+          <Route exact path="/leaderboard" component={Top10} />
           <Route exact path="/prizes" component={Prizes} />
           <Route exact path="/challenges/:challengeId" component={Challenge} />
           <Route path="/apple-app-site-association" onEnter={reload} />

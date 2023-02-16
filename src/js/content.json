@@ -61,6 +61,40 @@
       "link": "https://github.com/TreeHacks/hackpack-web-next"
     }
   ],
+  "preHackathonWorkshops": [
+    {
+      "name": "Education Technology with Professor Dan Schwartz",
+      "link": "https://drive.google.com/file/d/1FvLw7bmcZt64pr3SK0IUZs6vQzqBt4hG/view?usp=sharing"
+    },
+    {
+      "name": "Healthcare and Technology with Dr. Timothy Chou",
+      "link": "https://stanford.zoom.us/rec/share/dGaRxfSRv0h691Q72tf4WwtJ5ieEfErov_e6FD00-O2iWL-_weuXi3syj8sKWx8J.63k553i3yMCCE_OS"
+    },
+    {
+      "name": "Web Development",
+      "link": "https://stanford.zoom.us/rec/share/xFJwDSMvMfisALgV3qIy6ZxJD1dUoo-eCFzcJbQpBxgmrswBMyIKazT-WLdLLqYG.0hWMsW9cM7VgPCDk"
+    },
+    {
+      "name": "Web Development Source Code",
+      "link": "https://github.com/TreeHacks/treehacks-wordle-clone-2023"
+    },
+    {
+      "name": "ZetaChain: What is interoperability? What is an omnichain smart contract?",
+      "link": "https://stanford.zoom.us/rec/share/-bAuhxxC0zb3dr8KXC_6Z960q3LwZE5WDxqotIs7AoPKmM13rNJh6RBk1vME8hs.GPb_FdsvQPygLmDd"
+    },
+    {
+      "name": "RF Design in Microwave Office",
+      "link": "https://stanford.zoom.us/rec/share/H3_xJoMCx11ocYB9GX7nWpH2O7z1BZhJrGXh-3anRyZk21wcyMHNZVU31dijKoS1.Jnj4_qom3Jb5RBYR"
+    },
+    {
+      "name": "Android App Development",
+      "link": "https://stanford.zoom.us/rec/share/WcPLsitD3ePpbM7kPz9KbKp-4PmD6Lbl1zN222Qses2HDOBfYF15Tc36pOvxbnWj.1SzQ4zUEuJPdOuy5"
+    },
+    {
+      "name": "Android App Development Source Code",
+      "link": "https://github.com/TreeHacks/android-firebase-todo-list-workshop-src-code"
+    }
+  ],
   "projects": [
     {
       "name": "Healthcare",

@@ -7,6 +7,7 @@ import apisIcon from "../svg/apis.svg";
 import mapsIcon from "../svg/maps.svg";
 import faqIcon from "../svg/faq.svg";
 import trophyIcon from "../svg/trophy.svg";
+import leaderboard from "../svg/starchart.svg";
 import { Link } from "react-router-dom";
 
 function Resources() {
@@ -46,6 +47,18 @@ function Resources() {
         <div className="resource-container">
           <img src={apisIcon} className="resource-icon" />
           APIs, Resources, Gifts-in-Kind
+        </div>
+      </a>
+      <a href="/maps" target="">
+        <div className="resource-container">
+          <img src={mapsIcon} className="resource-icon" />
+          Maps
+        </div>
+      </a>
+      <a href="/leaderboard" target="">
+        <div className="resource-container">
+          <img src={leaderboard} className="resource-icon" />
+          Leaderboard
         </div>
       </a>
     </div>
