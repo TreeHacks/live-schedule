@@ -7,19 +7,19 @@ class Announcements extends React.Component {
     super(props);
 
     this.state = {
-      announcements: []
+      announcements: [],
     };
 
     this.md = new Remarkable({
       breaks: true,
-      linkify: true
+      linkify: true,
     });
   }
 
   componentWillMount() {
     fetch("https://root.treehacks.com/api/announcements")
-      .then(r => r.json())
-      .then(announcements => {
+      .then((r) => r.json())
+      .then((announcements) => {
         if (announcements.error) {
           throw new Error(JSON.stringify(announcements.error));
         }
@@ -30,18 +30,18 @@ class Announcements extends React.Component {
             content: this.md
               .render(emojify(text, { output: "unicode" }))
               .replace(/\s*&lt;!(?:channel|here)&gt;\s*/g, "") // remove @channel
-              .replace(/&lt;.*?\|(.*?)&gt;/g, "#$1") // reformat slack links
+              .replace(/&lt;.*?\|(.*?)&gt;/g, "#$1"), // reformat slack links
           };
         });
         this.setState({ announcements });
         this.props.setAnnouncementData(announcements);
       })
-      .catch(e => {
+      .catch((e) => {
         let announcements = [
           {
             content: `Failed to fetch announcements :( ${e}`,
-            ts: Date.now() / 1000
-          }
+            ts: Date.now() / 1000,
+          },
         ];
         this.setState({ announcements });
         this.props.setAnnouncementData(announcements);

@@ -10,6 +10,17 @@
   align-content: "center";
   align-items: "center";
 }
+#leaderboard2 {
+  padding: 20px;
+  background-color: white;
+  justify-content: "center";
+  display: "flex";
+  border-radius: 1vw;
+  box-shadow: 0 0 15px 0 #e4e4e4;
+  flex-direction: "column";
+  align-content: "center";
+  align-items: "center";
+}
 
 @media screen and (max-width: $tablet-screen) {
   #sidebar {
