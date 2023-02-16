@@ -420,7 +420,7 @@ export default class extends React.Component {
       {
         name: "Best Use of InterSystems IntegratedML",
         description:
-          "InterSystems is issuing a challenge to build the most interesting and innovative application using **InterSystems IntegratedML** -- in-database automated machine learning, the simplest way to create, deploy and use ML models to power next-generation intelligent applications.\nTo qualify for the prize, your solution needs to use InterSystems IntegratedML. InterSystems will provide free access to cloud-hosted accounts* and *onsite mentors' support. You will be able to submit your project to one of the main tracks as well.*",
+          "InterSystems is issuing a challenge to build the most interesting and innovative application using **InterSystems IntegratedML** -- in-database automated machine learning, the simplest way to create, deploy and use ML models to power next-generation intelligent applications.\nTo qualify for the prize, your solution needs to use InterSystems IntegratedML. InterSystems will provide free access to cloud-hosted accounts* and *onsite mentors' support. You will be able to submit your project to one of the main tracks as well. https://events.intersystems.com/treehacks2023",
         contents: "1st place: $2000\n2nd place: $1500\n3rd place: $1000",
         company: "InterSystems",
         logo: InterSystems,

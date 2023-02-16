@@ -143,3 +143,13 @@ companies:
 
         tags:
           - Geospatial
+  - company: Intersystems
+    apis:
+      - title: Intersystems IntegratedML
+        description: InterSystems is issuing a challenge to build the most interesting and innovative application using InterSystems IntegratedML -- in-database automated machine learning, the simplest way to create, deploy and use ML models to power next-generation intelligent applications. To qualify for the prize, your solution needs to use InterSystems IntegratedML. InterSystems will provide free access to cloud-hosted accounts and onsite mentors' support. You will be able to submit your project to one of the main tracks as well.
+        links:
+          - title: Access Here
+            url: https://events.intersystems.com/treehacks2023
+
+        tags:
+          - Geospatial
