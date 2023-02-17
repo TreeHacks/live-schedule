@@ -32,6 +32,7 @@ class RoomStatus extends React.Component {
       "o9lwg",
       "lwwer",
       "2csgz",
+      "99j53",
     ];
 
     const route2Data = {
@@ -43,7 +44,7 @@ class RoomStatus extends React.Component {
         clue: "ya like jazz?",
         nextLoc: "37.4242, -122.1714", //main quad
       },
-      rw83j: {
+      lj47b: {
         currentLoc: "Tressider (back patio area)",
         img: Tressider,
         description:
@@ -51,7 +52,7 @@ class RoomStatus extends React.Component {
         clue: "the site of the Berkeley bear’s murder...",
         nextLoc: "37.4249, -122.1694", //statues
       },
-      cdkrp: {
+      rwez3: {
         currentLoc: "White Memorial Fountain (The Claw)",
         img: Claw,
         description:
@@ -59,7 +60,7 @@ class RoomStatus extends React.Component {
         clue: "dessert as a reward for yet another year of being the best school in the world :)",
         nextLoc: "37.4252, -122.1676", //cantor
       },
-      "373p9": {
+      o9lwg: {
         currentLoc: "Hello by Xu Zhen (Churro)",
         img: Hello,
         description:
@@ -67,7 +68,7 @@ class RoomStatus extends React.Component {
         clue: "how do you feel about circles? What if they’re a little longer…",
         nextLoc: "37.4297, -122.1695", //cantor
       },
-      "9f1jb": {
+      lwwer: {
         currentLoc: "The Oval",
         img: Oval,
         description:
@@ -75,7 +76,7 @@ class RoomStatus extends React.Component {
         clue: "the mitochondria is the powerhouse of the cell…        ",
         nextLoc: "37.4319, -122.1742", //hoocver
       },
-      "8ei5o": {
+      "2csgz": {
         img: Clark,
         currentLoc: "Clark Center",
         description:
@@ -83,7 +84,7 @@ class RoomStatus extends React.Component {
         clue: "this guy started a company or something…        ",
         nextLoc: "37.4299, -122.1734", //lake lag
       },
-      "8fsga": {
+      "99j53": {
         currentLoc: "Gates",
         img: Gates,
         clue: "Congratulations—you’ve just finished our scavenger hunt! Head back to Huang to claim your points.",
@@ -138,7 +139,7 @@ class RoomStatus extends React.Component {
               Show this code to an organizer so they can give you points on the
               leaderboard!
             </h3>
-            <p>th2023-v2</p>
+            <p>th2023</p>
           </div>
         ) : (
           <h3 style={{ marginTop: "20px" }}>
