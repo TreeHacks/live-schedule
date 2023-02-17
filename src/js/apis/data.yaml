@@ -10,13 +10,15 @@ companies:
             url: https://vercel.com/docs/rest-api
         tags:
           - Geospatial
-  - company: Omnichain
+  - company: ZetaChain
     apis:
-      - title: Omnichain Smart Contracts and Messaging
+      - title: ZetaChain
         description: Smart Contracts and Messaging Platform that lets you build dApps that span many blockchains.
         links:
           - title: API
-            url: zetachain.com/docs/
+            url: https://zetachain.com/docs
+          - title: Tutorial
+            url: https://zetachain.notion.site/Deploy-your-first-smart-contract-on-ZetaChain-22dbf1ca117542919b5f991dded23c7c
         tags:
           - Geospatial
   - company: Arduino

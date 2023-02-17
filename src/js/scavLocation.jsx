@@ -17,8 +17,6 @@ class RoomStatus extends React.Component {
   }
 
   render() {
-    console.log(this.props.match.params.locationID);
-
     const validLocations1 = [
       "route1Start",
       "rw83j",
@@ -33,6 +31,7 @@ class RoomStatus extends React.Component {
       route1Start: {
         currentLoc: "Huang Engineering Center",
         img: Huang,
+        clue: "Clue: how do you feel about squares…",
         description:
           "Welcome to Stanford, you are now at the Huang Engineering Center. Jen-Hsun Huang is the Founder and CEO of NVIDIA, a company that designs graphics processing units (GPUs) for the gaming and professional markets.   ",
         nextLoc: "37.4274, -122.1703", //main quad
@@ -40,6 +39,7 @@ class RoomStatus extends React.Component {
       rw83j: {
         currentLoc: "Main Quad",
         img: MainQuad,
+        clue: "thinking is overrated…",
         description:
           "Welcome to the iconic view of Stanford. Imported Palm trees frame a view of Memorial Church, the non-denominational center of campus replete with stained glass and frescoes. Surrounding this, the oldest part of campus, are buildings that house many of the humanities classes.        ",
         nextLoc: "37.4285, -122.1699", //statues
@@ -47,6 +47,7 @@ class RoomStatus extends React.Component {
       cdkrp: {
         currentLoc: "Statues",
         img: Statues,
+        clue: "had enough rodin?",
         description:
           "Have you heard of Rodin? Perhaps you’ve heard of his most famous work, the thinker. Rodin sculptures appear at several places on campus, including here, with a direct sightline to Stanford’s iconic entrance: a palm-lined drive leading to “the oval” – an expansive field with a Stanford “S” written in flowers in the center.        ",
         nextLoc: "37.4329, -122.1702", //cantor
@@ -54,12 +55,14 @@ class RoomStatus extends React.Component {
       "373p9": {
         currentLoc: "Cantor",
         img: Cantor,
+        clue: "it’s green! But it’s blue! A Stanford riddle…",
         description:
           "Yo! Art is of paramount importance at Stanford – if the beauty of campus hasn’t convinced you, this next location certainly will. With the largest collection of Rodin sculptures anywhere in the world (besides Paris), come witness the cultural capital of campus ",
         nextLoc: "37.4271, -122.1684", //cantor
       },
       "9f1jb": {
         currentLoc: "Green Fountain",
+        clue: "You know how Sauron watches over everything from above…",
         img: GreenFountain,
         description:
           "Stanford, as you may have heard, has some funky traditions. Fountain hopping might be the best of them. Fountains across campus are chlorinated and prepared for the enjoyment and de-stressing of students. This historic fountain provides a view of Green Library, the intellectual hub of campus.        ",
@@ -68,6 +71,7 @@ class RoomStatus extends React.Component {
       "8ei5o": {
         img: Hoover,
         currentLoc: "Hoover Tower",
+        clue: "Swimming lags is great exercise…",
         description:
           "Rising 285 feet above campus, this structure’s first nine floors are entirely occupied by library stacks. Visible from almost all corners of Stanford’s campus, this is the monument to (arguably) Stanford’s most famous alum.        ",
         nextLoc: "37.4234, -122.1744", //lake lag
@@ -75,6 +79,7 @@ class RoomStatus extends React.Component {
       "8fsga": {
         currentLoc: "Lake Lag",
         img: LakeLag,
+        clue: "Congratulations—you’ve just finished our scavenger hunt! Head back to Huang to claim your points.",
         description:
           "Witness one of the most improbable artifacts of 2023! This body of water is filled for the first time in more than a decade, after the historic flooding earlier this year. Brimming with natural life – and now bacterially safe for swimming – this gorgeous locale has revitalized campus.        ",
         nextLoc: "Done!",
@@ -105,6 +110,10 @@ class RoomStatus extends React.Component {
         </h2>
         <p style={{ marginTop: "20px" }}>
           {route1Data[this.props.match.params.locationID].description}
+        </p>
+        <p style={{ marginTop: "20px" }}>
+          Clue for the next location:{" "}
+          {route1Data[this.props.match.params.locationID].clue}
         </p>
         <img
           src={route1Data[this.props.match.params.locationID].img}

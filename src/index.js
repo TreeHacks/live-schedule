@@ -24,6 +24,7 @@ import Leaderboard from "./js/leaderboard.jsx";
 import Maps from "./js/maps/Maps.jsx";
 import Top10 from "./js/top10.jsx";
 import ScavLocation from "./js/scavLocation.jsx";
+import ScavLocation2 from "./js/scavLocation2.jsx";
 
 const reload = () => window.location.reload();
 
@@ -97,6 +98,11 @@ function App() {
           <Route exact path="/" component={Main} />
           {/*  <Route exact path="/_room/:roomId" component={RoomStatus} /> */}
           <Route exact path="/scavhunt/:locationID" component={ScavLocation} />
+          <Route
+            exact
+            path="/scavhunt2/:locationID"
+            component={ScavLocation2}
+          />
           <Route exact path="/apisresources" component={Apis} />
           <Route exact path="/maps" component={Maps} />
           <Route exact path="/leaderboard" component={Top10} />
