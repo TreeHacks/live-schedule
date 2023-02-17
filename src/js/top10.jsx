@@ -25,7 +25,7 @@ function Top10() {
       <div id="sidebar">
         <div id="leaderboard2" className="section">
           <h1 className="section-heading">Top 10</h1>
-          <button
+          {/* <button
             style={{
               backgroundColor: "#105E54",
               border: "none",
@@ -37,7 +37,7 @@ function Top10() {
             }}
           >
             refresh
-          </button>
+          </button> */}
 
           <h5 style={{ marginTop: "20px" }}>
             Below are the top 10 hackers on the leaderboard right now, way to
