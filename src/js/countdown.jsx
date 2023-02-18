@@ -15,9 +15,14 @@ function Countdown() {
       <h1 id="countdown-heading">
         until hacking {new Date() < START_DATE ? "starts" : "ends"}!
       </h1>
-      {/* <a className="main-button" href="https://root.treehacks.com/rooms">
-        reserve a room
-      </a> */}
+
+      <a
+        className="main-button"
+        target="_blank"
+        href="https://calendar.google.com/calendar/u/0/embed?src=3af74f35a1cc66846660ec161c0b77670bf1fbf68e1001e5a0804503f2e7ac36@group.calendar.google.com&ctz=America/Los_Angeles"
+      >
+        mentor help
+      </a>
     </div>
   );
 }
