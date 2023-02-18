@@ -374,8 +374,8 @@ export default class extends React.Component {
             quantity: 4,
           },
         },
-        company: "Warp",
-        logo: Warp,
+        company: "Estuary",
+        logo: Estuary,
       },
       {
         name: "Best hack to connect with others through food",
