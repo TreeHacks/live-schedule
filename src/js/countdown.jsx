@@ -18,9 +18,6 @@ function Countdown() {
       {/* <a className="main-button" href="https://root.treehacks.com/rooms">
         reserve a room
       </a> */}
-      <a className="main-button" /*href="https://help.treehacks.com/" */>
-        request mentor help
-      </a>
     </div>
   );
 }
