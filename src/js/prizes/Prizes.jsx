@@ -299,7 +299,7 @@ export default class extends React.Component {
       {
         name: "Best Startup",
         description:
-          "Given to the top performing teams in Y Combinator's challenge. These are the teams that we think are most likely to succeed at a startup.",
+          "Given to the top performing teams in Y Combinator's challenge. These are the teams that we think are most ready to start a real startup. APPLY BY SATURDAY 2PM: full details at https://docs.google.com/document/d/1BvYNYp8Ii_Y-34-SUYmR9xj-UMxToX-18P6FAfDjpAQ/.",
         contents:
           "Real interview for Y Combinator (no expiration, come interview whenever you want with whoever you want) Dinner on Sunday, with YC team (if in person)",
         company: "Y Combinator",
