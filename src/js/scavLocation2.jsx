@@ -27,7 +27,6 @@ class RoomStatus extends React.Component {
     const validLocations2 = [
       "route2Start",
       "lj47b",
-      "q3tyq",
       "rwez3",
       "o9lwg",
       "lwwer",

@@ -64,7 +64,7 @@ companies:
   - company: Checkbook.io
     apis:
       - title: Checkbook Payments API
-        description: The Checkbook API
+        description: The Checkbook API allows you to send/receive payments from anyone, anytime with a single endpoint.  This one-sided push payments platform means only the sender needs to have a Checkbook account to send out payments. This means you can disburse payments to anyone so long as you have their email/phone number.
         links:
           - title: API
             url: https://docs.checkbook.io/reference/post-check-digital
