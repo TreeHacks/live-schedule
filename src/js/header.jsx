@@ -14,7 +14,7 @@ import twitterIcon from "../svg/twitter.svg";
 function Header() {
   return (
     <nav id="header">
-      <ul className="container" style={{ background: "#BBCCBB" }}>
+      <ul className="container" style={{ background: "#0CB08A" }}>
         <li id="header-logo">
           <a href="/">
             <img src={whitelogo} alt="treehacks small logo" />
