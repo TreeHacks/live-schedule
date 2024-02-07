@@ -111,7 +111,7 @@ export default Vue.component("event-schedule", {
     //62d6f1e7253936004578c672
     //old: 6203128ecad60200e7963432
     fetch(
-      "https://api.eventive.org/event_buckets/62d6f1e7253936004578c672/events_slim?api_key=2db927190aa686598bf88c893181cb7a"
+      "https://api.eventive.org/event_buckets/65c17d0a6cbb1d003973d1d9/events_slim?api_key=2db927190aa686598bf88c893181cb7a"
     )
       .then((r) => r.json())
       .then((data) => {

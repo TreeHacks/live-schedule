@@ -13,17 +13,7 @@ import { Link } from "react-router-dom";
 function Resources() {
   return (
     <div id="resources" className="section">
-      <a
-        href="https://join.slack.com/t/treehacks2023/shared_invite/zt-1o9x80qf4-fgz7xEKi7nINeFDMF6Os5Q"
-        target="_blank"
-      >
-        <div className="resource-container">
-          <img src={slackIcon} className="resource-icon" />
-          Slack
-        </div>
-      </a>
-
-      <a href="https://treehacks-2023.devpost.com/" target="_blank">
+      <a href="https://treehacks-2024.devpost.com/" target="_blank">
         <div className="resource-container">
           <img src={devpostIcon} className="resource-icon" />
           Devpost
