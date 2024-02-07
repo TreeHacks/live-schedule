@@ -1,115 +1,97 @@
 tags:
   -
 companies:
-  - company: Vercel
+  - company: Chroma
     apis:
-      - title: Vercel
-        description: Create projects, deployments, and more with programmatic access to your Vercel account.
+      - title: Chroma DB
+        description: AI-native open-source vector database
         links:
           - title: API
-            url: https://vercel.com/docs/rest-api
+            url: https://docs.trychroma.com/
         tags:
           - Geospatial
-  - company: Omnichain
+  - company: Together AI
     apis:
-      - title: Omnichain Smart Contracts and Messaging
-        description: Smart Contracts and Messaging Platform that lets you build dApps that span many blockchains.
+      - title: Together API
+        description: Build your application using the fastest inference engine with Together Inference API. You can find 100+ open source models on our platform including Mistral and LLaMA-2 models. If you would like to build your own model, fine-tune leading open-source LLMs using Together Fine-tuning API.
         links:
           - title: API
-            url: zetachain.com/docs/
+            url: https://docs.together.ai/docs
         tags:
           - Geospatial
-  - company: Arduino
+  - company: Vespa
     apis:
-      - title: Arduino Cloud REST API & SDK
-        description: The Arduino IoT Cloud REST API can be accessed through a set of endpoints to manage Devices, Things, Properties, and more. It can be accessed via any HTTP client and is supported by JavaScript, Python, and Golang clients.
+      - title: Vespa Cloud API
+        description: API to upload application configuration, including ML models. Feed data and query the corpus, including ML inference over the full data set
         links:
           - title: API
-            url: https://docs.arduino.cc/arduino-cloud/getting-started/arduino-iot-api
+            url: https://cloud.vespa.ai/en/getting-started
         tags:
           - Geospatial
-  - company: NEAR Protocol
+  - company: Terra API
     apis:
-      - title: NEAR.social
-        description:
-          NEAR Social is a social networking platform the runs on smart contract (social.near) deployed on the NEAR Protocol (a layer 1 blockchain) that allows for anyone to post their ReactJS like code as widgets directly on the open web. Not only can anyone create or fork any widget directly on the platform near.social, but all data can be indexed from the blockchain known as the Social DB. Imagine CodePen meets Facebook meets OpenAPI.
-          To access -> 👋🏽 1st Make An Account → Create Wallet → Sign into NEAR Social
-        links:
-          - title: GitHub
-            url: https://github.com/nearsocial/
-          - title: Social Docs
-            url: https://thewiki.near.page/near.social_docs
-          - title: NEAR Social Developer Telegram
-            url: https://nearbuilders.com/tg-social
-        tags:
-          - Geospatial
-  - company: Wolfram
-    apis:
-      - title: Wolfram|One
-        description: Access to both Desktop and Cloud, Wolfram Language, Knowledgebase, FreeCDF deployment, 5000 Wolfram|Alpha API calls, 5000 Cloud Credits, 2 installations per user, and 2 GB of Cloud Storage.
-        links:
-        tags:
-          - Geospatial
-  - company: Supabase
-    apis:
-      - title: Supabase
-        description: Access to both Desktop and Cloud, Wolfram Language, Knowledgebase, FreeCDF deployment, 5000 Wolfram|Alpha API calls, 5000 Cloud Credits, 2 installations per user, and 2 GB of Cloud Storage.
-        links:
-          - title: Access Link
-            url: https://app.supabase.com/
-        tags:
-          - Geospatial
-  - company: Checkbook.io
-    apis:
-      - title: Checkbook Payments API
-        description: The Checkbook API
+      - title: Terra API
+        description: The API that makes it easy to access health data from wearables and sensors, generate insights, and use AI tools.
         links:
           - title: API
-            url: https://docs.checkbook.io/reference/post-check-digital
+            url: https://dashboard.tryterra.co/user/signup?tree=hacks
         tags:
           - Geospatial
-  - company: Retool
+  - company: Canva
     apis:
-      - title: Retool
-        description: Retool is the ultimate hackathon hack! It's a low-code platform that makes building any app a breeze with minimal setup required. With Retool's drag-and-drop app builder, you can assemble custom apps, dashboards, and admin panels in minutes. Plus, with the ability to write custom code and connect to any data source or API, you can create the perfect tool for your hackathon demo without having to fuss about setup.
+      - title: Canva Apps SDK
+        description: APIs enable access to resources inside of the Canva Editor, allowing devs to add, change, or upload new assets and elements to a user’s design. Includes @canva/asset, @canva/design, @canva/user, @canva/platform.
         links:
-          - title: Register for the free plan here
-            url: https://login.retool.com/auth/signup?plan=free
+          - title: Starter Kit Repo
+            url: https://github.com/canva-sdks/canva-apps-sdk-starter-kit
+          - title: NPM
+            url: https://www.npmjs.com/package/@canva/design
         tags:
           - Geospatial
-  - company: Protocol Labs
+  - company: Intel
     apis:
-      - title: Estuary API
-        description: Allows hackers to upload data to Estuary. To access, hackers msut apply for an invite - in the application, hackers must state they are a part of TreeHacks.
+      - title: Intel Developer Cloud
+        description: Accelerate AI development using Intel®-optimized software on the latest Intel® Xeon® processors and GPU compute.
         links:
-          - title: Link to apply for an invite
-            url: https://docs.estuary.tech/get-invite-key
         tags:
           - Geospatial
-  - company: Otsuka Valuenex
+  - company: Pinecone
     apis:
-      - title: VALUENEX Radar
-        description: VALUENEX Radar is a data visualization platform with our proprietary algorithm to analyze any type of compiled text, such as start-up data, scientific papers, news, financial reports, customer feedback, or anything else you can think of, to gain insight into previously unseen patterns and future movements, allowing for detection and extraction of key knowledge such as untapped potential, new opportunities, competitive threats, and collaborative links to make better decisions for future strategy.
-        links:
-          - title: NOT GIVEN YET
-            url:
-        tags:
-          - Geospatial
-  - company: Mem
-    apis:
-      - title: Mem API
-        description: The Mem API is a way for people to develop integrations and flows for Mem. The Mem API enables a variety of information—text messages, sound clips, videos, contacts, projects, emails, documents, tasks, calendar events, you name it—to flow into and out of your Mem knowledge graph, the place where your information is connected, contextualized, and automatically structured into an intelligent, assistive database.
+      - title: Pinecone API
+        description: Manage Pinecone vector database indexes, and perform data operations such as upsert and query.
         links:
           - title: API
-            url: https://docs.mem.ai/
+            url: https://app.pinecone.io/
+          - title: Examples
+            url: http://github.com/pinecone-io/examples
         tags:
           - Geospatial
-  - company: Mem
+  - company: Crossmint
+    apis:
+      - title: Crossmint API
+        description: This is where you can find all the API references for Crossmint’s suite of products.
+        links:
+          - title: API
+            url: https://docs.crossmint.com/api-reference/
+          - title: Quickstart
+            url: https://docs.crossmint.com/verifiable-credentials/quickstart
+        tags:
+          - Geospatial
+  - company: Merklebot
+    apis:
+      - title: Merklebot API
+        description: 
+        links:
+          - title: Quickstart
+            url: https://app.merklebot.com/docs/tutorials/quickstart
+        tags:
+          - Geospatial
+  - company: Convex
     apis:
       - title: Convex API
         description: Convex platform getting started, usage docs, and reference APIs
         links:
           - title: API
-            url: https://docs.convex.dev/tutorial
+            url: https://www.convex.dev/hackathon
         tags:
           - Geospatial
