@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Bricklayer from "bricklayer";
 import Logo from "../../logos/treehacks_logo.webp";
+import GrandPrize from "../../logos/bigCheck.webp";
 import Otsuka from "../../logos/otsuka.webp";
 import Estuary from "../../logos/estuary.webp";
 import Convex from "../../logos/convex.webp";
@@ -512,7 +513,7 @@ export default class extends React.Component {
         name: "Moonshot Prize",
         description: "The craziest, most out-of-this-world project built at TreeHacks",
         contents: "$10,000 Cash",
-        logo: Logo,
+        logo: GrandPrize,
         quantity: 4,
       },
       {
@@ -546,7 +547,7 @@ export default class extends React.Component {
       {
         name: "Best Beginner Hack",
         description:
-          "Best hack made by a majority-beginner (beginner = this is your first hackathon!) team",
+          "Best hack by a majority-beginner team (beginner = this is your first hackathon!)",
         contents: "Razor Keyboard + Mouse",
         logo: Logo,
         quantity: 4,
@@ -571,7 +572,7 @@ export default class extends React.Component {
       {
         name: "Blockchain and Security Grand Prize",
         logo: Logo,
-        description: "Best project in the field of blockchain and/or security",
+        description: "Best blockchain and/or security project",
         contents: "JBL Partybox",
         quantity: 4,
       },
@@ -632,6 +633,19 @@ export default class extends React.Component {
                     <p style={{ color: "white", fontWeight: "bold" }}>
                       {col.quantity && col.quantity + "x"} {col.contents}
                     </p>
+                    <h3 style={{ color: "white" }}>
+                          Sponsored by {col.company}
+                        </h3>
+                        <img
+                          src={col.logo}
+                          className="resource-6"
+                          style={{
+                            backgroundColor: "white",
+                            borderRadius: "20px",
+                            padding: "10px",
+                            scale: "0.7",
+                          }}
+                        />
                   </div>
                 </div>
               );
@@ -689,7 +703,7 @@ export default class extends React.Component {
             style={{
               width: "80%",
               borderRadius: "20px",
-              color: "white",
+              color: "#487D5D",
               fontSize: "20px",
               backgroundColor: "transparent",
               border: "1px solid white",
