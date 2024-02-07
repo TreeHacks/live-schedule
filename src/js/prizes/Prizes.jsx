@@ -510,7 +510,7 @@ export default class extends React.Component {
     const grandPrizeData = [
       {
         name: "Moonshot Prize",
-        description: "The craziest, most out-of-this-world project",
+        description: "The craziest, most out-of-this-world project built at TreeHacks",
         contents: "$10,000 Cash",
         logo: Logo,
         quantity: 4,
@@ -538,7 +538,7 @@ export default class extends React.Component {
       },
       {
         name: "Most Impactful Hack",
-        description: "The largest social impact project",
+        description: "The project with the largest impact, whether it be deep or wide ranging",
         contents: "Mac Mini",
         logo: Logo,
         quantity: 4,
@@ -546,7 +546,7 @@ export default class extends React.Component {
       {
         name: "Best Beginner Hack",
         description:
-          "Best hack made by a majority-beginner team. Beginners are hackers for whom TreeHacks is their first hackathon.",
+          "Best hack made by a majority-beginner (beginner = this is your first hackathon!) team",
         contents: "Razor Keyboard + Mouse",
         logo: Logo,
         quantity: 4,
@@ -611,7 +611,7 @@ export default class extends React.Component {
 
           <h1
             className="api-title"
-            style={{ marginTop: "0px", paddingTop: "20px", color: "white" }}
+            style={{ marginTop: "0px", paddingTop: "20px", color: "#487D5D" }}
           >
             Grand Prizes
           </h1>
@@ -632,19 +632,6 @@ export default class extends React.Component {
                     <p style={{ color: "white", fontWeight: "bold" }}>
                       {col.quantity && col.quantity + "x"} {col.contents}
                     </p>
-                    <h3 style={{ color: "white", marginTop: "10px" }}>
-                      Sponsored by
-                    </h3>
-                    <img
-                      src={col.logo}
-                      className="resource-6"
-                      style={{
-                        backgroundColor: "white",
-                        marginTop: "10px",
-                        borderRadius: "20px",
-                        padding: "20px",
-                      }}
-                    />
                   </div>
                 </div>
               );
@@ -653,11 +640,11 @@ export default class extends React.Component {
         </div>
         <div
           class="trackPrizes"
-          style={{ backgroundColor: "#151729", paddingTop: "40px" }}
+          style={{ backgroundColor: "#E3EBDD", paddingTop: "40px" }}
         >
           <h1
             className="api-title"
-            style={{ marginTop: "0px", paddingTop: "20px", color: "white" }}
+            style={{ marginTop: "0px", paddingTop: "20px", color: "#487D5D" }}
           >
             Track Prizes
           </h1>
@@ -669,7 +656,7 @@ export default class extends React.Component {
                   <div
                     className="card api-item"
                     style={{
-                      backgroundImage: "linear-gradient(90deg, black, #8174b4)",
+                      backgroundColor: "#484D7D",
                       color: "white",
                       border: "1px solid #8174b4",
                     }}
@@ -679,19 +666,6 @@ export default class extends React.Component {
                     <p style={{ color: "white" }}>
                       {col.quantity && col.quantity + "x"} {col.contents}
                     </p>
-                    <h3 style={{ color: "white", marginTop: "10px" }}>
-                      Sponsored by
-                    </h3>
-                    <img
-                      src={col.logo}
-                      className="resource-6"
-                      style={{
-                        backgroundColor: "white",
-                        marginTop: "10px",
-                        borderRadius: "20px",
-                        padding: "20px",
-                      }}
-                    />
                   </div>
                 </div>
               );
@@ -700,11 +674,11 @@ export default class extends React.Component {
         </div>
         <div
           class="sponsorPrizes"
-          style={{ backgroundColor: "#151729", paddingTop: "40px" }}
+          style={{ backgroundColor: "#E3EBDD", paddingTop: "40px" }}
         >
           <h1
             className="api-title"
-            style={{ marginTop: "0px", paddingTop: "20px", color: "white" }}
+            style={{ marginTop: "0px", paddingTop: "20px", color: "#487D5D" }}
           >
             Sponsor Prizes
           </h1>
