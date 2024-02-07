@@ -633,16 +633,6 @@ export default class extends React.Component {
                     <p style={{ color: "white", fontWeight: "bold" }}>
                       {col.quantity && col.quantity + "x"} {col.contents}
                     </p>
-                    <h3 style={{ color: "white" }}>
-                          Sponsored by {col.company}
-                        </h3>
-                        <img
-                          src={col.logo}
-                          className="resource-6"
-                          style={{
-                            padding: "3px",
-                          }}
-                        />
                   </div>
                 </div>
               );
@@ -667,7 +657,7 @@ export default class extends React.Component {
                   <div
                     className="card api-item"
                     style={{
-                      backgroundColor: "#9A5693",
+                      backgroundColor: "#7D4878",
                       color: "white",
                       border: "1px solid #8174b4",
                     }}
