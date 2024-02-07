@@ -640,8 +640,7 @@ export default class extends React.Component {
                           src={col.logo}
                           className="resource-6"
                           style={{
-                            padding: "10px",
-                            scale: "0.7",
+                            padding: "3px",
                           }}
                         />
                   </div>
