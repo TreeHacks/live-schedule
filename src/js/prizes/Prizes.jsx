@@ -640,8 +640,6 @@ export default class extends React.Component {
                           src={col.logo}
                           className="resource-6"
                           style={{
-                            backgroundColor: "white",
-                            borderRadius: "20px",
                             padding: "10px",
                             scale: "0.7",
                           }}
@@ -670,7 +668,7 @@ export default class extends React.Component {
                   <div
                     className="card api-item"
                     style={{
-                      backgroundColor: "#484D7D",
+                      backgroundColor: "#9A5693",
                       color: "white",
                       border: "1px solid #8174b4",
                     }}
