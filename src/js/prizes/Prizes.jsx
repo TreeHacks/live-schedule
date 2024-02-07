@@ -511,35 +511,35 @@ export default class extends React.Component {
       {
         name: "Moonshot Prize",
         description: "The craziest, most out-of-this-world project",
-        contents: "Segway - G30Max Electric Kick Scooter",
+        contents: "$10,000 Cash",
         logo: Logo,
         quantity: 4,
       },
       {
         name: "Most Technically Complex Hack",
         description: "The project built using the most technical skills",
-        contents: "Mac Minis",
+        contents: "Apple Watch",
         logo: Logo,
         quantity: 4,
       },
       {
         name: "Most Creative Hack",
         description: "The project with the most innovative idea and deployment",
-        contents: "Sonos Roam",
+        contents: "Nintendo Switch",
         logo: Logo,
         quantity: 4,
       },
       {
         name: "Best Hardware Hack",
         description: "Best hack that incorporates hardware",
-        contents: "Monoprice Maker Select 3D Printer v2",
+        contents: "Prusa MINI+ kit 3D Printer",
         logo: Logo,
         quantity: 4,
       },
       {
         name: "Most Impactful Hack",
         description: "The largest social impact project",
-        contents: "Apple TV Wi-FI + Ethernet (128 GB)",
+        contents: "Mac Mini",
         logo: Logo,
         quantity: 4,
       },
@@ -547,16 +547,9 @@ export default class extends React.Component {
         name: "Best Beginner Hack",
         description:
           "Best hack made by a majority-beginner team. Beginners are hackers for whom TreeHacks is their first hackathon.",
-        contents: "Audio Technica MX50 Headphones",
+        contents: "Razor Keyboard + Mouse",
         logo: Logo,
         quantity: 4,
-      },
-      {
-        name: "Overall Leaderboard Winner",
-        description: "Most points tallied on our leaderboard system",
-        logo: Logo,
-        contents: "TreeHacks Engraved AirPods (3rd generation)",
-        quantity: 1,
       },
     ];
 
@@ -565,41 +558,34 @@ export default class extends React.Component {
         name: "Healthcare Grand Prize",
         description: "Best healthcare project",
         logo: Logo,
-        contents: "Apple Watch SE",
+        contents: "Oura ring",
         quantity: 4,
       },
       {
         name: "Sustainbility Grand Prize",
         description: "Best sustainability project",
         logo: Logo,
-        contents: "Apeman M4 DLP Projector 1080P",
+        contents: "Patogonia Jackets",
         quantity: 4,
       },
       {
-        name: "New Frontiers Grand Prize",
+        name: "Blockchain and Security Grand Prize",
         logo: Logo,
-        description: "Best project incorporating cutting edge tech",
-        contents: "Quest 2",
-        quantity: 4,
-      },
-      {
-        name: "Web 3.0 and Fintech Grand Prize",
-        description: "Best Web 3.0 project",
-        logo: Logo,
-        contents: "Airline $250 Gift Card to go to a crypto conference!",
+        description: "Best project in the field of blockchain and/or security",
+        contents: "JBL Partybox",
         quantity: 4,
       },
       {
         name: "Education Grand Prize",
         description: "Best education project",
-        contents: "Nintendo Switch",
+        contents: "Quest 3",
         logo: Logo,
         quantity: 4,
       },
       {
-        name: "Privacy and Safety Grand Prize",
-        description: "Best Privacy and Safety project",
-        contents: "Mark VII + AC Tacitcal Wifi Pineapples",
+        name: "Entertainment Grand Prize",
+        description: "Best entertainment project",
+        contents: "Dell Curved Monitor",
         logo: Logo,
         quantity: 4,
       },
@@ -608,7 +594,7 @@ export default class extends React.Component {
     return (
       <div>
         <div
-          style={{ backgroundColor: "#151729", paddingTop: "0px" }}
+          style={{ backgroundColor: "#E3EBDD", paddingTop: "0px" }}
           className="prizes"
         >
           {/*  <div className="row">
@@ -637,7 +623,7 @@ export default class extends React.Component {
                   <div
                     className="card api-item"
                     style={{
-                      backgroundImage: "linear-gradient(90deg, black, #105E54)",
+                      backgroundColor: "#487D5D",
                       color: "white",
                     }}
                   >
