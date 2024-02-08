@@ -54,7 +54,7 @@ export default class extends React.Component {
     }
 
     return (
-      <div class="apis container">
+      <div class="apis container" style={{ backgroundColor: "#E3EBDD", paddingTop: "0px" }}>
         <div className="row">
           <h1 className="api-title">APIs & Resources</h1>
         </div>

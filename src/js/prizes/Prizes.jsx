@@ -3,47 +3,31 @@ import Bricklayer from "bricklayer";
 import Logo from "../../logos/treehacks_logo.webp";
 import GrandPrize from "../../logos/bigCheck.webp";
 import Otsuka from "../../logos/otsuka.webp";
-import Estuary from "../../logos/estuary.webp";
 import Convex from "../../logos/convex.webp";
 import InterSystems from "../../logos/intersystems.webp";
-import OpenAI from "../../logos/OpenAI.webp";
-import Modal from "../../logos/modal.webp";
-import Vercel from "../../logos/vercel.webp";
-import Palantir from "../../logos/palantir.webp";
-import Cotopaxi from "../../logos/cotopaxi.webp";
-import Citadel from "../../logos/citadel.webp";
-import You from "../../logos/you.webp";
-import Skydio from "../../logos/skydio.webp";
-import Cadence from "../../logos/cadence.webp";
-import EIS from "../../logos/EIS.webp";
-import Arduino from "../../logos/arduino.webp";
-import Zetachain from "../../logos/zetachain.webp";
-import Phri from "../../logos/phri.webp";
-import Mem from "../../logos/mem.webp";
-import Cypherd from "../../logos/cypherd.webp";
 import HRT from "../../logos/hrt.webp";
-import Meta from "../../logos/meta.webp";
-import Cisco from "../../logos/cisco.webp";
-import SquareL from "../../logos/square.webp";
-import Retool from "../../logos/retool.webp";
-import Dolby from "../../logos/dolby.webp";
 import Warp from "../../logos/warp.webp";
-import Bnb from "../../logos/bnb.webp";
-import Checkbook from "../../logos/checkbook.webp";
 import Parrot from "../../logos/parrot.webp";
 import YCombinator from "../../logos/ycombinator.webp";
 import Neo from "../../logos/neo.webp";
 import Pear from "../../logos/pear.webp";
-import GeneralTask from "../../logos/generaltask.webp";
-import Replit from "../../logos/replit.webp";
-import Algolia from "../../logos/algolia.webp";
-import Wolfram from "../../logos/wolfram.webp";
+import Caldera from "../../logos/caldera.webp";
+import Canva from "../../logos/canva.webp";
+import Chroma from "../../logos/chroma.webp";
+import Intel from "../../logos/intel.webp";
+import Pinecone from "../../logos/pinecone.webp";
+import Reflex from "../../logos/reflex.webp";
+import Taisu from "../../logos/taisu.webp";
+import TerraAPI from "../../logos/terra.webp";
+import Together from "../../logos/togetherai.webp";
+import Vespa from "../../logos/vespa.webp";
+import Fetch from "../../logos/fetch.webp";
 import Makerbot from "../../logos/makerbot.webp";
-import Twilio from "../../logos/twilio.webp";
-import Supabase from "../../logos/supabase.webp";
-import Voiceflow from "../../logos/voiceflow.webp";
-import Aptos from "../../logos/aptos.webp";
-import Near from "../../logos/near.webp";
+import Reazon from "../../logos/reazon.webp";
+import Coframe from "../../logos/coframe.webp";
+import Postman from "../../logos/postman.webp";
+import Wispr from "../../logos/wispr.webp";
+import Codegen from "../../logos/codegen.webp";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export default class extends React.Component {
@@ -54,239 +38,215 @@ export default class extends React.Component {
 
     const sponsorPrizeData = [
       {
-        name: "Best Chat App",
-        description: "The most innovative AI chat application",
-        contents: "2k per team (cash)",
-        company: "You.com",
-        logo: You,
+        name: "Best Use of Drone Technology",
+        description: "",
+        contents: "Anafi AI Drones",
+        company: "Parrot Drones",
+        logo: Parrot,
       },
       {
-        name: "Best Use of Dolby.io",
+        name: "Best Project Built on Open-Source AI Programs and Models",
+        description: "",
+        contents: "$2,500 in Together API credits divided amongst the team",
+        company: "Together AI",
+        logo: Together,
+      },
+      {
+        name: "Best Use of Together API",
+        description: "",
+        contents: "$2,500 in Together API credits + a pair of AirPods Max",
+        company: "Together AI",
+        logo: Together,
+      },
+      {
+        name: "Best Use of Convex Features",
         description:
-          "Add high-quality audio & video experiences to your application using Dolby.io Real-time Communications and Streaming.",
-        contents: "$1000 Cash prize (gift cards)",
-        company: "Dolby.io",
-        logo: Dolby,
-      },
-      {
-        name: "Best Use of the You.com Open Platform",
-        description:
-          "Awarded to the team who creates the best You.com Open Platform Search app using the Developer Dashboard. Documentation and examples can be found at https://you.com/developers",
-        contents: "1k per team (Cash)",
-        company: "You.com",
-        logo: You,
-      },
-      {
-        name: "Best Use of OpenAI Models",
-        description:
-          "Awarded to the team who uses OpenAI's models to create the most innovative application.",
-        contents: "$2,500 in API Credits",
-        company: "OpenAI",
-        logo: OpenAI,
-      },
-      {
-        name: "Highest Frequency Award",
-        description:
-          "For the team that makes the best use of RF and microwave design workflows for high-frequency solutions",
-        contents: "True Wireless Earbuds",
-        company: "Cadence",
-        logo: Cadence,
-        quantity: 5,
-      },
-      {
-        name: "Best Web Frontend",
-        description:
-          "For the team that sweats the details. Every pixel of the UI has been polished and intentionally crafted. This award goes to the team who can merge the design and development worlds.",
-        contents: "Vercel swag box ($100 value)",
-        quantity: 4,
-        company: "Vercel",
-        logo: Vercel,
-      },
-      {
-        name: "Vercel Free Tier",
-        description:
-          "Vercel offers a 100% free tier, perfect for Hackathons, to get your React, Vue, Svelte, Nuxt, Next.js, or similar projects deployed to the Web. ",
-        contents: "n/a",
-        company: "Vercel",
-        logo: Vercel,
-      },
-      {
-        name: "Best Drone Hack",
-        description:
-          "Skydio 2+ does all the shooting so you can concentrate on the adventure at hand. Launch Skydio into the air and after just 27 minutes, you will have over 100,000 breathtaking 4K stills to choose from, export and share. And when you’re ready to take your drone photography to the next level, Skydio Panorama Skills gives you live previews of massive horizontal, vertical and spherical images in up to 72 megapixels.",
-        contents: "Skydio 2+ Drone",
-        company: "Skydio",
-        logo: Skydio,
-      },
-      {
-        name: "BIG IDEA: Best Technology-Enabled Patient Safety Solution",
-        description:
-          "We’re in search of bold new thinking. This is an invitation to solve the problem of medical error that harms millions of U.S. patients, kills approximately 250,000 patients, and costs billions of dollars every year. We’re calling on TreeHacks teams to envision the best technology-enabled patient safety solution that has the potential to avert patient harm and save lives and will be awarding $2,000 to the top team. Your hack must align with one of the following five leading patient safety challenges facing health care across the continuum of care: Medication errors, procedural/surgical errors, errors during routine patient care (e.g. pressure ulcers, blood clots, falls), infections and diagnostic safety. We encourage teams to consider autonomous tech-enabled patient safety solutions – those that are able to take action with little or no human supervision – as well. Learn more about the problem and get access to resources to help your hack here.",
-        contents: "$2,000 cash to the top team",
-        company: "Pateint Safety Initiative",
-        logo: Phri,
-      },
-      {
-        name: "Palantir Prize",
-        description: "Best use of Palantir Foundry",
-        contents: "$2,000 cash prize",
-        company: "Palantir",
-        logo: Palantir,
-      },
-      {
-        name: "Best Real-World Crypto Hack",
-        description:
-          "Build something using technologies like Bitcoin, Ethereum, ZetaChain that provides real utility for real people.",
-        contents: "Ledger Nano X",
-        company: "ZetaChain",
-        quantity: 4,
-        logo: Zetachain,
-      },
-      {
-        name: "Best Omnichain Smart Contract Application",
-        description:
-          "Build an useful application that spans multiple chains using ZetaChain’s smart contract and/or messaging!n",
-        contents: "$2500 USDC",
-        company: "ZetaChain",
-        logo: Zetachain,
-      },
-      {
-        name: "Most Cyberpunk Hardware Hack",
-        description:
-          "Our future is most definitely going to be a cyberpunk dystopia. Show us your best hack that interacts with the physical world. This could be a robotic arm controlled by A.I., a custom pentest gadget, taking control of a consumer product, or a matrix of blinking LEDs meant to distract the masses. The best physical hack takes home the prize!",
-        contents:
-          "Arduino Machine Vision Bundle Kits for the winning team members",
-        company: "Arduino",
-        quantity: 4,
-        logo: Arduino,
-      },
-      {
-        name: "Best use of Arduino Cloud/API",
-        description:
-          "Integrate the Arduino IoT Cloud in any way to qualify for this prize. Most interesting and creative implementation wins!",
-        contents: "",
-        company: "Arduino",
-        logo: Arduino,
-      },
-      {
-        name: "Best Use of Aptos",
-        description:
-          "This prize goes to the team that best uses Aptos to create an innovative social or gaming product / service on the blockchain or enables a better developer experience on Aptos",
-        contents: "$1000",
-        company: "Aptos",
-        logo: Aptos,
-      },
-      {
-        name: "Top Uses of NEAR Social (3x)",
-        description:
-          "This goes to the top 3 teams that implement NEAR Social the best. Whether it is indexing data from NEAR Social into your projects or directly building a widget on NEAR Social.",
-        contents: "$1,000 Per team",
-        company: "NEAR Protocol",
-        logo: Near,
-      },
-      {
-        name: "Replit's Choice Award",
-        description:
-          "This prize goes to the teams that the Replit team thinks made the coolest projects!",
+          "The best use of Convex features, (e.g., multiplayer, vector search, server functions, and real-time updates.)",
         contents: {
           1: {
-            name: "3,000 Cycles (~ 3 months of Hacker)",
+            name: "$1,250 Cash, 6 months Convex Pro",
           },
           2: {
-            name: "2,000 Cycles (~ 2 months of Hacker)",
+            name: "$500 Cash, 3 months Convex Pro",
           },
           3: {
-            name: "1,000 Cycles (~ 1 month of Hacker)",
+            name: "$250 Cash",
           },
         },
-        company: "Replit",
-        logo: Replit,
+        company: "Intel",
+        logo: Intel,
       },
       {
-        name: "Best Omnichain Smart Contract Application",
+        name: "Best Developer Tool by Warp",
         description:
-          "Build an useful application that spans multiple chains using ZetaChain’s smart contract and/or messaging!n",
-        contents: "$2500 USDC",
-        company: "ZetaChain",
-        logo: Zetachain,
+          "Build a hack that focuses on improving the developer experience in some meaningful way - this could be tackling any part of the development lifecycle (creating, modifying or testing software)!",
+        contents: "Keychron Keyboards & Warp Merch",
+        company: "Warp",
+        logo: Warp,
       },
       {
-        name: "Wolfram Award",
+        name: "Innovative DeFi Award",
         description:
-          "Everyone on the top twelve teams with a max of 60 individuals",
+          "The most exceptional hack that pushes the boundaries of what's possible in the DeFi landscape, boldly addressesing any of the following verticals: from pioneering aggregators to revolutionary liquid staking providers, innovative real-world-assets, boundary-pushing DeFi option Vaults, and groundbreaking derivatives platforms. ",
+        contents: "$500 Cash",
+        company: "Taisu",
+        logo: Taisu,
+      },
+      {
+        name: "Creative Web3 Platform Award",
+        description:
+          "Hack with the most outstanding infrastructure, utility hack and platform, designed to empower market participants with seamless access to the underlying blockchain technology. Celebrating any innovations across developer tools, Decentralized IDs and marketplaces, metaverse-based solutions, SocialFi and DAOs",
+        contents: "$500 Cash",
+        company: "Taisu",
+        logo: Taisu,
+      },
+      {
+        name: "Amazing Web3 Gaming Award ",
+        description: "Innovative hacks in blockchain gaming",
+        contents: "$500 Cash",
+        company: "Taisu",
+        logo: Taisu,
+      },
+      {
+        name: "Best Use of Intel Developer Cloud",
+        description:
+          "Show us your innovative and creative technological solutions using Intel Developer Cloud or Prediction Guard LLM APIs for development. ",
+        contents: {
+          1: {
+            name: "$2500 Intel® Developer Cloud credits + Lenovo AI PC for each member",
+          },
+          2: {
+            name: "$1000 Intel® Developer Cloud credit per person",
+          },
+          3: {
+            name: "$500 Intel® Developer Cloud credit per person",
+          },
+        },
+        company: "Intel",
+        logo: Intel,
+      },
+      {
+        name: "Fetch.ai’s Beyond Boundaries AI Agent Prize",
+        description:
+          "Exceptional use of Fetch.ai’s Success Tree ",
         contents:
-          "One year of Wolfram|One Personal Edition + one-year subscription to Wolfram|Alpha Pro ($375 per hacker)",
-        company: "Wolfram",
-        logo: Wolfram,
+          "Engraved iPad and 1-on-1 with Fetch.ai's CEO",
+        company: "Fetch AI",
+        logo: Fetch,
       },
       {
-        name: "Best use of Supabase",
+        name: "Best Use of Reflex",
         description:
-          "Award to the project that uses more Supabase features in the most creative way.",
+          "Best App created using the Reflex framework",
+        contents: "$2,000 Cash",
+        company: "Reflex",
+        logo: Reflex,
+      },
+      {
+        name: "Best Use of Data Hack",
+        description:
+          "Effective use of data is important to the decisions we make at Hudson River Trading, and we’re always looking for innovative new ways to strategize with data. This prize will be awarded to the hack that best integrates the use of data into their project.",
+        contents: "Keyboard + Mouse Set",
+        company: "Hudson River Trading",
+        logo: HRT,
+      },
+      {
+        name: "Best Hack using a Large Language Model",
+        description:
+          "ChatGPT set records last year - Large Language Models are now in everyday use. Applications can use APIs to interact with LLMs, or self-host the models in the application. LLMs are changing how users interact with applications - this prize is for the best hack using an LLM to create an awesome UX!",
+        contents: "Bose Headphones per teammate",
+        company: "VespaAI",
+        logo: VespaAI,
+      },
+      {
+        name: "Vespa Cloud API Hack",
+        description:
+          "Vespa Cloud lets you build a sophisticated application in minutes by running advanced ranking and aggregation functions on your data, possibly using ML models for realtime inference over a large document corpus. Users use Vespa Cloud to create search and recommendation applications, but not limited to this. This prize is for the team who is able to use Vespa’s ranking language, potentially with ML model inference, in an innovative way - example include predictions based on historical data and realtime events, awesome visualizations of multidimensional tensor data, RAG, and more.",
+        contents: "Bose Headphones per teammate",
+        company: "VespaAI",
+        logo: VespaAI,
+      },
+      {
+        name: "Best Senior-Focused Hack",
+        description:
+          "How can we apply new tech innovations to support the increasingly growing senior population? How can we not only address seniors’ acute problems, but also increase their joy and wellbeing holistically? Think IoT, ASR/AI, and robotics, senior-friendly UX is critical, product ecosystems, social networks, etc. Brainstorm more @ Reazon's booth!",
+        contents: "Round-trip tickets to Tokyo during spring break",
+        company: "Reazon Holdings",
+        logo: Reazon,
+      },
+      {
+        name: "Best AI Hack",
+        description:
+          "Awarded to the project that showcases the most impressive use of AI. ",
         contents:
-          "A Supabase swag pack (Black mode T-shirt, Supabase hat, cam cover, and stickers) for each member of the team.",
-        company: "Supabase",
-        quantity: 4,
-        logo: Supabase,
+          "NVIDIA RTX 4080 GPU",
+        company: "Coframe",
+        logo: Coframe,
       },
       {
-        name: "Most Ethically Engaged Hack",
+        name: "Best Use of an API with Postman",
         description:
-          "This prize awards the team that can best articulate the ethical tensions and potential hazards latent in their project and create innovative solutions for addressing them. Judging criteria for the prize can be found here: rb.gy/21wpus. Participants are encouraged to attend the Center for Ethics workshop on Saturday at 12:30pm to learn more. To be considered, participants must also include in their devpost submission a written narrative that explains what ethical considerations were most important when developing the project and how they were incorporated into their final product. You can see a previous winner here: https://devpost.com/software/soteria-58hg6m",
-        contents: "$1000 Cash Prize",
-        company: "Stanford Center for Ethics in Society",
-        logo: EIS,
+          "Submit a project with positive social impact that makes use of one or more APIs, with a related Postman public workspace for the API(s). Whether you build your own API or find existing APIs from the Postman Public API network, make use of Postman's public workspace to collaborate with your team for development and documentation.",
+        contents:
+          "Flipper0 + Student Kit",
+        company: "Postman",
+        logo: Postman,
       },
       {
-        name: "Peak Modal",
+        name: "Best Voice Experience",
         description:
-          "Best project that’s hosted on Modal, or used Modal somewhere along the line for training or data processing.",
-        contents: "$1000/mo in Modal credits for the winning team for life",
-        company: "Modal",
-        logo: Modal,
+          "The world is changing and computers can start to understand natural language. Build an experience with voice that feels intuitive and seamless. This could be a phone / desktop / web app. The award will go to the project with the best attention-to-detail and a new user behavior.",
+        contents: "Wispr HQ Visit, be one of the first people to experience neural interface in person + exclusive Wispr merch",
+        company: "Wispr",
+        logo: Wispr,
       },
       {
-        name: "Most Innovative Hack",
-        description: "",
-        contents: "Back pack, blankets, sweat shirts, t-shirts, beanies  ",
-        company: "Meta",
-        quantity: 4,
-        logo: Meta,
+        name: "Best New Canva App Submission",
+        description:
+          "Canva’s editor sees millions of user create designs everyday. Embed your tech into Canva using the Apps SDK to gain access to a massive and loyal user base to help grow your reach and share you tech with actual users. ",
+        contents: "Wireless Headphones, exclusive Canva Devs x TreeHacks sweatshirt",
+        company: "Canva",
+        logo: Canva,
+      },
+      {
+        name: "Most Likely to Get Funded Hack",
+        description: "Pear VC’s prize goes to the team most likely to spin off into a company and raise funding. ",
+        contents: "$1,500 Cash",
+        company: "PearVC",
+        logo: PearVC,
       },
       {
         name: "Most likely to become a business",
         description:
           "Product: Build something people want. Market Size: Address a significant opportunity. Team: Founders would consider committing for long-term.",
         contents:
-          "Product: Build something people want. Market Size: Address a significant opportunity. Team: Founders would consider committing for long-term.",
+          "Airfare + accommodations for your team to visit a summer retreat with Neo scholars, startups, and veteran mentors.",
         company: "Neo",
         logo: Neo,
       },
       {
-        name: "Best use of Data Hack",
+        name: "Best Hack to Connect with Others through Food",
         description:
-          "Effective use of data is important to the decisions we make at Hudson River Trading, and we’re always looking for innovative new ways to strategize with data. This prize will be awarded to the hack that best integrates the use of data into their project.",
-        contents: "Acesss to online HRT VIP Swag Store + $150 Amazon Gift Card",
-        company: "HRT",
-        quantity: 4,
-        logo: HRT,
+          "“Best hack to connect with others through food” for the improvement of the world’s well-being & happiness with food! The prize will be $500 DoorDash credit (treat yourself with good food) and $250 Spa experience during the busy school year (We’ll make sure to look after your well-being as you help others!). Also, you will get a chance to further develop the idea with Otsuka & Valuenex through an amazing summer internship.",
+        contents: "Good Life Package ($500 Doordash + $250 Spa)",
+        company: "Otsuka/Valuenex",
+        logo: Otsuka,
       },
       {
-        name: "Best Payments Hack",
+        name: "Most Creative On-Chain Hack",
         description:
-          "This prize will be awarded to the team that has the most interesting payments-based hack.",
-        contents: "$500",
-        company: "Checkbook.io",
-        logo: Checkbook,
+          "Awarded to the project that best executes on an original, creative application of blockchain. Preference given to applications with a significant on-chain (smart contract) component",
+        contents: "$2,500 Ethereum, split across team members",
+        company: "Caldera",
+        logo: Caldera,
       },
       {
-        name: "Checkbook API Best Implementation",
+        name: "Best use of Caldera",
         description:
-          "This prize will be awarded to the team that has the most interesting use-case of the Checkbook.io platform.",
-        contents: "AirPod Pros",
-        company: "Checkbook.io",
-        logo: Checkbook,
-        quantity: 4,
+          "Best project deployed to a Caldera chain.",
+        contents: "$1000 in Ethereum, split across team members",
+        company: "Caldera",
+        logo: Caldera,
       },
       {
         name: "Best use of Drone Technology",
@@ -298,143 +258,40 @@ export default class extends React.Component {
         logo: Parrot,
       },
       {
-        name: "Best Startup",
+        name: "Best Use of AI Agents",
         description:
-          "Given to the top performing teams in Y Combinator's challenge. These are the teams that we think are most likely to succeed at a startup.",
+          "Awarded to the team that demonstrates the most innovative and effective use of AI agents within their project. This prize celebrates creativity, technical excellence, and the strategic implementation of agentic AI. We're looking for teams that push the boundaries of what AI agents can achieve.",
         contents:
-          "Real interview for Y Combinator (no expiration, come interview whenever you want with whoever you want) Dinner on Sunday, with YC team (if in person)",
-        company: "Y Combinator",
-        logo: YCombinator,
+          "$3,000 cash, split between team members ",
+        company: "Codegen",
+        logo: Codegen,
       },
       {
-        name: "Dev tools",
-        description: "Best developer tool",
-        contents: "Xbox Series S",
-        quantity: 4,
-        company: "Warp",
-        logo: Warp,
-      },
-      {
-        name: "Best Hack Using Frontier Tech",
+        name: "Best Use of GenAI using InterSystems IRIS Vector Search (1st)",
         description:
-          "For hackers using cutting-edge tech like Zero Knowledge Proofs, Federated Learning, or Quantum Computing, a chance to showcase your skills!",
-        contents:
-          "$1,000 cash prize and upto $100,000 uncapped SAFE (more below)",
-        company: "Pear VC",
-        logo: Pear,
-      },
-      {
-        name: "Cotopaxi's Choice Award",
-        description:
-          "The Cotopaxi team will choose a team that is working on a project closely tied to Cotopaxi's values of sustainability and extreme poverty alleviation",
-        contents:
-          "Cotopaxi Allpa 28L Backpack, filled with a Dopp Kit, Cotopaxi hat, and MiiR x Cotopaxi camping mug. $250 value/ea",
-        company: "Cotopaxi",
-        logo: Cotopaxi,
-        quantity: 4,
-      },
-      {
-        name: "Best Hack for a Real World Use Case ",
-        description:
-          "For hackers looking to solve any real world problems with technology. You could be helping college students get food delivery, fighting misinformation online, or increasing opportunities to equal education. There’s no shortage of problems in the world that would benefit from even the simplest technology.",
-        contents:
-          "$1,000 cash prize and upto $100,000 uncapped SAFE (more below)",
-        company: "Pear VC",
-        logo: Pear,
-      },
-      {
-        name: "Best Hack Using AI/ML",
-        description:
-          "Beyond the buzzwords, we have the chance to change the way we interact with computers. We’re at the cusp of a brand new set of possibilities. For hackers looking to push the envelope here with their technical approach or application domain, this is the prize to win!",
-        contents:
-          "$1,000 cash prize and upto $100,000 uncapped SAFE (more below)",
-        company: "Pear VC",
-        logo: Pear,
-      },
-      {
-        name: "Retool Hack Ninjas",
-        description:
-          "Build your hackathon project faster with the power of Retool, and get your project demo ready in no time. Retool is perfect for beginners or coding veterans alike to build your apps 10x faster than usual. We’re looking for cool apps that utilize Retool in their hack!",
-        contents:
-          "Ducky One 3 SF Pure White 65% Hotswap RGB Mechanical Keyboard",
-        quantity: 4,
-        company: "Retool",
-        logo: Retool,
-      },
-      {
-        name: "Best Use of Estuary",
-        description:
-          "This prize will go to the students who best demonstrate Estuary's use case and use creative ways to incorporate our API. The first place prize will be iPads and second place will be keyboards.",
+          "InterSystems IRIS Vector Search is our new vector store feature within the IRIS Data Platform! But we're not a "vector database" just like we're not a "string database" or "integer database" 😉 -- embedding vectors are just another SQL datatype for us!  Build your groundbreaking solution on InterSystems IRIS data platform, which gives you the tools to seamlessly integrate GenAI, tabular AutoML, data interoperability, using simple SQL or Python LangChain/Llamaindex connectors! The most innovative solution that leverages GenAI using InterSystems IRIS will win cash prizes!",
         contents: {
           1: {
-            name: "iPad 10th Generation",
-            quantity: 4,
+            name: "$2,000 Cash",
           },
           2: {
-            name: "4 Mechanical/gaming keyboards",
-            quantity: 4,
-          },
-        },
-        company: "Warp",
-        logo: Warp,
-      },
-      {
-        name: "Best hack to connect with others through food",
-        description:
-          "Best hack to connect with others through food” for the improvement of the world’s wellbeing & happiness with food! The prize will be $500 DoorDash credit (treat yourself with good food) and $250 Spa experience during the busy school year (We’ll make sure to look after your wellbeing as you help others!). Also, you will get a chance to further develop the idea with Otsuka & Valuenex through an amazing summer internship.",
-        contents:
-          "Good life package - DoorDash gift card ($500) + Spa gift card ($250) = Total: $3000",
-        company: "Otsuka <> Valuenex",
-        logo: Otsuka,
-      },
-      {
-        name: "Best VALUENEX Radar Hack",
-        description:
-          "Best VALUENEX Radar Hack for the best VALUENEX Radar use case to show the world! Each winning team member will be awarded a $250 Amazon gift card and an annual VALUENEX Radar subscription. ",
-        contents:
-          "VALUENEX package - Amazon gift card ($250) and VALUENEX Radar 1 year membership",
-        company: "Otsuka <> Valuenex",
-        quantity: 4,
-        logo: Otsuka,
-      },
-      {
-        name: "Best Natural Language Hack",
-        description:
-          "The project with the best application of natural language processing",
-        contents: {
-          1: {
-            name: "AirPods Max ($500/each)",
-            quantity: 4,
-          },
-          2: {
-            name: "Ember Mug ($125/each)",
-            quantity: 4,
+            name: "$1,500 Cash",
           },
           3: {
-            name: "Amazon Echo Dot (5th gen) ($50/ea)",
-            quantity: 4,
+            name: "$1,000 Cash",
           },
         },
-        company: "Mem",
-        logo: Mem,
-      },
-      {
-        name: "Best Use of InterSystems IntegratedML",
-        description:
-          "InterSystems is issuing a challenge to build the most interesting and innovative application using **InterSystems IntegratedML** -- in-database automated machine learning, the simplest way to create, deploy and use ML models to power next-generation intelligent applications.\nTo qualify for the prize, your solution needs to use InterSystems IntegratedML. InterSystems will provide free access to cloud-hosted accounts* and *onsite mentors' support. You will be able to submit your project to one of the main tracks as well.*",
-        contents: "1st place: $2000\n2nd place: $1500\n3rd place: $1000",
         company: "InterSystems",
         logo: InterSystems,
       },
-
       {
-        name: "Best use of Convex",
+        name: "Most Commercially Viable Hack",
         description:
-          "This prize goes to the team that makes the best use of the Convex platform to create a novel and compelling web or mobile multi-user app. Real-time or reactive elements are a plus.",
+          "Given to the hack that we think has the most potential to make it as a startup! We’ll assess the viability of the product, and will value real-world user research and testing you may have performed",
         contents:
-          "- Massive Lego: 5’ Eiffel Tower, 2 meter RC Airplane kit: E-flite DRACO 2.0m BNF Basic Electric Airplane, Arduino-based quadruped robot: Lynxmotion SQ3U, Various batteries, chargers, and accessories to finish the above projects",
-        company: "Convex",
-        logo: Convex,
+          "Weekly 1 on 1 sessions on how to develop your product, until you launch.",
+        company: "TerraAPI",
+        logo: TerraAPI,
       },
     ];
 
@@ -624,7 +481,7 @@ export default class extends React.Component {
                   <div
                     className="card api-item"
                     style={{
-                      backgroundColor: "#487D5D",
+                      backgroundColor: "#484D7D",
                       color: "white",
                     }}
                   >
