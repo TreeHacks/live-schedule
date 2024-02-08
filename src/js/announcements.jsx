@@ -51,7 +51,7 @@ class Announcements extends React.Component {
   render() {
     const { announcements } = this.state;
     return (
-      <div id="announcements" className="section">
+      <div id="announcements" className="section" style={{ backgroundColor: "#BBCCBB"}}>
         <h1 className="section-heading">Announcements</h1>
         <hr />
         <div className="container">
