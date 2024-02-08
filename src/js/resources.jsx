@@ -36,19 +36,13 @@ function Resources() {
       <a href="/apisresources" target="">
         <div className="resource-container">
           <img src={apisIcon} className="resource-icon" />
-          APIs, Resources, Gifts-in-Kind
+          APIs and Resources
         </div>
       </a>
       <a href="/maps" target="">
         <div className="resource-container">
           <img src={mapsIcon} className="resource-icon" />
           Maps
-        </div>
-      </a>
-      <a href="/leaderboard" target="">
-        <div className="resource-container">
-          <img src={leaderboard} className="resource-icon" />
-          Leaderboard
         </div>
       </a>
     </div>

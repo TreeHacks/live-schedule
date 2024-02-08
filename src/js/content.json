@@ -1,6 +1,14 @@
 {
   "hackpacks": [
     {
+      "name": "App Dev (React Native!)",
+      "link": "https://github.com/TreeHacks/hackpack-react-native"
+    },
+    {
+      "name": "Swift UI- IOS App Dev",
+      "link": "https://github.com/TreeHacks/hackpack-swift-ui"
+    },
+    {
       "name": "Computer Vision (Machine Learning)",
       "link": "https://github.com/TreeHacks/computer-vision-hackpack"
     },
@@ -21,24 +29,12 @@
       "link": "https://github.com/TreeHacks/hackpack-android-kotlin"
     },
     {
-      "name": "Android + Firebase",
-      "link": "https://github.com/TreeHacks/hackpack-android-firebase"
-    },
-    {
-      "name": "Arduino",
-      "link": "https://github.com/TreeHacks/hackpack-arduino-app"
-    },
-    {
       "name": "Botnet",
       "link": "https://github.com/TreeHacks/botnet-hackpack"
     },
     {
       "name": "Chrome Extensions",
       "link": "https://github.com/TreeHacks/hackpack-chrome-ext"
-    },
-    {
-      "name": "iOS (Swift)",
-      "link": "https://github.com/TreeHacks/hackpack-ios"
     },
     {
       "name": "iOS ARKit",

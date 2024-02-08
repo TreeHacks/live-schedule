@@ -369,9 +369,8 @@ export default class extends React.Component {
       {
         name: "Moonshot Prize",
         description: "The craziest, most out-of-this-world project built at TreeHacks",
-        contents: "$10,000 Cash",
+        contents: "$10,000 Cash, split between teammates",
         logo: GrandPrize,
-        quantity: 4,
       },
       {
         name: "Most Technically Complex Hack",
@@ -389,7 +388,7 @@ export default class extends React.Component {
       },
       {
         name: "Best Hardware Hack",
-        description: "Best hack that incorporates hardware",
+        description: "Best hack that incorporates hardware (check out the Hardware Lab @ TreeHacks!)",
         contents: "Prusa MINI+ kit 3D Printer",
         logo: Logo,
         quantity: 4,
@@ -481,7 +480,7 @@ export default class extends React.Component {
                   <div
                     className="card api-item"
                     style={{
-                      backgroundColor: "#484D7D",
+                      backgroundColor: "#487D5D",
                       color: "white",
                     }}
                   >
@@ -514,7 +513,7 @@ export default class extends React.Component {
                   <div
                     className="card api-item"
                     style={{
-                      backgroundColor: "#7D4878",
+                      backgroundColor: "#487D5D",
                       color: "white",
                       border: "1px solid #8174b4",
                     }}
