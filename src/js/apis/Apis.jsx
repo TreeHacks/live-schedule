@@ -154,9 +154,6 @@ export default class extends React.Component {
             )}
           </Masonry>
         </ResponsiveMasonry>
-        <div className="row">
-          <h1 className="api-title">Gift-In-Kind</h1>
-        </div>
       </div>
     );
   }

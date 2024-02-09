@@ -20,7 +20,7 @@ function Resources() {
         </div>
       </a>
 
-      <a href="https://support.treehacks.com" target="_blank">
+      <a href="https://docs.google.com/document/d/162lC3yzvkURS1FZcVX-vpMckuWYkbqnoESZcPdxRdHk/edit?usp=sharing" target="_blank">
         <div className="resource-container">
           <img src={faqIcon} className="resource-icon" />
           FAQ
