@@ -100,7 +100,7 @@ export default Vue.component("event-schedule", {
   created: function () {
     // this date is the time they start hacking
     if (
-      (new Date().getTime() - new Date("2023-02-17 22:00").getTime()) /
+      (new Date().getTime() - new Date("2024-02-16 21:00").getTime()) /
         3600000 <
       36
     )
@@ -399,7 +399,7 @@ export default Vue.component("event-schedule", {
   methods: {
     updateTime: function () {
       var hoursIn =
-        (new Date().getTime() - new Date("2023-02-17 22:00").getTime()) /
+        (new Date().getTime() - new Date("2024-02-16 21:00").getTime()) /
         3600000;
       if (hoursIn > 36) hoursIn = -1;
       this.hoursIn = hoursIn;
