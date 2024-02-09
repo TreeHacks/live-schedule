@@ -14,7 +14,7 @@ function Hackpacks() {
     );
   }
   return (
-    <div id="hackpacks" className="section" style={{ backgroundColor: "#BBCCBB"}}>
+    <div id="hackpacks" className="section">
       <h1 className="section-heading">Hackpacks</h1>
       <hr />
       <div className="container">{content}</div>

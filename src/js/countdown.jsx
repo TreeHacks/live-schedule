@@ -8,7 +8,7 @@ function Countdown() {
     timeline.push(<TimerUnit unit={units[i]} key={i} />);
   }
   return (
-    <div id="countdown" className="section" style={{ backgroundColor: "#BBCCBB"}}>
+    <div id="countdown" className="section">
       <Timer />
       <hr />
       <div className="timeUnits">{timeline}</div>

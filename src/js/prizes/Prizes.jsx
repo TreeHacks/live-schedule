@@ -480,7 +480,7 @@ export default class extends React.Component {
                   <div
                     className="card api-item"
                     style={{
-                      backgroundColor: "#487D5D",
+                      backgroundColor: "#484D7D",
                       color: "white",
                     }}
                   >
@@ -513,7 +513,7 @@ export default class extends React.Component {
                   <div
                     className="card api-item"
                     style={{
-                      backgroundColor: "#487D5D",
+                      backgroundColor: "#7D4878",
                       color: "white",
                       border: "1px solid #8174b4",
                     }}

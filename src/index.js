@@ -43,7 +43,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div style={{ backgroundColor: "#E3EBDD"}}>
+      <div>
         <Countdown />
         <Resources />
         <p>Note: all times below are in PST (California time)</p>
