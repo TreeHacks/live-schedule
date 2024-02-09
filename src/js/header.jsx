@@ -1,5 +1,5 @@
 import React from "react";
-import * as whitelogo from "../svg/whitelogo.svg";
+import * as whitelogo from "../svg/newLog.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
