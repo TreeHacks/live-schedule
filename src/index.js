@@ -50,7 +50,9 @@ class Main extends React.Component {
         <p>Note: all times below are in PST (California time)</p>
         <Schedule />
         <div id="group">
-          <Prehackathon />
+          <div id="sidebar">
+            <Prehackathon />
+          </div>
           <div id="sidebar">
             {/* <Projects /> */}
             <Hackpacks />

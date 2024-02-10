@@ -369,7 +369,7 @@ export default class extends React.Component {
       {
         name: "Moonshot Prize",
         description: "The craziest, most out-of-this-world project built at TreeHacks",
-        contents: "$10,000 Cash, split between teammates",
+        contents: "It's a surprise :)) A really huge one!",
         logo: GrandPrize,
       },
       {
