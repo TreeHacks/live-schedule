@@ -10,6 +10,15 @@ companies:
             url: https://docs.trychroma.com/
         tags:
           - Geospatial
+  - company: FetchAI
+    apis:
+      - title: FetchAI
+        description: Fetch.ai’s infrastructure enables developers and businesses to build, deploy & monetize a new generation of AI applications through its agent-based modular platform.
+        links:
+          - title: API
+            url: https://fetch.ai/events/treehacks
+        tags:
+          - Geospatial
   - company: Together AI
     apis:
       - title: Together API

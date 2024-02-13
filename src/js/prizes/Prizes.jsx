@@ -38,6 +38,15 @@ export default class extends React.Component {
 
     const sponsorPrizeData = [
       {
+        name: "Fetch.ai’s Beyond Boundaries AI Agent Prize",
+        description:
+          "Exceptional use of Fetch.ai’s Success Tree ",
+        contents:
+          "Engraved iPad and 1-on-1 with Fetch.ai's CEO",
+        company: "Fetch AI",
+        logo: Fetch,
+      },
+      {
         name: "Best Use of Drone Technology",
         description: "",
         contents: "Anafi AI Drones",
@@ -124,15 +133,6 @@ export default class extends React.Component {
         },
         company: "Intel",
         logo: Intel,
-      },
-      {
-        name: "Fetch.ai’s Beyond Boundaries AI Agent Prize",
-        description:
-          "Exceptional use of Fetch.ai’s Success Tree ",
-        contents:
-          "Engraved iPad and 1-on-1 with Fetch.ai's CEO",
-        company: "Fetch AI",
-        logo: Fetch,
       },
       {
         name: "Best Use of Reflex",
