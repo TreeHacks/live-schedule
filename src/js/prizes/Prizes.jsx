@@ -68,6 +68,15 @@ export default class extends React.Component {
         logo: Together,
       },
       {
+        name: "Smartest AI Agent Prize",
+        description:
+          "Two exceptional project ideas and execution",
+        contents:
+          "$3,000 Cash",
+        company: "Fetch AI",
+        logo: Fetch,
+      },
+      {
         name: "Best Use of Convex Features",
         description:
           "The best use of Convex features, (e.g., multiplayer, vector search, server functions, and real-time updates.)",
