@@ -154,36 +154,6 @@ export default class extends React.Component {
             )}
           </Masonry>
         </ResponsiveMasonry>
-        <div className="row">
-          <h1 className="api-title">Gift-In-Kind</h1>
-        </div>
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry>
-            {giftResult.map((company) => {
-              return (
-                <div className="api-item-container">
-                  <div className="card api-item" key={company[1].title}>
-                    <h3>{company[1].name}</h3>
-                    <p style={{ color: "#0cb08a" }}>
-                      Sponsored by: {company[1].title}
-                    </p>
-                    <p>{company[1].description}</p>
-                    <h4 style={{ marginTop: "10px" }}>How to access</h4>
-                    <p>{company[1].access}</p>
-                    {company[1].links != null &&
-                      Object.keys(company[1].links).map((key) => {
-                        return (
-                          <a target="_blank" href={company[1].links[key]}>
-                            <button className="main-button">{key}</button>
-                          </a>
-                        );
-                      })}
-                  </div>
-                </div>
-              );
-            })}
-          </Masonry>
-        </ResponsiveMasonry>
       </div>
     );
   }

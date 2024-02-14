@@ -100,7 +100,7 @@ export default Vue.component("event-schedule", {
   created: function () {
     // this date is the time they start hacking
     if (
-      (new Date().getTime() - new Date("2023-02-17 22:00").getTime()) /
+      (new Date().getTime() - new Date("2024-02-16 21:00").getTime()) /
         3600000 <
       36
     )
@@ -244,20 +244,20 @@ export default Vue.component("event-schedule", {
             // subtract 15 to make 0 "3pm"
             // subtract 13 to make 0 "1pm"
             item.absStartHour =
-              (startDay - 17) * 24 + startHour + startMinute / 60 - 13;
+              (startDay - 16) * 24 + startHour + startMinute / 60 - 13;
             item.absEndHour =
-              (endDay - 17) * 24 + endHour + endMinute / 60 - 13;
+              (endDay - 16) * 24 + endHour + endMinute / 60 - 13;
             item.startTime =
               (startHour % 12 || 12) + ":" + ("0" + startMinute).slice(-2);
             item.endTime =
               (endHour % 12 || 12) + ":" + ("0" + endMinute).slice(-2);
             item.startDate =
-              dayMap[startDay - 17] +
+              dayMap[startDay - 16] +
               " " +
               item.startTime +
               (startHour >= 12 ? "pm" : "am");
             item.endDate =
-              dayMap[endDay - 17] +
+              dayMap[endDay - 16] +
               " " +
               item.endTime +
               (endHour >= 12 ? "pm" : "am");
@@ -399,7 +399,7 @@ export default Vue.component("event-schedule", {
   methods: {
     updateTime: function () {
       var hoursIn =
-        (new Date().getTime() - new Date("2023-02-17 22:00").getTime()) /
+        (new Date().getTime() - new Date("2024-02-16 21:00").getTime()) /
         3600000;
       if (hoursIn > 36) hoursIn = -1;
       this.hoursIn = hoursIn;

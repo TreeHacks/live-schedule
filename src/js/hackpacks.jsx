@@ -19,11 +19,6 @@ function Hackpacks() {
       <hr />
       <div className="container">{content}</div>
       <br />
-      <div id="preHackathon">
-        <h1 className="section-heading">Pre-Hackathon Workshops</h1>
-        <hr />
-        <div className="container">{content2}</div>
-      </div>
     </div>
   );
 }

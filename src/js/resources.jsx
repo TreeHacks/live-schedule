@@ -20,7 +20,7 @@ function Resources() {
         </div>
       </a>
 
-      <a href="https://support.treehacks.com" target="_blank">
+      <a href="https://docs.google.com/document/d/162lC3yzvkURS1FZcVX-vpMckuWYkbqnoESZcPdxRdHk/edit?usp=sharing" target="_blank">
         <div className="resource-container">
           <img src={faqIcon} className="resource-icon" />
           FAQ
@@ -36,19 +36,13 @@ function Resources() {
       <a href="/apisresources" target="">
         <div className="resource-container">
           <img src={apisIcon} className="resource-icon" />
-          APIs, Resources, Gifts-in-Kind
+          APIs and Resources
         </div>
       </a>
       <a href="/maps" target="">
         <div className="resource-container">
           <img src={mapsIcon} className="resource-icon" />
           Maps
-        </div>
-      </a>
-      <a href="/leaderboard" target="">
-        <div className="resource-container">
-          <img src={leaderboard} className="resource-icon" />
-          Leaderboard
         </div>
       </a>
     </div>

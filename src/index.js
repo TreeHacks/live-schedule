@@ -10,6 +10,7 @@ import Hackpacks from "./js/hackpacks.jsx";
 import RoomStatus from "./js/room-status.jsx";
 import Apis from "./js/apis/Apis.jsx";
 import Challenge from "./js/challenge.jsx";
+import Prehackathon from "./js/prehackathon.jsx";
 
 import "./favicons/favicons";
 import "./index.scss";
@@ -49,7 +50,9 @@ class Main extends React.Component {
         <p>Note: all times below are in PST (California time)</p>
         <Schedule />
         <div id="group">
-          <Announcements setAnnouncementData={this.setAnnouncementData} />
+          <div id="sidebar">
+            <Prehackathon />
+          </div>
           <div id="sidebar">
             {/* <Projects /> */}
             <Hackpacks />
