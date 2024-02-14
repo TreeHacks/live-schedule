@@ -31,6 +31,7 @@ import Codegen from "../../logos/codegen.webp";
 import Monster from "../../logos/monster.webp";
 import McCoy from "../../logos/mccoy.jpeg";
 import QED from "../../logos/qed.webp";
+import Roblox from "../../logos/roblox.webp";
 
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
@@ -251,7 +252,7 @@ export default class extends React.Component {
       {
         name: "Best New Canva App Submission",
         description:
-          "Canva’s editor sees millions of user create designs everyday. Embed your tech into Canva using the Apps SDK to gain access to a massive and loyal user base to help grow your reach and share you tech with actual users. ",
+          "Canva’s editor sees millions of user create designs everyday. Embed your tech into Canva using the Apps SDK to gain access to a massive and loyal user base to help grow your reach and share you tech with actual users. The Canva Apps SDK is a React based toolkit that allows you to build tools into the Canva Editor. The SDK includes APIs, example code, and a UI Kit. These tools enable you to quickly develop a UI to allow real Canva users to interact with your LLM, GAN, or design tech. A Canva app can be anything from transforming images into paintings with AI or creating custom SVG shapes based on a user's input.  Not able to get your app production ready in just 36 hours? Talk with the Canva team about bringing your app to the Canva Apps Marketplace even after this weekend and getting access to our Innovation Fund.",
         contents: "Wireless Headphones, exclusive Canva Devs x TreeHacks sweatshirt",
         company: "Canva",
         logo: Canva,
@@ -313,6 +314,15 @@ export default class extends React.Component {
           "$3,000 cash, split between team members ",
         company: "Codegen",
         logo: Codegen,
+      },
+      {
+        name: "Visionary Award",
+        description:
+          "At Roblox, our vision is to reimagine the way people come together to create, play, explore, learn and connect with one another. The Visionary Award is given to the project that best encapsulates our vision to bring people together. Award Criteria: 1.Hackathon project is built using Roblox Studio and/or draws on the Roblox platform as part of their final project. 2.The project and problem space are complex, challenging, and requires team collaboration. 3.Final result offers a unique, novel, and innovative solution.",
+        contents:
+          "Limited Edition Roblox Blanket, Limited Edition Roblox Backpack, & $100 Gift Card (each per team member)",
+        company: "Roblox",
+        logo: Roblox,
       },
       {
         name: "Best Use of GenAI using InterSystems IRIS Vector Search",
