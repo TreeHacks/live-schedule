@@ -114,8 +114,8 @@ export default class extends React.Component {
             name: "X Box",
           },
         },
-        company: "Intel",
-        logo: Intel,
+        company: "Monster",
+        logo: Monster,
       },
       {
         name: "Most Ethically Engaged Hack",
