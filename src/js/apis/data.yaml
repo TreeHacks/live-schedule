@@ -37,6 +37,33 @@ companies:
             url: https://cloud.vespa.ai/en/getting-started
         tags:
           - Geospatial
+  - company: MonsterAPI
+    apis:
+      - title: MonsterAPI
+        description: World’s most Advanced Fine-tuner. Our no-code fine-tuner helps developers fine-tune the latest LLMs in just 3 clicks.
+        links:
+          - title: API
+            url: https://docs.google.com/document/d/14p6xpd9fhA2GxyCWofKT0iupN21C51CCRPC9daJqw50/edit
+        tags:
+          - Geospatial
+  - company: InterSystems
+    apis:
+      - title: InterSystems IRIS Vector Search
+        description: InterSystems IRIS Vector Search is our new vector store feature within the IRIS Data Platform! But we're not a "vector database" just like we're not a "string database" or "integer database" 😉 -- embedding vectors are just another SQL datatype for us! Build your groundbreaking solution on InterSystems IRIS data platform, which gives you the tools to seamlessly integrate GenAI, tabular AutoML, data interoperability, using simple SQL or Python LangChain/Llamaindex connectors! 
+        links:
+          - title: API
+            url: https://github.com/alvin-isc/treehacks-2024
+        tags:
+          - Geospatial
+  - company: Reflex 
+    apis:
+      - title: Reflex
+        description: Web apps in Pure Python getting started and usage docs
+        links:
+          - title: API
+            url: https://reflex.dev/docs/getting-started/introduction
+        tags:
+          - Geospatial
   - company: Terra API
     apis:
       - title: Terra API
@@ -62,6 +89,8 @@ companies:
       - title: Intel Developer Cloud
         description: Accelerate AI development using Intel®-optimized software on the latest Intel® Xeon® processors and GPU compute.
         links:
+          - title: API
+            url: https://images.plan.intel.com/Web/IntelCorporation/%7b50a80b75-ae74-4feb-b4f5-c5a42b7c7f10%7d_Hackathon_IDC_Guide_Digital.pdf
         tags:
           - Geospatial
   - company: Pinecone

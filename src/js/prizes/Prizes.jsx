@@ -28,6 +28,10 @@ import Coframe from "../../logos/coframe.webp";
 import Postman from "../../logos/postman.webp";
 import Wispr from "../../logos/wispr.webp";
 import Codegen from "../../logos/codegen.webp";
+import Monster from "../../logos/monster.webp";
+import McCoy from "../../logos/mccoy.jpeg";
+import QED from "../../logos/qed.webp";
+
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export default class extends React.Component {
@@ -91,8 +95,34 @@ export default class extends React.Component {
             name: "$250 Cash",
           },
         },
+        company: "Convex",
+        logo: Convex,
+      },
+      {
+        name: "MonsterAPI: Best use of our Generative AI APIs",
+        description:
+          "Build cool Generative AI applications like IronMan’s Jarvis by customising AI models using our LoRA powered fine-tuner which reduces the fine tuning time from weeks to hours. You can fine-tune from a massive range of latest open-source LLMs such as TinyLlama 1B to Llama 2 70B and Mixtral 8x7B and run them with our one-click deployment engine.",
+        contents: {
+          1: {
+            name: "iPhone 15 Pro Max",
+          },
+          2: {
+            name: "1 Million MonsterAPI credits",
+          },
+          3: {
+            name: "X Box",
+          },
+        },
         company: "Intel",
         logo: Intel,
+      },
+      {
+        name: "Most Ethically Engaged Hack",
+        description:
+          "This prize awards the team that can best articulate the ethical tensions and potential hazards latent in their project and create innovative solutions for addressing them. Judging criteria for the prize can be found here: rb.gy/21wpus. Participants are encouraged to attend the Center for Ethics workshop on Saturday at 12:30pm to learn more. To be considered, participants must also include in their devpost submission a written narrative that explains what ethical considerations were most important when developing the project and how they were incorporated into their final product. You can see a previous winner here.",
+        contents: "$1,000 Cash",
+        company: "McCoy Center for Ethics in Society",
+        logo: McCoy,
       },
       {
         name: "Best Developer Tool by Warp",
@@ -124,6 +154,15 @@ export default class extends React.Component {
         contents: "$500 Cash",
         company: "Taisu",
         logo: Taisu,
+      },
+      {
+        name: "Best application of Zero Knowledge Proofs",
+        description:
+          "EThis prize will be awarded to the team which builds the most innovative or creative application of Zero Knowledge Proof technology.  ",
+        contents:
+          "$2000 Cash",
+        company: "QED Protocol",
+        logo: QED,
       },
       {
         name: "Best Use of Intel Developer Cloud",
@@ -229,7 +268,7 @@ export default class extends React.Component {
         description:
           "Product: Build something people want. Market Size: Address a significant opportunity. Team: Founders would consider committing for long-term.",
         contents:
-          "Airfare + accommodations for your team to visit a summer retreat with Neo scholars, startups, and veteran mentors.",
+          "Airfare + accommodations for your team to visit a summer retreat with Neo scholars, startups, and veteran mentors",
         company: "Neo",
         logo: Neo,
       },
