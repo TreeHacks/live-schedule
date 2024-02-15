@@ -43,6 +43,60 @@ export default class extends React.Component {
 
     const sponsorPrizeData = [
       {
+        name: "Most Commercially Viable Hack",
+        description:
+          "Given to the hack that we think has the most potential to make it as a startup! We’ll assess the viability of the product, and will value real-world user research and testing you may have performed",
+        contents:
+          "Weekly 1 on 1 sessions on how to develop your product, until you launch.",
+        company: "TerraAPI",
+        logo: TerraAPI,
+      },
+      {
+        name: "Best Use of GenAI using InterSystems IRIS Vector Search",
+        description:
+          "Build your groundbreaking solution on InterSystems IRIS data platform, which gives you the tools to seamlessly integrate GenAI, tabular AutoML, data interoperability, using simple SQL or Python LangChain/Llamaindex connectors! The most innovative solution that leverages GenAI using InterSystems IRIS will win cash prizes!",
+        contents: {
+          1: {
+            name: "$2,000 Cash",
+          },
+          2: {
+            name: "$1,500 Cash",
+          },
+          3: {
+            name: "$1,000 Cash",
+          },
+        },
+        company: "InterSystems",
+        logo: InterSystems,
+      },
+      {
+        name: "Best Use of Intel Developer Cloud",
+        description:
+          "Show us your innovative and creative technological solutions using Intel Developer Cloud or Prediction Guard LLM APIs for development. ",
+        contents: {
+          1: {
+            name: "$2500 Intel® Developer Cloud credits + Lenovo AI PC for each member",
+          },
+          2: {
+            name: "$1000 Intel® Developer Cloud credit per person",
+          },
+          3: {
+            name: "$500 Intel® Developer Cloud credit per person",
+          },
+        },
+        company: "Intel",
+        logo: Intel,
+      },
+      {
+        name: "Best application of Zero Knowledge Proofs",
+        description:
+          "This prize will be awarded to the team which builds the most innovative or creative application of Zero Knowledge Proof technology.  ",
+        contents:
+          "$2000 Cash",
+        company: "QED Protocol",
+        logo: QED,
+      },
+      {
         name: "Fetch.ai’s Beyond Boundaries AI Agent Prize",
         description:
           "Exceptional use of Fetch.ai’s Success Tree ",
@@ -102,7 +156,7 @@ export default class extends React.Component {
       {
         name: "MonsterAPI: Best use of our Generative AI APIs",
         description:
-          "Build cool Generative AI applications like IronMan’s Jarvis by customising AI models using our LoRA powered fine-tuner which reduces the fine tuning time from weeks to hours. You can fine-tune from a massive range of latest open-source LLMs such as TinyLlama 1B to Llama 2 70B and Mixtral 8x7B and run them with our one-click deployment engine.",
+          "MonsterAPI: World’s most Advanced Fine-tuner. Our no-code fine-tuner helps developers fine-tune the latest LLMs in just 3 clicks. Build cool Generative AI applications like IronMan’s Jarvis by customising AI models using our LoRA powered fine-tuner which reduces the fine tuning time from weeks to hours. You can fine-tune from a massive range of latest open-source LLMs such as TinyLlama 1B to Llama 2 70B and Mixtral 8x7B and run them with our one-click deployment engine. [Jarvis is just an example, millions of meaningful AI apps can be created. So be creative and submit your most innovative projects]",
         contents: {
           1: {
             name: "iPhone 15 Pro Max",
@@ -151,37 +205,10 @@ export default class extends React.Component {
       },
       {
         name: "Amazing Web3 Gaming Award ",
-        description: "Innovative hacks in blockchain gaming",
+        description: "his award celebrates the innovation of blockchain gaming, recognizing  projects within the sphere of web3 gaming, across esports, cutting-edge gaming engines, and innovative launchpads.",
         contents: "$500 Cash",
         company: "Taisu",
         logo: Taisu,
-      },
-      {
-        name: "Best application of Zero Knowledge Proofs",
-        description:
-          "EThis prize will be awarded to the team which builds the most innovative or creative application of Zero Knowledge Proof technology.  ",
-        contents:
-          "$2000 Cash",
-        company: "QED Protocol",
-        logo: QED,
-      },
-      {
-        name: "Best Use of Intel Developer Cloud",
-        description:
-          "Show us your innovative and creative technological solutions using Intel Developer Cloud or Prediction Guard LLM APIs for development. ",
-        contents: {
-          1: {
-            name: "$2500 Intel® Developer Cloud credits + Lenovo AI PC for each member",
-          },
-          2: {
-            name: "$1000 Intel® Developer Cloud credit per person",
-          },
-          3: {
-            name: "$500 Intel® Developer Cloud credit per person",
-          },
-        },
-        company: "Intel",
-        logo: Intel,
       },
       {
         name: "Best Use of Reflex",
@@ -195,7 +222,7 @@ export default class extends React.Component {
         name: "Best Use of Data Hack",
         description:
           "Effective use of data is important to the decisions we make at Hudson River Trading, and we’re always looking for innovative new ways to strategize with data. This prize will be awarded to the hack that best integrates the use of data into their project.",
-        contents: "Keyboard + Mouse Set",
+        contents: "HRT-branded keyboard + mouse set",
         company: "Hudson River Trading",
         logo: HRT,
       },
@@ -237,7 +264,7 @@ export default class extends React.Component {
         description:
           "Submit a project with positive social impact that makes use of one or more APIs, with a related Postman public workspace for the API(s). Whether you build your own API or find existing APIs from the Postman Public API network, make use of Postman's public workspace to collaborate with your team for development and documentation.",
         contents:
-          "Flipper0 + Student Kit",
+          "Flipper0 + Postman Swag Kit",
         company: "Postman",
         logo: Postman,
       },
@@ -298,15 +325,6 @@ export default class extends React.Component {
         logo: Caldera,
       },
       {
-        name: "Best use of Drone Technology",
-        description:
-          "Parrot is the European leader in the drone industry building Nano drones (under 2 pounds). As drones continue to find applications in a wide range of verticals, such as, industrial inspections, defense, first responders and surveillance, there is a need for development of innovative and specific software mission or customize accessories relevant for different use case. we are therefore interested by what can be the drone technology of tomorrow, how such a technology would be operated and in which mission contexts.",
-        contents: "Anafi AI Drone",
-        company: "Parrot Drones",
-        quantity: 1,
-        logo: Parrot,
-      },
-      {
         name: "Best Use of AI Agents",
         description:
           "Awarded to the team that demonstrates the most innovative and effective use of AI agents within their project. This prize celebrates creativity, technical excellence, and the strategic implementation of agentic AI. We're looking for teams that push the boundaries of what AI agents can achieve.",
@@ -323,33 +341,6 @@ export default class extends React.Component {
           "Limited Edition Roblox Blanket, Limited Edition Roblox Backpack, & $100 Gift Card (each per team member)",
         company: "Roblox",
         logo: Roblox,
-      },
-      {
-        name: "Best Use of GenAI using InterSystems IRIS Vector Search",
-        description:
-          "Build your groundbreaking solution on InterSystems IRIS data platform, which gives you the tools to seamlessly integrate GenAI, tabular AutoML, data interoperability, using simple SQL or Python LangChain/Llamaindex connectors! The most innovative solution that leverages GenAI using InterSystems IRIS will win cash prizes!",
-        contents: {
-          1: {
-            name: "$2,000 Cash",
-          },
-          2: {
-            name: "$1,500 Cash",
-          },
-          3: {
-            name: "$1,000 Cash",
-          },
-        },
-        company: "InterSystems",
-        logo: InterSystems,
-      },
-      {
-        name: "Most Commercially Viable Hack",
-        description:
-          "Given to the hack that we think has the most potential to make it as a startup! We’ll assess the viability of the product, and will value real-world user research and testing you may have performed",
-        contents:
-          "Weekly 1 on 1 sessions on how to develop your product, until you launch.",
-        company: "TerraAPI",
-        logo: TerraAPI,
       },
     ];
 
@@ -433,7 +424,7 @@ export default class extends React.Component {
       {
         name: "Most Technically Complex Hack",
         description: "The project built using the most technical skills",
-        contents: "Apple Watch",
+        contents: "Mac Mini",
         logo: Logo,
         quantity: 4,
       },
@@ -454,7 +445,7 @@ export default class extends React.Component {
       {
         name: "Most Impactful Hack",
         description: "The project with the largest impact, whether it be deep or wide ranging",
-        contents: "Mac Mini",
+        contents: "Apple Watch Series 9",
         logo: Logo,
         quantity: 4,
       },

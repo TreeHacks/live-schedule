@@ -22,10 +22,12 @@ companies:
   - company: Together AI
     apis:
       - title: Together API
-        description: Build your application using the fastest inference engine with Together Inference API. You can find 100+ open source models on our platform including Mistral and LLaMA-2 models. If you would like to build your own model, fine-tune leading open-source LLMs using Together Fine-tuning API.
+        description: Build your application using the fastest inference engine with Together Inference API. You can find 100+ open source models on our platform including Mistral and LLaMA-2 models. If you would like to build your own model, fine-tune leading open-source LLMs using Together Fine-tuning API. We offering $100 in free API credits to all hackathon participants. All you have to do to receive your credit is fill out this form
         links:
           - title: API
             url: https://docs.together.ai/docs
+          - title: Credits
+            url: https://www.together.ai/forms/hackathon
         tags:
           - Geospatial
   - company: Vespa
