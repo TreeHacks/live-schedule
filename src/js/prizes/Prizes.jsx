@@ -317,30 +317,6 @@ export default class extends React.Component {
         logo: PearVC,
       },
       {
-        name: "Best Solves the User’s Pain Point (Sustainability Track)",
-        description:
-          "How well does the hackers' solution address a user's pain point? In order to win this prize, you will have to present real quotes from real users who have tested prototypes of your solution.",
-        contents: "$1,000 Cash",
-        company: "Stanford Ecopreneurship",
-        logo: ecopren,
-      },
-      {
-        name: "Best Prototyping Process (Sustainability Track)",
-        description:
-          "Which team exhibited the best prototyping process, including multiple iterations with user feedback, identifying what hypotheses they want to test with each prototype, and using the quickest/cheapest prototyping process to test those hypotheses.",
-        contents: "$1,000 Cash",
-        company: "Stanford Ecopreneurship",
-        logo: ecopren,
-      },
-      {
-        name: "Best Incorporation of Broader Stakeholders (Sustainability Track)",
-        description:
-          "Satisfying the user's pain point is crucial, but so is considering the other broader contexts that can make a solution viable or not [e.g. regulatory constraints, purchaser vs user considerations, strategic design to facilitate word-of-mouth growth, ensuring equitable access, designing to prevent unintended impacts of using the solution, etc.}.   How well has the team incorporated these broader contextual and stakeholder considerations into their solution design?",
-        contents: "$1,000 Cash",
-        company: "Stanford Ecopreneurship",
-        logo: ecopren,
-      },
-      {
         name: "Most likely to become a business",
         description:
           "Product: Build something people want. Market Size: Address a significant opportunity. Team: Founders would consider committing for long-term.",
