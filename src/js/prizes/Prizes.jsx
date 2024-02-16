@@ -32,6 +32,8 @@ import Monster from "../../logos/monster.webp";
 import McCoy from "../../logos/mccoy.jpeg";
 import QED from "../../logos/qed.webp";
 import Roblox from "../../logos/roblox.webp";
+import Crossmint from "../../logos/crossmint.webp";
+import BGB from "../../logos/bgb.webp";
 
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
@@ -159,13 +161,13 @@ export default class extends React.Component {
           "MonsterAPI: World’s most Advanced Fine-tuner. Our no-code fine-tuner helps developers fine-tune the latest LLMs in just 3 clicks. Build cool Generative AI applications like IronMan’s Jarvis by customising AI models using our LoRA powered fine-tuner which reduces the fine tuning time from weeks to hours. You can fine-tune from a massive range of latest open-source LLMs such as TinyLlama 1B to Llama 2 70B and Mixtral 8x7B and run them with our one-click deployment engine. [Jarvis is just an example, millions of meaningful AI apps can be created. So be creative and submit your most innovative projects]",
         contents: {
           1: {
-            name: "iPhone 15 Pro Max",
+            name: "4x X BOX Series S",
           },
           2: {
-            name: "1 Million MonsterAPI credits",
+            name: "1 Million MonsterAPI credits for the team ($250 per participant) (Please mention full 1 Million vs 1 Mil to avoid any confusion)",
           },
           3: {
-            name: "X Box",
+            name: "Total cash: $400 for the team",
           },
         },
         company: "Monster",
@@ -183,7 +185,8 @@ export default class extends React.Component {
         name: "Best Developer Tool by Warp",
         description:
           "Build a hack that focuses on improving the developer experience in some meaningful way - this could be tackling any part of the development lifecycle (creating, modifying or testing software)!",
-        contents: "Keychron Keyboards & Warp Merch",
+        contents: "Keychron Keyboards + Warp Tumblers",
+        quantity: 4,
         company: "Warp",
         logo: Warp,
       },
@@ -205,10 +208,25 @@ export default class extends React.Component {
       },
       {
         name: "Amazing Web3 Gaming Award ",
-        description: "his award celebrates the innovation of blockchain gaming, recognizing  projects within the sphere of web3 gaming, across esports, cutting-edge gaming engines, and innovative launchpads.",
+        description: "This award celebrates the innovation of blockchain gaming, recognizing  projects within the sphere of web3 gaming, across esports, cutting-edge gaming engines, and innovative launchpads.",
         contents: "$500 Cash",
         company: "Taisu",
         logo: Taisu,
+      },
+      {
+        name: "Best Identity Credential Application Hack:",
+        description:
+          "The best use of Convex features, (e.g., multiplayer, vector search, server functions, and real-time updates.)",
+        contents: {
+          1: {
+            name: "2 x rabbit r1 + $250 of credit per team member",
+          },
+          2: {
+            name: "4 x ledger nano s plus (or less if team has less than 4 people) + $100 of credit per team member.",
+          },
+        },
+        company: "Crossmint",
+        logo: Crossmint,
       },
       {
         name: "Best Use of Reflex",
@@ -225,6 +243,13 @@ export default class extends React.Component {
         contents: "HRT-branded keyboard + mouse set",
         company: "Hudson River Trading",
         logo: HRT,
+      },
+      {
+        name: "Y Combinator / Yoneda Labs ",
+        description: "Yoneda Labs is a startup in the current Y Combinator batch. At Yoneda Labs we care about the ability of teams to create prototypes of their ideas and ship fast. For our challenge, we want to see the best prototype which addresses an issue someone on the team faces in a novel manner. We don’t care about slides or fancy presentations, we will be solely focussed on the coding prowess displayed and the ability of the prototype to solve the problem.",
+        contents: "Office Hours with a Y Combinator Group Partner ",
+        company: "Y Combinator",
+        logo: YCombinator,
       },
       {
         name: "Best Hack using a Large Language Model",
@@ -272,7 +297,7 @@ export default class extends React.Component {
         name: "Best Voice Experience",
         description:
           "The world is changing and computers can start to understand natural language. Build an experience with voice that feels intuitive and seamless. This could be a phone / desktop / web app. The award will go to the project with the best attention-to-detail and a new user behavior.",
-        contents: "Wispr HQ Visit, be one of the first people to experience neural interface in person + exclusive Wispr merch",
+        contents: "Interview with Wispr founders and visit to Wispr HQ",
         company: "Wispr",
         logo: Wispr,
       },
@@ -290,6 +315,30 @@ export default class extends React.Component {
         contents: "$1,500 Cash",
         company: "PearVC",
         logo: PearVC,
+      },
+      {
+        name: "Best Solves the User’s Pain Point (Sustainability Track)",
+        description:
+          "How well does the hackers' solution address a user's pain point? In order to win this prize, you will have to present real quotes from real users who have tested prototypes of your solution.",
+        contents: "$1,000 Cash",
+        company: "Stanford Ecopreneurship",
+        logo: ecopren,
+      },
+      {
+        name: "Best Prototyping Process (Sustainability Track)",
+        description:
+          "Which team exhibited the best prototyping process, including multiple iterations with user feedback, identifying what hypotheses they want to test with each prototype, and using the quickest/cheapest prototyping process to test those hypotheses.",
+        contents: "$1,000 Cash",
+        company: "Stanford Ecopreneurship",
+        logo: ecopren,
+      },
+      {
+        name: "Best Incorporation of Broader Stakeholders (Sustainability Track)",
+        description:
+          "Satisfying the user's pain point is crucial, but so is considering the other broader contexts that can make a solution viable or not [e.g. regulatory constraints, purchaser vs user considerations, strategic design to facilitate word-of-mouth growth, ensuring equitable access, designing to prevent unintended impacts of using the solution, etc.}.   How well has the team incorporated these broader contextual and stakeholder considerations into their solution design?",
+        contents: "$1,000 Cash",
+        company: "Stanford Ecopreneurship",
+        logo: ecopren,
       },
       {
         name: "Most likely to become a business",
@@ -323,6 +372,13 @@ export default class extends React.Component {
         contents: "$1000 in Ethereum, split across team members",
         company: "Caldera",
         logo: Caldera,
+      },
+      {
+        name: "Informed Physicians Prize",
+        description: "How might we reach oncologists in the community and academic settings with disease state education messaging to generate excitement and anticipation in this low interest and largely low-urgency category WHILE amplifying corporate presence and commitment to ensure a new brand is eagerly accepted at launch.",
+        contents: "$500 Gift Card + Internship Interview (per team member)",
+        company: "BGB Group",
+        logo: BGB,
       },
       {
         name: "Best Use of AI Agents",

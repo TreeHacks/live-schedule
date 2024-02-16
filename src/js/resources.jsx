@@ -26,7 +26,7 @@ function Resources() {
           FAQ
         </div>
       </a>
-      <a href="/prizes" target="">
+      <a href="https://docs.google.com/document/d/1ky9_TwHPgV9X22GT6-hBZYZ5mg0m_rWEqguTpFY0Fw8/edit" target="">
         <div className="resource-container">
           <img src={trophyIcon} className="resource-icon" />
           Prizes
